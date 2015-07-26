@@ -284,6 +284,7 @@ header>nav>ul>li>nav>ul>li:hover>a {
 		right: -50%;
 		width: 296px;
 		position: absolute;	
+		margin-top: -20px;
 	}
 }
 
