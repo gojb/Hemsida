@@ -84,7 +84,7 @@ $(document).ready(function() {
 
 		$(".meny").css('max-width' , $width*1.05+'px');
 	});
-	$('.prg').mouseentered(function(){
+	$('.prg').mouseenter(function(){
 		console.log("HehhaS")
 	});
 	
