@@ -84,7 +84,7 @@ $(document).ready(function() {
 
 		$(".meny").css('max-width' , $width*1.05+'px');
 	});
-	$('.Plus').mouseover(function(){
+	$('.prg').mouseover(function(){
 		console.log("HehhaS")
 	});
 	
