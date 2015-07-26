@@ -85,6 +85,10 @@ $(document).ready(function() {
 	$('.prg').mouseenter(function(){
 		console.log("HehhaS")
 	});
+	$('.prg').mouseexit(function(){
+		console.log("gvfdjk")
+	});
+	
 	
 	
 });
