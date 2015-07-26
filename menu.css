@@ -114,6 +114,7 @@ header>nav {
 
 header nav>ul {
 	list-style-type: none;
+	text-align: center;
 }
 
 header nav>ul>li {
