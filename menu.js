@@ -42,7 +42,7 @@ $(document).ready(function() {
 			var docWidth = $(window).width();
 
 			var topWidth = document.getElementById('top').clientWidth;
-			console.out(docWidth+"waf"+topWidth);
+			console.log(docWidth+"waf"+topWidth);
 			if(docWidth-topWidth<100){ 		
 				$('.top').css('font-size','75%');
 			}
