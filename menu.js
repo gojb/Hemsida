@@ -85,7 +85,7 @@ $(document).ready(function() {
 		plus2=plus2+90;
 		$('span.Plus').css('transform', plus1);
 		$('span.Plus1').css('transform', plus2);
-		console.log("Plus1 = " + plus 1 + "  Plus2 = " + plus2);
+		console.log("Plus1 = " + plus1 + "  Plus2 = " + plus2);
 		console.log("232");
 		
 	});
