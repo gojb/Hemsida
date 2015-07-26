@@ -9,7 +9,7 @@ $(document).ready(function() {
 	$(window).resize(function() {
 		var $maxwidth = $(".meny").css('max-width');
 		$maxwidth = $maxwidth.replace('px', ''); 
-		if($(".meny").width() <= $maxwidth ) {
+		if($(".meny").width() < $maxwidth*1.05 ) {
 			$("header > nav").css("display", "block");
 
 			if($("#logo").attr('class') == "menuDown") {
