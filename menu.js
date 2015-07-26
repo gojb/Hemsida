@@ -54,6 +54,7 @@ $(document).ready(function() {
 			}
 		}
 	});
+	
 	$(function() {
 		$("a").each(function() {
 			if (window.location.href == (this.href)) {
