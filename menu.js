@@ -83,8 +83,8 @@ $(document).ready(function() {
 	$('.prg').mouseenter(function(){
 		plus1=plus1+180;
 		plus2=plus2+90;
-		$('.Plus').css('transform', plus1);
-		$('.Plus1').css('transform', plus2);
+		$('header.bred nav>ul>li:hover>a span.Plus').css('transform', plus1);
+		$('header.bred nav>ul>li:hover>a span.Plus1').css('transform', plus2);
 		
 	});
 	$('.prg').click(function(){
