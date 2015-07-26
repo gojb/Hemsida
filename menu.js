@@ -7,8 +7,8 @@ $(document).ready(function() {
 		$("#logo").toggleClass("menuUp menuDown");
 	});
 	function resize() {
-		console.log($(".meny").width() + "  " + bredd*1.05);
-		if($(".meny").width() > bredd) {
+		console.log($("#header").width() + "  " + bredd*1.05);
+		if($("#header").width() > bredd) {
 			$("header > nav").css("display", "block");
 			console.log("JA");
 			if($("#logo").attr('class') == "menuDown") {
@@ -24,7 +24,7 @@ $(document).ready(function() {
 	
 
 	$("header > nav > ul > li > a").click(function(e) {
-		if($(".meny").width() > bredd) {
+		if($("#header").width() > bredd) {
 			if($(this).siblings().size() > 0 ) {
 				e.preventDefault();
 				$(this).siblings().slideToggle("fast")
@@ -77,9 +77,9 @@ $(document).ready(function() {
 		var $width = 0;
 		$(".meny").find('ul li').each(function() {
 			$width += $(this).outerWidth();
-			console.log("hej2");
-
+			console.log("hej2" + $(this).outerWidth());
 		});
+		$width += $(".top").outerWidth();
 		console.log($width);
 		
 		// if modern browser
