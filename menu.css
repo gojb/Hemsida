@@ -230,7 +230,7 @@ header>nav>ul>li>nav>ul>li:hover>a {
 	}
 	header>nav {
 		background-color: transparent;
-		display: block;
+		display: none;
 	}
 	header>nav>ul {
 		display: flex;
