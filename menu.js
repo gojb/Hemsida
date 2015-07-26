@@ -1,6 +1,5 @@
 
 $(document).ready(function() {
-	var $meny = $('.meny').attr('class');
 	$("#navToggle a").click(function(e){
 		e.preventDefault();
 		$("header > nav").slideToggle();
@@ -8,9 +7,9 @@ $(document).ready(function() {
 	});
 
 	$(window).resize(function() {
-		var $maxwidth = $meny.css('max-width');
+		var $maxwidth = $(".meny").css('max-width');
 		$maxwidth = $width.replace('px', ''); 
-		if($meny.width() <= $maxwidth ) {
+		if($(".meny").width() <= $maxwidth ) {
 			$("header > nav").css("display", "block");
 
 			if($("#logo").attr('class') == "menuDown") {
@@ -73,8 +72,8 @@ $(document).ready(function() {
 		/* 	width of menu list (non-toggled) */
 
 		var $width = 0;
-		$meny.find('ul li').each(function() {
-			$width += $meny.outerWidth();
+		$(".meny").find('ul li').each(function() {
+			$width += $(this).outerWidth();
 			console.log("hej2");
 
 		});
