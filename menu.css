@@ -271,8 +271,6 @@ header.bred nav>ul>li>a span.Plus {
 }
 
 header.bred nav>ul>li:hover>a span.Plus {
-	border-right-color: rgb(0, 0, 0);
-	transform: rotate(360deg);
 }
 
 header.bred nav>ul>li>a span.Plus1 { /*Lodrätt sträck*/
@@ -292,8 +290,7 @@ header.bred nav>ul>li>a span.Plus1 { /*Lodrätt sträck*/
 }
 
 header.bred nav>ul>li:hover>a span.Plus1 {
-	border-right-color: rgb(0, 0, 0);
-	transform: rotate(360deg);
+
 	margin-left: -0.75em;
 }
 
