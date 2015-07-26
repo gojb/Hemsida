@@ -77,7 +77,7 @@ $(document).ready(function() {
 			console.log("hej2");
 
 		});
-
+		console.log($width);
 		
 		// if modern browser
 
