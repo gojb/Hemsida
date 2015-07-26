@@ -1,2 +1,2 @@
-ErrorDocument 404 http://www.gojb.x10host.com/404
+ErrorDocument 404 /404
 DirectoryIndex index.shtml index.html
