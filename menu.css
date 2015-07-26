@@ -159,7 +159,7 @@ header>nav>ul>li:hover>a {
 	/*Hover color*/
 }
 header>nav>ul>li>nav>ul>li{
-	border: 1px solid black;
+	border: 2px solid black;
 }
 
 header>nav>ul>li>nav {
