@@ -207,6 +207,7 @@ header>nav>ul>li>nav>ul>li:hover>a {
 }
 
 /* Medium screens */
+<<<<<<< HEAD
 @media all and (min-width: 600px) {
 	header>div#logo>div#navToggle {
 		display: none;
@@ -298,6 +299,110 @@ header>nav>ul>li>nav>ul>li:hover>a {
 		z-index: 1000;
 		border: 2px solid black;
 	}
+=======
+header.bred>div#logo>div#navToggle {
+	display: none;
+}
+
+header.bred {
+	background-color: white;
+	flex-direction: row;
+	line-height: 90px;
+	padding: 0 3rem;
+	text-align: left;
+	width: 100%;
+	height: inherit;
+}
+
+header.bred>div#logo {
+	background-color: transparent;
+	line-height: 90px;
+}
+
+header.bred>div#logo>h1 {
+	color: rgb(58, 163, 158);
+	text-decoration: none;
+}
+
+header.bred>nav {
+	background-color: transparent;
+	display: block;
+}
+
+header.bred>nav>ul {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+	white-space: nowrap;
+}
+
+header.bred nav>ul>li {
+	border-bottom: none;
+}
+
+header.bred nav>ul>li>a {
+	padding: 0 1.25rem;
+}
+
+header.bred nav>ul>li>a span.toggle {
+	display: none;
+}
+
+header.bred nav>ul>li>a span.Plus {
+	border-bottom: 0.125em solid rgb(0, 0, 0);
+	border-top: 0.125em solid rgb(0, 0, 0);
+	border-right: 0.375em solid rgb(0, 0, 0);
+	border-left: 0.375em solid rgb(0, 0, 0);
+	content: "afdsdsf";
+	display: inline-block;
+	height: 0;
+	margin: 0 0 0 .25rem;
+	transition: 500ms all ease;
+	width: 0;
+	vertical-align: middle;
+	transform: rotate(0);
+}
+
+header.bred nav>ul>li:hover>a span.Plus {
+	border-right-color: rgb(0, 0, 0);
+	transform: rotate(360deg);
+}
+
+header.bred nav>ul>li>a span.Plus1 { /*Lodrätt sträck*/
+	border-bottom: 0.125em solid rgb(0, 0, 0);
+	border-top: 0.125em solid rgb(0, 0, 0);
+	border-right: 0.375em solid rgb(0, 0, 0);
+	border-left: 0.375em solid rgb(0, 0, 0);
+	content: "afdsdsf";
+	display: inline-block;
+	height: 0;
+	margin: 0 0 0 .25rem;
+	transition: 700ms all ease;
+	width: 0;
+	vertical-align: middle;
+	transform: rotate(90deg);
+	margin-left: -0.75em;
+}
+
+header.bred nav>ul>li:hover>a span.Plus1 {
+	border-right-color: rgb(0, 0, 0);
+	transform: rotate(360deg);
+	margin-left: -0.75em;
+}
+
+header.bred>nav>ul>li:hover>nav {
+	background-color: rgb(255, 255, 255);
+	border-radius: .45em;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, .6);
+	display: block;
+	line-height: 3em;
+	right: -50%;
+	width: 296px;
+	position: absolute;
+	margin-top: -20px;
+	z-index: 1000;
+	border: 2px solid black;
+>>>>>>> branch 'master' of https://github.com/gojb/Hemsida.git
 }
 
 header>div#logo>h1>a {
