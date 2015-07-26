@@ -85,7 +85,7 @@ $(document).ready(function() {
 	$('.prg').mouseenter(function(){
 		console.log("HehhaS")
 	});
-	$('.prg').mouseexit(function(){
+	$('.prg').mouseout(function(){
 		console.log("gvfdjk")
 	});
 	
