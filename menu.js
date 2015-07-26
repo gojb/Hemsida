@@ -9,9 +9,10 @@ $(document).ready(function() {
 	$(window).resize(function() {
 		var $maxwidth = $(".meny").css('max-width');
 		$maxwidth = $maxwidth.replace('px', ''); 
+		console.log($(".meny").width() + "  " + $maxwidth*1.05);
 		if($(".meny").width() < $maxwidth*1.05 ) {
 			$("header > nav").css("display", "block");
-
+			console.log("JA");
 			if($("#logo").attr('class') == "menuDown") {
 				$("#logo").toggleClass("menuUp menuDown");
 			}
