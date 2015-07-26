@@ -277,14 +277,14 @@ header.bred nav>ul>li>a span.toggle {
 	header nav>ul>li>a span.Plus1 { /*LodrÃ¤tt strÃ¤ck*/
 	/* 	border-bottom: 0.125em solid rgb(0, 0, 0);
 		border-top: 0.125em solid rgb(0, 0, 0); */
-		border-bottom: 0.375em solid rgb(0, 0, 0);
-		border-top: 0.375em solid rgb(0, 0, 0);
-		border-right: 0.375em solid rgb(0, 0, 0);
-		border-left: 0.375em solid rgb(0, 0, 0);
+		border-bottom: 0.375em solid rgb(58, 163, 158);
+		border-top: 0.375em solid rgb(58, 163, 158);
+		border-right: 0.375em solid rgb(58, 163, 158);
+		border-left: 0.375em solid rgb(58, 163, 158);
 		content: "afdsdsf";
 		display: inline-block;
 		height: 0;
-		border-radius: 100%;
+		border-radius: 75%;
 		margin: 0 0 0 .25rem;
 		transition: 700ms all ease;
 		width: 0;
@@ -295,7 +295,6 @@ header.bred nav>ul>li>a span.toggle {
 	header nav>ul>li:hover>a span.Plus1 {
 		border-right-color: rgb(0, 0, 0);
 		transform: rotate(360deg);
-		margin-left: -0.75em;
 	}
 
 header.bred>nav>ul>li:hover>nav {
