@@ -91,7 +91,7 @@ $(document).ready(function() {
 	$('.prg').mouseout(function(){
 		console.log($)
 	});
-	
+	resize();
 	
 	
 });
