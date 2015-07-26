@@ -82,7 +82,7 @@ $(document).ready(function() {
 		// if modern browser
 		bredd=$width;
 	});
-	$('.Plus').mouseenter(function(){
+	$('.prg').mouseenter(function(){
 		console.log("HehhaS")
 	});
 	
