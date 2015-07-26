@@ -91,6 +91,7 @@ resize();
 		console.log("Plus1 = " + plus1 + "  Plus2 = " + plus2);
 		console.log("232");
 		i=i+1;
+		console.log(i);
 	});
 	$('.prg').click(function(){
 		console.log($('.Plus').css("border-top"))
@@ -102,6 +103,7 @@ resize();
 		$('span.Plus1').css('transform', "rotate("+plus2+"deg)");
 		console.log($('.Plus').css('transform'))
 		i=i-1;
+		console.log(i);
 	});
 
 	resize();
