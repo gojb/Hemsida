@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 	$(window).resize(function() {
 		var $maxwidth = $(".meny").css('max-width');
-		$maxwidth = $width.replace('px', ''); 
+		$maxwidth = $maxwidth.replace('px', ''); 
 		if($(".meny").width() <= $maxwidth ) {
 			$("header > nav").css("display", "block");
 
