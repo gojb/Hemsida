@@ -1,3 +1,4 @@
+var $meny = $('.meny').attr('class');
 $(document).ready(function() {
 	$("#navToggle a").click(function(e){
 		e.preventDefault();
@@ -6,7 +7,9 @@ $(document).ready(function() {
 	});
 
 	$(window).resize(function() {
-		if($( window ).width() >= "600") {
+		var $maxwidth = menu.css('max-width');
+		$maxwidth = $width.replace('px', ''); 
+		if($meny.width() <= $maxwidth ) {
 			$("header > nav").css("display", "block");
 
 			if($("#logo").attr('class') == "menuDown") {
@@ -53,7 +56,7 @@ $(document).ready(function() {
 			}
 		}
 	});
-	
+
 	$(function() {
 		$("a").each(function() {
 			if (window.location.href == (this.href)) {
@@ -62,4 +65,21 @@ $(document).ready(function() {
 			}
 		});
 	});  
+	$(function() {
+		
+		console.log("hej");
+
+		/* 	width of menu list (non-toggled) */
+
+		var $width = 0;
+		$meny.find('ul li').each(function() {
+			$width += $meny.outerWidth();
+			console.log("hej2");
+
+		});
+
+		// if modern browser
+
+			$meny.css('max-width' , $width*1.05+'px');
+	});
 });
