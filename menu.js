@@ -43,7 +43,8 @@ $(document).ready(function() {
 			console.log(topWidth + "  top-----------");
 			if(docWidth-topWidth<100){
 				/*     		document.getElementById('top').style.fontSize = '75%';
-				 */    		$('.top').css('font-size','75%');
+				 */    		
+				$('.top').css('font-size','75%');
 			}
 			else{
 				/*     		document.getElementById('top').style.fontSize = '100%';
