@@ -130,7 +130,7 @@ header nav>ul>li:first-of-type {
 }
 
 header nav>ul>li>a {
-	display: none;
+	display: block;
 	color: rgba(0, 0, 0, .65);
 	font-weight: 700;
 	padding: 1.5rem 0;
