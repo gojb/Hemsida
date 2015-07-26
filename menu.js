@@ -86,9 +86,9 @@ resize();
 	$('.prg').mouseenter(function(){
 		plus1=plus1+180;
 		plus2=plus2+90;
-		$('span.Plus').css('transform', plus1);
+		$('nav>ul>li>a span.Plus1').css('transform', plus1);
 		$('span.Plus1').css('transform', plus2);
-		console.log("Plus1 = " + plus 1 + "  Plus2 = " + plus2);
+		console.log("Plus1 = " + plus1 + "  Plus2 = " + plus2);
 		console.log("232");
 		
 	});
