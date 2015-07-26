@@ -216,7 +216,7 @@ header>nav>ul>li>nav>ul>li:hover>a {
 	}
 	header>nav {
 		background-color: transparent;
-		display: block;
+		display: inline;
 	}
 	header>nav>ul {
 		display: flex;

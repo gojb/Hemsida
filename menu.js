@@ -1,14 +1,14 @@
 $(document).ready(function() {
+	var menybredd
 	$("#navToggle a").click(function(e){
 		e.preventDefault();
-
 		$("header > nav").slideToggle();
 		$("#logo").toggleClass("menuUp menuDown");
 	});
 
 	$(window).resize(function() {
 		if($( window ).width() >= "600") {
-			$("header > nav").css("display", "block");
+			$("header > nav").css("display", "inline");
 
 			if($("#logo").attr('class') == "menuDown") {
 				$("#logo").toggleClass("menuUp menuDown");
