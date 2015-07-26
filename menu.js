@@ -1,5 +1,4 @@
 $(document).ready(function() {
-	var menybredd
 	$("#navToggle a").click(function(e){
 		e.preventDefault();
 		$("header > nav").slideToggle();
@@ -8,7 +7,7 @@ $(document).ready(function() {
 
 	$(window).resize(function() {
 		if($( window ).width() >= "600") {
-			$("header > nav").css("display", "inline");
+			$("header > nav").css("display", "block");
 
 			if($("#logo").attr('class') == "menuDown") {
 				$("#logo").toggleClass("menuUp menuDown");
@@ -44,7 +43,7 @@ $(document).ready(function() {
 			if(docWidth-topWidth<100){
 				/*     		document.getElementById('top').style.fontSize = '75%';
 				 */    		
-				$('.top').html('GoJb');
+				$('.top').css('font-size','75%');
 			}
 			else{
 				/*     		document.getElementById('top').style.fontSize = '100%';
