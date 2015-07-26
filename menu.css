@@ -295,7 +295,8 @@ header>nav>ul>li>nav>ul>li:hover>a {
 		position: absolute;
 		margin-top: -20px;
 		z-index: 1000;
-		border: 2px solid black;
+		border-top: 2px solid black;
+		border-bottom: 2px solid black;
 	}
 }
 
