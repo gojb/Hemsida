@@ -169,7 +169,7 @@ header>nav>ul>li>nav {
 	margin-bottom: 20px;
 	margin-top: 10px; */
 
-	display: block;
+	display: none;
 	color: rgba(0, 0, 0, .65);
 	font-weight: 700;
 	padding: 1.5rem 0;
