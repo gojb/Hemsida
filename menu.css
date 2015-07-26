@@ -130,7 +130,7 @@ header nav>ul>li:first-of-type {
 }
 
 header nav>ul>li>a {
-	display: block;
+	display: none;
 	color: rgba(0, 0, 0, .65);
 	font-weight: 700;
 	padding: 1.5rem 0;
@@ -230,7 +230,7 @@ header>nav>ul>li>nav>ul>li:hover>a {
 	}
 	header>nav {
 		background-color: transparent;
-		display: none;
+		display: block;
 	}
 	header>nav>ul {
 		display: flex;
