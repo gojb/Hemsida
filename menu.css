@@ -78,7 +78,7 @@ header>div#logo>div#navToggle {
 	position: absolute;
 	right: 0;
 	top: 0;
-	transition: 3000ms all ease;
+	transition: 300ms all ease;
 	position: absolute;
 	/*Menuknapp  */
 }
@@ -96,7 +96,7 @@ header>div#logo>div#navToggle>a {
 	font-weight: 600;
 	padding: 0 2.5rem;
 	text-decoration: none;
-	transition: 3000ms all ease;
+	transition: 300ms all ease;
 	/*Text menuknapp*/
 }
 
@@ -106,10 +106,10 @@ header>div#logo>div#navToggle:hover>a {
 }
 
 header>nav {
-	background-color: #0000a0;
+	background-color: #a6a6a6;
 	display: none;
 	flex: 1;
-	transform: 3000ms all ease;
+	transform: 300ms all ease;
 }
 
 header nav>ul {
@@ -117,7 +117,7 @@ header nav>ul {
 }
 
 header nav>ul>li {
-	border-bottom: 1px dotted rgba(250, 0, 0, .1);
+	border-bottom: 1px dotted rgba(0, 0, 0, .1);
 	position: relative;
 }
 
@@ -131,7 +131,7 @@ header nav>ul>li>a {
 	font-weight: 700;
 	padding: 1.5rem 0;
 	text-decoration: none;
-	transition: 5000ms all ease;
+	transition: 500ms all ease;
 	background-color: white;
 }
 
@@ -180,9 +180,9 @@ header>nav>ul>li>nav {
 
 header>nav>ul>li>nav>ul>li>a {
 	color: rgba(0, 0, 0, .65);
-	transition: 7000ms all ease;
-/* 	border: 2px solid black;
- */	/*Dropdown textyyu*/
+	transition: 700ms all ease;
+	border: 2px solo
+	/*Dropdown textyyu*/
 }
 
 header>nav>ul>li>nav>ul>li:hover>a {
@@ -216,7 +216,7 @@ header>nav>ul>li>nav>ul>li:hover>a {
 	}
 	header>nav {
 		background-color: transparent;
-		display: inline;
+		display: block;
 	}
 	header>nav>ul {
 		display: flex;
@@ -243,7 +243,7 @@ header>nav>ul>li>nav>ul>li:hover>a {
 		display: inline-block;
 		height: 0;
 		margin: 0 0 0 .25rem;
-		transition: 5000ms all ease;
+		transition: 500ms all ease;
 		width: 0;
 		vertical-align: middle;
 		transform: rotate(0);
@@ -262,7 +262,7 @@ header>nav>ul>li>nav>ul>li:hover>a {
 		display: inline-block;
 		height: 0;
 		margin: 0 0 0 .25rem;
-		transition: 7000ms all ease;
+		transition: 700ms all ease;
 		width: 0;
 		vertical-align: middle;
 		transform: rotate(90deg);
