@@ -85,9 +85,10 @@ $(document).ready(function() {
 	});
 	$('.prg').mouseenter(function(){
 		console.log($('.Plus').css("border-top"))
+		console.log($('.Plus').css('transform'))
 	});
 	$('.prg').mouseout(function(){
-		console.log("gvfdjk")
+		console.log($('.Plus').css('transform'))
 	});
 	
 	
