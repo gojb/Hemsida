@@ -96,6 +96,10 @@ resize();
 		console.log($('.Plus').css("border-top"))
 	});
 	$('.prg').mouseout(function(){
+		
+		
+		$('nav>ul>li>a span.Plus').css('transform', "rotate("+plus1+"deg)");
+		$('span.Plus1').css('transform', "rotate("+plus2+"deg)");
 		console.log($('.Plus').css('transform'))
 	});
 
