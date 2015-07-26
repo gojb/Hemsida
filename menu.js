@@ -83,7 +83,7 @@ $(document).ready(function() {
 		bredd=$width;
 	});
 	$('.prg').mouseenter(function(){
-		console.log("HehhaS")
+		console.log($('.Plus').css("border-top"))
 	});
 	$('.prg').mouseout(function(){
 		console.log("gvfdjk")
