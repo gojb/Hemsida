@@ -53,6 +53,9 @@ header {
 	flex-direction: column;
 	height: 70px;
 }
+header nav>ul>li span.Plus {
+	display: none;
+}
 
 header>div#logo {
 	line-height: 70px;
@@ -151,9 +154,7 @@ header nav>ul>li>a span.toggle {
 	text-transform: lowercase;
 }
 
-header nav>ul>li>a span.Plus {
-	display: none;
-}
+
 
 header>nav>ul>li:hover>a {
 	color: rgb(58, 163, 158);
@@ -256,7 +257,7 @@ header.bred nav>ul>li>a span.toggle {
 	display: none;
 }
 
-header.bred nav>ul>li>a span.Plus {
+header.bred nav>ul>li span.Plus {
 	border-bottom: 0.125em solid rgb(0, 0, 0);
 	border-top: 0.125em solid rgb(0, 0, 0);
 	border-right: 0.375em solid rgb(0, 0, 0);
@@ -271,10 +272,10 @@ header.bred nav>ul>li>a span.Plus {
 	transform: rotate(0);
 }
 
-header.bred nav>ul>li:hover>a span.Plus {
+header.bred nav>ul>li:hover span.Plus {
 }
 
-header.bred nav>ul>li>a span.Plus1 { /*Lodrätt sträck*/
+header.bred nav>ul>li span.Plus1 { /*Lodrätt sträck*/
 	border-bottom: 0.125em solid rgb(0, 0, 0);
 	border-top: 0.125em solid rgb(0, 0, 0);
 	border-right: 0.375em solid rgb(0, 0, 0);
@@ -290,7 +291,7 @@ header.bred nav>ul>li>a span.Plus1 { /*Lodrätt sträck*/
 	margin-left: -0.75em;
 }
 
-header.bred nav>ul>li:hover>a span.Plus1 {
+header.bred nav>ul>li:hover span.Plus1 {
 
 	margin-left: -0.75em;
 }
