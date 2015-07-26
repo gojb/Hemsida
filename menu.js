@@ -34,8 +34,8 @@ $(document).ready(function() {
 	<!--	Resize font h1-ish	-->
 	var i = 0;
 	$(window).resize(function(){
-		console.log($('.top').width()+"  top");
-		console.log($(window).width()+"  doc");
+		//console.log($('.top').width()+"  top");
+		//console.log($(window).width()+"  doc");
 		if($(document).width()>$('top').width()&&$(document).width()<500){
 			var docWidth = $(window).width();
 			//var topWidth = document.getElementById('top');
@@ -43,7 +43,7 @@ $(document).ready(function() {
 
 			var topWidth = document.getElementById('top').clientWidth;
 
-			console.log(topWidth + "  top-----------");
+		//	console.log(topWidth + "  top-----------");
 			if(docWidth-topWidth<100){
 				/*     		document.getElementById('top').style.fontSize = '75%';
 				 */    		
@@ -84,4 +84,9 @@ $(document).ready(function() {
 
 		$(".meny").css('max-width' , $width*1.05+'px');
 	});
+	$('.Plus').mouseenter(function(){
+		console.log("HehhaS")
+	});
+	
+	
 });
