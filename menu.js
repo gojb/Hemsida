@@ -44,7 +44,7 @@ $(document).ready(function() {
 			if(docWidth-topWidth<100){
 				/*     		document.getElementById('top').style.fontSize = '75%';
 				 */    		
-				$('.top').html('GoJb');
+				$('.top').css('font-size','75%');
 			}
 			else{
 				/*     		document.getElementById('top').style.fontSize = '100%';
