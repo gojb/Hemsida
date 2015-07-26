@@ -158,9 +158,12 @@ header>nav>ul>li:hover>a {
 	color: rgb(58, 163, 158);
 	/*Hover color*/
 }
+header>nav>ul>li>nav>ul>li{
+	border: 1px solid black;
+}
 
 header>nav>ul>li>nav {
-/* 	background-color: rgb(51, 51, 51);
+	/* 	background-color: rgb(51, 51, 51);
 	border-radius: .45em;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, .6);
 	display: none;
@@ -168,7 +171,8 @@ header>nav>ul>li>nav {
 	right: -100%;
 	margin-bottom: 20px;
 	margin-top: 10px; */
-
+	
+	
 	display: none;
 	color: rgba(0, 0, 0, .65);
 	font-weight: 700;
