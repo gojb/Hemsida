@@ -284,12 +284,13 @@ header.bred nav>ul>li>a span.toggle {
 		content: "afdsdsf";
 		display: inline-block;
 		height: 0;
+		border-radius: 100%;
 		margin: 0 0 0 .25rem;
 		transition: 700ms all ease;
 		width: 0;
 		vertical-align: middle;
 		transform: rotate(90deg);
-		margin-left: -0.75em;
+		margin-left: 0.75em;
 	}
 	header nav>ul>li:hover>a span.Plus1 {
 		border-right-color: rgb(0, 0, 0);
