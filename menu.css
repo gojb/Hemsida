@@ -274,7 +274,7 @@ header.bred nav>ul>li>a span.toggle {
 		border-right-color: rgb(0, 0, 0);
 		transform: rotate(360deg);
 	}
-	header nav>ul>li>a span.Plus1 { /*LodrÃ¤tt strÃ¤ck*/
+	header.bred nav>ul>li>a span.Plus1 { /*LodrÃ¤tt strÃ¤ck*/
 	/* 	border-bottom: 0.125em solid rgb(0, 0, 0);
 		border-top: 0.125em solid rgb(0, 0, 0); */
 		border-bottom: 0.375em solid rgb(255, 255, 255);
