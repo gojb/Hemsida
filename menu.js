@@ -86,7 +86,7 @@ $(document).ready(function() {
 		console.log($('.Plus').css("border-top"))
 	});
 	$('.prg').mouseout(function(){
-		console.log("gvfdjk")
+		console.log($('.Plus').css('transform'))
 	});
 	
 	
