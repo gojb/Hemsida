@@ -1,5 +1,6 @@
-var $meny = $('.meny').attr('class');
+
 $(document).ready(function() {
+	var $meny = $('.meny').attr('class');
 	$("#navToggle a").click(function(e){
 		e.preventDefault();
 		$("header > nav").slideToggle();
