@@ -160,6 +160,7 @@ header>nav>ul>li:hover>a {
 }
 header>nav>ul>li>nav>ul>li{
 	border: 2px solid black;
+	z-index: 1000;
 }
 
 header>nav>ul>li>nav {
