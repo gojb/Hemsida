@@ -106,7 +106,7 @@ header>div#logo>div#navToggle:hover>a {
 }
 
 header>nav {
-	background-color: #0000a0;
+	background-color: #a6a6a6;
 	display: none;
 	flex: 1;
 	transform: 300ms all ease;
@@ -117,7 +117,7 @@ header nav>ul {
 }
 
 header nav>ul>li {
-	border-bottom: 1px dotted rgba(250, 0, 0, .1);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 	position: relative;
 }
 
@@ -164,7 +164,7 @@ header>nav>ul>li>nav {
 		line-height: 3em;
 		right: -100%;
 		margin-bottom: 20px;
-		margin-top: 10px;
+		margin-top: /* 10px */;
 		
 	/*background-color: rgb(51, 51, 51);
 	border-radius: 1.5em;
@@ -181,8 +181,8 @@ header>nav>ul>li>nav {
 header>nav>ul>li>nav>ul>li>a {
 	color: rgba(0, 0, 0, .65);
 	transition: 700ms all ease;
-/* 	border: 2px solid black;
- */	/*Dropdown textyyu*/
+	border: 2px solo
+	/*Dropdown textyyu*/
 }
 
 header>nav>ul>li>nav>ul>li:hover>a {
@@ -216,7 +216,7 @@ header>nav>ul>li>nav>ul>li:hover>a {
 	}
 	header>nav {
 		background-color: transparent;
-		display: inline;
+		display: block;
 	}
 	header>nav>ul {
 		display: flex;
@@ -284,6 +284,8 @@ header>nav>ul>li>nav>ul>li:hover>a {
 		right: -50%;
 		width: 296px;
 		position: absolute;	
+		margin-top: -20px;
+		z-index: 1000;
 	}
 }
 
