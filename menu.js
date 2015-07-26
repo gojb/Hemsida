@@ -11,12 +11,13 @@ $(document).ready(function() {
 		console.log($(".meny").width() + "  " + bredd*1.05);
 		if($(".meny").width() > bredd) {
 			$("header > nav").css("display", "block");
-			console.log("JA");
+			$("#header").addClass("bred");
 			if($("#logo").attr('class') == "menuDown") {
 				$("#logo").toggleClass("menuUp menuDown");
 			}
 		}
 		else {
+			$("#header").removeClass("bred");
 			$("header > nav").css("display", "none");
 		}
 	});
