@@ -1,2 +1,2 @@
-ErrorDocument 404 /404
+ErrorDocument 404 http://gojb.tk/404
 DirectoryIndex index.shtml index.html
