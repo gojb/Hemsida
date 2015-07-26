@@ -83,7 +83,7 @@ $(document).ready(function() {
 
 		$(".meny").css('max-width' , $width*1.05+'px');
 	});
-	$('.Plus').mouseenter(function(){
+	$('.Plus').mouseover(function(){
 		console.log("HehhaS")
 	});
 	
