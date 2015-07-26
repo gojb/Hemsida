@@ -82,9 +82,19 @@ $(document).ready(function() {
 		// if modern browser
 		bredd=$width;
 	});
+	
+	var plus1 = 0;
+	var plus2 = 90;
+	
 	$('.prg').mouseenter(function(){
+		plus1=plus1+180;
+		plus2=plus2+90;
+		$('.Plus').css('transform', plus1);
+		$('.Plus1').css('transform', plus2);
+		
+	});
+	$('.prg').click(function(){
 		console.log($('.Plus').css("border-top"))
-		console.log($('.Plus').css('transform'))
 	});
 	$('.prg').mouseout(function(){
 		console.log($('.Plus').css('transform'))
