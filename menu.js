@@ -84,6 +84,7 @@ $(document).ready(function() {
 		
 		// if modern browser
 		bredd=$width;
+		resize();
 	});
 	$('.prg').mouseenter(function(){
 		console.log($('.Plus').css("border-top"))
