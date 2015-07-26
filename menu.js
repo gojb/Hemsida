@@ -1,5 +1,6 @@
 
 $(document).ready(function() {
+	var bredd;
 	$("#navToggle a").click(function(e){
 		e.preventDefault();
 		$("header > nav").slideToggle();
@@ -7,10 +8,8 @@ $(document).ready(function() {
 	});
 
 	$(window).resize(function() {
-		var $maxwidth = $(".meny").css('max-width');
-		$maxwidth = $maxwidth.replace('px', ''); 
-		console.log($(".meny").width() + "  " + $maxwidth*1.05);
-		if($(".meny").width() < $maxwidth*1.05 ) {
+		console.log($(".meny").width() + "  " + bredd);
+		if($(".meny").width() < bredd) {
 			$("header > nav").css("display", "block");
 			console.log("JA");
 			if($("#logo").attr('class') == "menuDown") {
@@ -81,8 +80,7 @@ $(document).ready(function() {
 		console.log($width);
 		
 		// if modern browser
-
-		$(".meny").css('max-width' , $width*1.05+'px');
+		bredd=$width;
 	});
 	$('.prg').mouseenter(function(){
 		console.log("HehhaS")
