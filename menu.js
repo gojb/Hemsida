@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 	$(window).resize(function() {
 		console.log($(".meny").width() + "  " + bredd*1.05);
-		if($(".meny").width() < bredd) {
+		if($(".meny").width() > bredd) {
 			$("header > nav").css("display", "block");
 			console.log("JA");
 			if($("#logo").attr('class') == "menuDown") {
