@@ -88,7 +88,7 @@ resize();
 //		plus1=plus1+180;
 //		plus2=plus2+90;
 		
-		while(run==false){
+		for(i == 5760){
 		i++;
 		$('nav>ul>li>a span.Plus').css('transform', "rotate("+i+"deg)");
 //		$('span.Plus1').css('transform', "rotate("+plus2+"deg)");
