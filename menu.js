@@ -78,6 +78,7 @@ $(document).ready(function() {
 
 		});
 
+		
 		// if modern browser
 
 		$(".meny").css('max-width' , $width*1.05+'px');
