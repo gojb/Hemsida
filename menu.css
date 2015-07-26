@@ -256,44 +256,44 @@ header.bred nav>ul>li>a span.toggle {
 	display: none;
 }
 
-header.bred nav>ul>li>a span.Plus {
-	border-bottom: 0.125em solid rgb(0, 0, 0);
-	border-top: 0.125em solid rgb(0, 0, 0);
-	border-right: 0.375em solid rgb(0, 0, 0);
-	border-left: 0.375em solid rgb(0, 0, 0);
-	content: "afdsdsf";
-	display: inline-block;
-	height: 0;
-	margin: 0 0 0 .25rem;
-	transition: 500ms all ease;
-	width: 0;
-	vertical-align: middle;
-	transform: rotate(0);
-}
-
-header.bred nav>ul>li:hover>a span.Plus {
-}
-
-header.bred nav>ul>li>a span.Plus1 { /*Lodrätt sträck*/
-	border-bottom: 0.125em solid rgb(0, 0, 0);
-	border-top: 0.125em solid rgb(0, 0, 0);
-	border-right: 0.375em solid rgb(0, 0, 0);
-	border-left: 0.375em solid rgb(0, 0, 0);
-	content: "afdsdsf";
-	display: inline-block;
-	height: 0;
-	margin: 0 0 0 .25rem;
-	transition: 700ms all ease;
-	width: 0;
-	vertical-align: middle;
-	transform: rotate(90deg);
-	margin-left: -0.75em;
-}
-
-header.bred nav>ul>li:hover>a span.Plus1 {
-
-	margin-left: -0.75em;
-}
+header nav>ul>li>a span.Plus {
+		border-bottom: 0.125em solid rgb(0, 0, 0);
+		border-top: 0.125em solid rgb(0, 0, 0);
+		border-right: 0.375em solid rgb(0, 0, 0);
+		border-left: 0.375em solid rgb(0, 0, 0);
+		content: "afdsdsf";
+		display: inline-block;
+		height: 0;
+		margin: 0 0 0 .25rem;
+		transition: 500ms all ease;
+		width: 0;
+		vertical-align: middle;
+		transform: rotate(0);
+	}
+	header nav>ul>li:hover>a span.Plus {
+		border-right-color: rgb(0, 0, 0);
+		transform: rotate(360deg);
+	}
+	header nav>ul>li>a span.Plus1 { /*LodrÃ¤tt strÃ¤ck*/
+		border-bottom: 0.125em solid rgb(0, 0, 0);
+		border-top: 0.125em solid rgb(0, 0, 0);
+		border-right: 0.375em solid rgb(0, 0, 0);
+		border-left: 0.375em solid rgb(0, 0, 0);
+		content: "afdsdsf";
+		display: inline-block;
+		height: 0;
+		margin: 0 0 0 .25rem;
+		transition: 700ms all ease;
+		width: 0;
+		vertical-align: middle;
+		transform: rotate(90deg);
+		margin-left: -0.75em;
+	}
+	header nav>ul>li:hover>a span.Plus1 {
+		border-right-color: rgb(0, 0, 0);
+		transform: rotate(360deg);
+		margin-left: -0.75em;
+	}
 
 header.bred>nav>ul>li:hover>nav {
 	background-color: rgb(255, 255, 255);

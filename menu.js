@@ -8,11 +8,21 @@ $(document).ready(function() {
 	});
 
 	$(window).resize(function() {
-resize();
+		console.log($(".meny").width() + "  " + bredd*1.05);
+		if($(".meny").width() > bredd) {
+			$("header > nav").css("display", "block");
+			console.log("JA");
+			if($("#logo").attr('class') == "menuDown") {
+				$("#logo").toggleClass("menuUp menuDown");
+			}
+		}
+		else {
+			$("header > nav").css("display", "none");
+		}
 	});
 
 	$("header > nav > ul > li > a").click(function(e) {
-		if($(".meny").width() > bredd) {
+		if($( window ).width() <= "600") {
 			if($(this).siblings().size() > 0 ) {
 				e.preventDefault();
 				$(this).siblings().slideToggle("fast")
@@ -32,7 +42,7 @@ resize();
 
 			var topWidth = document.getElementById('top').clientWidth;
 
-			//	console.log(topWidth + "  top-----------");
+		//	console.log(topWidth + "  top-----------");
 			if(docWidth-topWidth<100){
 				/*     		document.getElementById('top').style.fontSize = '75%';
 				 */    		
@@ -46,20 +56,6 @@ resize();
 			}
 		}
 	});
-	function resize() {
-		console.log($(".meny").width() + "  " + bredd*1.05);
-		if($(".meny").width() > bredd) {
-			$("header > nav").css("display", "block");
-			$("#header").addClass("bred");
-			if($("#logo").attr('class') == "menuDown") {
-				$("#logo").toggleClass("menuUp menuDown");
-			}
-		}
-		else {
-			$("#header").removeClass("bred");
-			$("header > nav").css("display", "none");
-		}
-	}
 
 	$(function() {
 		$("a").each(function() {
@@ -69,50 +65,30 @@ resize();
 			}
 		});
 	});  
-
-	var $width = 0;
-	$(".meny").find('ul li').each(function() {
-		$width += $(this).outerWidth();
-		console.log("hej2");
-
-	});
-	
-	var plus1 = 0;
-	var plus2 = 90;
-	var i;
-	var run = false;
-	console.log($width);
-	bredd=$width;
-	
-	$('.prg').mouseenter(function(){
-//		plus1=plus1+180;
-//		plus2=plus2+90;
+	$(function() {
 		
-		for(i == 5760){
-		i++;
-		$('nav>ul>li>a span.Plus').css('transform', "rotate("+i+"deg)");
-//		$('span.Plus1').css('transform', "rotate("+plus2+"deg)");
-//		console.log("Plus1 = " + plus1 + "  Plus2 = " + plus2);
-//		console.log("232");
-		console.log(i);
-		}
+		console.log("hej");
+
+		/* 	width of menu list (non-toggled) */
+
+		var $width = 0;
+		$(".meny").find('ul li').each(function() {
+			$width += $(this).outerWidth();
+			console.log("hej2");
+
+		});
+		console.log($width);
+		
+		// if modern browser
+		bredd=$width;
 	});
-	$('.prg').click(function(){
+	$('.prg').mouseenter(function(){
 		console.log($('.Plus').css("border-top"))
 	});
 	$('.prg').mouseout(function(){
-		
-		run=false;
-		
-//		plus1=plus1+180;
-//		plus2=plus2+90;
-//		$('nav>ul>li>a span.Plus').css('transform', "rotate("+plus1+"deg)");
-//		$('span.Plus1').css('transform', "rotate("+plus2+"deg)");
-//		console.log($('.Plus').css('transform'))
-//		i=i-1;
-//		console.log(i);
+		console.log($)
 	});
-
-	resize();
-
+	
+	
+	
 });
