@@ -86,8 +86,8 @@ resize();
 	$('.prg').mouseenter(function(){
 		plus1=plus1+180;
 		plus2=plus2+90;
-		$('nav>ul>li>a span.Plus1').css('transform', plus1);
-		$('span.Plus1').css('transform', plus2);
+		$('nav>ul>li>a span.Plus').css('transform', "rotate("+plus1+"deg)");
+		$('span.Plus1').css('transform', "rotate("+plus2+"deg)");
 		console.log("Plus1 = " + plus1 + "  Plus2 = " + plus2);
 		console.log("232");
 		
@@ -96,6 +96,10 @@ resize();
 		console.log($('.Plus').css("border-top"))
 	});
 	$('.prg').mouseout(function(){
+		
+		
+		$('nav>ul>li>a span.Plus').css('transform', "rotate("+plus1+"deg)");
+		$('span.Plus1').css('transform', "rotate("+plus2+"deg)");
 		console.log($('.Plus').css('transform'))
 	});
 
