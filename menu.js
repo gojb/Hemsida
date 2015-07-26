@@ -7,8 +7,8 @@ $(document).ready(function() {
 		$("#logo").toggleClass("menuUp menuDown");
 	});
 	function resize() {
-		console.log($(".meny").width() + "  " + bredd*1.05);
-		if($(".meny").width() > bredd) {
+		console.log($("#header").width() + "  " + bredd*1.05);
+		if($("#header").width() > bredd) {
 			$("header > nav").css("display", "block");
 			console.log("JA");
 			if($("#logo").attr('class') == "menuDown") {
@@ -21,10 +21,10 @@ $(document).ready(function() {
 			$("#header").removeClass("bred");
 		}
 	}
-	
+
 
 	$("header > nav > ul > li > a").click(function(e) {
-		if($(".meny").width() > bredd) {
+		if($("#header").width() > bredd) {
 			if($(this).siblings().size() > 0 ) {
 				e.preventDefault();
 				$(this).siblings().slideToggle("fast")
@@ -40,20 +40,14 @@ $(document).ready(function() {
 		//console.log($(window).width()+"  doc");
 		if($(document).width()>$('top').width()&&$(document).width()<500){
 			var docWidth = $(window).width();
-			//var topWidth = document.getElementById('top');
-			//var Width = (topWidth.clientWidth()+1);
 
 			var topWidth = document.getElementById('top').clientWidth;
-
-		//	console.log(topWidth + "  top-----------");
-			if(docWidth-topWidth<100){
-				/*     		document.getElementById('top').style.fontSize = '75%';
-				 */    		
+			console.log(docWidth+"waf"+topWidth);
+			console.log(docWidth-topWidth);
+			if(docWidth-topWidth<100){ 		
 				$('.top').css('font-size','75%');
 			}
 			else{
-				/*     		document.getElementById('top').style.fontSize = '100%';
-  $('.top').css('font-size','100%');*/
 				$('.top').css('font-size','');
 				$('.top').css('font-size','100%');
 			}
@@ -69,7 +63,7 @@ $(document).ready(function() {
 		});
 	});  
 	$(function() {
-		
+
 		console.log("hej");
 
 		/* 	width of menu list (non-toggled) */
@@ -77,11 +71,11 @@ $(document).ready(function() {
 		var $width = 0;
 		$(".meny").find('ul li').each(function() {
 			$width += $(this).outerWidth();
-			console.log("hej2");
-
+			console.log("hej2" + $(this).outerWidth());
 		});
+		$width += $(".top").outerWidth();
 		console.log($width);
-		
+
 		// if modern browser
 		bredd=$width;
 		resize();
@@ -92,7 +86,7 @@ $(document).ready(function() {
 	$('.prg').mouseout(function(){
 		console.log($)
 	});
-	
-	
-	
+
+
+
 });
