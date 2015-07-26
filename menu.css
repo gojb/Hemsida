@@ -256,7 +256,7 @@ header.bred nav>ul>li>a span.toggle {
 	display: none;
 }
 
-header nav>ul>li>a span.Plus {
+/* header nav>ul>li>a span.Plus {
 		border-bottom: 0.125em solid rgb(0, 0, 0);
 		border-top: 0.125em solid rgb(0, 0, 0);
 		border-right: 0.375em solid rgb(0, 0, 0);
@@ -269,14 +269,16 @@ header nav>ul>li>a span.Plus {
 		width: 0;
 		vertical-align: middle;
 		transform: rotate(0);
-	}
+	} */
 	header nav>ul>li:hover>a span.Plus {
 		border-right-color: rgb(0, 0, 0);
 		transform: rotate(360deg);
 	}
 	header nav>ul>li>a span.Plus1 { /*LodrÃ¤tt strÃ¤ck*/
-		border-bottom: 0.125em solid rgb(0, 0, 0);
-		border-top: 0.125em solid rgb(0, 0, 0);
+	/* 	border-bottom: 0.125em solid rgb(0, 0, 0);
+		border-top: 0.125em solid rgb(0, 0, 0); */
+		border-bottom: 0.375em solid rgb(0, 0, 0);
+		border-top: 0.375em solid rgb(0, 0, 0);
 		border-right: 0.375em solid rgb(0, 0, 0);
 		border-left: 0.375em solid rgb(0, 0, 0);
 		content: "afdsdsf";
