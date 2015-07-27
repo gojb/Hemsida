@@ -11,7 +11,7 @@ $(document).ready(function() {
 		console.log($(document).width() + "  " + bredd);
 		console.log($(window).width() + "  " + bredd);
 		console.log($('#header').height()>100);
-		console.log(($('#header').outerHeight());
+		console.log($('#header').outerHeight());
 		if($('#header').height()>100||$(window).width() < bredd) {
 			$("header > nav").css("display", "none");
 			$("#header").removeClass("bred");
