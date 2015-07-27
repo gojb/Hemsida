@@ -289,19 +289,20 @@ header.bred nav>ul>li a.prg2 { /*LodrÃ¤tt strÃ¤ck*/
 	border-left: 0.375em solid rgb(0, 0, 0);
 	content: "afdsdsf";*/
 	display: inline-block;
-	height: 0;
-	border-radius: 20%;
-	margin-left: -7.5px;
-	margin-top: -2.5px;
-	transition: 700ms all ease;
-	width: 0;
-	vertical-align: middle;
-	transform: rotate(0); */
+    height: initial;
+    border-radius: 20%;
+    margin-left: 127.5px;
+    margin-top: -93px;
+    transition: 700ms all ease;
+    width: 10%;
+    vertical-align: middle;
+    background-color: transparent;
+    transform: rotate(45deg);
 }
 
 header nav>ul>li:hover a.prg2 {
 	transform: rotate(360deg);
-	content: "-";
+	margin-top: -90px;
 }
 
 header.bred>nav>ul>li:hover>nav {
