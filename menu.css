@@ -280,7 +280,7 @@ header.bred nav>ul>li:hover>a span.Plus {
 	transform: rotate(360deg);
 }
 
-header.bred nav>ul>li a.prg2 { /*LodrÃ¤tt strÃ¤ck*/
+header.bred nav>ul>li a.prg2:after { /*LodrÃ¤tt strÃ¤ck*/
 /* 	border-bottom: 0.125em solid rgb(0, 0, 0);
 	border-top: 0.125em solid rgb(0, 0, 0);
 			border-bottom: 0.375em solid rgb(255, 255, 255);
@@ -300,10 +300,11 @@ header.bred nav>ul>li a.prg2 { /*LodrÃ¤tt strÃ¤ck*/
     transform: rotate(45deg);
 }
 
-header nav>ul>li:hover a.prg2 {
+header nav>ul>li:hover a.prg2:after {
 	transform: rotate(360deg);
 	margin-top: -90px;
 }
+
 
 header.bred>nav>ul>li:hover>nav {
 	background-color: rgb(255, 255, 255);
