@@ -9,6 +9,7 @@ $(document).ready(function() {
 	function resize() {
 		console.log($('#logo').height() + "  Höjdd");
 		console.log($(document).width() + "  " + bredd);
+		console.log($(window).width() + "  " + bredd);
 		if($(document).width() > bredd) {
 			
 			$("header > nav").css("display", "block");
