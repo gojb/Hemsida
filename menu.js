@@ -7,9 +7,10 @@ $(document).ready(function() {
 		$("#logo").toggleClass("menuUp menuDown");
 	});
 	function resize() {
-		console.log($('#logo').height() + "  Höjdd");
+		console.log($('#header').height() + "  Höjdd");
 		console.log($(document).width() + "  " + bredd);
 		console.log($(window).width() + "  " + bredd);
+		console.log($('#header').height()>100);
 		if($('#header').height()>100||$(window).width() < bredd) {
 			$("header > nav").css("display", "none");
 			$("#header").removeClass("bred");
