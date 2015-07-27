@@ -91,7 +91,6 @@ header>div#logo>div#navToggle:hover {
 
 header>div#logo>div#navToggle>a {
 	color: rgba(255, 255, 255, .85);
-	display: block;
 	font-size: 0.85em;
 	font-weight: 600;
 	padding: 0 2.5rem;
@@ -131,7 +130,6 @@ header nav>ul>li:first-of-type {
 }
 
 header nav>ul>li>a {
-	display: block;
 	color: rgba(0, 0, 0, .65);
 	font-weight: 700;
 	text-decoration: none;

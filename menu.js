@@ -9,6 +9,7 @@ $(document).ready(function() {
 	function resize() {
 		console.log($(document).width() + "  " + bredd);
 		if($(document).width() > bredd) {
+			
 			$("header > nav").css("display", "block");
 			if($("#logo").attr('class') == "menuDown") {
 				$("#logo").toggleClass("menuUp menuDown");
