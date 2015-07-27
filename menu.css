@@ -97,12 +97,12 @@ header>div#logo>div#navToggle>a {
 	text-decoration: none;
 	transition: 300ms all ease;
 	display: block;
-	/*Text menuknapp*/
+	/*Text menuknapp smalskärm*/
 }
 
 header>div#logo>div#navToggle:hover>a {
 	color: rgba(255, 255, 255, 1);
-	/*Textfär vid hover menuknapp*/
+	/*Textfär vid hover menuknapp smalskärm*/
 }
 
 header>nav {
@@ -131,6 +131,7 @@ header nav>ul>li:first-of-type {
 }
 
 header nav>ul>li>a {
+	hej
 	color: rgba(0, 0, 0, .65);
 	font-weight: 700;
 	text-decoration: none;
@@ -139,7 +140,7 @@ header nav>ul>li>a {
 	display: block;
 }
 
-header nav>ul>li>a span.toggle {
+span.toggle {
 	/*Expand button*/
 	background-color: rgba(0, 0, 0, .05);
 	/* 	border-radius: 3rem; */
@@ -153,15 +154,15 @@ header nav>ul>li>a span.toggle {
 	text-transform: lowercase;
 }
 
-header nav>ul>li>a span.Plus {
+span.Plus {
 	display: none;
 }
 
-header nav>ul>li>a span.Plus1 {
+span.Plus1 {
 	display: none;
 }
 
-header>nav>ul>li:hover>a {
+nav li:hover>a {
 	color: rgb(58, 163, 158);
 	/*Hover color*/
 }
@@ -203,13 +204,7 @@ header>nav>ul>li>nav {
 header>nav>ul>li>nav>ul>li>a {
 	color: rgba(0, 0, 0, .65);
 	transition: 700ms all ease;
-	border: 2px solo /*Dropdown textyyu*/
-}
-
-header>nav>ul>li>nav>ul>li:hover>a {
-	background-color: rgba(255, 255, 255, 0.9);
-	color: rgb(58, 163, 158);
-	/*color at hover dropdown menu*/
+	/*Dropdown textyyu*/
 }
 
 /* Medium screens */
@@ -318,6 +313,7 @@ header.bred>nav>ul>li:hover>nav {
 }
 
 header>div#logo>h1>a {
+	/*  Text vid logga  */
 	color: rgb(58, 163, 158);
 	text-decoration: none;
 	white-space: nowrap;
