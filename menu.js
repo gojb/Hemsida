@@ -10,7 +10,7 @@ $(document).ready(function() {
 		console.log($('#logo').height() + "  Höjdd");
 		console.log($(document).width() + "  " + bredd);
 		console.log($(window).width() + "  " + bredd);
-		if($(document).width() > bredd) {
+		if($(window).width() > bredd) {
 			
 			$("header > nav").css("display", "block");
 			if($("#logo").attr('class') == "menuDown") {
@@ -35,7 +35,7 @@ $(document).ready(function() {
 
 
 	$("header > nav > ul > li > a").click(function(e) {
-		if($(document).width() < bredd) {
+		if($(window).width() < bredd) {
 			if($(this).siblings().size() > 0 ) {
 				e.preventDefault();
 				$(this).siblings().slideToggle("fast")
