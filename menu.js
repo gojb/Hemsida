@@ -10,17 +10,17 @@ $(document).ready(function() {
 		console.log($('#logo').height() + "  Höjdd");
 		console.log($(document).width() + "  " + bredd);
 		console.log($(window).width() + "  " + bredd);
-		if($(window).width() > bredd) {
+		if($(window).width() < bredd||$('#header').height()>100) {
+			$("header > nav").css("display", "none");
+			$("#header").removeClass("bred");
 			
+		}
+		else {
 			$("header > nav").css("display", "block");
 			if($("#logo").attr('class') == "menuDown") {
 				$("#logo").toggleClass("menuUp menuDown");
 			}
 			$("#header").addClass("bred");
-		}
-		else {
-			$("header > nav").css("display", "none");
-			$("#header").removeClass("bred");
 		}
 		var docWidth = $(window).width();
 		if(docWidth<520){ 		
@@ -35,7 +35,7 @@ $(document).ready(function() {
 
 
 	$("header > nav > ul > li > a").click(function(e) {
-		if($(window).width() < bredd) {
+		if($('#header').hasClass("bred")==false) {
 			if($(this).siblings().size() > 0 ) {
 				e.preventDefault();
 				$(this).siblings().slideToggle("fast")
