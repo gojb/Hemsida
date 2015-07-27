@@ -7,7 +7,7 @@ $(document).ready(function() {
 		$("#logo").toggleClass("menuUp menuDown");
 	});
 	function resize() {
-		console.log($("#header").width() + "  " + bredd*1.05);
+		console.log($("#header").width() + "  " + bredd);
 		if($(document).width() > bredd*1.1) {
 			$("header > nav").css("display", "block");
 			console.log("JA");
@@ -75,7 +75,7 @@ $(document).ready(function() {
 		console.log($width);
 
 		// if modern browser
-		bredd=$width;
+		bredd=$width+48;
 		resize();
 	});
 	$('.prg').mouseenter(function(){
