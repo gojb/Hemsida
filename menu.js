@@ -24,13 +24,13 @@ $(document).ready(function() {
 		
 		console.log(docWidth+"waf"+topWidth);
 		console.log(docWidth-topWidth);
-		if(topWidth<100){ 		
-			$('.top').css('font-size','75%');
-		}
-		else{
-			$('.top').css('font-size','');
-			$('.top').css('font-size','100%');
-		}
+//		if(topWidth<100){ 		
+//			$('.top').css('font-size','75%');
+//		}
+//		else{
+//			$('.top').css('font-size','');
+//			$('.top').css('font-size','100%');
+//		}
 	}
 
 
