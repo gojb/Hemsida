@@ -73,7 +73,7 @@ $(document).ready(function() {
 //			$width += $(this).outerWidth();
 //			console.log("span" + $(this).outerWidth());
 //		});
-		$width += $(".h1top").outerWidth();
+		$width += $("#logo").outerWidth();
 		console.log($width);
 
 		// if modern browser
