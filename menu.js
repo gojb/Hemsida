@@ -20,7 +20,7 @@ $(document).ready(function() {
 			$("#header").removeClass("bred");
 		}
 		var docWidth = $(window).width();
-		var topWidth = $("#top").width();
+		var topWidth = $(".top").width();
 		
 		console.log(docWidth+"waf"+topWidth);
 		console.log(docWidth-topWidth);
