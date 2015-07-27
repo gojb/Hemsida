@@ -77,7 +77,7 @@ $(document).ready(function() {
 		console.log($width + "  " + ($width+($("#header").css("padding-left").replace("px","")*2)));
 		console.log($("#header").css("padding-left").replace("px",""));
 		console.log(Math.ceil($("#header").css("padding-left").replace("px",""))*2);
-		bredd=$width+($("#header").css("padding-left").replace("px","")*2);
+		bredd=$width+(Math.ceil($("#header").css("padding-left").replace("px",""))*2);
 		resize();
 	});
 	$('.prg').mouseenter(function(){
