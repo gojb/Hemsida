@@ -68,10 +68,10 @@ $(document).ready(function() {
 			$width += $(this).outerWidth();
 			console.log("hej2" + $(this).outerWidth());
 		});
-		$(".meny").find('ul li span').each(function() {
-			$width += $(this).outerWidth();
-			console.log("span" + $(this).outerWidth());
-		});
+//		$(".meny").find('ul li span').each(function() {
+//			$width += $(this).outerWidth();
+//			console.log("span" + $(this).outerWidth());
+//		});
 		$width += $(".h1top").outerWidth();
 		console.log($width);
 
