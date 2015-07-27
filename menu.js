@@ -10,7 +10,6 @@ $(document).ready(function() {
 //		console.log($("#header").width() + "  " + bredd);
 		if($(document).width() > bredd) {
 			$("header > nav").css("display", "block");
-			console.log("JA");
 			if($("#logo").attr('class') == "menuDown") {
 				$("#logo").toggleClass("menuUp menuDown");
 			}
