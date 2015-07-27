@@ -300,7 +300,7 @@ header.bred nav>ul>li a.prg2 { /*LodrÃ¤tt strÃ¤ck*/
 }
 
 header nav>ul>li:hover a.prg2 {
-	transform: rotate(90deg);
+	transform: rotate(360deg);
 	content: "-";
 }
 
