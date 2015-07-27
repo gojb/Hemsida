@@ -280,12 +280,12 @@ header.bred nav>ul>li:hover>a span.Plus {
 
 header.bred nav>ul>li>a span.Plus1 { /*LodrÃ¤tt strÃ¤ck*/
 /* 	border-bottom: 0.125em solid rgb(0, 0, 0);
-	border-top: 0.125em solid rgb(0, 0, 0);
+	border-top: 0.125em solid rgb(0, 0, 0);*/
 			border-bottom: 0.375em solid rgb(255, 255, 255);
 		border-top: 0.375em solid rgb(58, 163, 158);
 	border-right: 0.375em solid rgb(0, 0, 0);
 	border-left: 0.375em solid rgb(0, 0, 0);
-	content: "afdsdsf";*/
+	content: "afdsdsf";
 	display: inline-block;
     height: initial;
     border-radius: 20%;
