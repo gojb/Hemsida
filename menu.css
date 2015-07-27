@@ -277,7 +277,6 @@ header nav>ul>li>a span.Plus {
 }
 
 header.bred nav>ul>li:hover>a span.Plus {
-	border-right-color: rgb(0, 0, 0);
 	transform: rotate(360deg);
 }
 
@@ -286,8 +285,8 @@ header.bred nav>ul>li>a span.Plus1 { /*LodrÃ¤tt strÃ¤ck*/
 	border-top: 0.125em solid rgb(0, 0, 0);
 	/* 		border-bottom: 0.375em solid rgb(255, 255, 255);
 		border-top: 0.375em solid rgb(58, 163, 158); */
-	border-right: 0.375em solid rgb(255, 255, 255);
-	border-left: 0.375em solid rgb(255, 255, 255);
+	border-right: 0.375em solid rgb(0, 0, 0);
+	border-left: 0.375em solid rgb(0, 0, 0);
 	content: "afdsdsf";
 	display: inline-block;
 	height: 0;
@@ -300,10 +299,6 @@ header.bred nav>ul>li>a span.Plus1 { /*LodrÃ¤tt strÃ¤ck*/
 }
 
 header nav>ul>li:hover>a span.Plus1 {
-	border-right-color: rgb(255, 255, 255);
-	border-left-color: rgb(255, 255, 255);
-	border-bottom-color: rgb(58, 163, 158);
-	border-top-color: rgb(255, 255, 255);
 	transform: rotate(90deg);
 }
 
