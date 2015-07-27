@@ -10,7 +10,7 @@ $(document).ready(function() {
 		console.log($('#logo').height() + "  Höjdd");
 		console.log($(document).width() + "  " + bredd);
 		console.log($(window).width() + "  " + bredd);
-		if($(window).width() > bredd||$('#header').height()>100) {
+		if($(window).width() > bredd||$('#header').height()<100) {
 			
 			$("header > nav").css("display", "block");
 			if($("#logo").attr('class') == "menuDown") {
