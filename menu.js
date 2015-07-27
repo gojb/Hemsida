@@ -20,10 +20,6 @@ $(document).ready(function() {
 			$("#header").removeClass("bred");
 		}
 		var docWidth = $(window).width();
-		var topWidth = $(".top").width();
-		
-		console.log(docWidth+"waf"+topWidth);
-		console.log(docWidth-topWidth);
 		if(docWidth<520){ 		
 			$('.top').css('font-size','75%');
 			console.log("75");
