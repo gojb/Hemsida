@@ -280,7 +280,7 @@ header.bred nav>ul>li:hover>a span.Plus {
 	transform: rotate(360deg);
 }
 
-header.bred nav>ul>li>a span.plus4 { /*LodrÃ¤tt strÃ¤ck*/
+header.bred nav>ul>li>a span.Plus1 { /*LodrÃ¤tt strÃ¤ck*/
 /* 	border-bottom: 0.125em solid rgb(0, 0, 0);
 	border-top: 0.125em solid rgb(0, 0, 0);
 			border-bottom: 0.375em solid rgb(255, 255, 255);
@@ -300,7 +300,7 @@ header.bred nav>ul>li>a span.plus4 { /*LodrÃ¤tt strÃ¤ck*/
     transform: rotate(0);
 }
 
-header nav>ul>li:hover a>span.plus4 {
+header nav>ul>li:hover a>span.Plus1 {
 	transform: rotate(225deg);
 	margin-top: -91px;
 	margin-left: 129px;
