@@ -10,6 +10,7 @@ $(document).ready(function() {
 		console.log($('#logo').height() + "  Höjdd");
 		console.log($(document).width() + "  " + bredd);
 		if($(document).width() > bredd) {
+			
 			$("header > nav").css("display", "block");
 			if($("#logo").attr('class') == "menuDown") {
 				$("#logo").toggleClass("menuUp menuDown");
@@ -65,6 +66,10 @@ $(document).ready(function() {
 		$(".meny").find('ul li').each(function() {
 			$width += $(this).outerWidth();
 			console.log("hej2" + $(this).outerWidth());
+		});
+		$(".meny").find('ul li span').each(function() {
+			$width += $(this).outerWidth();
+			console.log("span" + $(this).outerWidth());
 		});
 		$width += $(".h1top").outerWidth();
 		console.log($width);
