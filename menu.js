@@ -20,6 +20,20 @@ $(document).ready(function() {
 			$("header > nav").css("display", "none");
 			$("#header").removeClass("bred");
 		}
+		if($(document).width()>$('top').width()&&$(document).width()<500){
+			var docWidth = $(window).width();
+
+			var topWidth = document.getElementById('top').clientWidth;
+			console.log(docWidth+"waf"+topWidth);
+			console.log(docWidth-topWidth);
+			if(docWidth-topWidth<100){ 		
+				$('.top').css('font-size','75%');
+			}
+			else{
+				$('.top').css('font-size','');
+				$('.top').css('font-size','100%');
+			}
+		}
 	}
 
 
@@ -36,22 +50,6 @@ $(document).ready(function() {
 	var i = 0;
 	$(window).resize(function(){
 		resize();
-		//console.log($('.top').width()+"  top");
-		//console.log($(window).width()+"  doc");
-		if($(document).width()>$('top').width()&&$(document).width()<500){
-			var docWidth = $(window).width();
-
-			var topWidth = document.getElementById('top').clientWidth;
-			console.log(docWidth+"waf"+topWidth);
-			console.log(docWidth-topWidth);
-			if(docWidth-topWidth<100){ 		
-				$('.top').css('font-size','75%');
-			}
-			else{
-				$('.top').css('font-size','');
-				$('.top').css('font-size','100%');
-			}
-		}
 	});
 
 	$(function() {
