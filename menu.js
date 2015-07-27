@@ -8,7 +8,7 @@ $(document).ready(function() {
 	});
 	function resize() {
 		console.log($("#header").width() + "  " + bredd*1.05);
-		if($("#header").width() > bredd) {
+		if($(document).width() > bredd) {
 			$("header > nav").css("display", "block");
 			console.log("JA");
 			if($("#logo").attr('class') == "menuDown") {
@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 
 	$("header > nav > ul > li > a").click(function(e) {
-		if($("#header").width() < bredd) {
+		if($(document).width() < bredd) {
 			if($(this).siblings().size() > 0 ) {
 				e.preventDefault();
 				$(this).siblings().slideToggle("fast")
