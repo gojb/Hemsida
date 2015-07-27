@@ -7,8 +7,8 @@ $(document).ready(function() {
 		$("#logo").toggleClass("menuUp menuDown");
 	});
 	function resize() {
-		console.log($("#header").width() + "  " + bredd);
-		if($(document).width() > bredd*1.1) {
+//		console.log($("#header").width() + "  " + bredd);
+		if($(document).width() > bredd) {
 			$("header > nav").css("display", "block");
 			console.log("JA");
 			if($("#logo").attr('class') == "menuDown") {
