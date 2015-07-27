@@ -283,7 +283,7 @@ header.bred nav>ul>li>a span.toggle {
 		border-bottom: 0.375em solid rgb(255, 255, 255);
 		border-top: 0.375em solid rgb(58, 163, 158);
 		border-right: 0.375em solid rgb(255, 255, 255);
-		border-left: 0.375em solid rgb(58, 163, 158);
+		border-left: 0.375em solid rgb(255, 255, 255);
 		content: "afdsdsf";
 		display: inline-block;
 		height: 0;
@@ -292,14 +292,14 @@ header.bred nav>ul>li>a span.toggle {
 		transition: 700ms all ease;
 		width: 0;
 		vertical-align: middle;
-		transform: rotate(90deg);
+		transform: rotate(0);
 	}
 	header nav>ul>li:hover>a span.Plus1 {
-		border-right-color: rgb(58, 163, 158);
-		border-left-color: rgb(255, 255, 255);
-		border-bottom-color: rgb(58, 163, 158);
+		border-right-color: rgb(255, 255, 255);
+		border-left-color: rgb(58, 163, 158);
+		border-bottom-color: rgb(255, 255, 255);
 		border-top-color: rgb(255, 255, 255);
-		transform: rotate(360deg);
+		transform: rotate(270deg);
 	}
 
 header.bred>nav>ul>li:hover>nav {
