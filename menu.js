@@ -67,7 +67,7 @@ $(document).ready(function() {
 		var $width = 0;
 		$(".meny").find('ul li').each(function() {
 			$width += $(this).outerWidth();
-			console.log("hej2" + $(this).outerWidth());
+			console.log("hej  " + $(this).outerWidth());
 		});
 //		$(".meny").find('ul li span').each(function() {
 //			$width += $(this).outerWidth();
