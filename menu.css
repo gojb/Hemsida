@@ -215,7 +215,7 @@ header.bred {
 	background-color: white;
 	flex-direction: row;
 	line-height: 90px;
-	padding: 0 3rem;
+	padding-left: 5%;
 	text-align: left;
 	width: 100%;
 	height: inherit;
