@@ -8,7 +8,7 @@ $(document).ready(function() {
 	});
 	function resize() {
 		console.log($("#header").width() + "  " + bredd*1.05);
-		if($(document).width() > bredd) {
+		if($(document).width() > bredd*1,1) {
 			$("header > nav").css("display", "block");
 			console.log("JA");
 			if($("#logo").attr('class') == "menuDown") {
