@@ -75,7 +75,8 @@ $(document).ready(function() {
 //		});
 		$width += $("#logo").outerWidth();
 		console.log($width + "  " + ($width+110));
-		console.log(Math.ceil($("#header").css("padding-left"))*2);
+		console.log($("#header").css("padding-left"));
+		console.log(Math.ceil($("#header").css("padding-left")));
 		bredd=$width+110;
 		resize();
 	});
