@@ -96,7 +96,7 @@ header>div#logo>div#navToggle>a {
 	padding: 0 2.5rem;
 	text-decoration: none;
 	transition: 300ms all ease;
-		display: block;
+	display: block;
 	/*Text menuknapp*/
 }
 
@@ -281,28 +281,27 @@ header.bred nav>ul>li:hover>a span.Plus {
 }
 
 header.bred nav>ul>li>a span.Plus1 { /*LodrÃ¤tt strÃ¤ck*/
-/* 	border-bottom: 0.125em solid rgb(0, 0, 0);
+	/* 	border-bottom: 0.125em solid rgb(0, 0, 0);
 	border-top: 0.125em solid rgb(0, 0, 0);*/
-			border-bottom: 0.475em solid rgb(0, 0, 0);
-		border-top: 0.475em solid rgb(0, 0, 0);
+	border-bottom: 0.475em solid rgb(0, 0, 0);
+	border-top: 0.475em solid rgb(0, 0, 0);
 	border-right: 0.125em solid rgb(0, 0, 0);
 	border-left: 0.125em solid rgb(0, 0, 0);
 	content: "afdsdsf";
 	display: inline-block;
 	margin-left: 4px;
 	margin-top: -2px;
-    border-radius: 10%;
-    transition: 700ms all ease;
-    vertical-align: middle;
-    background-color: transparent;
-    transform: rotate(90deg);
+	border-radius: 10%;
+	transition: 700ms all ease;
+	vertical-align: middle;
+	background-color: transparent;
+	transform: rotate(90deg);
 }
 
 header nav>ul>li:hover a>span.Plus1 {
 	transform: rotate(360deg);
 	border-color: rgb(58, 163, 158);
 }
-
 
 header.bred>nav>ul>li:hover>nav {
 	background-color: rgb(255, 255, 255);
