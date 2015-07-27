@@ -10,10 +10,9 @@ $(document).ready(function() {
 		console.log($('#logo').height() + "  Höjdd");
 		console.log($(document).width() + "  " + bredd);
 		console.log($(window).width() + "  " + bredd);
-		if($(window).width() < bredd||$('#header').height()>100) {
+		if($('#header').height()>100||$(window).width() < bredd) {
 			$("header > nav").css("display", "none");
 			$("#header").removeClass("bred");
-			
 		}
 		else {
 			$("header > nav").css("display", "block");
