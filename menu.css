@@ -290,17 +290,18 @@ header.bred nav>ul>li>a span.plus4 { /*LodrÃ¤tt strÃ¤ck*/
     height: initial;
     border-radius: 20%;
     margin-left: 127.5px;
-    margin-top: -93px;
+    margin-top: -90px;
     transition: 700ms all ease;
     width: 10%;
     vertical-align: middle;
     background-color: transparent;
-    transform: rotate(45deg);
+    transform: rotate(0);
 }
 
 header nav>ul>li:hover a>span.plus4 {
-	transform: rotate(360deg);
-	margin-top: -90px;
+	transform: rotate(225deg);
+	margin-top: -91px;
+	margin-left: 129px;
 }
 
 
