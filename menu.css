@@ -96,6 +96,7 @@ header>div#logo>div#navToggle>a {
 	padding: 0 2.5rem;
 	text-decoration: none;
 	transition: 300ms all ease;
+		display: block;
 	/*Text menuknapp*/
 }
 
@@ -135,6 +136,7 @@ header nav>ul>li>a {
 	text-decoration: none;
 	transition: 500ms all ease;
 	background-color: white;
+	display: block;
 }
 
 header nav>ul>li>a span.toggle {
