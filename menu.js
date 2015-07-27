@@ -74,7 +74,7 @@ $(document).ready(function() {
 //			console.log("span" + $(this).outerWidth());
 //		});
 		$width += $("#logo").outerWidth();
-		console.log($width);
+		console.log($width + "  " + $width+110);
 
 		// if modern browser
 		bredd=$width+110;
