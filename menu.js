@@ -69,7 +69,7 @@ $(document).ready(function() {
 		console.log($width);
 
 		// if modern browser
-		bredd=$width+96;
+		bredd=$width+110;
 		resize();
 	});
 	$('.prg').mouseenter(function(){
