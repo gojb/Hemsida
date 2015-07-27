@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 
 	$("header > nav > ul > li > a").click(function(e) {
-		if($("#header").width() > bredd) {
+		if($("#header").width() < bredd) {
 			if($(this).siblings().size() > 0 ) {
 				e.preventDefault();
 				$(this).siblings().slideToggle("fast")
