@@ -65,7 +65,7 @@ $(document).ready(function() {
 			$width += $(this).outerWidth();
 			console.log("hej2" + $(this).outerWidth());
 		});
-		$width += $(".top").outerWidth();
+		$width += $(".h1top").outerWidth();
 		console.log($width);
 
 		// if modern browser
