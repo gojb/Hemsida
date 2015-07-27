@@ -20,11 +20,7 @@ $(document).ready(function() {
 			$("#header").removeClass("bred");
 		}
 		var docWidth = $(window).width();
-		var topWidth = $(".top").width();
-		
-		console.log(docWidth+"waf"+topWidth);
-		console.log(docWidth-topWidth);
-		if(docWidth<440){ 		
+		if(docWidth<520){ 		
 			$('.top').css('font-size','75%');
 			console.log("75");
 		}
@@ -69,11 +65,11 @@ $(document).ready(function() {
 			$width += $(this).outerWidth();
 			console.log("hej2" + $(this).outerWidth());
 		});
-		$width += $(".top").outerWidth();
+		$width += $(".h1top").outerWidth();
 		console.log($width);
 
 		// if modern browser
-		bredd=$width+48;
+		bredd=$width+110;
 		resize();
 	});
 	$('.prg').mouseenter(function(){
