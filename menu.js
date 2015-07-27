@@ -24,7 +24,7 @@ $(document).ready(function() {
 		
 		console.log(docWidth+"waf"+topWidth);
 		console.log(docWidth-topWidth);
-		if(docWidth<440){ 		
+		if(docWidth<520){ 		
 			$('.top').css('font-size','75%');
 			console.log("75");
 		}
