@@ -283,27 +283,24 @@ header.bred nav>ul>li:hover>a span.Plus {
 header.bred nav>ul>li>a span.Plus1 { /*LodrÃ¤tt strÃ¤ck*/
 /* 	border-bottom: 0.125em solid rgb(0, 0, 0);
 	border-top: 0.125em solid rgb(0, 0, 0);*/
-			border-bottom: 0.375em solid rgb(255, 255, 255);
-		border-top: 0.375em solid rgb(58, 163, 158);
-	border-right: 0.375em solid rgb(0, 0, 0);
-	border-left: 0.375em solid rgb(0, 0, 0);
+			border-bottom: 0.475em solid rgb(0, 0, 0);
+		border-top: 0.475em solid rgb(0, 0, 0);
+	border-right: 0.125em solid rgb(0, 0, 0);
+	border-left: 0.125em solid rgb(0, 0, 0);
 	content: "afdsdsf";
 	display: inline-block;
-    height: initial;
-    border-radius: 20%;
-    margin-left: 127.5px;
-    margin-top: -90px;
+	margin-left: 4px;
+	margin-top: -2px;
+    border-radius: 10%;
     transition: 700ms all ease;
-    width: 10%;
     vertical-align: middle;
     background-color: transparent;
-    transform: rotate(0);
+    transform: rotate(90deg);
 }
 
 header nav>ul>li:hover a>span.Plus1 {
-	transform: rotate(225deg);
-	margin-top: -91px;
-	margin-left: 129px;
+	transform: rotate(360deg);
+	border-color: rgb(58, 163, 158);
 }
 
 
