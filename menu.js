@@ -7,23 +7,17 @@ $(document).ready(function() {
 		$("#logo").toggleClass("menuUp menuDown");
 	});
 	function resize() {
-		console.log($('#header').height() + "  Höjdd");
 		console.log($(document).width() + "  " + bredd);
-		console.log($(window).width() + "  " + bredd);
-		console.log($('#header').height()>100);
-		console.log($('#header').outerWidth());
-		if($('#header').height()>100||$(window).width() < bredd) {
-			$("header > nav").css("display", "none");
-			$("#header").removeClass("bred");
-			$("#header").addClass("smal");
-		}
-		else {
+		if($(document).width() > bredd) {
 			$("header > nav").css("display", "block");
 			if($("#logo").attr('class') == "menuDown") {
 				$("#logo").toggleClass("menuUp menuDown");
 			}
-			$("#header").removeClass("smal");
 			$("#header").addClass("bred");
+		}
+		else {
+			$("header > nav").css("display", "none");
+			$("#header").removeClass("bred");
 		}
 		var docWidth = $(window).width();
 		if(docWidth<520){ 		
@@ -38,10 +32,10 @@ $(document).ready(function() {
 
 
 	$("header > nav > ul > li > a").click(function(e) {
-		if($('#header').hasClass("smal")) {
+		if($(document).width() < bredd) {
 			if($(this).siblings().size() > 0 ) {
 				e.preventDefault();
-				$(this).siblings().slideToggle("fast");
+				$(this).siblings().slideToggle("fast")
 				$(this).children(".toggle").html($(this).children(".toggle").html() == 'close' ? 'expand' : 'close');
 			}
 		}
@@ -69,17 +63,13 @@ $(document).ready(function() {
 		var $width = 0;
 		$(".meny").find('ul li').each(function() {
 			$width += $(this).outerWidth();
-			console.log("hej  " + $(this).outerWidth());
+			console.log("hej2" + $(this).outerWidth());
 		});
-//		$(".meny").find('ul li span').each(function() {
-//			$width += $(this).outerWidth();
-//			console.log("span" + $(this).outerWidth());
-//		});
-		$width += $("#logo").outerWidth();
-		console.log($width + "  " + ($width+($("#header").css("padding-left").replace("px","")*2)));
-		console.log($("#header").css("padding-left").replace("px",""));
-		console.log(Math.ceil($("#header").css("padding-left").replace("px",""))*2);
-		bredd=$width+(Math.ceil($("#header").css("padding-left").replace("px",""))*2);
+		$width += $(".h1top").outerWidth();
+		console.log($width);
+
+		// if modern browser
+		bredd=$width+110;
 		resize();
 	});
 	$('.prg').mouseenter(function(){
