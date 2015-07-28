@@ -38,7 +38,6 @@ $(document).ready(function()
 		    if (user != "") {
 		        alert("Welcome again " + user);
 		    } else {
-		        user = prompt("Please enter your name:", "");
 		        if (user != "" && user != null) {
 		            setCookie("username", prompt("Set Username"), 2);
 		        }
