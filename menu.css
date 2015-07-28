@@ -1,9 +1,6 @@
 html {
 	height: 100%;
 }
-*{
-	font-family: Bitter, serif;
-}
 
 body {
 	background-color: rgba(200, 200, 200, 0.2);
@@ -30,6 +27,10 @@ body {
 .rubrik {
 	float: left;
 	font-family: Audiowide, monospace;
+		line-height: 90px;
+	font-size: 45px;
+	font-weight: bold;
+	color: rgb(58, 163, 158);
 }
 
 img {
