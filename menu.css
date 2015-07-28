@@ -16,7 +16,7 @@ body {
 	height: 90px;
 	background-color: rgba(58, 163, 158, 0.1);
 	text-decoration: none;
-	padding-left: 2%;
+	padding: 0 2%;
 }
 
 .logo {
