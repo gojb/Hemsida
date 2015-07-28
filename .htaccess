@@ -1,7 +1,8 @@
 Options +FollowSymLinks
 RewriteEngine On
-RewriteRule ^.*$ http://gojb.tk/ [R=301,L]
-ErrorDocument 404 http://gojb.tk/404
+RewriteCond %{HTTP_HOST} gojb.tk$ [NC]
+RewriteCond %{HTTP_HOST} !/
+RewriteRule ^(.*)$ http://gojb.tk/$1 [R=301,L]
 DirectoryIndex index.shtml index.html
 <filesMatch "\.(html|htm|js|css)$">
 FileETag None
