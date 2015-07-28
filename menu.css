@@ -12,9 +12,6 @@
 	border: 10px solid rgba(255, 255, 255, 0);
 	float: left;
 }
-.inline{
-	display: inline;
-}
 .rubrik{
 float: left;
 	}
@@ -26,7 +23,9 @@ a {
 	text-decoration: none;
 	color: black;
 }
-
+.menu1{
+	vertical-align: middle;
+}
 li>ul {
 	display: none;
 }
