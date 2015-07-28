@@ -27,6 +27,7 @@ function Cookie(){
 	function getCookie(cookiename) {
 		var name = cookiename + "=";
 		var ca = document.cookie.split(';');
+		console.log("err");
 		for(var i=0; i<ca.length; i++) {
 			var c = ca[i];
 			while (c.charAt(0)==' ') c = c.substring(1);
@@ -39,6 +40,7 @@ function Cookie(){
 		var lang = getCookie("lang");
 		if (lang != "") {
 			alert("Your language is still " + lang);
+			console.log("e543rr");
 		} else {
 			if (lang != "" && lang != null) {
 				setCookie("lang", prompt("Set Language"), 2);
