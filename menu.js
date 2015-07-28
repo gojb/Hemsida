@@ -35,12 +35,12 @@ function Cookie(){
 	}
 
 	function checkCookie() {
-		var user = getCookie("lang");
-		if (user != "") {
+		var lang = getCookie("lang");
+		if (lang != "") {
 			alert("Welcome again " + user);
 		} else {
 			if (user != "" && user != null) {
-				setCookie("username", prompt("Set Username"), 2);
+				setCookie("lang", prompt("Set Language"), 2);
 			}
 		}
 	}
