@@ -37,9 +37,9 @@ function Cookie(){
 	function checkCookie() {
 		var lang = getCookie("lang");
 		if (lang != "") {
-			alert("Welcome again " + user);
+			alert("Your language is still " + lang);
 		} else {
-			if (user != "" && user != null) {
+			if (lang != "" && lang != null) {
 				setCookie("lang", prompt("Set Language"), 2);
 			}
 		}
