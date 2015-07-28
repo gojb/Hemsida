@@ -28,6 +28,7 @@ $(document).ready(function() {
 			console.log("100");
 			$('.top').css('font-size','100%');
 		}
+		console.log($("#logo").height() + " ----- Height logo");
 	}
 
 
