@@ -9,7 +9,7 @@ $(document).ready(function() {
 	function resize() {
 		console.log($(document).width() + "  " + bredd);
 		console.log("Höjd " + bredd&&$("#header").height());
-		if($(document).width() > bredd&&$("#header").height<100) {
+		if($(document).width() > bredd) {
 			$("header > nav").css("display", "block");
 			if($("#logo").attr('class') == "menuDown") {
 				$("#logo").toggleClass("menuUp menuDown");
