@@ -1,6 +1,6 @@
 ErrorDocument 404 http://gojb.tk/404
 DirectoryIndex index.shtml index.html
-RedirectMatch 301  http://gojb.tk/OmOss/menu.css http://gojb.tk/menu.css
+Redirect 301  http://gojb.tk/OmOss/menu.css http://gojb.tk/menu.css
 <filesMatch "\.(html|htm|js|css)$">
 FileETag None
 <ifModule mod_headers.c>
