@@ -7,14 +7,15 @@ $(document).ready(function() {
 		$("#logo").toggleClass("menuUp menuDown");
 	});
 	function resize() {
-		console.log($('#logo').height() + "  Höjdd");
+		console.log($('#header').height() + "  Höjdd");
 		console.log($(document).width() + "  " + bredd);
 		console.log($(window).width() + "  " + bredd);
-		if($(window).width() < bredd||$('#header').height()>100) {
+		console.log($('#header').height()>100);
+		console.log($('#header').outerWidth());
+		if($('#header').height()>100||$(window).width() < bredd) {
 			$("header > nav").css("display", "none");
 			$("#header").removeClass("bred");
 			$("#header").addClass("smal");
-			
 		}
 		else {
 			$("header > nav").css("display", "block");
@@ -68,17 +69,17 @@ $(document).ready(function() {
 		var $width = 0;
 		$(".meny").find('ul li').each(function() {
 			$width += $(this).outerWidth();
-			console.log("hej2" + $(this).outerWidth());
+			console.log("hej  " + $(this).outerWidth());
 		});
 //		$(".meny").find('ul li span').each(function() {
 //			$width += $(this).outerWidth();
 //			console.log("span" + $(this).outerWidth());
 //		});
-		$width += $(".h1top").outerWidth();
-		console.log($width);
-
-		// if modern browser
-		bredd=$width+110;
+		$width += $("#logo").outerWidth();
+		console.log($width + "  " + ($width+($("#header").css("padding-left").replace("px","")*2)));
+		console.log($("#header").css("padding-left").replace("px",""));
+		console.log(Math.ceil($("#header").css("padding-left").replace("px",""))*2);
+		bredd=$width+(Math.ceil($("#header").css("padding-left").replace("px",""))*2);
 		resize();
 	});
 	$('.prg').mouseenter(function(){
