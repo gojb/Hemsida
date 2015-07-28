@@ -6,13 +6,18 @@
 
 .logo {
 	height: 70px;
+	width: 70px;
 	vertical-align: middle;
 	margin: auto 0;
 	border: 10px solid rgba(255, 255, 255, 0);
+	float: left;
 }
 .inline{
 	display: inline;
 }
+.rubrik{
+float: left;
+	}
 img {
 	height: 100%;
 }
@@ -35,4 +40,7 @@ li {
 
 li:hover {
 	background-color: rgba(0, 0, 0, 0.3)
+}
+.meny{
+	float: left;
 }
