@@ -45,7 +45,7 @@ $(document).ready(function()
 		}
 		checkCookie();
 	}
-	document.setTimeout(2000, Cookie());
+	setTimeout(Cookie(),1000);
 
 		});
 
