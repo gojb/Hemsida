@@ -8,7 +8,8 @@ $(document).ready(function() {
 	});
 	function resize() {
 		console.log($(document).width() + "  " + bredd);
-		if($(document).width() > bredd) {
+		console.log("Höjd " + bredd&&$("#header").height());
+		if($(document).width() > bredd&&$("#header").height()<100) {
 			$("header > nav").css("display", "block");
 			if($("#logo").attr('class') == "menuDown") {
 				$("#logo").toggleClass("menuUp menuDown");
@@ -27,10 +28,6 @@ $(document).ready(function() {
 		else{
 			console.log("100");
 			$('.top').css('font-size','100%');
-		}
-		console.log($("#logo").height()/2 + " ----- Height logo");
-		if($("#logo").height>90){
-			$("#header").removeClass("bred");
 		}
 		console.log(($("#logo").height)/2>"90");
 	}
@@ -68,7 +65,7 @@ $(document).ready(function() {
 		var $width = 0;
 		$(".meny").find('ul li').each(function() {
 			$width += $(this).outerWidth();
-			console.log("hej2" + $(this).outerWidth());
+			console.log("ul li " + $(this).outerWidth());
 		});
 		$width += $(".h1top").outerWidth();
 		console.log($width);
