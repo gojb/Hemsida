@@ -1,5 +1,5 @@
 $(document).ready(function(){
-var i;
+var i = 0;;
 $('h1').click(function(){
 	i++;
    $('<p>').appendTo('.middle').text("null"+i);
