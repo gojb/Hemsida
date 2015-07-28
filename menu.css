@@ -1,31 +1,38 @@
 .header {
 	height: 90px;
-	background-color: rgba(58,163,158,0.2);
+	background-color: rgba(58, 163, 158, 0.2);
 	text-decoration: none;
 }
 
 .logo {
 	height: 70px;
-	display: block;
 	vertical-align: middle;
-	text-align: center;
-	
+	margin: auto 0;
+	border: 10px solid rgba(255, 255, 255, 0);
+}
+.inline{
+	display: inline;
+}
+img {
+	height: 100%;
 }
 
 a {
 	text-decoration: none;
 	color: black;
 }
-li>ul{
+
+li>ul {
 	display: none;
 }
-li{
+
+li {
 	list-style: none;
 	display: inline;
 	margin: 0 10px;
 	padding: 5px;
 }
-li:hover{
-	background-color: rgba(0,0,0,0.3)
-	
+
+li:hover {
+	background-color: rgba(0, 0, 0, 0.3)
 }
