@@ -41,7 +41,7 @@ $(document).ready(function() {
 		if($('#header').hasClass("smal")) {
 			if($(this).siblings().size() > 0 ) {
 				e.preventDefault();
-				$(this).siblings().slideToggle("fast")
+				$(this).siblings().slideToggle("fast");
 				$(this).children(".toggle").html($(this).children(".toggle").html() == 'close' ? 'expand' : 'close');
 			}
 		}
