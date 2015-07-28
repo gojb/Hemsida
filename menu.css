@@ -1,3 +1,31 @@
-.header{
+.header {
 	height: 90px;
+	background-color: rgba(58,163,158,0.2);
+	text-decoration: none;
+}
+
+.logo {
+	height: 70px;
+	display: block;
+	vertical-align: middle;
+	text-align: center;
+	
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+li>ul{
+	display: none;
+}
+li{
+	list-style: none;
+	display: inline;
+	margin: 0 10px;
+	padding: 5px;
+}
+li:hover{
+	background-color: rgba(0,0,0,0.3)
+	
 }
