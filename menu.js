@@ -32,7 +32,9 @@ function Cookie(){
 			var c = ca[i];
 			while (c.charAt(0)==' ') c = c.substring(1);
 			if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+			console.log("e212234234rr");
 		}
+		console.log("3242");
 		return "";
 	}
 
@@ -42,6 +44,7 @@ function Cookie(){
 			alert("Your language is still " + lang);
 			console.log("e543rr");
 		} else {
+			console.log("e454534231rr");
 			if (lang != "" && lang != null) {
 				setCookie("lang", prompt("Set Language"), 2);
 			}
