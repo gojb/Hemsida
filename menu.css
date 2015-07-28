@@ -1,6 +1,13 @@
-body{
-	background-color: rgba(200,200,200,0.2);
+html {
+	height: 100%;
 }
+
+body {
+	background-color: rgba(200, 200, 200, 0.2);
+	margin: 0;
+	height: 100%;
+}
+
 .header {
 	height: 90px;
 	background-color: rgba(58, 163, 158, 0.2);
@@ -15,9 +22,11 @@ body{
 	border: 10px solid rgba(255, 255, 255, 0);
 	float: left;
 }
-.rubrik{
-float: left;
-	}
+
+.rubrik {
+	float: left;
+}
+
 img {
 	height: 100%;
 }
@@ -26,12 +35,15 @@ a {
 	text-decoration: none;
 	color: black;
 }
-.menu1{
+
+.menu1 {
 	vertical-align: middle;
 }
+
 li>ul {
 	display: none;
 }
+
 li {
 	list-style: none;
 	display: inline;
@@ -42,11 +54,13 @@ li {
 li:hover {
 	background-color: rgba(0, 0, 0, 0.3)
 }
-.meny{
+
+.meny {
 	float: left;
 	vertical-align: middle;
 }
-.middle{
+
+.middle {
 	width: 85%;
 	margin: 20 auto;
 	background-color: white;
