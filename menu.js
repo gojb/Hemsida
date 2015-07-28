@@ -36,7 +36,7 @@ $(document).ready(function() {
 			if($(this).siblings().size() > 0 ) {
 				e.preventDefault();
 				$(this).siblings().slideToggle("fast")
-				$(this).children(".toggle").html($(this).children(".toggle").html() == 'close' ? 'expand' : 'close');
+				$(this).children(".toggle").html($(this).children(".toggle").html() == '▲' ? '▼' : '▲');
 			}
 		}
 	});
