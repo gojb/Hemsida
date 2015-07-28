@@ -1,6 +1,5 @@
 Options +FollowSymLinks
 RewriteEngine On
-RewriteCond %{HTTP_HOST} gojb.tk$ [NC]
 RewriteCond %{HTTP_HOST} !/
 RewriteRule ^(.*)$ http://gojb.tk/$1 [R=301,L]
 DirectoryIndex index.shtml index.html
