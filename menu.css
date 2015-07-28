@@ -12,6 +12,7 @@ body {
 	height: 90px;
 	background-color: rgba(58, 163, 158, 0.2);
 	text-decoration: none;
+	line-height: 3;
 }
 
 .logo {
