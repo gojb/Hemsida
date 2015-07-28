@@ -28,10 +28,6 @@ $(document).ready(function() {
 			console.log("100");
 			$('.top').css('font-size','100%');
 		}
-		console.log($("#logo").height()/2 + " ----- Height logo");
-		if($("#logo").height>90){
-			$("#header").removeClass("bred");
-		}
 		console.log(($("#logo").height)/2>"90");
 	}
 
