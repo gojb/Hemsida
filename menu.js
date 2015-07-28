@@ -29,6 +29,9 @@ $(document).ready(function() {
 			$('.top').css('font-size','100%');
 		}
 		console.log($("#logo").height() + " ----- Height logo");
+		if($("#logo").height>90){
+			$("#header").removeClass("bred");
+		}
 	}
 
 
