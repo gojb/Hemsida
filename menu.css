@@ -48,13 +48,13 @@ header {
 	height: 70px;
 }
 
-header>div#logo {
+#logo {
 	line-height: 70px;
 	position: relative;
 	margin-left: 10px;
 }
 
-header>div#logo>h1>a {
+#logo>h1>a {
 	/*  Text vid logga  */
 	color: rgb(58, 163, 158);
 	text-decoration: none;
