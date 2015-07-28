@@ -54,6 +54,13 @@ header>div#logo {
 	margin-left: 10px;
 }
 
+header>div#logo>h1>a {
+	/*  Text vid logga  */
+	color: rgb(58, 163, 158);
+	text-decoration: none;
+	white-space: nowrap;
+	font-size: 100%;
+}
 header>.menuDown {
 	box-shadow: 0 3px 5px rgba(0, 0, 0, .15);
 }
@@ -308,13 +315,7 @@ header.bred>nav>ul>li:hover>nav {
 	border: 2px solid black;
 }
 
-header>div#logo>h1>a {
-	/*  Text vid logga  */
-	color: rgb(58, 163, 158);
-	text-decoration: none;
-	white-space: nowrap;
-	font-size: 100%;
-}
+
 
 a.active {
 	color: rgb(58, 163, 158);
