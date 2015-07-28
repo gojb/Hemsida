@@ -125,12 +125,14 @@ header nav>ul>li:first-of-type {
 }
 
 header nav>ul>li>a {
+	font-size: 30;
 	color: rgba(0, 0, 0, .65);
 	font-weight: 700;
 	text-decoration: none;
 	transition: 500ms all ease;
 	background-color: white;
 	display: block;
+	padding: 10 0;
 }
 
 span.toggle {
