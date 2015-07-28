@@ -32,6 +32,7 @@ $(document).ready(function() {
 		if($("#logo").height>90){
 			$("#header").removeClass("bred");
 		}
+		console.log($("#logo").height>90);
 	}
 
 
