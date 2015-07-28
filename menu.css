@@ -1,6 +1,9 @@
 html {
 	height: 100%;
 }
+*{
+	font-family: Bitter, serif;
+}
 
 body {
 	background-color: rgba(200, 200, 200, 0.2);
@@ -10,9 +13,8 @@ body {
 
 .header {
 	height: 90px;
-	background-color: rgba(58, 163, 158, 0.2);
+	background-color: rgba(58, 163, 158, 0.1);
 	text-decoration: none;
-	line-height: 3;
 }
 
 .logo {
@@ -27,10 +29,11 @@ body {
 .rubrik {
 	float: left;
 	font-family: Audiowide, monospace;
-		line-height: 90px;
+	line-height: 90px;
 	font-size: 45px;
 	font-weight: bold;
 	color: rgb(58, 163, 158);
+
 }
 
 img {
@@ -50,6 +53,10 @@ li>ul {
 	display: none;
 }
 
+ul {
+	margin: 0;
+}
+
 li {
 	list-style: none;
 	display: inline;
@@ -63,7 +70,7 @@ li:hover {
 
 .meny {
 	float: left;
-	vertical-align: middle;
+	line-height: 90px;
 }
 
 .middle {
