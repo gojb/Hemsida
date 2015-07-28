@@ -16,6 +16,7 @@ $(document).ready(function()
 	});
 		});
 function Cookie(){
+	console.log("Cookies!!")
 	function setCookie(name, value, exdays) {
 		var d = new Date();
 		d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -46,4 +47,4 @@ function Cookie(){
 	}
 	checkCookie();
 }
-setTimeout(Cookie(),10000);
+setTimeout(Cookie(),1000);
