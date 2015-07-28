@@ -30,8 +30,6 @@ a {
 li>ul {
 	display: none;
 }
-
-
 li {
 	list-style: none;
 	display: inline;
@@ -44,4 +42,8 @@ li:hover {
 }
 .meny{
 	float: left;
+}
+.middle{
+	width: 85%;
+	margin: 0 auto;
 }
