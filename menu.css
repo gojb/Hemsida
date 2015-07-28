@@ -1,3 +1,6 @@
+body{
+	background-color: rgba(200,200,200,0.2);
+}
 .header {
 	height: 90px;
 	background-color: rgba(58, 163, 158, 0.2);
@@ -41,8 +44,12 @@ li:hover {
 }
 .meny{
 	float: left;
+	vertical-align: middle;
 }
 .middle{
 	width: 85%;
-	margin: 0 auto;
+	margin: 20 auto;
+	background-color: white;
+	padding: 20px;
+	border-radius: 30px;
 }
