@@ -16,6 +16,9 @@ $(document).ready(function() {
 			$("header > nav").css("display", "none");
 			$("#header").removeClass("bred");
 			$("#header").addClass("smal");
+			$(".smal").animate({
+				left: "-250px"
+			},1)
 		}
 		else {
 			$("header > nav").css("display", "block");
@@ -41,8 +44,14 @@ $(document).ready(function() {
 		if($('#header').hasClass("smal")) {
 			if($(this).siblings().size() > 0 ) {
 				e.preventDefault();
-				$(this).siblings().slideToggle("fast")
-				$(this).children(".toggle").html($(this).children(".toggle").html() == 'close' ? 'expand' : 'close');
+				$(this).animate({
+					left: "0"
+				}, 300);
+				$("body").animate({
+					left: "250px"
+				}, 300);
+//				$(this).siblings().slideToggle("fast")
+//				$(this).children(".toggle").html($(this).children(".toggle").html() == 'close' ? 'expand' : 'close');
 			}
 		}
 	});
