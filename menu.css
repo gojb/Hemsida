@@ -10,8 +10,9 @@ body {
 
 .header {
 	height: 90px;
-	background-color: rgba(58, 163, 158, 0.1);
+	background-color: rgba(58, 163, 158, 0.2);
 	text-decoration: none;
+	line-height: 3;
 }
 
 .logo {
@@ -25,7 +26,8 @@ body {
 
 .rubrik {
 	float: left;
-	line-height: 90px;
+	font-family: Audiowide, monospace;
+		line-height: 90px;
 	font-size: 45px;
 	font-weight: bold;
 	color: rgb(58, 163, 158);
@@ -48,10 +50,6 @@ li>ul {
 	display: none;
 }
 
-ul {
-	margin: 0;
-}
-
 li {
 	list-style: none;
 	display: inline;
@@ -65,7 +63,7 @@ li:hover {
 
 .meny {
 	float: left;
-	line-height: 90px;
+	vertical-align: middle;
 }
 
 .middle {

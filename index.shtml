@@ -12,7 +12,7 @@
   ga('send', 'pageview');
  
 </script>
-<title>GoJbs Programmering</title>
+<title>GoJb Development</title>
 <link href=index.css rel=stylesheet type="text/css">
 </head>
 
@@ -23,7 +23,7 @@
 	</div>
 	<!--<div class="below"></div>-->
 	<div class="middle">
-		<h1>Välkommen till GoJbs Programmerings officiella hemsida!</h1>
+		<h1>Välkommen till GoJb Development's officiella hemsida!</h1>
 		<br/>
 		<p>
 			Den härsidan är kodad från grunden, inget fuskigt hemsideverktyg har använts!
