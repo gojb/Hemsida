@@ -25,6 +25,8 @@ body {
 
 .rubrik {
 	float: left;
+	line-height: 90px;
+	font-size: 45px;
 }
 
 img {
