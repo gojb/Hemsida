@@ -1,6 +1,8 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule ^.*$ http://gojb.tk/ [R=301,L]
 ErrorDocument 404 http://gojb.tk/404
 DirectoryIndex index.shtml index.html
-Redirect 301  http://gojb.tk/OmOss/menu.css http://gojb.tk/menu.css
 <filesMatch "\.(html|htm|js|css)$">
 FileETag None
 <ifModule mod_headers.c>
