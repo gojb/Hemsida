@@ -17,19 +17,14 @@
 </head>
 
 <body>
-
-	<div class="menu" id="menu">
-		<!--#include virtual="menu.html" -->
-	</div>
-	<!--<div class="below"></div>-->
+	<!--#include virtual="menu.html" -->
 	<div class="middle">
 		<h1>Välkommen till GoJb Developments officiella hemsida!</h1>
-		<br/>
+		<br />
 		<p>
-			Den här sidan är kodad från grunden, inget fuskigt hemsideverktyg har använts!
-			<br/>
-			Vi kan programmera Java och Web (CSS, JS, HTML). 
-			Vi är inte utbildade, vi har lärt oss allting genom böcker och internet.
+			Den här sidan är kodad från grunden, inget fuskigt hemsideverktyg har
+			använts! <br /> Vi kan programmera Java och Web (CSS, JS, HTML). Vi
+			är inte utbildade, vi har lärt oss allting genom böcker och internet.
 		</p>
 	</div>
 </body>
