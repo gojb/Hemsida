@@ -12,8 +12,9 @@ function Cookie(){
 	console.log("Cookies!!")
 	
 	cookieArray = document.cookie.split(";");
-	for(var i = 0; 0 < cookieArray.length; i++){
+	for(var i = 0; i < cookieArray.length; i++){
 		console.log(cookieArray[i]);
+		
 	}
 	
 //	function setCookie(name, value, exdays) {
