@@ -22,8 +22,6 @@ body {
 .logo {
 	height: 70px;
 	width: 70px;
-	vertical-align: middle;
-	margin: auto 0;
 	border: 10px solid rgba(255, 255, 255, 0);
 	float: left;
 	background-image: url(/images/rect8147.png);
