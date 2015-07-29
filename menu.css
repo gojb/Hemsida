@@ -45,26 +45,27 @@ body {
 	text-decoration: none;
 	color: black;
 }
+
 .meny a.active {
 	color: rgb(58, 163, 158);
 }
 
 ul {
 	margin: 35px 0;
-    height: 20px;
+	height: 20px;
 }
-
 
 li {
 	display: inline;
 	margin: 0 10px;
-	border: 5px solid rgba(0,0,0,0);
+	border: 5px solid rgba(0, 0, 0, 0);
 	border-radius: 10px;
 	position: relative;
-	background: linear-gradient(to top, rgba(0, 0, 0, 0.0) 50%, rgba(0, 0, 0, 0.3) 50%);
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.0) 50%,
+		rgba(0, 0, 0, 0.3) 50%);
 	background-size: 100% calc(200% + 50px);
-	background-position-y:calc(100% + 10px);	
-	transition: background-position 0.5s ;
+	background-position-y: calc(100% + 10px);
+	transition: background-position 0.5s;
 }
 
 li:hover {
@@ -75,25 +76,32 @@ li>ul {
 	display: block;
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.3);
-    padding: 0;
-    left: -5px;
-    top: 24px;
-    top: -11px;
-    border-radius: 10px;
-    height:0;
-    overflow:hidden;
-    transition:height 200ms ease-in;
+	padding: 0;
+	left: -5px;
+	top: 24px;
+	top: -11px;
+	border-radius: 10px;
+	height: 0;
+	overflow: hidden;
+	transition: height 200ms ease-in;
 }
 
 li:hover>ul {
-	
- 	display: block;
- height: 100%
+	display: block;
+	height: 100%
 }
+
 li>ul>li {
 	display: block;
 	line-height: normal;
 	margin: 0;
+}
+
+.lang {
+	display: none;
+	height: 100px;
+	width: 100px;
+	margin: auto;
 }
 
 .middle {
