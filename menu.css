@@ -69,7 +69,6 @@ li {
 	background-size: 100% calc(200% + 50px);
 	background-position-y: calc(100% + 10px);
 	transition: background-position 0.5s, height 500ms ease-in-out;
-	width: 100%;
 	overflow: hidden;
 }
 
@@ -83,6 +82,7 @@ li>ul {
 
 li>ul>li {
 	height: 0;
+	width: 100%;
 }
 
 li:hover>ul>li {
