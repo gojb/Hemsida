@@ -30,7 +30,13 @@
 		<p>
 			Den här sidan är kodad från grunden, inget fuskigt hemsideverktyg har
 			använts! <br /> Vi kan programmera Java och Web (CSS, JS, HTML). Vi
-			är inte utbildade, vi har lärt oss allting via böcker och internet.<br /> Den här sidan är skapad för Google Chrome och vi kan inte garantera att den funkar i andra webbläsare. Så om du inte redan har Google Chrome, <a href="https://www.google.se/chrome/browser/desktop/">ladda ner det nu!</a>.
+			är inte utbildade, vi har lärt oss allting via böcker och internet.
+		</p>
+		<p>
+			Den här sidan är skapad för Google Chrome och vi kan inte garantera
+			att den funkar i andra webbläsare. Så om du inte redan har Google
+			Chrome, <a href="https://www.google.se/chrome/browser/desktop/">ladda
+				ner det nu!</a>.
 		</p>
 	</div>
 </body>
