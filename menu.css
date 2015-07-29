@@ -1,9 +1,9 @@
-html {
-	height: 100%;
-}
-
 * {
 	font-family: Bitter, serif;
+}
+
+html {
+	height: 100%;
 }
 
 body {
@@ -24,7 +24,7 @@ body {
 	margin: 10px;
 	float: left;
 	background: url(images/rect8147.png) no-repeat;
-    background-size: cover;
+	background-size: cover;
 }
 
 .rubrik {
@@ -41,15 +41,12 @@ a {
 	color: black;
 }
 
-.menu1 {
-	vertical-align: middle;
-}
-
 li>ul {
 	display: none;
 	position: absolute;
 }
-li:hover>ul{
+
+li:hover>ul {
 	display: block;
 }
 
