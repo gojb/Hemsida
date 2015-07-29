@@ -78,6 +78,7 @@ body {
 
 .meny li>ul {
 	position: absolute;
+	background-color: rgba(0,0,0,0.1);
 }
 
 .meny li>ul>li {
