@@ -14,6 +14,9 @@ $(document).ready(function(){
 			if(cookieArray[0].indexOf(namn)!==-1){
 				var cookie = cookieArray[1].substring(namn.length, cookieArray[1].length+1);
 				console.log(cookie);
+				console.log(cookieArray[0]+"------0")
+				console.log(cookieArray[1]+"------1")
+				console.log(cookieArray[2]+"------2")
 			}else {
 				console.log(cookieArray[0]+"------0")
 				console.log(cookieArray[1]+"------1")
