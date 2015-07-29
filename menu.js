@@ -11,15 +11,13 @@ $(document).ready(function(){
 		console.log("Cookies!!")
 		var namn = CookieVar+"=";
 		cookieArray = document.cookie.split(";");
-		for(var i = 0; i < cookieArray.length; i++){
-			if(cookieArray[i].indexOf(namn)!==-1){
+			if(cookieArray[0].indexOf(namn)!==-1){
 				var cookie = cookieArray[i].substring(namn.length, cookieArray[i].length+1);
 				console.log(cookie);
 			}else {
 				console.log("%c No Cookies for you!!", "font-size: 50px; color: red;");
 				$(".lang").css("display", "block");
 			}
-		}
 	}
 	$(".swe, .uk").click(function(){
 		var chosenLang = $(this).children("p").text();
