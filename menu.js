@@ -22,12 +22,11 @@ $(document).ready(function(){
 		}
 	}
 	$(".swe, .uk").click(function(){
-		console.log("Bugtest1");
-		console.log($(this).children("p").text())
-	});
-	$(".swe").click(function(){
-		console.log("Bugtest2");
-		console.log($(this).child)
+		var chosenLang = $(this).children("p").text();
+		var date = new Date();
+		date.setTime(date.getTime()+(365*86400000));
+		var UTC = date.toUTCString();
+		document.cookie("lang="+chosenLang+";"+UTC+";");
 	});
 	
 	setTimeout(Cookie("lang"),1000);
