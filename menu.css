@@ -61,6 +61,7 @@ li {
 	margin: 0 10px;
 	border: 5px solid rgba(0,0,0,0);
 	border-radius: 10px;
+	position: relative;
 }
 
 li:hover {
@@ -68,9 +69,11 @@ li:hover {
 }
 
 li:hover>ul {
-	display: block;
-	position: absolute;
-	background-color: red;
+ 	display: block;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0;
+    left: -5px;
+    top: 20px;
 }
 li>ul>li {
 	display: block;
