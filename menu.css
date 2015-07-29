@@ -57,28 +57,29 @@ body {
 
 .meny {
 	float: right;
+	margin: 25px 0;
 }
 
 .meny a {
 	text-decoration: none;
 	color: black;
-	display:block;
-    padding:10px 20px;
-        height: 20px;
+	display: block;
+	padding: 10px 20px;
+	height: 20px;
 }
 
 .meny a.active {
 	color: rgb(58, 163, 158);
 }
 
-ul {
-	padding:0;
-	height: 20px;
+.meny ul {
+	padding: 0;
+	margin: 0;
 	display: inline;
 }
 
-li {
-	float:left;
+.meny li {
+	float: left;
 	display: inline;
 	position: relative;
 	border-radius: 10px;
@@ -86,29 +87,26 @@ li {
 		rgba(0, 0, 0, 0.3) 50%);
 	background-size: 100% calc(200% + 50px);
 	background-position-y: calc(100% + 10px);
-	transition: background-position 0.5s;
+	transition: background-position 0.5s, height 500ms ease-in-out;
 }
 
-li:hover {
+.meny li:hover {
 	background-position-y: -10px;
 }
 
-li>ul {
+.meny li>ul {
 	position: absolute;
 }
 
-li>ul>li {
-	width:200px;
-    overflow:hidden;
-    height:0;
-    transition:height 200ms ease-in;
+.meny li>ul>li {
+	height: 0;
+	width: 100%;
+	overflow: hidden;
 }
 
-li:hover>ul>li{
-	height:40px;
+.meny li:hover>ul>li {
+	height: 40px;
 }
-
-
 
 .lang {
 	display: none;
@@ -121,7 +119,8 @@ li:hover>ul>li{
 	border-radius: 20%;
 	position: absolute;
 }
-.swe{
+
+.swe {
 	background-image: url(/images/swe.jpg);
 	width: 150px;
 	height: 150px;
@@ -142,7 +141,8 @@ li:hover>ul>li{
     color: #015293;
     font-size: 130%;
 }
-.uk{
+
+.uk {
 	background-image: url(/images/uk.png);
 	width: 150px;
 	height: 150px;
@@ -154,6 +154,7 @@ li:hover>ul>li{
 .uk {
     /* outline: 2px solid black; */
 }
+
 .middle {
 	width: 85%;
 	margin: 20px auto;
