@@ -13,8 +13,8 @@ function Cookie(){
 	
 	cookieArray = document.cookie.split(";");
 	for(var i = 0; i < cookieArray.length; i++){
-		if(cookieArray[i].indexOf("username=")!==-1){
-			var cookie = cookieArray[i].substring("username=".length, cookieArray[i].length+1);
+		if(cookieArray[i].indexOf("lang=")!==-1){
+			var cookie = cookieArray[i].substring("lang=".length, cookieArray[i].length+1);
 		}else {
 			console.log("Error!!", "font-weight: 70px; color: red;")
 		}
