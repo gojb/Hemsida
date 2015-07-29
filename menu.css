@@ -22,7 +22,7 @@ body {
 .logo {
 	height: 70px;
 	width: 70px;
-	border: 10px solid rgba(255, 255, 255, 0);
+	border: 10px;
 	float: left;
 	background-image: url(/images/rect8147.png);
     background-size: cover;
