@@ -116,7 +116,7 @@ body {
 
 .lang {
 	display: none;
-	background-color: rgb(23, 182, 176);
+	background-color: rgba(23, 182, 176, 0.7);
 	border: 2px solid #3B8DA5;
 	height: 200px;
 	padding: 30px;
