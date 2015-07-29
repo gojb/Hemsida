@@ -23,9 +23,8 @@ body {
 	width: 70px;
 	margin: 10px;
 	float: left;
-	background-image: url(images/rect8147.png);
+	background: url(images/rect8147.png) no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .rubrik {
