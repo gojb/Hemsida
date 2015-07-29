@@ -86,12 +86,10 @@ li>ul {
 }
 
 li:hover>ul {
-	
- 	display: block;
  height: 100%
 }
 li>ul>li {
-	display: block;
+	display: inline-block;
 	line-height: normal;
 	margin: 0;
 }
