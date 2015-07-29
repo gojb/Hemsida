@@ -112,8 +112,9 @@ li>ul>li {
 }
 .uk{
 	background-image: url(/images/uk.png);
-	width: 40px;
-	height: 40px;
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
 }
 .middle {
 	width: 85%;
