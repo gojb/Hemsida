@@ -17,11 +17,13 @@ $(document).ready(function(){
 				console.log(cookie);
 			}else {
 				console.log("%c No Cookies for you!!", "font-size: 50px; color: red;");
-				
 				$(".lang").css("display", "block");
 			}
 		}
 	}
+	$(".swe", "uk").click(function(){
+		console.log($(this).child)
+	});
 	setTimeout(Cookie("lang"),1000);
 });
 	
