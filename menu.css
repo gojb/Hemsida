@@ -46,7 +46,7 @@ body {
 	text-decoration: none;
 	color: black;
 }
-.meny a:active {
+.meny a.active {
 	color: rgb(58, 163, 158);
 }
 
