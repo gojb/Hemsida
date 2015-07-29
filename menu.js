@@ -21,7 +21,7 @@ $(document).ready(function(){
 			}
 		}
 	}
-	$(".swe", ".uk").click(function(){
+	$(".swe, .uk").click(function(){
 		console.log("Bugtest1");
 		console.log($(this).child)
 	});
