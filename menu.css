@@ -2,6 +2,29 @@
 	font-family: Bitter, serif;
 }
 
+.langList {
+    list-style: none;
+    margin-left: -10%;
+}
+
+.uk:hover>p {
+    text-shadow: 0 0 4px #17B6B0;
+}
+
+.langSelect {
+    width: auto;
+    font-size: 115%;
+    font-weight: bold;
+    margin: 2% 22%;
+    /* position: fixed; */
+}
+
+.uk>p {
+    vertical-align: middle;      
+    margin: 39% 17%;      
+    color: #FFFFFF;      font-size: 130%;
+}
+
 html {
 	height: 100%;
 }
@@ -114,14 +137,14 @@ body {
 }
 
 .swe:hover>p {
-	text-shadow: 1px 1px 1px #17B6B0;
+    text-shadow: 1px 1px 1px #17B6B0;
 }
 
 .swe>p {
-	vertical-align: middle;
-	margin: 39% 0px;
-	color: #015293;
-	font-size: 130%;
+    vertical-align: middle;
+    margin: 39% 0px;
+    color: #015293;
+    font-size: 130%;
 }
 
 .uk {
@@ -133,23 +156,8 @@ body {
 	background-position: 50%;
 }
 
-.uk:hover>p {
-	text-shadow: 0 0 4px #17B6B0;
-}
-
-.langSelect {
-	width: auto;
-	font-size: 115%;
-	font-weight: bold;
-	margin: 2% 22%;
-	/* position: fixed; */
-}
-
-.uk>p {
-	vertical-align: middle;
-	margin: 39% 17%;
-	color: #FFFFFF;
-	font-size: 130%;
+.uk {
+    /* outline: 2px solid black; */
 }
 
 .middle {
