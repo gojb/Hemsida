@@ -65,7 +65,7 @@ li {
 	border: 5px solid rgba(0,0,0,0);
 	border-radius: 10px;
 	position: relative;
-	background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.0) 50%);
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.0) 50%, rgba(0, 0, 0, 0.3) 50%);
 	background-size: 100% calc(200% + 50px);
 	background-position-y:calc(100% + 10px);
 	background-repeat-y:no-reply;
