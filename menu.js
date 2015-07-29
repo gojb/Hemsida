@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$(function linkActive() {
-		$("nav a").each(function() {
+		$(".meny a").each(function() {
 			if (window.location.href == (this.href)) {
 				$(this).addClass("active");
 				$(this).parents("ul").siblings("a").addClass("active");
