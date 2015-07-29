@@ -68,7 +68,9 @@ li {
 		rgba(0, 0, 0, 0.3) 50%);
 	background-size: 100% calc(200% + 50px);
 	background-position-y: calc(100% + 10px);
-	transition: background-position 0.5s;
+	transition: background-position 0.5s, height 500ms ease-in-out;
+	width: 200px;
+	overflow: hidden;
 }
 
 li:hover {
@@ -80,10 +82,7 @@ li>ul {
 }
 
 li>ul>li {
-	width: 200px;
-	overflow: hidden;
 	height: 0;
-	transition: height 500ms ease-in-out;
 }
 
 li:hover>ul>li {
