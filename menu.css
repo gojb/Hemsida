@@ -41,7 +41,8 @@ body {
 	float: right;
 	line-height: 90px;
 }
-.meny a{
+
+.meny a {
 	text-decoration: none;
 	color: black;
 }
@@ -55,18 +56,19 @@ li>ul {
 	position: absolute;
 }
 
-li:hover>ul {
-	display: block;
-}
-
 li {
 	display: inline;
 	margin: 0 10px;
-	padding: 5px;
+	border: 5px solid rgba(0,0,0,0);
+	border-radius: 5px;
 }
 
 li:hover {
-	background-color: rgba(0, 0, 0, 0.3)
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+li:hover>ul {
+	display: block;
 }
 
 .middle {
