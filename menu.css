@@ -102,6 +102,7 @@ body {
 .meny li>ul {
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
 }
 
 .meny li>ul>li {
