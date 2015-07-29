@@ -17,7 +17,7 @@ function Cookie(CookieVar){
 			var cookie = cookieArray[i].substring(namn.length, cookieArray[i].length+1);
 			console.log(cookie);
 		}else {
-			console.log("%c Error!!", "font-weight: 70px; color: red;")
+			console.log("%c No Cookies for you!!", "font-size: 50px; color: red;")
 		}
 	}
 	
