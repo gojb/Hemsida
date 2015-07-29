@@ -36,6 +36,11 @@ body {
 	color: rgb(58, 163, 158);
 }
 
+.meny {
+	float: right;
+	line-height: 90px;
+}
+
 a {
 	text-decoration: none;
 	color: black;
@@ -62,11 +67,6 @@ li {
 
 li:hover {
 	background-color: rgba(0, 0, 0, 0.3)
-}
-
-.meny {
-	float: right;
-	line-height: 90px;
 }
 
 .middle {
