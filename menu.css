@@ -54,12 +54,12 @@ body {
 	color: rgb(58, 163, 158);
 }
 
-ul {
+.meny ul {
 	padding: 0;
 	margin: 0;
 }
 
-li {
+.meny li {
 	float: left;
 	display: inline;
 	position: relative;
@@ -71,21 +71,21 @@ li {
 	transition: background-position 0.5s, height 500ms ease-in-out;
 }
 
-li:hover {
+.meny li:hover {
 	background-position-y: -10px;
 }
 
-li>ul {
+.meny li>ul {
 	position: absolute;
 }
 
-li>ul>li {
+.meny li>ul>li {
 	height: 0;
 	width: 100%;
 	overflow: hidden;
 }
 
-li:hover>ul>li {
+.meny li:hover>ul>li {
 	height: 40px;
 }
 
