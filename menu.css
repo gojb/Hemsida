@@ -46,6 +46,9 @@ body {
 	text-decoration: none;
 	color: black;
 }
+.meny a:active {
+	color: rgb(58, 163, 158);
+}
 
 ul {
 	margin: 0;
