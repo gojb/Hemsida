@@ -26,7 +26,7 @@ $(document).ready(function(){
 		console.log($(this).child)
 	});
 	$(".swe").click(function(){
-		console.log("Bugtest1");
+		console.log("Bugtest2");
 		console.log($(this).child)
 	});
 	
