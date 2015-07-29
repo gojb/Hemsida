@@ -39,7 +39,6 @@ body {
 
 .meny {
 	float: right;
-	line-height: 90px;
 }
 
 .meny a {
@@ -51,7 +50,8 @@ body {
 }
 
 ul {
-	margin: 0;
+	margin: 35px 0;
+    height: 20px;
 }
 
 li>ul {
