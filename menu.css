@@ -103,6 +103,7 @@ li>ul>li {
 	height: 100px;
 	width: 100px;
 	margin: auto;
+	position: absolute;
 }
 
 .middle {
