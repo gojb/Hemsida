@@ -27,6 +27,8 @@ $(document).ready(function(){
 		date.setTime(date.getTime()+(365*86400000));
 		var UTC = date.toUTCString();
 		document.cookie = "lang="+chosenLang+";"+UTC+";";
+		console.log(document.cookie);
+		$('.lang').css("display", "none")
 	});
 	
 	setTimeout(Cookie("lang"),1000);
