@@ -39,15 +39,14 @@ body {
 
 .meny {
 	float: right;
-	margin: 25px 0px;
 }
 
 .meny a {
 	text-decoration: none;
 	color: black;
-	display: block;
-	padding: 10px 20px;
-	height: 20px;
+	display:block;
+    padding:10px 20px;
+        height: 20px;
 }
 
 .meny a.active {
@@ -55,12 +54,12 @@ body {
 }
 
 ul {
-	padding: 0;
+	padding:0;
+	height: 20px;
 }
 
-}
 li {
-	float: left;
+	float:left;
 	display: inline;
 	position: relative;
 	border-radius: 10px;
@@ -71,7 +70,6 @@ li {
 	transition: background-position 0.5s;
 }
 
-}
 li:hover {
 	background-position-y: -10px;
 }
@@ -81,15 +79,17 @@ li>ul {
 }
 
 li>ul>li {
-	width: 200px;
-	overflow: hidden;
-	height: 0;
-	transition: height 200ms ease-in;
+	width:200px;
+    overflow:hidden;
+    height:0;
+    transition:height 200ms ease-in;
 }
 
-li:hover>ul>li {
-	height: 40px;
+li:hover>ul>li{
+	height:40px;
 }
+
+
 
 .lang {
 	display: none;
@@ -102,23 +102,20 @@ li:hover>ul>li {
 	border-radius: 20%;
 	position: absolute;
 }
-
-.swe {
+.swe{
 	/* background-image: url(/images/swe.jpg); */
 	width: 150px;
 	height: 150px;
 	float: right;
 	border-radius: 100%;
 }
-
-.uk {
+.uk{
 	/* background-image: url(/images/uk.png); */
 	width: 150px;
 	height: 150px;
 	float: right;
 	border-radius: 100%;
 }
-
 .middle {
 	width: 85%;
 	margin: 20px auto;
