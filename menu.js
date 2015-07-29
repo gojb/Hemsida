@@ -13,8 +13,9 @@ function Cookie(){
 	
 	cookieArray = document.cookie.split(";");
 	for(var i = 0; i < cookieArray.length; i++){
-		console.log(cookieArray[i]);
-		console.log(cookieArray[i].indexOf("username="))
+		if(cookieArray[i].indexOf("username=")!==-1){
+			console.log(cookieArray[i].substring("username=".length, cookieArray[i].length+1))
+		}
 	}
 	
 //	function setCookie(name, value, exdays) {
@@ -50,6 +51,5 @@ function Cookie(){
 //			}
 //		}
 //	}
-	checkCookie();
 }
 setTimeout(Cookie(),1000);
