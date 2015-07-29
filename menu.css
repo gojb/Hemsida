@@ -83,7 +83,7 @@ li>ul>li {
 	width: 200px;
 	overflow: hidden;
 	height: 0;
-	transition: height 200ms ease-in;
+	transition: height 500ms ease-in;
 }
 
 li:hover>ul>li {
