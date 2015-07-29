@@ -54,10 +54,6 @@ ul {
     height: 20px;
 }
 
-li>ul {
-	display: none;
-	position: absolute;
-}
 
 li {
 	display: inline;
@@ -75,16 +71,26 @@ li:hover {
 	background-position-y: -10px;
 }
 
+li>ul {
+	display: none;
+	position: absolute;
+}
+
 li:hover>ul {
+	
  	display: block;
     background-color: rgba(0, 0, 0, 0.3);
     padding: 0;
     left: -5px;
     top: 24px;
+    top: -11px;
+    height: inherit;
+    border-radius: 10px;
 }
 li>ul>li {
 	display: block;
 	line-height: normal;
+	margin: 0;
 }
 
 .middle {
