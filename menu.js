@@ -8,6 +8,9 @@ $(document).ready(function(){
 		});
 	});
 		});
+$('p').click(function(){
+			$(".lang").css("display", "block");
+});
 function Cookie(CookieVar){
 	console.log("Cookies!!")
 	var namn = CookieVar+"=";
@@ -18,7 +21,8 @@ function Cookie(CookieVar){
 			console.log(cookie);
 		}else {
 			console.log("%c No Cookies for you!!", "font-size: 50px; color: red;");
-			$(".lang").css("display", "block")
+			
+			$(".lang").css("display", "block");
 		}
 	}
 	
