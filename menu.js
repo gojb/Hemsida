@@ -15,6 +15,9 @@ $(document).ready(function(){
 				var cookie = cookieArray[i].substring(namn.length, cookieArray[i].length+1);
 				console.log(cookie);
 			}else {
+				console.log(cookieArray[0]+"------0")
+				console.log(cookieArray[1]+"------1")
+				console.log(cookieArray[2]+"------2")
 				console.log("%c No Cookies for you!!", "font-size: 50px; color: red;");
 				$(".lang").css("display", "block");
 			}
