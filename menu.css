@@ -69,6 +69,11 @@ li:hover {
 
 li:hover>ul {
 	display: block;
+	position: absolute;
+	background-color: red;
+}
+li>ul>li {
+	display: block;
 }
 
 .middle {
