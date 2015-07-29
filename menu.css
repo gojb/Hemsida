@@ -81,6 +81,8 @@ li:hover>ul {
     padding: 0;
     left: -5px;
     top: 24px;
+    top: -11px;
+    height: inherit;
 }
 li>ul>li {
 	display: block;
