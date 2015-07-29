@@ -108,14 +108,14 @@ li>ul>li {
 	position: absolute;
 }
 .swe{
-	/* background-image: url(/images/swe.jpg); */
+	background-image: url(/images/swe.jpg);
 	width: 150px;
 	height: 150px;
 	float: right;
 	border-radius: 100%;
 }
 .uk{
-	/* background-image: url(/images/uk.png); */
+	background-image: url(/images/uk.png);
 	width: 150px;
 	height: 150px;
 	float: right;
