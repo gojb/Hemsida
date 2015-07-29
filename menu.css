@@ -2,6 +2,24 @@
 	font-family: Bitter, serif;
 }
 
+.uk:hover>p {
+    text-shadow: 0 0 4px #17B6B0;
+}
+
+.langSelect {
+    width: auto;
+    font-size: 115%;
+    font-weight: bold;
+    margin: 2% 22%;
+    /* position: fixed; */
+}
+
+.uk>p {
+    vertical-align: middle;      
+    margin: 39% 17%;      
+    color: #FFFFFF;      font-size: 130%;
+}
+
 html {
 	height: 100%;
 }
@@ -56,6 +74,7 @@ body {
 ul {
 	padding:0;
 	height: 20px;
+	display: inline;
 }
 
 li {
@@ -98,7 +117,7 @@ li:hover>ul>li{
 	height: 200px;
 	padding: 30px;
 	width: 400px;
-	margin: -2% 5% 50% 35%;
+	margin: 0 5% 0 35%;
 	border-radius: 20%;
 	position: absolute;
 }
@@ -106,8 +125,22 @@ li:hover>ul>li{
 	background-image: url(/images/swe.jpg);
 	width: 150px;
 	height: 150px;
-	float: right;
+	float: left;
 	border-radius: 100%;
+	background-position: 40%;
+	text-align: center;
+	position: relative;
+}
+
+.swe:hover>p {
+    text-shadow: 1px 1px 1px #17B6B0;
+}
+
+.swe>p {
+    vertical-align: middle;
+    margin: 39% 0px;
+    color: #015293;
+    font-size: 130%;
 }
 .uk{
 	background-image: url(/images/uk.png);
@@ -115,6 +148,11 @@ li:hover>ul>li{
 	height: 150px;
 	float: right;
 	border-radius: 100%;
+	background-position: 50%;
+}
+
+.uk {
+    /* outline: 2px solid black; */
 }
 .middle {
 	width: 85%;
