@@ -14,7 +14,7 @@ function Cookie(){
 	cookieArray = document.cookie.split(";");
 	for(var i = 0; i < cookieArray.length; i++){
 		console.log(cookieArray[i]);
-		
+		console.log(cookieArray[i].indexOf("username="))
 	}
 	
 //	function setCookie(name, value, exdays) {
