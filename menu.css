@@ -41,9 +41,13 @@ body {
 	line-height: 90px;
 }
 
-header a {
+.header a {
 	text-decoration: none;
 	color: black;
+}
+
+ul {
+	margin: 0;
 }
 
 li>ul {
@@ -53,10 +57,6 @@ li>ul {
 
 li:hover>ul {
 	display: block;
-}
-
-ul {
-	margin: 0;
 }
 
 li {
