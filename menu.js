@@ -23,7 +23,7 @@ $(document).ready(function(){
 	}
 	$(".swe, .uk").click(function(){
 		console.log("Bugtest1");
-		console.log($(this).children("p"))
+		console.log($(this).children("p").text())
 	});
 	$(".swe").click(function(){
 		console.log("Bugtest2");
