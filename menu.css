@@ -107,7 +107,14 @@ li>ul>li {
 	border-radius: 20%;
 	position: absolute;
 }
-
+.swe{
+	
+}
+.uk{
+	background-image: url(/images/uk.png);
+	width: 40px;
+	height: 40px;
+}
 .middle {
 	width: 85%;
 	margin: 20px auto;
