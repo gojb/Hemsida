@@ -14,7 +14,7 @@ $(document).ready(function(){
 		cookieArray = document.cookie.split(";");
 		for(var i = 0; i < cookieArray.length; i++){
 			if(cookieArray[i].indexOf(namn)!==-1){
-				var cookie = cookieArray[i].substring(namn.length+1, cookieArray[i].length+1);
+				var cookie = cookieArray[i].substring(namn.length, cookieArray[i].length+1);
 				console.log(cookie);
 			}else {
 				elseAmount++;
