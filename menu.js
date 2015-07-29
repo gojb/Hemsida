@@ -7,11 +7,12 @@ $(document).ready(function(){
 			}
 		});
 	});
+	$('p').click(function(){
+		console.log("sad");
+				$(".lang").css("display", "block");
+	});
 		});
-$('p').click(function(){
-	console.log("sad");
-			$(".lang").css("display", "block");
-});
+
 function Cookie(CookieVar){
 	console.log("Cookies!!")
 	var namn = CookieVar+"=";
