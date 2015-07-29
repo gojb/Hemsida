@@ -12,7 +12,7 @@ $(document).ready(function(){
 		var namn = CookieVar+"=";
 		cookieArray = document.cookie.split(";");
 			if(cookieArray[0].indexOf(namn)!==-1){
-				var cookie = cookieArray[1].substring(namn.length, cookieArray[1].length+1);
+				var cookie = cookieArray[0].substring(namn.length, cookieArray[0].length+1);
 				console.log(cookie);
 				console.log(cookieArray[0]+"------0")
 				console.log(cookieArray[1]+"------1")
