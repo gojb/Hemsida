@@ -29,7 +29,7 @@ $(document).ready(function(){
 				if(cookie.toLowerCase()===($(".swe").children("p").text()).toLowerCase()){
 					console.log("Swe");
 				}
-				else if(cookie.toLowerCase()===($(".swe").children("p").text()).toLowerCase(){
+				else if(cookie.toLowerCase()===($(".swe").children("p").text()).toLowerCase()){
 					console.log("eng");
 				}
 			}else {
