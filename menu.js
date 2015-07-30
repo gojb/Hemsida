@@ -14,17 +14,17 @@ $(document).ready(function(){
 		cookieArray = document.cookie.split(";");
 		for(var i = 0; i < cookieArray.length; i++){
 			if(cookieArray[i].indexOf(namn)!==-1){
-				
+
 				var cookie = cookieArray[i].substring(namn.length, cookieArray[i].length+1);
-				
+
 				if(cookie.indexOf("=")!==-1){
-				console.log(cookieArray[i].substring(namn.length+1, cookieArray[i].length+1));
-				console.log("= finns");
+					console.log(cookieArray[i].substring(namn.length+1, cookieArray[i].length+1));
+					console.log("= finns");
 				}else{
 					console.log("%c= finns <strong>INTE</strong>", "strong{font-weight: bold;}");
 					console.log(cookie)
 				}
-				
+
 			}else {
 				elseAmount++;
 				if(elseAmount==cookieArray.length){
@@ -40,17 +40,38 @@ $(document).ready(function(){
 		date.setTime(date.getTime()+(365*86400000));
 		var UTC = date.toUTCString();
 		document.cookie = "lang="+chosenLang+"; expires="+UTC+";";
-		
+
 		console.log(document.cookie);
 		$('.lang').css("display", "none")
 	});
 
 	Cookie("lang");
-	
+
 	$(".ChangeLang").click(function(){
-		$(".lang").css("display", "block")
-		trythisfunc();
+//		$(".lang").css("display", "block")
+		englishLang();
 	});
+
+	var englishLang = function(){
+		var htmlId = [
+		              /*0*/"Home",
+		              /*1*/"UNUSED",
+		              /*2*/"Gojbs Goodies",
+		              /*3*/"About us",
+		              /*4*/"Welcome to GoJb Development's official website!",
+		              /*5*/ "This page is coded from scratch, no website builder has been used! <br />" +
+		              /*fortfarande 5*/"We can program Java and Web (CSS, JS, HTML and so on). We are not educated in this" +
+		              /*fortfarande 5*/", we have learnt it all from books and the internet",
+		              /*6*/"This page is created for the latest verision of Google Chrome and we" +
+		              /*fortfarande 6*/"can't guarantee that it works as it should in other browsers. So if you don't have it already, ",
+		              /*7*/"download Google Chrome now!"
+		              
+		              ]/*I htmlId är 0-3 i menu.html, 4-7 på startsidan*/
+		for(var i = 0; i < html.length; i++){
+			$("#"+i).text(html[i]);
+		}
+	}
+
 });
 
 //function setCookie(name, value, exdays) {

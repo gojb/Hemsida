@@ -25,17 +25,17 @@
 <body>
 	<!--#include virtual="/menu.html" -->
 	<div class="middle">
-		<h1 class="h1_headline">Välkommen till GoJb Developments officiella hemsida!</h1>
+		<h1 id="4">Välkommen till GoJb Developments officiella hemsida!</h1>
 		<br />
-		<p>
+		<p id="5">
 			Den här sidan är kodad från grunden, inget fuskigt hemsideverktyg har
-			använts! <br /> Vi kan programmera Java och Web (CSS, JS, HTML). Vi
+			använts! <br /> Vi kan programmera Java och Web (CSS, JS, HTML osv.). Vi
 			är inte utbildade, vi har lärt oss allting via böcker och internet.
 		</p>
-		<p>
+		<p id="6">
 			Den här sidan är skapad för senaste verisionen Google Chrome och vi kan inte garantera
 			att den funkar som den ska i andra webbläsare. Så om du inte redan
-			har Google Chrome, <a
+			har Google Chrome, <a id="7"
 				href="https://www.google.se/chrome/browser/desktop/">ladda ner
 				det nu!</a>
 		</p>
