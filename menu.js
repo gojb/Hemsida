@@ -70,7 +70,7 @@ $(document).ready(function(){
 		              /*fortfarande 5*/"We can program Java and Web (CSS, JS, HTML and so on). We are not educated in this" +
 		              /*fortfarande 5*/", we have learnt it all from books and the internet",
 		              /*6*/"This page is created for the latest verision of Google Chrome and we" +
-		              /*fortfarande 6*/"can't guarantee that it works as it should in other browsers. So if you don't have it already,  <a id='7'"+		
+		              /*fortfarande 6*/"can't guarantee that it works as it should in other browsers. So if you don't have it already,  <a"+		
 		              /*fortfarande 6*/"href='https://www.google.se/chrome/browser/desktop/'>download Google Chrome now!</a>",
 		              /*7*/"You can here connect to GoJb's chat. The program uses websocket to comunicate with  our servers" +
 		              /*fortfarande 7*/" so you can chat with everyone that are online at the moment."
