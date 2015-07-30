@@ -68,7 +68,7 @@ $(document).ready(function(){
 		              
 		              ]/*I htmlId är 0-3 i menu.html, 4-7 på startsidan*/
 		for(var i = 0; i < htmlId.length; i++){
-			$("#"+i).text(html[i]);
+			$("#"+i).text(htmlId[i]);
 		}
 	}
 
