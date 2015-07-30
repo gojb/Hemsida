@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GoJbGuide - GoJb Development</title>
+</head>
+<body>
+<!--#include virtual="/menu.html" -->
+<div class="middle"></div>
+</body>
+</html>

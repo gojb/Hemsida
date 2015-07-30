@@ -69,7 +69,7 @@ body {
 
 .meny {
 	float: right;
-	margin: 25px 0;
+	margin: 25px;
 }
 
 .meny a {
@@ -97,19 +97,24 @@ body {
 	border-radius: 10px;
 	background: linear-gradient(to top, rgba(0, 0, 0, 0.0) 50%,
 		rgba(0, 0, 0, 0.3) 50%);
-	background-size: 100% calc(200% + 50px);
-	background-position-y: calc(100% + 10px);
-	transition: background-position 0.5s, height 500ms ease-in-out;
+	background-size: 100% 200%;
+	background-position-y: 100%;
+	transition: all 500ms ease-in-out;
 }
 
 .meny li:hover {
-	background-position-y: -10px;
+	background-position-y: 0;
+}
+
+.meny li:hover>ul {
+	box-shadow: 0px 0px 20px;
 }
 
 .meny li>ul {
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
+	transition: all 500ms ease-in-out;
 }
 
 .meny li>ul>li {
