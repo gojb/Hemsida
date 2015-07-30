@@ -37,6 +37,11 @@ $(document).ready(function(){
 	});
 
 	Cookie("lang");
+	
+	$(".ChoseLanguage").click(function({
+		$(".lang").css("display", "block")
+	}));
+	
 });
 
 //function setCookie(name, value, exdays) {
