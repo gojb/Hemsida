@@ -29,7 +29,7 @@ $(document).ready(function(){
 					console.log("asd");
 				}
 				console.log("Sv -- " + cookie===$(".swe").text());
-				console.log(cookie.length + "cookie  swe"+(".swe").text().length);
+				console.log(cookie.length + "cookie  swe"+$(".swe").text().length);
 				console.log(cookie + "<-- Cookie -- swe -->" + $(".swe").text());
 
 			}else {
