@@ -1,3 +1,3 @@
-$('.choseLang').click(function(){
+$('.changeLang').click(function(){
 	console.log("sady")
 })
