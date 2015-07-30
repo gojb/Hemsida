@@ -46,7 +46,7 @@ $(document).ready(function(){
 		var date = new Date();
 		date.setTime(date.getTime()+(365*86400000));
 		var UTC = date.toUTCString();
-		document.cookie = "lang="+chosenLang+"; expires="+UTC+";";
+		document.cookie = "lang="+chosenLang+"; expires="+UTC+";path=/";
 
 		console.log(document.cookie);
 		$('.lang').css("display", "none")
