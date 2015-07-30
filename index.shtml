@@ -25,7 +25,7 @@
 <body>
 	<!--#include virtual="/menu.html" -->
 	<div class="middle">
-		<h1>Välkommen till GoJb Developments officiella hemsida!</h1>
+		<h1 class="h1_headline">Välkommen till GoJb Developments officiella hemsida!</h1>
 		<br />
 		<p>
 			Den här sidan är kodad från grunden, inget fuskigt hemsideverktyg har
