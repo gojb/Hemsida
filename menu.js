@@ -36,7 +36,7 @@ $(document).ready(function(){
 		$('.lang').css("display", "none")
 	});
 
-	setTimeout(Cookie("lang"),1000);
+	Cookie("lang");
 });
 
 //function setCookie(name, value, exdays) {

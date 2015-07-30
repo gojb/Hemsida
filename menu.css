@@ -61,6 +61,12 @@ body {
 	text-decoration: none;
 }
 
+.ChangeLang {
+	background-color: rgba(58, 163, 158, 0.5);
+	width: 100px;
+	height: 50px;
+}
+
 .meny {
 	float: right;
 	margin: 25px;
