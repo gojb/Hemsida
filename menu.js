@@ -25,13 +25,12 @@ $(document).ready(function(){
 					console.log("%c= finns <strong>INTE</strong>", "strong{font-weight: bold;}");
 					console.log(cookie)
 				}
-
 				if(cookie.toLowerCase()===($(".swe").children("p").text()).toLowerCase()){
 					console.log("Swe");
 				}
 				else if(cookie.toLowerCase()===($(".uk").children("p").text()).toLowerCase()){
 					console.log("eng");
-					location.reload();
+					englishLang();
 				}
 			}else {
 				elseAmount++;
@@ -51,6 +50,7 @@ $(document).ready(function(){
 
 		console.log(document.cookie);
 		$('.lang').css("display", "none")
+		location.reload();
 	});
 
 	Cookie("lang");
