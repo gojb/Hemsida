@@ -59,7 +59,7 @@ $(document).ready(function(){
 		$(".lang").css("display", "block")
 	});
 
-	var englishLang = function(){
+	function englishLang(){
 		var htmlId = [
 		              /*0*/"Home",
 		              /*1*/"Chat",
