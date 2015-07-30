@@ -19,7 +19,8 @@ $(document).ready(function(){
 				console.log(cookieArray[i].substring(namn.length+1, cookieArray[i].length+1));
 				console.log("= finns");
 				}else{
-					console.log("%c= finns <strong>INTE<strong>")
+					console.log("%c= finns <strong>INTE<strong>");
+					console.log(cookie)
 				}
 			}else {
 				elseAmount++;
