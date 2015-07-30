@@ -38,7 +38,7 @@ $(document).ready(function(){
 
 	Cookie("lang");
 	
-	$(".ChoseLanguage").click(function(){
+	$(".ChangeLang").click(function(){
 		$(".lang").css("display", "block")
 	});
 	
