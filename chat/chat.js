@@ -3,7 +3,7 @@ var socket;
 
 function connect() {
 	if ('WebSocket' in window) {
-		socket = new WebSocket("ws://wildfly-gojb.rhcloud.com/");
+		socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/");
 	}  else {
 		Console.log('Error: WebSocket stöds inte.');
 	}
