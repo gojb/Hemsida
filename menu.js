@@ -50,7 +50,6 @@ $(document).ready(function(){
 	$(".ChangeLang").click(function(){
 		$(".lang").css("display", "block")
 	});
-	console.log(JSON.parse("Svenska"));
 });
 
 //function setCookie(name, value, exdays) {
