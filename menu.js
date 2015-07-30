@@ -17,11 +17,11 @@ $(document).ready(function(){
 				
 				var cookie = cookieArray[i].substring(namn.length, cookieArray[i].length+1);
 				
-				if(cookie.indexOf("=")==-1){
+				if(cookie.indexOf("=")!==-1){
 				console.log(cookieArray[i].substring(namn.length+1, cookieArray[i].length+1));
 				console.log("= finns");
 				}else{
-					console.log("%c= finns <strong>INTE</strong>");
+					console.log("%c= finns <strong>INTE</strong>", "strong{font-weight: bold;}");
 					console.log(cookie)
 				}
 				
