@@ -30,7 +30,7 @@ $(document).ready(function(){
 				}
 				console.log("Sv -- " + cookie===$(".swe").text());
 				console.log("Uk -- " + cookie===$(".uk").text());
-				console.log($(".uk").text() + " <-- Uk  --  Cookie-->" + cookie + " <-- Cookie -- swe -->" $(".swe").text());
+				console.log($(".uk").text() + " <-- Uk  --  Cookie-->" + cookie + " <-- Cookie -- swe -->" + $(".swe").text());
 
 			}else {
 				elseAmount++;
