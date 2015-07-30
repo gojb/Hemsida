@@ -1,3 +1,3 @@
 $('.ChangeLang').click(function(){
-	console.log("sady")
-})
+	console.log("sady");
+});
