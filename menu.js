@@ -25,18 +25,13 @@ $(document).ready(function(){
 					console.log("%c= finns <strong>INTE</strong>", "strong{font-weight: bold;}");
 					console.log(cookie)
 				}
-				
-				if(cookie.toLowerCase()===($(".swe").children("p").text()).toLowerCase()){
-					console.log("wwqdsa");
-					console.log($(this).children("p").text().toLowerCase());
-				}
-				console.log(cookie.toLowerCase()===($(".swe, .uk").children("p").text()).toLowerCase());
-				console.log($(".swe, .uk").children("p").text());
-//				else if(cookie.toLowerCase()=="english"
-//				console.log("Sv -- " + cookie===$(".swe").text());
-//				console.log(cookie.length + "cookie  swe"+$(".swe").text().length);
-//				console.log(cookie + "<-- Cookie -- swe -->" + $(".swe").text());
 
+				if(cookie.toLowerCase()===($(".swe").children("p").text()).toLowerCase()){
+					console.log("Swe");
+				}
+				else if(cookie.toLowerCase()===($(".swe").children("p").text()).toLowerCase(){
+					console.log("eng");
+				}
 			}else {
 				elseAmount++;
 				if(elseAmount==cookieArray.length){
@@ -75,47 +70,47 @@ $(document).ready(function(){
 		              /*fortfarande 5*/", we have learnt it all from books and the internet",
 		              /*6*/"This page is created for the latest verision of Google Chrome and we" +
 		              /*fortfarande 6*/"can't guarantee that it works as it should in other browsers. So if you don't have it already,  <a id='7'"+		
-		             "href='https://www.google.se/chrome/browser/desktop/'>download Google Chrome now!</a>"
-		              
+		              "href='https://www.google.se/chrome/browser/desktop/'>download Google Chrome now!</a>"
+
 		              ]/*I htmlId är 0-3 i menu.html, 4-6 på startsidan*/
 		for(var i = 0; i < htmlId.length; i++){
 			$("#"+i).html(htmlId[i]);
-		console.log(htmlId[i])
+			console.log(htmlId[i])
 		}
 	}
 
 });
 
-//function setCookie(name, value, exdays) {
-//var d = new Date();
-//d.setTime(d.getTime() + (exdays*24*60*60*1000));
-//var expires = "expires="+d.toUTCString();
-//document.cookie = name + "=" + value + "; " + expires + "; path=/";
-//}
+//				function setCookie(name, value, exdays) {
+//				var d = new Date();
+//				d.setTime(d.getTime() + (exdays*24*60*60*1000));
+//				var expires = "expires="+d.toUTCString();
+//				document.cookie = name + "=" + value + "; " + expires + "; path=/";
+//				}
 
-//function getCookie(cookiename) {
-//var name = cookiename + "=";
-//var ca = document.cookie.split(';');
-//console.log("err");
-//for(var i=0; i<ca.length; i++) {
-//var c = ca[i];
-//while (c.charAt(0)==' ') c = c.substring(1);
-//if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
-//console.log("e212234234rr");
-//}
-//console.log("3242");
-//return "";
-//}
+//				function getCookie(cookiename) {
+//				var name = cookiename + "=";
+//				var ca = document.cookie.split(';');
+//				console.log("err");
+//				for(var i=0; i<ca.length; i++) {
+//				var c = ca[i];
+//				while (c.charAt(0)==' ') c = c.substring(1);
+//				if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+//				console.log("e212234234rr");
+//				}
+//				console.log("3242");
+//				return "";
+//				}
 
-//function checkCookie() {
-//var lang = getCookie("lang");
-//if (lang != "") {
-//alert("Your language is still " + lang);
-//console.log("e543rr");
-//} else {
-//console.log("e454534231rr");
-//if (lang != "" && lang != null) {
-//setCookie("lang", prompt("Set Language"), 2);
-//}
-//}
-//}
+//				function checkCookie() {
+//				var lang = getCookie("lang");
+//				if (lang != "") {
+//				alert("Your language is still " + lang);
+//				console.log("e543rr");
+//				} else {
+//				console.log("e454534231rr");
+//				if (lang != "" && lang != null) {
+//				setCookie("lang", prompt("Set Language"), 2);
+//				}
+//				}
+//				}
