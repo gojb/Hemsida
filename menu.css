@@ -100,7 +100,6 @@ body {
 	background-position-y: 0;
 }
 .meny li:hover>ul {
-	background-position-y: 0;
 	box-shadow: 0px 0px 20px;
 }
 .meny li>ul {
