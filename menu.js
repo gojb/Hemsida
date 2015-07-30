@@ -38,9 +38,9 @@ $(document).ready(function(){
 
 	Cookie("lang");
 	
-	$(".ChoseLanguage").click(function({
+	$(".ChoseLanguage").click(function(){
 		$(".lang").css("display", "block")
-	}));
+	});
 	
 });
 
