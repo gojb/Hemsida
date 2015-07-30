@@ -9,7 +9,7 @@ function connect() {
 	}
 	socket.onopen = function () {
 		var person = prompt("Vad heter du?", "");
-		et.send(person);
+		socket.send(person);
 		Console.log('Info: Anslutning Öppnad');
 		document.getElementById('knapp').setAttribute('disabled','disabled');
 		document.getElementById('chat').onkeydown = function(event) {
