@@ -30,6 +30,8 @@ $(document).ready(function(){
 					console.log("wwqdsa");
 					console.log($(this).children("p").text().toLowerCase());
 				}
+				console.log(cookie.toLowerCase()===($(".swe, .uk").children("p").text()).toLowerCase());
+				console.log((".swe, .uk").children("p").text());
 //				else if(cookie.toLowerCase()=="english"
 //				console.log("Sv -- " + cookie===$(".swe").text());
 //				console.log(cookie.length + "cookie  swe"+$(".swe").text().length);
