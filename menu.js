@@ -29,10 +29,10 @@ $(document).ready(function(){
 				if(cookie.toLowerCase()===($(".swe, .uk").children("p").text()).toLowerCase()){
 					console.log($(this).children("p").text()).toLowerCase());
 				}
-				else if(cookie.toLowerCase()=="english"
-				console.log("Sv -- " + cookie===$(".swe").text());
-				console.log(cookie.length + "cookie  swe"+$(".swe").text().length);
-				console.log(cookie + "<-- Cookie -- swe -->" + $(".swe").text());
+//				else if(cookie.toLowerCase()=="english"
+//				console.log("Sv -- " + cookie===$(".swe").text());
+//				console.log(cookie.length + "cookie  swe"+$(".swe").text().length);
+//				console.log(cookie + "<-- Cookie -- swe -->" + $(".swe").text());
 
 			}else {
 				elseAmount++;
