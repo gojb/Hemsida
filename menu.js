@@ -27,6 +27,7 @@ $(document).ready(function(){
 				}
 				
 				if(cookie.toLowerCase()===($(".swe, .uk").children("p").text()).toLowerCase()){
+					console.log("wwqdsa");
 					console.log($(this).children("p").text().toLowerCase());
 				}
 //				else if(cookie.toLowerCase()=="english"
