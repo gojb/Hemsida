@@ -24,7 +24,7 @@ $(document).ready(function(){
 					console.log("%c= finns <strong>INTE</strong>", "strong{font-weight: bold;}");
 					console.log(cookie)
 				}
-				if(cookie===$(".swe").getText()){
+				if(cookie===$(".swe").text()){
 					console.log("asd");
 				}
 
