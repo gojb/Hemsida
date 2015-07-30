@@ -40,10 +40,5 @@
 				det nu!</a>
 		</p>
 	</div>
-	<script>
-$(".ChangeLang").click(function(){
-	trythisfunc();
-});
-</script>
 </body>
 </html>
