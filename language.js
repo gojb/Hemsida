@@ -1,6 +1,5 @@
 $(document).ready(function(){
-	console.log("asdASDs")
-	$('.ChangeLang').click(function(){
-	console.log("sady");
-});
+var trythisfunc = function(){
+	console.log("sucess!!")
+}
 });
