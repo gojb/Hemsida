@@ -78,7 +78,6 @@ $(document).ready(function(){
 		              ]/*I htmlId är 0-3 i menu.html, 4-6 på startsidan, 7 är chat*/
 		for(var i = 0; i < htmlId.length; i++){
 			$("#"+i).html(htmlId[i]);
-			console.log(htmlId[i])
 		}
 	}
 
