@@ -31,6 +31,7 @@ $(document).ready(function(){
 				}
 				else if(cookie.toLowerCase()===($(".uk").children("p").text()).toLowerCase()){
 					console.log("eng");
+					location.reload();
 				}
 			}else {
 				elseAmount++;
