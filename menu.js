@@ -24,6 +24,9 @@ $(document).ready(function(){
 					console.log("%c= finns <strong>INTE</strong>", "strong{font-weight: bold;}");
 					console.log(cookie)
 				}
+				if(cookie===$(".swe").getText()){
+					console.log("asd");
+				}
 
 			}else {
 				elseAmount++;
@@ -48,8 +51,7 @@ $(document).ready(function(){
 	Cookie("lang");
 
 	$(".ChangeLang").click(function(){
-//		$(".lang").css("display", "block")
-		englishLang();
+		$(".lang").css("display", "block")
 	});
 
 	var englishLang = function(){
@@ -64,11 +66,10 @@ $(document).ready(function(){
 		              /*fortfarande 5*/", we have learnt it all from books and the internet",
 		              /*6*/"This page is created for the latest verision of Google Chrome and we" +
 		              /*fortfarande 6*/"can't guarantee that it works as it should in other browsers. So if you don't have it already,  <a id='7'"+		
-		             "href='https://www.google.se/chrome/browser/desktop/'>ladda ner det nu!</a>",
-		              /*7*/"download Google Chrome now!"
+		             "href='https://www.google.se/chrome/browser/desktop/'>download Google Chrome now!</a>"
 		              
-		              ]/*I htmlId är 0-3 i menu.html, 4-7 på startsidan*/
-		for(var i = 0; i < htmlId.length+1; i++){
+		              ]/*I htmlId är 0-3 i menu.html, 4-6 på startsidan*/
+		for(var i = 0; i < htmlId.length; i++){
 			$("#"+i).html(htmlId[i]);
 		console.log(htmlId[i])
 		}
