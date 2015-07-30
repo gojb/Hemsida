@@ -55,7 +55,7 @@ $(document).ready(function(){
 	var englishLang = function(){
 		var htmlId = [
 		              /*0*/"Home",
-		              /*1*/"UNUSED",
+		              /*1*/"Chat",
 		              /*2*/"Gojbs Goodies",
 		              /*3*/"About us",
 		              /*4*/"Welcome to GoJb Development's official website!",
@@ -67,8 +67,9 @@ $(document).ready(function(){
 		              /*7*/"download Google Chrome now!"
 		              
 		              ]/*I htmlId är 0-3 i menu.html, 4-7 på startsidan*/
-		for(var i = 0; i < htmlId.length+1; i++){
+		for(var i = 0; i < htmlId.length+1'; i++){
 			$("#"+i).text(htmlId[i]);
+		console.log(htmlId[i])
 		}
 	}
 
