@@ -17,7 +17,7 @@
 		<H1>Live Chat</H1>
 
 		<BR />
-		<p>Här kan du ansluta dig till GoJbs chat. Programmet använder
+		<p id="7">Här kan du ansluta dig till GoJbs chat. Programmet använder
 			websocket för att kommunicera med våra servrar så att du kan chatta
 			med alla som är online för tillfället.</p>
 		<BR />
