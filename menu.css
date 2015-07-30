@@ -93,7 +93,7 @@ body {
 		rgba(0, 0, 0, 0.3) 50%);
 	background-size: 100% 200%;
 	background-position-y: 100%;
-	transition: background-position 0.5s, height 500ms ease-in-out;
+	transition: all 500ms ease-in-out;
 }
 
 .meny li:hover {
