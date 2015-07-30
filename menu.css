@@ -99,11 +99,15 @@ body {
 .meny li:hover {
 	background-position-y: 0;
 }
-
+.meny li:hover>ul {
+	background-position-y: 0;
+	box-shadow: 0px 0px 20px;
+}
 .meny li>ul {
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
+	transition: all 500ms ease-in-out;
 }
 
 .meny li>ul>li {
