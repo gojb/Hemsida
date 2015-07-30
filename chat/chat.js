@@ -9,7 +9,7 @@ function connect() {
 	}
 	socket.onopen = function () {
 		var person = prompt("Vad heter du?", "");
-		Chat.socket.send(person);
+		et.send(person);
 		Console.log('Info: Anslutning Öppnad');
 		document.getElementById('knapp').setAttribute('disabled','disabled');
 		document.getElementById('chat').onkeydown = function(event) {
@@ -37,7 +37,7 @@ function connect() {
 function sendMessage() {
 	var message = document.getElementById('chat').value;
 	if (message != '') {
-		Chat.socket.send(message);
+		socket.send(message);
 		document.getElementById('chat').value = '';
 	}
 };
