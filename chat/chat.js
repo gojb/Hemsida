@@ -7,30 +7,31 @@ function connect() {
 	}  else {
 		Console.log('Error: WebSocket stöds inte.');
 	}
-};
+	socket.onopen = function () {
+		var person = prompt("Vad heter du?", "");
+		Chat.socket.send(person);
+		Console.log('Info: Anslutning Öppnad');
+		document.getElementById('knapp').setAttribute('disabled','disabled');
+		document.getElementById('chat').onkeydown = function(event) {
+			if (event.keyCode == 13) {
+				sendMessage();
+			}
+		};
+	};
 
-socket.onopen = function () {
-	var person = prompt("Vad heter du?", "");
-	Chat.socket.send(person);
-	Console.log('Info: Anslutning Öppnad');
-	document.getElementById('knapp').setAttribute('disabled','disabled');
-	document.getElementById('chat').onkeydown = function(event) {
-		if (event.keyCode == 13) {
-			sendMessage();
-		}
+	socket.onclose = function () {
+		document.getElementById('chat').onkeydown = null;
+		Console.log('Info: WebSocket stängd.');
+		document.getElementById('knapp').removeAttribute('disabled');
+	};
+
+	socket.onmessage = function (message) {
+		Console.log(message.data);
+
 	};
 };
 
-socket.onclose = function () {
-	document.getElementById('chat').onkeydown = null;
-	Console.log('Info: WebSocket stängd.');
-	document.getElementById('knapp').removeAttribute('disabled');
-};
 
-socket.onmessage = function (message) {
-	Console.log(message.data);
-
-};
 
 
 function sendMessage() {
