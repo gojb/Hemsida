@@ -35,10 +35,10 @@
 		<p id="6">
 			Den här sidan är skapad för senaste verisionen Google Chrome och vi kan inte garantera
 			att den funkar som den ska i andra webbläsare. Så om du inte redan
-			har Google Chrome,</p> <a id="7" 
+			har Google Chrome, <a id="7" 
 				href="https://www.google.se/chrome/browser/desktop/">ladda ner
 				det nu!</a>
-		
+		</p>
 	</div>
 </body>
 </html>
