@@ -49,6 +49,7 @@ $(document).ready(function(){
 	
 	$(".ChangeLang").click(function(){
 		$(".lang").css("display", "block")
+		trythisfunc();
 	});
 });
 
