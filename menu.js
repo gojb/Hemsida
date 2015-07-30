@@ -26,7 +26,7 @@ $(document).ready(function(){
 					console.log(cookie)
 				}
 				
-				if(cookie.toLowerCase()===($(".swe, .uk").children("p").text()).toLowerCase()){
+				if(cookie.toLowerCase()===($(".swe").children("p").text()).toLowerCase()){
 					console.log("wwqdsa");
 					console.log($(this).children("p").text().toLowerCase());
 				}
