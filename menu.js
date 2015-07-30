@@ -63,7 +63,8 @@ $(document).ready(function(){
 		              /*fortfarande 5*/"We can program Java and Web (CSS, JS, HTML and so on). We are not educated in this" +
 		              /*fortfarande 5*/", we have learnt it all from books and the internet",
 		              /*6*/"This page is created for the latest verision of Google Chrome and we" +
-		              /*fortfarande 6*/"can't guarantee that it works as it should in other browsers. So if you don't have it already, ",
+		              /*fortfarande 6*/"can't guarantee that it works as it should in other browsers. So if you don't have it already,  <a id='7'"+		
+		             "href='https://www.google.se/chrome/browser/desktop/'>ladda ner det nu!</a>",
 		              /*7*/"download Google Chrome now!"
 		              
 		              ]/*I htmlId är 0-3 i menu.html, 4-7 på startsidan*/
