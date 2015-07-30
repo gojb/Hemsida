@@ -19,6 +19,7 @@ $(document).ready(function(){
 
 				if(cookie.indexOf("=")!==-1){
 					console.log(cookieArray[i].substring(namn.length+1, cookieArray[i].length+1));
+					cookie=cookieArray[i].substring(namn.length+1, cookieArray[i].length+1);
 					console.log("= finns");
 				}else{
 					console.log("%c= finns <strong>INTE</strong>", "strong{font-weight: bold;}");
