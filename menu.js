@@ -74,9 +74,9 @@ $(document).ready(function(){
 		              /*fortfarande 6*/"<a href='https://www.google.se/chrome/browser/desktop/'>download Google Chrome now!</a>",
 		              /*7*/"You can here connect to GoJb's chat. The program uses websocket to comunicate with  our servers" +
 		              /*fortfarande 7*/" so you can chat with everyone that are online at the moment.",
-		              /*8*/"Programs"
-		              /*9*//*"<input type='text'placeholder='Enter your message here and press ENTER to send'"+*/
-	              /*fortfarande 9*//*"id='chat' /><button type='button' onclick='connect('english')' id='knapp'>Connect</button>"*/
+		              /*8*/"Programs",
+		              /*9*/"<input type='text'placeholder='Enter your message here and press ENTER to send'"+
+	              /*fortfarande 9"id='chat' /><button type='button' onclick='connect('english')' id='knapp'>Connect</button>"*/
 		              ]/*I htmlId är 0-3 i menu.html, 4-6 på startsidan, 7 är chat, 8 är "program" i menyn*/
 		for(var i = 0; i < htmlId.length; i++){
 			$("#"+i).html(htmlId[i]);
