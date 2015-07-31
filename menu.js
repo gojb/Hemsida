@@ -8,7 +8,6 @@ $(document).ready(function(){
 		});
 	});
 	function Cookie(CookieVar){
-		console.log("Cookies!!")
 		var namn = CookieVar+"=";
 		var elseAmount = 0;
 		cookieArray = document.cookie.split(";");
@@ -19,11 +18,9 @@ $(document).ready(function(){
 
 				if(cookie.indexOf("=")!==-1){
 					console.log(cookieArray[i].substring(namn.length+1, cookieArray[i].length+1));
-					cookie=cookieArray[i].substring(namn.length+1, cookieArray[i].length+1);
-					console.log("= finns");
+					cookie=cookieArray[i].substring(namn.length+1, cookieArray[i].length+1 + "   = finns");
 				}else{
-					console.log("%c= finns <strong>INTE</strong>", "strong{font-weight: bold;}");
-					console.log(cookie)
+					console.log("= finns inte  "+cookie);
 				}
 				if(cookie.toLowerCase()===($(".swe").children("p").text()).toLowerCase()){
 					console.log("Swe");
