@@ -3,7 +3,7 @@ var socket;
 
 function connect(lang) {
 	var language = lang;
-	if(language=='svenska'){
+//	if(language=='svenska'){
 	if ('WebSocket' in window) {
 		socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/");
 	}  else {
@@ -31,7 +31,7 @@ function connect(lang) {
 		Console.log(message.data);
 
 	};
-}
+//}
 	
 	/*if(lang=='english'){
 		if ('WebSocket' in window) {
