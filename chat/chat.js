@@ -58,7 +58,7 @@ $(document).ready(function(){
 
 		if(lang=='uk'){
 			if ('WebSocket' in window) {
-				socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/chat/");
+				socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/chat");
 			}  else {
 				Console.log('Error: WebSocket is not supported.');
 			}
