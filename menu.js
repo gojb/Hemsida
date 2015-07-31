@@ -76,7 +76,8 @@ $(document).ready(function(){
 		              /*fortfarande 7*/" so you can chat with everyone that are online at the moment.",
 		              /*8*/"Programs",
 		              /*9*/"<input type='text' placeholder='Enter a message and press ENTER to send' id='chat' /> <button type='button' " +
-		              " id='knapp'>Connect</button><button type='button' id='knapp2'> The sound is disabled</button>"
+		              /*fortfarande 9*/" id='knapp'>Connect</button><button type='button' id='knapp2'> The sound is disabled</button>",
+		              /*10*/"<h1>Error 404 - Page not found</h1><p>The page you are trying to reach can sadly not be found</p>"
 		              ]/*I htmlId är 0-3 i menu.html, 4-6 på startsidan, 7 är chat, 8 är "program" i menyn*/
 		for(var i = 0; i < htmlId.length; i++){
 			$("#"+i).html(htmlId[i]);

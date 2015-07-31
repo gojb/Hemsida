@@ -8,7 +8,7 @@
 	<div class="menu" id="menu">
 		<!--#include virtual="/menu.html" -->
 	</div>
-	<div class="middle">
+	<div class="middle" id=10>
 		<h1>Error 404 - Sidan hittades inte</h1>
 		<p>Sidan som du försökte nå kan tyvärr inte hittas</p>
 	</div>
