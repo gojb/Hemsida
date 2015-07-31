@@ -1,4 +1,4 @@
-
+$(document).ready(function(){
 var socket;
 
 function connect(lang) {
@@ -65,9 +65,7 @@ function connect(lang) {
 	}
 	
 }
-$("#knapp2").click(function(){
-	console.log("asds")
-});
+
 
 
 
@@ -137,3 +135,7 @@ function start(){
 	}
 }
 start();
+$("#knapp2").click(function(){
+	console.log("asds")
+});
+});
