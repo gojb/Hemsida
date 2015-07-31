@@ -1,5 +1,8 @@
 $(document).ready(function(){
 	console.log("wdflijbnsödijg");
+	$("#knapp2").click(function(){
+		console.log("asadsdsds")
+	});
 var socket;
 
 function connect(lang) {
@@ -136,7 +139,5 @@ function start(){
 	}
 }
 start();
-$("#knapp2").click(function(){
-	console.log("asadsdsds")
-});
+
 });
