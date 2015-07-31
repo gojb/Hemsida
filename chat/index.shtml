@@ -5,9 +5,9 @@
 <title>Chatt - GoJb Development</title>
 <link href=chat.css rel=stylesheet type=text/css>
 <link href=/index.css rel=stylesheet type=text/css>
+<script type="application/javascript" src="/chat.js"></script>
 <script type="text/javascript"
 	src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
-<script type="application/javascript" src="/chat.js"></script>
 </head>
 <body>
 	<div class="menu" id="menu">
