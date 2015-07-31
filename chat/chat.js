@@ -136,6 +136,6 @@ function start(){
 }
 start();
 $("#knapp2").click(function(){
-	console.log("asds")
+	console.log("asadsdsds")
 });
 });
