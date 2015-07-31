@@ -21,10 +21,10 @@
 			websocket för att kommunicera med våra servrar så att du kan chatta
 			med alla som är online för tillfället.</p>
 		<BR />
-		<p id="9">
+		<p >
 			<input type="text"
 				placeholder="Skriv meddelande och tryck på ENTER för att skicka"
-				id="chat" />
+				id="chat 9" />
 			<button type="button" onclick="connect()" id="knapp">Anslut</button>
 			<button type="button" onclick="sound()" id="knapp2">Ljudet
 				är av</button>
