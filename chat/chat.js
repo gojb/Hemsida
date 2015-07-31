@@ -28,7 +28,7 @@ $(document).ready(function(){
 	function connect(lang) {
 		if(lang=='swe'){
 			if ('WebSocket' in window) {
-				socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/");
+				socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/chat/");
 			}  else {
 				Console.log('Error: WebSocket stöds inte.');
 			}
@@ -58,7 +58,7 @@ $(document).ready(function(){
 
 		if(lang=='uk'){
 			if ('WebSocket' in window) {
-				socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/");
+				socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/chat/");
 			}  else {
 				Console.log('Error: WebSocket is not supported.');
 			}
