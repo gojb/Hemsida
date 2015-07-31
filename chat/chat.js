@@ -104,6 +104,7 @@ function playSound(){
 	document.getElementById('ljud').play();
 }
 function sound(lang){
+	consol.log("assdfsd");
 	var language=lang;
 	if(language=='svenska'){
 	if(document.getElementById('ljud').muted === false){
