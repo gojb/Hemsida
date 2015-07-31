@@ -24,13 +24,13 @@
 			<input type="text"
 				placeholder="Skriv meddelande och tryck på ENTER för att skicka"
 				id="chat" />
-			<button type="button" onclick="connect('svenska')" id="knapp">Anslut</button>
-			<button type="button" onclick="sound('svenska')" id="knapp2">Ljudet
-				är av</button>
+			<button type="button" id="knapp">Anslut</button>
+			<button type="button" id="knapp2">Ljudet är av</button>
 
 		</p>
 		<div id="console-container">
-			<div id="console" />
+			<div id="console">
+		</div>
 		</div>
 	</div>
 	<audio muted id="ljud">
