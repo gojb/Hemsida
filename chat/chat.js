@@ -33,7 +33,7 @@ function connect(lang) {
 	};
 }
 	
-	if(lang=='english'){
+	/*if(lang=='english'){
 		if ('WebSocket' in window) {
 			socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/");
 		}  else {
@@ -61,7 +61,7 @@ function connect(lang) {
 			Console.log(message.data);
 
 		};
-	}
+	}*/
 	
 }
 
@@ -115,7 +115,7 @@ function sound(lang){
 	}
 }
 	
-	/*if(lang=='english'){
+	if(lang=='english'){
 		if(document.getElementById('ljud').muted === false){
 			document.getElementById('knapp2').innerText = "The sound is disabled";
 			document.getElementById('ljud').muted = true;
@@ -124,7 +124,7 @@ function sound(lang){
 			document.getElementById('knapp2').innerText = "The sound is enabled";
 			document.getElementById('ljud').muted = false;
 		}
-	}*/
+	}
 	
 }
 function start(){
