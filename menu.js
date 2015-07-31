@@ -76,8 +76,8 @@ $(document).ready(function(){
 		              /*fortfarande 7*/" so you can chat with everyone that are online at the moment.",
 		              /*8*/"Programs",
 		              /*9*/"<input type='text'placeholder='Enter your message here and press ENTER to send'"+
-	              /*fortfarande 9*/"id='chat' /><button type='button' onclick='connect()' id='knapp'>Connect</button>"+
-	              /*fortfarande 9*/"<button type='button' onclick='sound()' id='knapp2'>The sound is off</button>"
+	              /*fortfarande 9*/"id='chat' /><button type='button' onclick='connect('english')' id='knapp'>Connect</button>"+
+	              /*fortfarande 9*/"<button type='button' onclick='sound('english')' id='knapp2'>The sound is off</button>"
 		              ]/*I htmlId är 0-3 i menu.html, 4-6 på startsidan, 7 är chat, 8 är "program" i menyn*/
 		for(var i = 0; i < htmlId.length; i++){
 			$("#"+i).html(htmlId[i]);

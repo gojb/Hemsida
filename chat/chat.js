@@ -1,7 +1,9 @@
 
 var socket;
 
-function connect() {
+function connect(lang) {
+	var lang = lang;
+	if(lang=='svenska'){
 	if ('WebSocket' in window) {
 		socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/");
 	}  else {
@@ -29,6 +31,38 @@ function connect() {
 		Console.log(message.data);
 
 	};
+}
+	
+	if(lang=='english'){
+		if ('WebSocket' in window) {
+			socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/");
+		}  else {
+			Console.log('Error: WebSocket is not supported.');
+		}
+		socket.onopen = function () {
+			var person = prompt("What's your name?", "");
+			socket.send(person);
+			Console.log('Info: Connection opened');
+			document.getElementById('knapp').setAttribute('disabled','disabled');
+			document.getElementById('chat').onkeydown = function(event) {
+				if (event.keyCode == 13) {
+					sendMessage();
+				}
+			};
+		};
+
+		socket.onclose = function () {
+			document.getElementById('chat').onkeydown = null;
+			Console.log('Info: WebSocket closed.');
+			document.getElementById('knapp').removeAttribute('disabled');
+		};
+
+		socket.onmessage = function (message) {
+			Console.log(message.data);
+
+		};
+	}
+	
 };
 
 
@@ -65,7 +99,9 @@ function playSound(){
 
 	document.getElementById('ljud').play();
 }
-function sound(){
+function sound(lang){
+	var lang=lang;
+	if(lang=='svenska'){
 	if(document.getElementById('ljud').muted == false){
 		document.getElementById('knapp2').innerText = "Ljudet är av";
 		document.getElementById('ljud').muted = true;
@@ -74,6 +110,19 @@ function sound(){
 		document.getElementById('knapp2').innerText = "Ljudet är på";
 		document.getElementById('ljud').muted = false;
 	}
+}
+	
+	if(lang=='english'){
+		if(document.getElementById('ljud').muted == false){
+			document.getElementById('knapp2').innerText = "The sound is disabled";
+			document.getElementById('ljud').muted = true;
+		}
+		else{
+			document.getElementById('knapp2').innerText = "The sound is enabled";
+			document.getElementById('ljud').muted = false;
+		}
+	}
+	
 }
 function start(){
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {

@@ -25,8 +25,8 @@
 			<input type="text"
 				placeholder="Skriv meddelande och tryck på ENTER för att skicka"
 				id="chat" />
-			<button type="button" onclick="connect()" id="knapp">Anslut</button>
-			<button type="button" onclick="sound()" id="knapp2">Ljudet
+			<button type="button" onclick="connect('svenska')" id="knapp">Anslut</button>
+			<button type="button" onclick="sound('svenska')" id="knapp2">Ljudet
 				är av</button>
 
 		</p>
