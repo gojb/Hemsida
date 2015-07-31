@@ -81,9 +81,8 @@ $(document).ready(function(){
 			};
 
 			socket.onmessage = function (message) {
-				Console.log(message.data);
 				console.log(message+" <-- message")
-
+				Console.log(message.data);
 			};
 		}
 
