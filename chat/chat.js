@@ -57,7 +57,6 @@ $(document).ready(function(){
 		}
 
 		if(lang=='uk'){
-			console.log("sasd")
 			if ('WebSocket' in window) {
 				socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/");
 			}  else {
@@ -127,7 +126,6 @@ $(document).ready(function(){
 		document.getElementById('ljud').play();
 	}
 	function sound(lang){
-		consol.log("assdfsd");
 		if(lang=='swe'){
 			if(document.getElementById('ljud').muted === false){
 				document.getElementById('knapp2').innerText = "Ljudet är av";
