@@ -83,9 +83,6 @@ $(document).ready(function(){
 			$("#"+i).html(htmlId[i]);
 		}
 	}
-	$("#knapp2").click(function(){
-		console.log("asds")
-	});
 });
 
 //function setCookie(name, value, exdays) {
