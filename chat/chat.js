@@ -65,7 +65,9 @@ function connect(lang) {
 	}
 	
 }
-
+$("#knapp2").click(function(){
+	console.log("asds")
+});
 
 
 
