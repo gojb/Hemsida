@@ -36,7 +36,7 @@ function connect(lang) {
 	if(lang=='english'){
 		console.log("sasd")
 		if ('WebSocket' in window) {
-			socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/");
+			socket = new WebSocket("ws://chat.gojb.bl.ee:8000/chat");
 		}  else {
 			Console.log('Error: WebSocket is not supported.');
 		}
