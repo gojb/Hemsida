@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	console.log("wdflijbnsödijg");
-	
+
 	$("#knapp").click(function(){ /*Anslut */
 		if($("#knapp2").text().length<16){
 			//Svenska
@@ -11,7 +11,7 @@ $(document).ready(function(){
 			connect("uk");
 		}
 	});
-	
+
 	$("#knapp2").click(function(){ /*Ljud på/av */
 		if($("#knapp2").text().length<16){
 			//Svenska
@@ -22,7 +22,7 @@ $(document).ready(function(){
 			sound("uk");
 		}
 	});
-	
+
 	var socket;
 
 	function connect(lang) {
@@ -88,9 +88,6 @@ $(document).ready(function(){
 
 	}
 
-
-
-
 	function sendMessage() {
 		var message = document.getElementById('chat').value;
 		if (message !== '') {
@@ -116,7 +113,7 @@ $(document).ready(function(){
 		document.title = "Nytt meddelande";
 		playSound();
 		setTimeout(function(){
-			document.title = title;
+			document.title = title
 		},3000);
 
 	});
