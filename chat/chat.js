@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	console.log("wdflijbnsödijg");
 var socket;
 
 function connect(lang) {
