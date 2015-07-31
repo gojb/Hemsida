@@ -82,6 +82,7 @@ $(document).ready(function(){
 
 			socket.onmessage = function (message) {
 				Console.log(message.data);
+				console.log(message+" <-- message")
 
 			};
 		}
@@ -113,7 +114,7 @@ $(document).ready(function(){
 		document.title = "Nytt meddelande";
 		playSound();
 		setTimeout(function(){
-			document.title = title
+			document.title = title;
 		},3000);
 
 	});
