@@ -105,7 +105,7 @@ function playSound(){
 }
 function sound(lang){
 	var language=lang;
-	if(language=='svenska'){
+//	if(language=='svenska'){
 	if(document.getElementById('ljud').muted === false){
 		document.getElementById('knapp2').innerText = "Ljudet är av";
 		document.getElementById('ljud').muted = true;
@@ -114,9 +114,9 @@ function sound(lang){
 		document.getElementById('knapp2').innerText = "Ljudet är på";
 		document.getElementById('ljud').muted = false;
 	}
-}
+//}
 	
-	if(lang=='english'){
+	/*if(lang=='english'){
 		if(document.getElementById('ljud').muted === false){
 			document.getElementById('knapp2').innerText = "The sound is disabled";
 			document.getElementById('ljud').muted = true;
@@ -125,7 +125,7 @@ function sound(lang){
 			document.getElementById('knapp2').innerText = "The sound is enabled";
 			document.getElementById('ljud').muted = false;
 		}
-	}
+	}*/
 	
 }
 function start(){
