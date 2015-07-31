@@ -74,7 +74,7 @@ $(document).ready(function(){
 		              /*fortfarande 6*/"<a href='https://www.google.se/chrome/browser/desktop/'>download Google Chrome now!</a>",
 		              /*7*/"You can here connect to GoJb's chat. The program uses websocket to comunicate with  our servers" +
 		              /*fortfarande 7*/" so you can chat with everyone that are online at the moment.",
-		              /*8*/"Programs"
+		              /*8*/"Programs",
 		              /*9*/"<input type='text'placeholder='Enter your message here and press ENTER to send'"
 	              /*fortfarande 9*/"id='chat' />"/*<button type='button' onclick='connect()' id='knapp'>Connect</button>"+*/
 //		              /*fortfarande 9*/"<button type='button' onclick='sound()' id='knapp2'>The sound is off</button>"
