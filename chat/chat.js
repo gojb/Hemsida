@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	console.log("wdflijbnsödijg");
 	$("#knapp2").click(function(){
-		console.log("asadsdsds")
+		console.log($(this).text())
 	});
 var socket;
 
