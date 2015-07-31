@@ -12,7 +12,7 @@ function connect() {
 		socket.send(person);
 		Console.log('Info: Anslutning Öppnad');
 		document.getElementById('knapp').setAttribute('disabled','disabled');
-		document.getElementById('chat').onkeydown = function(event) {
+		document.getElementById('9').onkeydown = function(event) {
 			if (event.keyCode == 13) {
 				sendMessage();
 			}
@@ -20,7 +20,7 @@ function connect() {
 	};
 
 	socket.onclose = function () {
-		document.getElementById('chat').onkeydown = null;
+		document.getElementById('9').onkeydown = null;
 		Console.log('Info: WebSocket stängd.');
 		document.getElementById('knapp').removeAttribute('disabled');
 	};
@@ -35,10 +35,10 @@ function connect() {
 
 
 function sendMessage() {
-	var message = document.getElementById('chat').value;
+	var message = document.getElementById('9').value;
 	if (message != '') {
 		socket.send(message);
-		document.getElementById('chat').value = '';
+		document.getElementById('9').value = '';
 	}
 };
 
