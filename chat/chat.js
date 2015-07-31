@@ -2,8 +2,8 @@
 var socket;
 
 function connect(lang) {
-	var lang = lang;
-	if(lang=='svenska'){
+	var language = lang;
+	if(language=='svenska'){
 	if ('WebSocket' in window) {
 		socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/");
 	}  else {
@@ -63,24 +63,25 @@ function connect(lang) {
 		};
 	}
 	
-};
+}
 
 
 
 
 function sendMessage() {
 	var message = document.getElementById('chat').value;
-	if (message != '') {
+	if (message !== '') {
 		socket.send(message);
 		document.getElementById('chat').value = '';
 	}
-};
+}
 
 var Console = {};
 
 Console.log = (function(message) {	
 	var console = document.getElementById('console');
 	var p = document.createElement('p');
+	
 	p.style.wordWrap = 'break-word';
 	p.innerHTML = message;
 	console.appendChild(p);
@@ -91,7 +92,9 @@ Console.log = (function(message) {
 	var title = document.title;
 	document.title = "Nytt meddelande";
 	playSound();
-	setTimeout(function(){document.title = title},3000);
+	setTimeout(function(){
+    document.title = title;
+  },3000);
 
 });
 
@@ -100,9 +103,9 @@ function playSound(){
 	document.getElementById('ljud').play();
 }
 function sound(lang){
-	var lang=lang;
-	if(lang=='svenska'){
-	if(document.getElementById('ljud').muted == false){
+	var language=lang;
+	if(language=='svenska'){
+	if(document.getElementById('ljud').muted === false){
 		document.getElementById('knapp2').innerText = "Ljudet är av";
 		document.getElementById('ljud').muted = true;
 	}
@@ -113,7 +116,7 @@ function sound(lang){
 }
 	
 	if(lang=='english'){
-		if(document.getElementById('ljud').muted == false){
+		if(document.getElementById('ljud').muted === false){
 			document.getElementById('knapp2').innerText = "The sound is disabled";
 			document.getElementById('ljud').muted = true;
 		}
@@ -130,5 +133,3 @@ function start(){
 	}
 }
 start();
-
-
