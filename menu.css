@@ -2,30 +2,6 @@
 	font-family: Bitter, serif;
 }
 
-.langList {
-	list-style: none;
-	margin-left: -10%;
-}
-
-.uk:hover>p {
-	text-shadow: 0 0 4px #17B6B0;
-}
-
-.langSelect {
-	width: auto;
-	font-size: 115%;
-	font-weight: bold;
-	margin: 2% 22%;
-	/* position: fixed; */
-}
-
-.uk>p {
-	vertical-align: middle;
-	margin: 39% 17%;
-	color: #FFFFFF;
-	font-size: 130%;
-}
-
 html {
 	height: 100%;
 }
@@ -40,6 +16,7 @@ body {
 	height: 90px;
 	background-color: rgba(58, 163, 158, 0.1);
 	padding: 0 2%;
+	overflow: hidden;
 }
 
 .logo {
@@ -73,8 +50,8 @@ body {
 }
 
 .ChangeLang:hover {
-    box-shadow: 0 0 2px;
-    text-shadow: 0 0 1px #083838;
+	box-shadow: 0 0 2px;
+	text-shadow: 0 0 1px #083838;
 }
 
 .meny {
@@ -184,6 +161,30 @@ body {
 .uk {
 	/* outline: 2px solid black; */
 	
+}
+
+.langList {
+	list-style: none;
+	margin-left: -10%;
+}
+
+.uk:hover>p {
+	text-shadow: 0 0 4px #17B6B0;
+}
+
+.langSelect {
+	width: auto;
+	font-size: 115%;
+	font-weight: bold;
+	margin: 2% 22%;
+	/* position: fixed; */
+}
+
+.uk>p {
+	vertical-align: middle;
+	margin: 39% 17%;
+	color: #FFFFFF;
+	font-size: 130%;
 }
 
 .middle {
