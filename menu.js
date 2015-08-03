@@ -8,7 +8,9 @@ $(document).ready(function(){
 			}
 		});
 	});
-	$(window).resize(res());
+	$(window).resize(function () {
+		res();
+	});
 	function res(){
 		console.log("adftg");
 		var element = document.querySelector('.header');
