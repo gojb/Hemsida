@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	res();
 	$(function linkActive() {
 		$(".meny a").each(function() {
 			if (window.location.href == (this.href)) {
@@ -8,6 +9,9 @@ $(document).ready(function(){
 		});
 	});
 	$(window).resize(function () {
+		res();
+	});
+	function res(){
 		console.log("adftg");
 		var element = document.querySelector('.header');
 		$('body').addClass("bred");
@@ -22,7 +26,7 @@ $(document).ready(function(){
 			// your element has overflow
 			$('body').removeClass("smal");
 		}
-	});
+	}
 	function Cookie(CookieVar){
 		var namn = CookieVar+"=";
 		var elseAmount = 0;
