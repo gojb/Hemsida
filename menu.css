@@ -19,8 +19,7 @@ body {
 	overflow: hidden;
 }
 
-.logo {
-	height: 70px;
+.bred { .logo { height:70px;
 	width: 70px;
 	margin: 10px;
 	float: left;
@@ -187,6 +186,7 @@ body {
 	font-size: 130%;
 }
 
+}
 .middle {
 	width: 85%;
 	margin: 20px auto;
