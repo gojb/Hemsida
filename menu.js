@@ -9,7 +9,7 @@ $(document).ready(function(){
 	});
 	$(window).resize(function () {
 		console.log("adftg");
-		var element = $('.header');
+		var element = document.querySelector('.header');
 		if( (element.offsetHeight < element.scrollHeight) || (element.
 				offsetWidth < element.scrollWidth)){
 			element.addClass("smal");
