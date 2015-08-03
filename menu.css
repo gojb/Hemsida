@@ -18,7 +18,9 @@ body {
 	padding: 0 2%;
 	overflow: hidden;
 }
-
+.bred .menuKnapp{
+	display: none;
+}
 .bred .logo {
 	height: 70px;
 	width: 70px;
@@ -233,7 +235,7 @@ body {
 }
 .smal .menuKnapp{
 	background-color: gray;
-	float: right;
+	float: left;
 	height: 100%;
 	width: 120px;
 }
