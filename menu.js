@@ -10,16 +10,17 @@ $(document).ready(function(){
 	$(window).resize(function () {
 		console.log("adftg");
 		var element = document.querySelector('.header');
+		$('.body').addClass("bred");
 		if( (element.offsetHeight < element.scrollHeight) || (element.
 				offsetWidth < element.scrollWidth)){
-			$('.header').addClass("smal");
+			$('.body').addClass("smal");
 			// your element has overflow
-			$('.header').removeClass("bred");
+			$('.body').removeClass("bred");
 		}
 		else{
-			$('.header').addClass("bred");
+			$('.body').addClass("bred");
 			// your element has overflow
-			$('.header').removeClass("smal");
+			$('.body').removeClass("smal");
 		}
 	});
 	function Cookie(CookieVar){
