@@ -12,14 +12,14 @@ $(document).ready(function(){
 		var element = document.querySelector('.header');
 		if( (element.offsetHeight < element.scrollHeight) || (element.
 				offsetWidth < element.scrollWidth)){
-			element.addClass("smal");
+			$('.header').addClass("smal");
 			// your element has overflow
-			element.removeClass("bred");
+			$('.header').removeClass("bred");
 		}
 		else{
-			element.addClass("bred");
+			$('.header').addClass("bred");
 			// your element has overflow
-			element.removeClass("smal");
+			$('.header').removeClass("smal");
 		}
 	});
 	function Cookie(CookieVar){
