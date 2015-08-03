@@ -231,6 +231,9 @@ body {
 .smal .header{
 	padding-left: 0;
 }
-.smal .menyKnapp{
-	background-color: black;
+.smal .menuKnapp{
+	background-color: gray;
+	float: right;
+	height: 100%;
+	width: 120px;
 }
