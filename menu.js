@@ -143,8 +143,10 @@ $(document).ready(function(){
 		}
 	});
 	$("li").click(function(){
+		if(location.href=$(this).children("a").attr("href")!=="#"){
 		location.href=$(this).children("a").attr("href");
-		if(location.href=$(this).children("a").attr("href")==="#"){
+		}
+		else{
 			$(this).children("ul").css("display", "block");
 		}
 	});
