@@ -250,7 +250,7 @@ body {
 	display: none;
 }
 .smal a {
-	color: rgba(58, 163, 158, 0.7);
+	color: rgba(58, 163, 158, 0.5);
 	text-decoration: none;
 	transition: 300ms all ease-in-out;
 }
