@@ -16,7 +16,10 @@ $(document).ready(function(){
 	function res(){
 		console.log("adftg");
 		var element = document.querySelector('.header');
-		$('body').addClass("bred");
+		$('body').addClass("bred");¨
+		$('.header').each(function{
+			console.log(this);
+		});
 		if( (element.offsetHeight < element.scrollHeight) || (element.
 				offsetWidth < element.scrollWidth)){
 			$('body').addClass("smal");
