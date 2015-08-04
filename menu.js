@@ -16,7 +16,7 @@ $(document).ready(function(){
 	function res(){
 		console.log("adftg");
 		var element = document.querySelector('.header');
-		$('body').addClass("bred");¨
+		$('body').addClass("bred");
 		$('.header').each(function{
 			console.log(this);
 		});
