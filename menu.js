@@ -145,7 +145,7 @@ $(document).ready(function(){
 	});
 	$("li").click(function(){
 		if(location.href=$(this).children("a").attr("href")!=="#"){
-		location.href=$(this).children("a").attr("href");
+//		location.href=$(this).children("a").attr("href");
 		console.log("true");
 		}
 		else{
