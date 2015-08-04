@@ -107,10 +107,10 @@ $(document).ready(function(){
 	}
 	
 	$('.menuKnapp').click(function(){
-		$('.menuKnapp').animate({
+		$('.meny').animate({
             left: '+=250'
         },200);
-        $('body').animate({
+        $('.body').animate({
            left: '+=250' 
         }, 300);
 	});
