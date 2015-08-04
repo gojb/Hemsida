@@ -107,7 +107,12 @@ $(document).ready(function(){
 	}
 	
 	$('.menuKnapp').click(function(){
-		console.log("Clickinginrensdoafln")
+		$('.menuKnapp').animate({
+            left: '0px'
+        },200);
+        $('body').animate({
+           left: '250px' 
+        }, 300);
 	});
 	
 	
