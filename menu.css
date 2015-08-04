@@ -210,21 +210,35 @@ body {
 }
 
 .smal .meny {
-	background-color: rgba(0, 0, 0, 0.8);
+	background: rgba(0, 0, 0, 0.8) url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
 	text-decoration: none;
 	color: black;
 	height: 100%;
 	width: 250px;
 	position: fixed;
-	left: -250px;
+	left: 0;
 }
-
-.smal ul {
+.smal .meny>ul{
+	height: 50px;
 	list-style: none;
 }
-
+.smal .meny>ul>li {
+	height:100%;
+	border-top: 1px solid #636366;
+	margin-left: -17%;
+	padding-top: 10%;
+	margin-right: 5%;
+}
+.smal .meny>ul>li:last-child {
+	border-bottom: 1px solid #636366;
+}
+.smal .meny>ul>li>ul {
+	list-style: none;
+	display: none;
+}
 .smal a {
 	color: rgb(58, 163, 158);
+	text-decoration: none;
 }
 
 .smal .ChangeLang {

@@ -127,13 +127,15 @@ $(document).ready(function(){
         }, 200);
 	}
 	});
-	$('#8').click(function(){
+	$('.smal').click(function(){
+		if($('.meny').css("left")==="0px"){
 		$('.meny').animate({
             left: '-=250'
         },300);
         $('.smal').animate({
            left: '-=250' 
         }, 200);
+		}
 	});
 	
 });
