@@ -1,5 +1,7 @@
 $(document).ready(function(){
 	res();
+	$('.smal .meny').css("left", "-250px");
+	$('.smal').css("left", "0");
 	$(function linkActive() {
 		$(".meny a").each(function() {
 			if (window.location.href == (this.href)) {
