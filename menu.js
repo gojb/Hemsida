@@ -11,10 +11,10 @@ $(document).ready(function(){
 	$('.smal').css("left", "0");
 	$(function linkActive() {
 		$(".meny a").each(function() {
-//			if (window.location.href == (this.href)) {
-//				$(this).addClass("active");
-//				$(this).parents("ul").siblings("a").addClass("active");
-//			}
+			if (window.location.href == (this.href)) {
+				$(this).addClass("active");
+				$(this).parents("ul").siblings("a").addClass("active");
+			}
 		});
 	});
 	$(window).resize(function () {
