@@ -115,7 +115,7 @@ $(document).ready(function(){
            left: '+=250' 
         }, 200);
 	}
-	});
+	
 	else{
 		$('.meny').animate({
             left: '-=250'
@@ -124,7 +124,7 @@ $(document).ready(function(){
            left: '-=250' 
         }, 300);
 	}
-	
+	});
 	$('#8').click(function(){
 		$('.meny').animate({
             left: '-=250'
