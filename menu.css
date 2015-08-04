@@ -18,9 +18,11 @@ body {
 	padding: 0 2%;
 	overflow: hidden;
 }
-.bred .menuKnapp{
+
+.bred .menuKnapp {
 	display: none;
 }
+
 .bred .logo {
 	height: 70px;
 	width: 70px;
@@ -188,6 +190,9 @@ body {
 	color: #FFFFFF;
 	font-size: 130%;
 }
+.bred .stängKnapp{
+	display:none;
+}
 
 .middle {
 	width: 85%;
@@ -197,7 +202,8 @@ body {
 	border-radius: 30px;
 	min-height: calc(100% - 170px);
 }
-.smal .logo{
+
+.smal .logo {
 	height: 70px;
 	width: 70px;
 	margin: 10px;
@@ -205,35 +211,71 @@ body {
 	background: url(images/rect8147.png) no-repeat;
 	background-size: cover;
 }
-.smal .meny{
-	background-color: rgba(0,0,0,0.3);
+
+.smal .meny {
+	background: rgba(0, 0, 0, 0.8) url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
 	text-decoration: none;
 	color: black;
-	height: 100%;
+	height: 200%;
 	width: 250px;
-	position: absolute;
-	margin-left: -250px;
-}
-.smal ul{
-	list-style: none;
+	position: fixed;
+	left: -250px;
 	
 }
-.smal a{
+.smal .stängKnapp{
+	content: url("/images/X.png");
+	display: block;
+	height: 30px;
+	width: 30px;
+	cursor: crosshair
+}
+.smal .meny>ul{
+	height: 50px;
+	list-style: none;
+}
+.smal .meny>ul>li {
+	height:100%;
+	border-top: 1px solid #636366;
+	margin-left: -17%;
+	padding-top: 10%;
+	margin-right: 5%;
+}
+.smal .meny>ul>li:first-child {
+	border-top: none;
+}
+.smal .meny>ul>li>ul {
+	list-style: none;
+	display: none;
+}
+.smal a {
+	color: rgba(10, 10, 20, 0.7);
+	text-decoration: none;
+}
+.smal a.active{
 	color: rgb(58, 163, 158);
 }
-.smal .ChangeLang{
+.smal li:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+.smal .ChangeLang {
 	display: none;
 }
-.smal .lang{
+
+.smal .lang {
 	display: none;
 }
-.smal .rubrik{
+
+.smal .rubrik {
 	float: right;
+	text-indent: -9999px;
 }
-.smal .header{
+
+.smal .header {
 	padding-left: 0;
 }
-.smal .menuKnapp{
+
+.smal .menuKnapp {
 	background-color: rgba(195, 214, 234, 0.41);
 	float: left;
 	height: 100%;
@@ -241,7 +283,14 @@ body {
 }
 
 .smal .menuKnapp>p {
-    vertical-align: middle;
-    text-align: center;
-    margin-top: 25%;
+	vertical-align: middle;
+	text-align: center;
+	margin-top: 25%;
+}
+
+.smal {
+	left: 0;
+	margin: 0;
+	overflow: hidden;
+	position: relative;
 }

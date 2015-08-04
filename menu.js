@@ -62,7 +62,7 @@ $(document).ready(function(){
 			}
 		}
 	}
-	
+
 	$(".swe, .uk").click(function(){
 		var chosenLang = $(this).children("p").text();
 		var date = new Date();
@@ -105,16 +105,37 @@ $(document).ready(function(){
 			$("#"+i).html(htmlId[i]);
 		}
 	}
-	
+
 	$('.menuKnapp').click(function(){
-		$('.meny').animate({
-            left: '+=250'
-        },200);
-        $('.body').animate({
-           left: '+=250' 
-        }, 300);
+		console.log($('.meny').css("left"));
+		console.log($('.meny').css("left")+" <? "+50)
+		if($('.meny').css("left")==="-250px"){
+			$('.meny').animate({
+				left: '+=250'
+			},200);
+			$('.smal').animate({
+				left: '+=250' 
+			}, 300);
+		}
+
+		else{
+			$('.meny').animate({
+				left: '-=250'
+			},300);
+			$('.smal').animate({
+				left: '-=250' 
+			}, 200);
+		}
 	});
-	
-	
-	
+	$(".middle").click(function(){
+		if($('.meny').css("left")==="0px"){
+				$('.meny').animate({
+					left: '-=250'
+				},300);
+				$('.smal').animate({
+					left: '-=250' 
+				}, 200);
+		}
+	});
+
 });

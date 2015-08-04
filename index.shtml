@@ -22,7 +22,7 @@
 <link href=index.css rel=stylesheet type="text/css">
 </head>
 
-<body class="body">
+<body>
 	<!--#include virtual="/menu.html" -->
 	<div class="middle">
 		<h1 id="4">Välkommen till GoJb Developments officiella hemsida!</h1>
