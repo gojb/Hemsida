@@ -140,7 +140,7 @@ $(document).ready(function(){
 		}
 	});
 	$("li").click(function(){
-		location.href($(this).children("a").attr("href"));
+		location.href=$(this).children("a").attr("href");
 	});
 
 });
