@@ -142,13 +142,8 @@ $(document).ready(function(){
 				}, 200);
 		}
 	});
-	$("#0").click(function(){
-		console.log("asdds");
-		window.location.href="/";
-	});
-	$("#3").click(function(){
-		console.log("sdaodsa")
-		window.location.href="/OmOss";
+	$(".meny>ul>li").click(function(){
+		console.log($(this).children().attr("href"));
 	});
 
 });
