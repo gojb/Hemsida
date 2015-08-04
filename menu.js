@@ -142,15 +142,11 @@ $(document).ready(function(){
 				}, 200);
 		}
 	});
-//	$("li").click(function(){
-//		if(location.href=$(this).children("a").attr("href")!=="#"){
-//		location.href=$(this).children("a").attr("href");
-//		console.log("true");
-//		}
-//		else{
-//			$(this).children("ul").css("display", "block");
-//			
-//		}
-//	});
+	$("#0").click(function(){
+		window.location.href="/"
+	});
+	$("#3").click(function(){
+		window.location.href="/OmOss"
+	});
 
 });
