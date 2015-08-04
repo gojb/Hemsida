@@ -35,7 +35,6 @@ $(document).ready(function(){
 			if(cookieArray[i].indexOf(namn)!==-1){
 
 				var cookie = cookieArray[i].substring(namn.length, cookieArray[i].length+1);
-				console.log(cookie);
 
 				if(cookie.indexOf("=")!==-1){
 					console.log(cookieArray[i].substring(namn.length+1, cookieArray[i].length+1 + "   = finns"));
@@ -52,9 +51,7 @@ $(document).ready(function(){
 					englishLang();
 				}
 				else{
-					console.log("ERROR with cookie  ")
-					console.log(cookie.toLowerCase()+"   "+($(".uk").children("p").text()).toLowerCase())
-					console.log(cookie)
+					console.log("ERROR with cookie  ");
 				}
 			}else {
 				elseAmount++;
@@ -65,6 +62,7 @@ $(document).ready(function(){
 			}
 		}
 	}
+	
 	$(".swe, .uk").click(function(){
 		var chosenLang = $(this).children("p").text();
 		var date = new Date();
@@ -107,4 +105,11 @@ $(document).ready(function(){
 			$("#"+i).html(htmlId[i]);
 		}
 	}
+	
+	$('.menuKnapp').click(function(){
+		console.log("Clickinginrensdoafln")
+	});
+	
+	
+	
 });
