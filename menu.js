@@ -108,10 +108,10 @@ $(document).ready(function(){
 	
 	$('.menuKnapp').click(function(){
 		$('.menuKnapp').animate({
-            left: '0px'
+            left: '+=250'
         },200);
         $('body').animate({
-           left: '250px' 
+           left: '+=250' 
         }, 300);
 	});
 	
