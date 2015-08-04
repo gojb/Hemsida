@@ -112,10 +112,10 @@ $(document).ready(function(){
 		if($('.meny').css("left")==="-250px"){
 		$('.meny').animate({
             left: '+=250'
-        },300);
+        },200);
         $('.smal').animate({
            left: '+=250' 
-        }, 200);
+        }, 300);
 	}
 	
 	else{
@@ -124,7 +124,7 @@ $(document).ready(function(){
         },300);
         $('.smal').animate({
            left: '-=250' 
-        }, 300);
+        }, 200);
 	}
 	});
 	$('#8').click(function(){
@@ -133,7 +133,7 @@ $(document).ready(function(){
         },300);
         $('.smal').animate({
            left: '-=250' 
-        }, 300);
+        }, 200);
 	});
 	
 });
