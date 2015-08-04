@@ -1,4 +1,9 @@
 $(document).ready(function(){
+	var bredd;
+	$('body').addClass("bred");
+	$('.header').children().each(function(){
+		console.log($(this).outerWidth(true));
+	});
 	res();
 	$('.smal .meny').css("left", "-250px");
 	$('.smal').css("left", "0");
@@ -15,11 +20,10 @@ $(document).ready(function(){
 	});
 	function res(){
 		console.log("adftg");
+		console.log("bredd: "+bredd);
 		var element = document.querySelector('.header');
+		console.log("header"+$(".header").outerWidth());
 		$('body').addClass("bred");
-		$('.header').children().each(function(){
-			console.log($(this).outerWidth(true));
-		});
 		if( (element.offsetHeight < element.scrollHeight) || (element.
 				offsetWidth < element.scrollWidth)){
 			$('body').addClass("smal");
