@@ -109,8 +109,6 @@ $(document).ready(function(){
 	}
 
 	$('.menuKnapp').click(function(){
-		console.log($('.meny').css("left"));
-		console.log($('.meny').css("left")+" <? "+50)
 		if($('.meny').css("left")==="-250px"){
 			$('.meny').animate({
 				left: '0'
@@ -141,6 +139,9 @@ $(document).ready(function(){
 	});
 	$("li").click(function(){
 		location.href=$(this).children("a").attr("href");
+		if(location.href=$(this).children("a").attr("href")==="#"){
+			$(this).children("ul").css("display", "block");
+		}
 	});
 
 });
