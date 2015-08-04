@@ -143,10 +143,10 @@ $(document).ready(function(){
 		}
 	});
 	$("#0").click(function(){
-		window.location.href="/"
+		window.location.href="/";
 	});
 	$("#3").click(function(){
-		window.location.href="/OmOss"
+		window.location.href="/OmOss";
 	});
 
 });
