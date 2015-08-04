@@ -1,4 +1,3 @@
-$('body').addClass("bred");
 $(document).ready(function(){
 	var bredd=0;
 	$('.header').children().each(function(){
