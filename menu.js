@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var bredd;
+	var bredd=0;
 	$('body').addClass("bred");
 	$('.header').children().each(function(){
 		console.log($(this).outerWidth(true));
