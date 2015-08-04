@@ -18,7 +18,7 @@ $(document).ready(function(){
 		var element = document.querySelector('.header');
 		$('body').addClass("bred");
 		$('.header').children().each(function(){
-			console.log(this);
+			console.log($(this).outerWidth(true));
 		});
 		if( (element.offsetHeight < element.scrollHeight) || (element.
 				offsetWidth < element.scrollWidth)){
