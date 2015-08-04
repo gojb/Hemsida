@@ -210,7 +210,7 @@ body {
 }
 
 .smal .meny {
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.8);
 	text-decoration: none;
 	color: black;
 	height: 100%;
@@ -257,7 +257,7 @@ body {
 	margin-top: 25%;
 }
 
-.smal .body {
+.smal {
 	left: 0;
 	margin: 0;
 	overflow: hidden;
