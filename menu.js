@@ -1,8 +1,9 @@
 $(document).ready(function(){
-	var bredd;
+	var bredd=0;
 	$('body').addClass("bred");
 	$('.header').children().each(function(){
 		console.log($(this).outerWidth(true));
+		bredd+=$(this).width();
 	});
 	res();
 	$('.smal .meny').css("left", "-250px");
