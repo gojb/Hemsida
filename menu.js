@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	var bredd=0;
 	$('.header').children().each(function(){
-		console.log($(this).outerWidth(true));
+		console.log($(this).attr("class") + "  " +$(this).outerWidth(true));
 		bredd+=$(this).outerWidth(true);
 	});
 	console.log("TOTALT" + bredd);
