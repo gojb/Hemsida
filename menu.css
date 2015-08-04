@@ -216,7 +216,7 @@ body {
 	height: 100%;
 	width: 250px;
 	position: fixed;
-	left: 0;
+	left: -250px;
 }
 .smal .meny>ul{
 	height: 50px;
