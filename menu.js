@@ -129,12 +129,15 @@ $(document).ready(function(){
 	});
 	$('.smal').click(function(){
 		if($('.meny').css("left")==="0px"){
+			if($(".menuKnapp").click){}
+			else{
 		$('.meny').animate({
             left: '-=250'
         },300);
         $('.smal').animate({
            left: '-=250' 
         }, 200);
+		}
 		}
 	});
 	
