@@ -190,6 +190,9 @@ body {
 	color: #FFFFFF;
 	font-size: 130%;
 }
+.bred .stängKnapp{
+	display:none;
+}
 
 .middle {
 	width: 85%;
@@ -217,6 +220,9 @@ body {
 	width: 250px;
 	position: fixed;
 	left: -250px;
+}
+.smal .stängKnapp{
+	background-image: url("images/X.png")
 }
 .smal .meny>ul{
 	height: 50px;
