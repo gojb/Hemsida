@@ -108,7 +108,8 @@ $(document).ready(function(){
 	
 	$('.menuKnapp').click(function(){
 		console.log($('.meny').css("left"));
-		if($('.meny').css("left")>50){
+		console.log($('.meny').css("left")+" <? "+50))
+		if($('.meny').css("left")==="-250px"){
 		$('.meny').animate({
             left: '+=250'
         },300);
