@@ -35,11 +35,13 @@ $(document).ready(function(){
 			if(cookieArray[i].indexOf(namn)!==-1){
 
 				var cookie = cookieArray[i].substring(namn.length, cookieArray[i].length+1);
-				console.log(cookieArray[i]);
+				console.log(cookie);
+
 				if(cookie.indexOf("=")!==-1){
 					console.log(cookieArray[i].substring(namn.length+1, cookieArray[i].length+1));
 					cookie=cookieArray[i].substring(namn.length+1, cookieArray[i].length+1 + "   = finns");
-				}else{
+				}
+				else{
 					console.log("= finns inte  "+cookie);
 				}
 				if(cookie.toLowerCase()===($(".swe").children("p").text()).toLowerCase()){
@@ -52,7 +54,7 @@ $(document).ready(function(){
 				else{
 					console.log("ERROR with cookie  ")
 					console.log(cookie.toLowerCase()+"   "+($(".uk").children("p").text()).toLowerCase())
-							console.log(cookie)
+					console.log(cookie)
 				}
 			}else {
 				elseAmount++;
