@@ -108,11 +108,11 @@ $(document).ready(function(){
 	
 	$('.menuKnapp').click(function(){
 		console.log($('.meny').css("left"));
-		if($('.meny').css("left")<50){
+		if($('.meny').css("left")>50){
 		$('.meny').animate({
             left: '+=250'
         },300);
-        $('.body').animate({
+        $('.smal').animate({
            left: '+=250' 
         }, 200);
 	}
@@ -121,7 +121,7 @@ $(document).ready(function(){
 		$('.meny').animate({
             left: '-=250'
         },300);
-        $('.body').animate({
+        $('.smal').animate({
            left: '-=250' 
         }, 300);
 	}
@@ -130,7 +130,7 @@ $(document).ready(function(){
 		$('.meny').animate({
             left: '-=250'
         },300);
-        $('.body').animate({
+        $('.smal').animate({
            left: '-=250' 
         }, 300);
 	});
