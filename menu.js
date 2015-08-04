@@ -62,7 +62,7 @@ $(document).ready(function(){
 			}
 		}
 	}
-	
+
 	$(".swe, .uk").click(function(){
 		var chosenLang = $(this).children("p").text();
 		var date = new Date();
@@ -105,40 +105,42 @@ $(document).ready(function(){
 			$("#"+i).html(htmlId[i]);
 		}
 	}
-	
+
 	$('.menuKnapp').click(function(){
 		console.log($('.meny').css("left"));
 		console.log($('.meny').css("left")+" <? "+50)
 		if($('.meny').css("left")==="-250px"){
-		$('.meny').animate({
-            left: '+=250'
-        },200);
-        $('.smal').animate({
-           left: '+=250' 
-        }, 300);
-	}
-	
-	else{
-		$('.meny').animate({
-            left: '-=250'
-        },300);
-        $('.smal').animate({
-           left: '-=250' 
-        }, 200);
-	}
+			$('.meny').animate({
+				left: '+=250'
+			},200);
+			$('.smal').animate({
+				left: '+=250' 
+			}, 300);
+		}
+
+		else{
+			$('.meny').animate({
+				left: '-=250'
+			},300);
+			$('.smal').animate({
+				left: '-=250' 
+			}, 200);
+		}
 	});
-	$('.smal').click(function(){
+	
+	$('.menuKnapp').on('click', function(e) {
+	    e.stopPropagation();
+	});
+	
+	$(".smal").on('click', function (e){
 		if($('.meny').css("left")==="0px"){
-			if($(".menuKnapp").click){}
-			else{
-		$('.meny').animate({
-            left: '-=250'
-        },300);
-        $('.smal').animate({
-           left: '-=250' 
-        }, 200);
-		}
+				$('.meny').animate({
+					left: '-=250'
+				},300);
+				$('.smal').animate({
+					left: '-=250' 
+				}, 200);
 		}
 	});
-	
+
 });
