@@ -107,22 +107,31 @@ $(document).ready(function(){
 	}
 	
 	$('.menuKnapp').click(function(){
+		if($('.meny').css("left")<50){
 		$('.meny').animate({
             left: '+=250'
-        },200);
+        },300);
         $('.body').animate({
            left: '+=250' 
-        }, 300);
+        }, 200);
 	});
+	}
+	else{
+		$('.meny').animate({
+            left: '-=250'
+        },300);
+        $('.body').animate({
+           left: '-=250' 
+        }, 300);
+	}
 	
 	$('#8').click(function(){
 		$('.meny').animate({
             left: '-=250'
-        },200);
+        },300);
         $('.body').animate({
            left: '-=250' 
         }, 300);
 	});
-	
 	
 });
