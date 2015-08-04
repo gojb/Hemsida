@@ -50,7 +50,8 @@ $(document).ready(function(){
 					englishLang();
 				}
 				else{
-					console.log("ERROR with cookie")
+					console.log("ERROR with cookie  ")
+					console.log(cookie.toLowerCase()+"   "+($(".uk").children("p").text()).toLowerCase())
 				}
 			}else {
 				elseAmount++;
