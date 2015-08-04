@@ -250,15 +250,17 @@ body {
 	display: none;
 }
 .smal a {
-	color: rgba(10, 10, 20, 0.7);
+	color: rgba(58, 163, 158, 0.7);
 	text-decoration: none;
+	transition: 300ms all ease-in-out;
 }
 .smal a.active{
 	color: rgb(58, 163, 158);
 }
 .smal li:hover{
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.13);
 	cursor: pointer;
+	transition: 500ms all ease-in-out;
 }
 .smal li:hover a{
 		color: rgb(58, 163, 158);
