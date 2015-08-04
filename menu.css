@@ -309,9 +309,8 @@ body {
 }
 
 .smal {
-	overflow-x: hidden;
 	left: 0;
 	margin: 0;
-	overflow: hidden;
+	overflow-x: hidden;
 	position: relative;
 }
