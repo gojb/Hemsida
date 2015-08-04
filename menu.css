@@ -21,6 +21,7 @@ body {
 
 .bred .menuKnapp {
 	display: none;
+	width: 0;
 }
 
 .bred .logo {
