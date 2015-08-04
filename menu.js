@@ -143,15 +143,15 @@ $(document).ready(function(){
 				}, 200);
 		}
 	});
-	$("li").click(function(){
-		if(location.href=$(this).children("a").attr("href")!=="#"){
-		location.href=$(this).children("a").attr("href");
-		console.log("true");
-		}
-		else{
-			$(this).children("ul").css("display", "block");
-			
-		}
-	});
+//	$("li").click(function(){
+//		if(location.href=$(this).children("a").attr("href")!=="#"){
+//		location.href=$(this).children("a").attr("href");
+//		console.log("true");
+//		}
+//		else{
+//			$(this).children("ul").css("display", "block");
+//			
+//		}
+//	});
 
 });
