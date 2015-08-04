@@ -17,7 +17,7 @@ $(document).ready(function(){
 		console.log("adftg");
 		var element = document.querySelector('.header');
 		$('body').addClass("bred");
-		$('.header').child().each(function(){
+		$('.header').children().each(function(){
 			console.log(this);
 		});
 		if( (element.offsetHeight < element.scrollHeight) || (element.
