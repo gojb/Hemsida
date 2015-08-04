@@ -115,6 +115,14 @@ $(document).ready(function(){
         }, 300);
 	});
 	
+	$('#8').click(function(){
+		$('.meny').animate({
+            left: '-=250'
+        },200);
+        $('.body').animate({
+           left: '-=250' 
+        }, 300);
+	});
 	
 	
 });
