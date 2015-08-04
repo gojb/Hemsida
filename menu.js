@@ -111,29 +111,29 @@ $(document).ready(function(){
 		console.log($('.meny').css("left")+" <? "+50)
 		if($('.meny').css("left")==="-250px"){
 			$('.meny').animate({
-				left: '+=250'
+				left: '0'
 			},200);
 			$('.smal').animate({
-				left: '+=250' 
+				left: '250' 
 			}, 300);
 		}
 
 		else{
 			$('.meny').animate({
-				left: '-=250'
+				left: '-250'
 			},300);
 			$('.smal').animate({
-				left: '-=250' 
+				left: '0' 
 			}, 200);
 		}
 	});
 	$(".middle, .stängKnapp").click(function(){
 		if($('.meny').css("left")==="0px"){
 				$('.meny').animate({
-					left: '-=250'
+					left: '-250'
 				},300);
 				$('.smal').animate({
-					left: '-=250' 
+					left: '0' 
 				}, 200);
 		}
 	});
