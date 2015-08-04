@@ -1,10 +1,11 @@
+$('body').addClass("bred");
 $(document).ready(function(){
 	var bredd=0;
-	$('body').addClass("bred");
 	$('.header').children().each(function(){
 		console.log($(this).outerWidth(true));
 		bredd+=$(this).outerWidth(true);
 	});
+	console.log("TOTALT" + bredd);
 	res();
 	$('.smal .meny').css("left", "-250px");
 	$('.smal').css("left", "0");
