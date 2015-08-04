@@ -3,7 +3,7 @@ $(document).ready(function(){
 	$('body').addClass("bred");
 	$('.header').children().each(function(){
 		console.log($(this).outerWidth(true));
-		bredd+=$(this).outerWidth(true);
+		bredd+=$(this).width();
 	});
 	res();
 	$('.smal .meny').css("left", "-250px");
