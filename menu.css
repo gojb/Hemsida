@@ -41,6 +41,7 @@ body {
 	font-weight: bold;
 	color: rgb(58, 163, 158);
 	text-decoration: none;
+	width: 565px;
 }
 
 .bred .ChangeLang {
@@ -88,8 +89,8 @@ body {
 	display: inline;
 	position: relative;
 	border-radius: 10px;
-	background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 50%,
-		transparent 50%);
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 50%, transparent
+		50%);
 	background-size: 100% 200%;
 	background-position-y: 0;
 	transition: all 500ms ease-in-out;
@@ -191,8 +192,9 @@ body {
 	color: #FFFFFF;
 	font-size: 130%;
 }
-.bred .stängKnapp{
-	display:none;
+
+.bred .stängKnapp {
+	display: none;
 }
 
 .middle {
@@ -215,16 +217,18 @@ body {
 }
 
 .smal .meny {
-	background: rgba(0, 0, 0, 0.8) url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
+	background: rgba(0, 0, 0, 0.8)
+		url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png')
+		repeat left top;
 	text-decoration: none;
 	color: black;
 	height: 200%;
 	width: 250px;
 	position: fixed;
 	left: -250px;
-	
 }
-.smal .stängKnapp{
+
+.smal .stängKnapp {
 	content: url("/images/X.png");
 	display: block;
 	height: 30px;
@@ -232,40 +236,49 @@ body {
 	margin: 5%;
 	cursor: pointer;
 }
-.smal .meny>ul{
+
+.smal .meny>ul {
 	height: 50px;
 	list-style: none;
 }
+
 .smal .meny>ul>li {
-	height:100%;
+	height: 100%;
 	border-top: 1px solid #636366;
 	margin-left: -17%;
 	padding-top: 10%;
 	margin-right: 5%;
 }
+
 .smal .meny>ul>li:first-child {
 	border-top: none;
 }
+
 .smal .meny>ul>li>ul {
 	list-style: none;
 	display: none;
 }
+
 .smal li>a {
 	color: rgba(58, 163, 158, 0.5);
 	text-decoration: none;
 	transition: 300ms all ease-in-out;
 }
-.smal a.active{
+
+.smal a.active {
 	color: rgb(58, 163, 158);
 }
-.smal li:hover{
+
+.smal li:hover {
 	background-color: rgba(0, 0, 0, 0.13);
 	cursor: pointer;
 	transition: 500ms all ease-in-out;
 }
-.smal li:hover a{
-		color: rgb(58, 163, 158);
+
+.smal li:hover a {
+	color: rgb(58, 163, 158);
 }
+
 .smal .ChangeLang {
 	display: none;
 }
