@@ -127,12 +127,7 @@ $(document).ready(function(){
 			}, 200);
 		}
 	});
-	
-	$('.menuKnapp').on('click', function(e) {
-	    e.stopPropagation();
-	});
-	
-	$(".smal").on('click', function (e){
+	$(".middle").click(function(){
 		if($('.meny').css("left")==="0px"){
 				$('.meny').animate({
 					left: '-=250'
