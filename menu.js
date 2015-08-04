@@ -114,8 +114,8 @@ $(document).ready(function(){
         $('.body').animate({
            left: '+=250' 
         }, 200);
-	});
 	}
+	});
 	else{
 		$('.meny').animate({
             left: '-=250'
