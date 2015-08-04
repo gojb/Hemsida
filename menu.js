@@ -3,7 +3,7 @@ $(document).ready(function(){
 	$('body').addClass("bred");
 	$('.header').children().each(function(){
 		console.log($(this).outerWidth(true));
-		bredd+=$(this).width();
+		bredd+=$(this).outerWidth(true);
 	});
 	res();
 	$('.smal .meny').css("left", "-250px");
@@ -22,11 +22,8 @@ $(document).ready(function(){
 	function res(){
 		console.log("adftg");
 		console.log("bredd: "+bredd);
-		var element = document.querySelector('.header');
-		console.log("header"+$(".header").outerWidth());
-		$('body').addClass("bred");
-		if( (element.offsetHeight < element.scrollHeight) || (element.
-				offsetWidth < element.scrollWidth)){
+		console.log("header"+$(".header").width());
+		if($(".header").width()<bredd){
 			$('body').addClass("smal");
 			// your element has overflow
 			$('body').removeClass("bred");
