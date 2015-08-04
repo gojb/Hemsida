@@ -220,6 +220,7 @@ body {
 	width: 250px;
 	position: fixed;
 	left: -250px;
+	
 }
 .smal .stängKnapp{
 	content: url("/images/X.png");
