@@ -87,15 +87,15 @@ body {
 	display: inline;
 	position: relative;
 	border-radius: 10px;
-	background: linear-gradient(to top, rgba(0, 0, 0, 0.0) 50%,
-		rgba(0, 0, 0, 0.3) 50%);
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 50%,
+		transparent 50%);
 	background-size: 100% 200%;
-	background-position-y: 100%;
+	background-position-y: 0;
 	transition: all 500ms ease-in-out;
 }
 
 .bred .meny li:hover {
-	background-position-y: 0;
+	background-position-y: -100%;
 }
 
 .bred .meny li:hover>ul {
