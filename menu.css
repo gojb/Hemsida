@@ -222,7 +222,8 @@ body {
 	left: -250px;
 }
 .smal .stängKnapp{
-	background-image: url("images/X.png")
+	background-image: url("images/X.png");
+	display: block;
 }
 .smal .meny>ul{
 	height: 50px;
