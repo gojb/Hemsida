@@ -139,5 +139,8 @@ $(document).ready(function(){
 				}, 200);
 		}
 	});
+	$("li").click(function(){
+		console.log($(this).children("a").attr("href"));
+	});
 
 });

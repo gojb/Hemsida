@@ -249,7 +249,7 @@ body {
 	list-style: none;
 	display: none;
 }
-.smal a {
+.smal li>a {
 	color: rgba(58, 163, 158, 0.5);
 	text-decoration: none;
 	transition: 300ms all ease-in-out;
