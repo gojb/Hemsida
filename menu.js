@@ -142,5 +142,8 @@ $(document).ready(function(){
 				}, 200);
 		}
 	});
+	$("li").click(function(){
+		location.href=$(this).children("a").attr("href");
+	});
 
 });
