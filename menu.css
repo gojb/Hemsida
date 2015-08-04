@@ -201,6 +201,7 @@ body {
 	padding: 20px;
 	border-radius: 30px;
 	min-height: calc(100% - 170px);
+	cursor: default;
 }
 
 .smal .logo {
@@ -227,7 +228,8 @@ body {
 	display: block;
 	height: 30px;
 	width: 30px;
-	cursor: crosshair
+	margin: 5%;
+	cursor: pointer;
 }
 .smal .meny>ul{
 	height: 50px;
@@ -257,6 +259,9 @@ body {
 .smal li:hover{
 	background-color: rgba(0, 0, 0, 0.1);
 	cursor: pointer;
+}
+.smal li:hover a{
+		color: rgb(58, 163, 158);
 }
 .smal .ChangeLang {
 	display: none;

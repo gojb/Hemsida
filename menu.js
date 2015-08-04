@@ -127,7 +127,7 @@ $(document).ready(function(){
 			}, 200);
 		}
 	});
-	$(".middle").click(function(){
+	$(".middle, .stängKnapp").click(function(){
 		if($('.meny').css("left")==="0px"){
 				$('.meny').animate({
 					left: '-=250'
