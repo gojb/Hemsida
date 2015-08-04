@@ -211,8 +211,8 @@ body {
 	color: black;
 	height: 100%;
 	width: 250px;
-	position: absolute;
-	margin-left: -250px;
+	position: fixed;
+	left: -250px;
 }
 .smal ul{
 	list-style: none;
@@ -245,3 +245,16 @@ body {
     text-align: center;
     margin-top: 25%;
 }
+.smal .body{
+	left: 0;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+
+
+
+
