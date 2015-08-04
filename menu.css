@@ -18,9 +18,11 @@ body {
 	padding: 0 2%;
 	overflow: hidden;
 }
-.bred .menuKnapp{
+
+.bred .menuKnapp {
 	display: none;
 }
+
 .bred .logo {
 	height: 70px;
 	width: 70px;
@@ -197,7 +199,8 @@ body {
 	border-radius: 30px;
 	min-height: calc(100% - 170px);
 }
-.smal .logo{
+
+.smal .logo {
 	height: 70px;
 	width: 70px;
 	margin: 10px;
@@ -205,8 +208,9 @@ body {
 	background: url(images/rect8147.png) no-repeat;
 	background-size: cover;
 }
-.smal .meny{
-	background-color: rgba(0,0,0,0.3);
+
+.smal .meny {
+	background-color: rgba(0, 0, 0, 0.3);
 	text-decoration: none;
 	color: black;
 	height: 100%;
@@ -214,26 +218,33 @@ body {
 	position: fixed;
 	left: -250px;
 }
-.smal ul{
+
+.smal ul {
 	list-style: none;
-	
 }
-.smal a{
+
+.smal a {
 	color: rgb(58, 163, 158);
 }
-.smal .ChangeLang{
+
+.smal .ChangeLang {
 	display: none;
 }
-.smal .lang{
+
+.smal .lang {
 	display: none;
 }
-.smal .rubrik{
+
+.smal .rubrik {
 	float: right;
+	text-indent: -9999px;
 }
-.smal .header{
+
+.smal .header {
 	padding-left: 0;
 }
-.smal .menuKnapp{
+
+.smal .menuKnapp {
 	background-color: rgba(195, 214, 234, 0.41);
 	float: left;
 	height: 100%;
@@ -241,20 +252,14 @@ body {
 }
 
 .smal .menuKnapp>p {
-    vertical-align: middle;
-    text-align: center;
-    margin-top: 25%;
+	vertical-align: middle;
+	text-align: center;
+	margin-top: 25%;
 }
-.smal .body{
+
+.smal .body {
 	left: 0;
-  margin: 0;
-  overflow: hidden;
-  position: relative;
+	margin: 0;
+	overflow: hidden;
+	position: relative;
 }
-
-
-
-
-
-
-
