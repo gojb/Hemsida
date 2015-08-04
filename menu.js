@@ -38,8 +38,8 @@ $(document).ready(function(){
 				console.log(cookie);
 
 				if(cookie.indexOf("=")!==-1){
-					console.log(cookieArray[i].substring(namn.length+1, cookieArray[i].length+1));
-					cookie=cookieArray[i].substring(namn.length+1, cookieArray[i].length+1 + "   = finns");
+					console.log(cookieArray[i].substring(namn.length+1, cookieArray[i].length+1 + "   = finns"));
+					cookie=cookieArray[i].substring(namn.length+1, cookieArray[i].length+1);
 				}
 				else{
 					console.log("= finns inte  "+cookie);
