@@ -49,6 +49,9 @@ $(document).ready(function(){
 					console.log("eng");
 					englishLang();
 				}
+				else{
+					console.log("ERROR with cookie")
+				}
 			}else {
 				elseAmount++;
 				if(elseAmount==cookieArray.length){
