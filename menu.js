@@ -142,15 +142,8 @@ $(document).ready(function(){
 				}, 200);
 		}
 	});
-//	$("li").click(function(){
-//		if(location.href=$(this).children("a").attr("href")!=="#"){
-//		location.href=$(this).children("a").attr("href");
-//		console.log("true");
-//		}
-//		else{
-//			$(this).children("ul").css("display", "block");
-//			
-//		}
-//	});
+	$(".meny>ul>li").click(function(){
+		console.log($(this).children().attr("href"));
+	});
 
 });
