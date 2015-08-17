@@ -2,7 +2,7 @@
  RewriteEngine on
  RewriteCond %{REQUEST_URI} !^/menu\.css [NC]
  RewriteCond %{REQUEST_URI} menu\.css [NC]
- RewriteRule (.*) http://gojb.ml/menu.css [R=301,L] 
+ RewriteRule (.*) http://gojb.x10host.com/menu.css [R=301,L] 
 </ifmodule>
 ErrorDocument 404 /404/
 DirectoryIndex index.shtml index.html
