@@ -15,6 +15,6 @@ Header set Pragma "no-cache"
 Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
 </ifModule>
 </filesMatch>
-<If "%{HTTP_HOST} != 'gojb.ml'">
-Redirect / http://gojb.ml/
+<If "%{HTTP_HOST} != 'gojb.x10host.com'">
+Redirect / http://gojb.x10host.com/
 </If>
