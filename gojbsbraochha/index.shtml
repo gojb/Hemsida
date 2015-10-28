@@ -6,6 +6,6 @@
 </head>
 <body class="bred">
 <!--#include virtual="/menu.html" -->
-<div class="middle"></div>
+<div class="middle"><a href="/jar/GoJb.jar">Ladda ner här</a></div>
 </body>
 </html>
