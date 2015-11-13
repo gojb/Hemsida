@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	var bredd=0;
+	var visible = false;
 	$('.header').children().each(function(){
 		console.log($(this).attr("class") + "  " +$(this).outerWidth(true));
 		bredd+=$(this).outerWidth(true);
@@ -65,6 +66,7 @@ $(document).ready(function(){
 				if(elseAmount==cookieArray.length){
 					console.log("%c No Cookies for you!!", "font-size: 50px; color: red;");
 					$(".lang").css("display", "block");
+					visible=true;
 				}
 			}
 		}
@@ -86,11 +88,13 @@ $(document).ready(function(){
 
 	$(".ChangeLang").click(function(){
 		console.log($(".ChangeLang").css("display"));
-		if($(".ChangeLang").css("display")=="block"){
-		$(".lang").css("display", "block")
+		if(visible==false){
+		$(".lang").css("display", "block");
+		visible=true;
 		}
-		else{
-			$('.lang').css("display", "none")
+		else if(visible==true){
+			$('.lang').css("display", "none");
+			visible=false;
 		}
 	});
 
