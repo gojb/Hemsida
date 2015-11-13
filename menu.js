@@ -85,7 +85,13 @@ $(document).ready(function(){
 	Cookie("lang");
 
 	$(".ChangeLang").click(function(){
+		Console.log($(".ChangeLang").css("display"));
+		if($(".ChangeLang").css("display")!=block){
 		$(".lang").css("display", "block")
+		}
+		else{
+			$('.lang').css("display", "none")
+		}
 	});
 
 	function englishLang(){
