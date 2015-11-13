@@ -86,7 +86,7 @@ $(document).ready(function(){
 
 	$(".ChangeLang").click(function(){
 		console.log($(".ChangeLang").css("display"));
-		if($(".ChangeLang").css("display")!=block){
+		if($(".ChangeLang").css("display")!="block"){
 		$(".lang").css("display", "block")
 		}
 		else{
