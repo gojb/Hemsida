@@ -5,7 +5,7 @@
 <link  href="index.css" rel=stylesheet type="text/css">
 </head>
 
-<body>
+<body class="bred">
 	<div class="menu" id="menu">
 		<!--#include virtual="/menu.html" -->
 	</div>

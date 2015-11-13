@@ -2,7 +2,7 @@
  RewriteEngine on
  RewriteCond %{REQUEST_URI} !^/menu\.css [NC]
  RewriteCond %{REQUEST_URI} menu\.css [NC]
- RewriteRule (.*) http://gojb.tk/menu.css [R=301,L] 
+ RewriteRule (.*) http://gojb.ml/menu.css [R=301,L] 
 </ifmodule>
 ErrorDocument 404 /404/
 DirectoryIndex index.shtml index.html
@@ -15,6 +15,6 @@ Header set Pragma "no-cache"
 Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
 </ifModule>
 </filesMatch>
-<If "%{HTTP_HOST} != 'gojb.tk'">
-Redirect / http://gojb.tk/
+<If "%{HTTP_HOST} != 'gojb.ml'">
+Redirect / http://gojb.ml/
 </If>
