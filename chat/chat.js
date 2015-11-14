@@ -52,7 +52,6 @@ $(document).ready(function(){
 
 			socket.onmessage = function (message) {
 				Console.log(message.data);
-				Console.log("mellan");
 
 			};
 		}
