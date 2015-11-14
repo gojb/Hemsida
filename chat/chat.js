@@ -36,7 +36,7 @@ $(document).ready(function(){
 				var person = prompt("Vad heter du?", "");
 				socket.send("SWE" + person);
 				Console.log('Info: Anslutning Öppnad');
-				document.getElementById('knapp').setAttribute('disabled','disabled');
+				document.getElementById('knapp').setAttribute('hidden');
 				document.getElementById('chat').onkeydown = function(event) {
 					if (event.keyCode == 13) {
 						sendMessage();
