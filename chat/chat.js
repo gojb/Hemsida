@@ -50,7 +50,7 @@ $(document).ready(function(){
 
 			socket.onclose = function () {
 				document.getElementById('chat').onkeydown = null;
-				Console.log('Info: WebSocket stängd.');
+				Console.log('*Ifrånkopplad');
 				document.getElementById('från').setAttribute('hidden','');
 				document.getElementById('knapp').removeAttribute('hidden');
 			};
@@ -81,7 +81,7 @@ $(document).ready(function(){
 
 			socket.onclose = function () {
 				document.getElementById('chat').onkeydown = null;
-				Console.log('Info: WebSocket closed.');
+				Console.log('*Disconnected');
 				document.getElementById('knapp').removeAttribute('disabled');
 			};
 
