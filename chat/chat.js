@@ -113,7 +113,7 @@ $(document).ready(function(){
 		document.title = "Nytt meddelande";
 		playSound();
 		setTimeout(function(){
-			document.title = "gfhfghl";
+			document.title = "Chat - GoJb Development";
 		},3000);
 
 	});
