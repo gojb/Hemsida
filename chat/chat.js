@@ -37,6 +37,7 @@ $(document).ready(function(){
 				socket.send("SWE" + person);
 				Console.log('Info: Anslutning Öppnad');
 				document.getElementById('knapp').setAttribute('hidden','');
+				document.getElementById('från').removeAttribute('hidden');
 				document.getElementById('chat').onkeydown = function(event) {
 					if (event.keyCode == 13) {
 						sendMessage();
@@ -47,7 +48,8 @@ $(document).ready(function(){
 			socket.onclose = function () {
 				document.getElementById('chat').onkeydown = null;
 				Console.log('Info: WebSocket stängd.');
-				document.getElementById('knapp').removeAttribute('disabled');
+				document.getElementById('från').setAttribute('hidden','');
+				document.getElementById('knapp').removeAttribute('hidden');
 			};
 
 			socket.onmessage = function (message) {
