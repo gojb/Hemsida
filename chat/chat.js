@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	console.log("wdflijbnsödijg");
+	var socket;
 
 	$("#knapp").click(function(){ /*Anslut */
 		if($("#knapp2").text().length<16){
@@ -22,9 +23,11 @@ $(document).ready(function(){
 			sound("uk");
 		}
 	});
+	$("#från").click(function(){ /*Koppla ifrån*/
+		socket.close();
+	});
 
-	var socket;
-
+	
 	function connect(lang) {
 		if(lang=='swe'){
 			if ('WebSocket' in window) {
