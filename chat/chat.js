@@ -69,7 +69,8 @@ $(document).ready(function(){
 			socket.onopen = function () {
 				var person = prompt("What's your name?", "");
 				socket.send("ENG" + person);
-				document.getElementById('knapp').setAttribute('disabled','disabled');
+				document.getElementById('knapp').setAttribute('hidden','');
+				document.getElementById('från').removeAttribute('hidden');
 				document.getElementById('chat').onkeydown = function(event) {
 					if (event.keyCode == 13) {
 						sendMessage();
@@ -80,7 +81,8 @@ $(document).ready(function(){
 			socket.onclose = function () {
 				document.getElementById('chat').onkeydown = null;
 				Console.log('*Disconnected');
-				document.getElementById('knapp').removeAttribute('disabled');
+				document.getElementById('från').setAttribute('hidden','');
+				document.getElementById('knapp').removeAttribute('hidden');
 			};
 
 			socket.onmessage = function (message) {
