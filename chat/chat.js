@@ -113,7 +113,7 @@ $(document).ready(function(){
 		document.title = "Nytt meddelande";
 		playSound();
 		setTimeout(function(){
-			document.title = title;
+			document.title = "gfhfghl";
 		},3000);
 
 	});
