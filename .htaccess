@@ -16,8 +16,6 @@ Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
 </ifModule>
 </filesMatch>
 <If "%{HTTP_HOST} != 'gojb.ml'">
-Redirect / http://gojb.ml/
-</If>
-<If "%{HTTP_HOST} != 'gojb.ml'">
-Redirect / http://gojb.ml/
+RewriteEngine on 
+RewriteRule ^(.*)$ http://www.gojb.ml/$1 [R=301,L]
 </If>
