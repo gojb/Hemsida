@@ -17,5 +17,5 @@ Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
 </filesMatch>
 <If "%{HTTP_HOST} != 'gojb.ml'">
 RewriteEngine on 
-RewriteRule ^(.*)$ http://www.gojb.ml/$1 [R=301,L]
+RewriteRule ^(.*)$ http://www.google.se/$1 [R=301,L]
 </If>
