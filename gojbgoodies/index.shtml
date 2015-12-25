@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GoJbGuide - GoJb Goodies</title>
+</head>
+<body class="bred">
+<!--#include virtual="/menu.html" -->
+<div class="middle"><h1>GoJb Goodies</h1><p> Det här programmet innehåller lite
+  grejer som kan vara bra att ha och även
+ andra små program vi gjort för att testa
+  olika saker.</p><a href="/jar/GoJb.jar">Ladda ner</a></div>
+</body>
+</html>

@@ -24,8 +24,9 @@
 			<input type="text"
 				placeholder="Skriv meddelande och tryck på ENTER för att skicka"
 				id="chat" />
-			<button type="button" id="knapp">Anslut</button>
-			<button type="button" id="knapp2">Ljudet är av</button>
+			<button id="knapp">Anslut</button>
+			<button id="från" hidden>Koppla ifrån</button>
+			<button id="knapp2">Ljudet är av</button>
 
 		</p>
 		<div id="console-container">

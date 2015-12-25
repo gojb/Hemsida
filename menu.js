@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	var bredd=0;
+	var visible = false;
 	$('.header').children().each(function(){
 		console.log($(this).attr("class") + "  " +$(this).outerWidth(true));
 		bredd+=$(this).outerWidth(true);
@@ -65,6 +66,7 @@ $(document).ready(function(){
 				if(elseAmount==cookieArray.length){
 					console.log("%c No Cookies for you!!", "font-size: 50px; color: red;");
 					$(".lang").css("display", "block");
+					visible=true;
 				}
 			}
 		}
@@ -85,7 +87,15 @@ $(document).ready(function(){
 	Cookie("lang");
 
 	$(".ChangeLang").click(function(){
-		$(".lang").css("display", "block")
+		console.log($(".ChangeLang").css("display"));
+		if(visible==false){
+		$(".lang").css("display", "block");
+		visible=true;
+		}
+		else if(visible==true){
+			$('.lang').css("display", "none");
+			visible=false;
+		}
 	});
 
 	function englishLang(){
@@ -98,14 +108,14 @@ $(document).ready(function(){
 		              /*5*/ "This page is coded from scratch, no website builder has been used! <br />" +
 		              /*fortfarande 5*/"We can program Java and Web (CSS, JS, HTML and so on). We are not educated in this" +
 		              /*fortfarande 5*/", we have learnt it all from books and the internet",
-		              /*6*/"This page is created for the latest verision of Google Chrome and we" +
+		              /*6*/"This page is created for the latest verision of Google Chrome and we " +
 		              /*fortfarande 6*/"can't guarantee that it works as it should in other browsers. So if you don't have it already,  " +
 		              /*fortfarande 6*/"<a href='https://www.google.se/chrome/browser/desktop/'>download Google Chrome now!</a>",
 		              /*7*/"You can here connect to GoJb's chat. The program uses websocket to comunicate with  our servers" +
 		              /*fortfarande 7*/" so you can chat with everyone that are online at the moment.",
 		              /*8*/"Programs",
 		              /*9*/"<input type='text' placeholder='Enter a message and press ENTER to send' id='chat' /> <button type='button' " +
-		              /*fortfarande 9*/" id='knapp'>Connect</button><button type='button' id='knapp2'> The sound is disabled</button>",
+		              /*fortfarande 9*/" id='knapp'>Connect</button><button id='från' hidden>Disconnect</button><button type='button' id='knapp2'> The sound is disabled</button>",
 		              /*10*/"<h1>Error 404 - Page not found</h1><p>The page you are trying to reach was not found</p>"
 		              ]/*I htmlId är 0-3 i menu.html, 4-6 på startsidan, 7 är chat, 8 är "program" i menyn*/
 		for(var i = 0; i < htmlId.length; i++){

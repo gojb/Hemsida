@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	console.log("wdflijbnsödijg");
+	var socket;
 
 	$("#knapp").click(function(){ /*Anslut */
 		if($("#knapp2").text().length<16){
@@ -22,21 +23,23 @@ $(document).ready(function(){
 			sound("uk");
 		}
 	});
+	$("#från").click(function(){ /*Koppla ifrån*/
+		socket.close();
+	});
 
-	var socket;
-
+	
 	function connect(lang) {
 		if(lang=='swe'){
 			if ('WebSocket' in window) {
-				socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/chat");
+				socket = new WebSocket("wss://wildfly-gojb.rhcloud.com:8443/chat");
 			}  else {
 				Console.log('Error: WebSocket stöds inte.');
 			}
 			socket.onopen = function () {
 				var person = prompt("Vad heter du?", "");
 				socket.send("SWE" + person);
-				Console.log('Info: Anslutning Öppnad');
-				document.getElementById('knapp').setAttribute('disabled','disabled');
+				document.getElementById('knapp').setAttribute('hidden','');
+				document.getElementById('från').removeAttribute('hidden');
 				document.getElementById('chat').onkeydown = function(event) {
 					if (event.keyCode == 13) {
 						sendMessage();
@@ -46,8 +49,9 @@ $(document).ready(function(){
 
 			socket.onclose = function () {
 				document.getElementById('chat').onkeydown = null;
-				Console.log('Info: WebSocket stängd.');
-				document.getElementById('knapp').removeAttribute('disabled');
+				Console.log('*Ifrånkopplad');
+				document.getElementById('från').setAttribute('hidden','');
+				document.getElementById('knapp').removeAttribute('hidden');
 			};
 
 			socket.onmessage = function (message) {
@@ -58,15 +62,15 @@ $(document).ready(function(){
 
 		if(lang=='uk'){
 			if ('WebSocket' in window) {
-				socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/chat");
+				socket = new WebSocket("wss://wildfly-gojb.rhcloud.com:8443/chat");
 			}  else {
 				Console.log('Error: WebSocket is not supported.');
 			}
 			socket.onopen = function () {
 				var person = prompt("What's your name?", "");
 				socket.send("ENG" + person);
-				Console.log('Info: Connection opened');
-				document.getElementById('knapp').setAttribute('disabled','disabled');
+				document.getElementById('knapp').setAttribute('hidden','');
+				document.getElementById('från').removeAttribute('hidden');
 				document.getElementById('chat').onkeydown = function(event) {
 					if (event.keyCode == 13) {
 						sendMessage();
@@ -76,12 +80,12 @@ $(document).ready(function(){
 
 			socket.onclose = function () {
 				document.getElementById('chat').onkeydown = null;
-				Console.log('Info: WebSocket closed.');
-				document.getElementById('knapp').removeAttribute('disabled');
+				Console.log('*Disconnected');
+				document.getElementById('från').setAttribute('hidden','');
+				document.getElementById('knapp').removeAttribute('hidden');
 			};
 
 			socket.onmessage = function (message) {
-				console.log(message+" <-- message")
 				Console.log(message.data);
 			};
 		}
@@ -105,7 +109,7 @@ $(document).ready(function(){
 		p.style.wordWrap = 'break-word';
 		p.innerHTML = message;
 		console.appendChild(p);
-		while (console.childNodes.length > 25) {
+		while (console.childNodes.length > 40) {
 			console.removeChild(console.firstChild);
 		}
 		console.scrollTop = console.scrollHeight;
@@ -113,7 +117,7 @@ $(document).ready(function(){
 		document.title = "Nytt meddelande";
 		playSound();
 		setTimeout(function(){
-			document.title = title;
+			document.title = "Chat - GoJb Development";
 		},3000);
 
 	});
