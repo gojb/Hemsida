@@ -28,9 +28,10 @@ $(document).ready(function(){
 			$('body').addClass("smal");
 			$('body').removeClass("bred");
 		}
-		else if($(".header").hasClass("smal")&&$(".header").width()*1.02>bredd){
+		else if($('body').hasClass("smal")&&$(".header").width()*1.02>bredd){
 			$('body').addClass("bred");
 			$('body').removeClass("smal");
+			
 		}
 	}
 	function Cookie(CookieVar){
