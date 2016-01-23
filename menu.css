@@ -47,9 +47,8 @@ body {
 	background-color: rgba(58, 163, 158, 0.5);
 	height: 30%;
 	border-radius: 11px;
-	float: left;
+	float: right;
 	color: rgb(38, 113, 110);
-	margin-left: 8%;
 	margin-top: 0.5%;
 	padding: 0.5%;
 }
