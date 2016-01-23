@@ -21,17 +21,15 @@ $(document).ready(function(){
 		res();
 	});
 	function res(){
-		console.log("adftg");
+		console.log("Resize");
 		console.log("bredd: "+bredd);
 		console.log("header"+$(".header").width());
 		if($(".header").width()<bredd){
 			$('body').addClass("smal");
-			// your element has overflow
 			$('body').removeClass("bred");
 		}
-		else{
+		else if($(".header").width()*1.02>bredd){
 			$('body').addClass("bred");
-			// your element has overflow
 			$('body').removeClass("smal");
 		}
 	}
