@@ -3,14 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="theme-color" content="rgb(170, 212, 210)">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-<style type="text/css"> 
-div#statusbar{ 
-background: navy; 
-height: 15pt; 
-width:100%; 
-position:-webkit-sticky; 
-top:0;} </style>
 <script type="text/javascript">
 	(function(i, s, o, g, r, a, m) {
 		i['GoogleAnalyticsObject'] = r;
@@ -32,7 +24,6 @@ top:0;} </style>
 </head>
 
 <body class="bred">
-<div id="statusbar"> </div>
 	<!--#include virtual="/menu.html" -->
 	<div class="middle">
 		<h1 id="4">Välkommen till GoJb Developments officiella hemsida!</h1>
