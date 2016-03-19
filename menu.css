@@ -41,6 +41,7 @@ body {
 	color: rgb(58, 163, 158);
 	text-decoration: none;
 	width: 565px;
+	display: inline;
 }
 
 .bred .ChangeLang {
