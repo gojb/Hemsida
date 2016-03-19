@@ -40,8 +40,7 @@ body {
 	font-weight: bold;
 	color: rgb(58, 163, 158);
 	text-decoration: none;
-	width: 565px;
-	display: inline;
+	/*width: 565px;'*/
 }
 
 .bred .ChangeLang {
