@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<!--#include virtual="/head.html" -->
 <title>Chatt - GoJb Development</title>
 <link href=chat.css rel=stylesheet type=text/css>
 <link href=/index.css rel=stylesheet type=text/css>
@@ -16,17 +16,17 @@
 		<H1>Live Chat</H1>
 
 		<BR />
-		<p id="7">HÃ¤r kan du ansluta dig till GoJbs chat. Programmet anvÃ¤nder
-			websocket fÃ¶r att kommunicera med vÃ¥ra servrar sÃ¥ att du kan chatta
-			med alla som Ã¤r online fÃ¶r tillfÃ¤llet.</p>
+		<p id="7">Här kan du ansluta dig till GoJbs chat. Programmet använder
+			websocket för att kommunicera med våra servrar så att du kan chatta
+			med alla som är online för tillfället.</p>
 		<BR />
 		<p id="9">
 			<input type="text"
-				placeholder="Skriv meddelande och tryck pÃ¥ ENTER fÃ¶r att skicka"
+				placeholder="Skriv meddelande och tryck på ENTER för att skicka"
 				id="chat" />
 			<button id="knapp">Anslut</button>
-			<button id="frÃ¥n" hidden>Koppla ifrÃ¥n</button>
-			<button id="knapp2">Ljudet Ã¤r av</button>
+			<button id="från" hidden>Koppla ifrån</button>
+			<button id="knapp2">Ljudet är av</button>
 
 		</p>
 		<div id="console-container">
