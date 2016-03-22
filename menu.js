@@ -1,6 +1,6 @@
 $('#container').css('opacity', 0);
 $(window).load(function(){
-	$('#container').css('opacity', 1);
+//	$('#container').css('opacity', 1);
 	var bredd=0;
 	var visible = false;
 	$('.header').children().each(function(){
