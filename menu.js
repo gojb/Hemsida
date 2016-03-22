@@ -1,4 +1,4 @@
-$(html).css('opacity', 0);
+$('html').css('opacity', 0);
 $(window).load(function(){
 //	$('#container').css('opacity', 1);
 	var bredd=0;
