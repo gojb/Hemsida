@@ -1,7 +1,7 @@
 $('html').css('opacity', 0);
 
 $(window).load(function(){
-	$('html').css('transition', 'opacity 0.2s');
+	$('html').css('transition', 'opacity 0.1s');
 	$('html').css('opacity', 1);
 	var bredd=0;
 	var visible = false;
