@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(window).load(function(){
 	var bredd=0;
 	var visible = false;
 	$('.header').children().each(function(){
