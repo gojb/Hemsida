@@ -23,16 +23,16 @@ $(window).load(function(){
 		res();
 	});
 	function res(){
-		var win=Math.ceil(bredd*1.02*1.02);
+		var bre=Math.ceil(bredd*1.02*1.02);
 		console.log("Resize");
 		console.log("bredd: "+bredd);
-		console.log("bredd*1.02*1.02: "+ win);
+		console.log("bredd*1.02*1.02: "+ bre);
 		console.log("window"+$(window).width());
-		if ($(window).width()<=win){
+		if ($(window).width()<=bre){
 			$('body').addClass("smal");
 			$('body').removeClass("bred");
 		}
-		else if ($(window).width()>win){
+		else if ($(window).width()>bre){
 			$('body').addClass("bred");
 			$('body').removeClass("smal");
 			
