@@ -26,7 +26,7 @@ $(window).load(function(){
 		var bre=Math.ceil(bredd*1.02*1.02);
 		console.log("Resize");
 		console.log("bredd: "+bredd);
-		console.log("bredd*1.02*1.02: "+ bre);
+		console.log("bredd*1.02*1.02: "+ bredd*1.02*1.02+ "  " +bre);
 		console.log("window"+$(window).width());
 		if ($(window).width()<=bre){
 			$('body').addClass("smal");
