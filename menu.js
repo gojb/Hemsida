@@ -23,7 +23,7 @@ $(window).load(function(){
 		res();
 	});
 	function res(){
-		var bre=Math.ceil(bredd*1.02*1.02)+1;
+		var bre=Math.ceil(bredd*1.02*1.02)+2;
 		console.log("Resize");
 		console.log("bredd: "+bredd);
 		console.log("bredd*1.02*1.02: "+ bredd*1.02*1.02+ "  " +bre);
