@@ -24,12 +24,12 @@ $(document).ready(function(){
 		console.log("Resize");
 		console.log("bredd: "+bredd);
 		console.log("bredd*1.02*1.02: "+bredd*1.02*1.02);
-		console.log("window"+$( window ).width());
-		if ($("window").width()<bredd*1.02*1.02){
+		console.log("window"+$(window).width());
+		if ($(window).width()<bredd*1.02*1.02){
 			$('body').addClass("smal");
 			$('body').removeClass("bred");
 		}
-		else if ($("window").width()>bredd*1.02*1.02){
+		else if ($(window).width()>bredd*1.02*1.02){
 			$('body').addClass("bred");
 			$('body').removeClass("smal");
 			
