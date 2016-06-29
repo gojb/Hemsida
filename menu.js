@@ -157,7 +157,9 @@ $(window).load(function(){
 				}, 200);
 		}
 	});
-	function expand(element) {
+	
+});
+function expand(element) {
 		console.log(element.attr("href"));
 		if(element.attr("href")=='#'){
 			if(element.siblings('ul').css('display')=='none'){
@@ -168,4 +170,3 @@ $(window).load(function(){
 			}
 		}
 	}
-});
