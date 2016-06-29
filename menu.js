@@ -161,6 +161,7 @@ $(window).load(function(){
 		console.log(element.attr("href"));
 		
 	});
+	$('a').click(function(){return true;}).click();
 	function expand(element) {
 		console.log(element.attr("href"));
 		if(element.attr("href")=='#'){
