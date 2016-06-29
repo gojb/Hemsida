@@ -158,7 +158,7 @@ $(window).load(function(){
 		}
 	});
 	$(".smal.meny ul>li>a").click(function(){
-		
+		console.log(element.attr("href"));
 		
 	});
 	function expand(element) {
