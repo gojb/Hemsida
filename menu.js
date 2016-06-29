@@ -158,15 +158,18 @@ $(window).load(function(){
 		}
 	});
 	$(".smal.meny ul>li>a").click(function(){
-		console.log($(this).attr("href"));
-		if($(this).attr("href")=='#'){
-			if($(this).siblings('ul').css('display')=='none'){
-				$(this).siblings('ul').css('display','inline')
-			}
-			else{
-				$(this).siblings('ul').css('display','none')
-			}
-		}
+		
 		
 	});
+	function expand(element) {
+		console.log(element.attr("href"));
+		if(element.attr("href")=='#'){
+			if(element.siblings('ul').css('display')=='none'){
+				element.siblings('ul').css('display','inline')
+			}
+			else{
+				element.siblings('ul').css('display','none')
+			}
+		}
+	}
 });
