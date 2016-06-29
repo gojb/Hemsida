@@ -157,8 +157,16 @@ $(window).load(function(){
 				}, 200);
 		}
 	});
-	$(".meny>ul>li").click(function(){
-		console.log($(this).children().attr("href"));
+	$(".smal.meny ul>li>a").click(function(){
+		if($(this).attr("href")=='#'){
+			if($(this).siblings('ul').css('display')=='none'){
+				$(this).siblings('ul').css('display','inline')
+			}
+			else{
+				$(this).siblings('ul').css('display','none')
+			}
+		}
+		console.log($(this).attr("href"));
 	});
 
 });
