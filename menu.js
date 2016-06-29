@@ -158,6 +158,7 @@ $(window).load(function(){
 		}
 	});
 	$(".smal.meny ul>li>a").click(function(){
+		console.log($(this).attr("href"));
 		if($(this).attr("href")=='#'){
 			if($(this).siblings('ul').css('display')=='none'){
 				$(this).siblings('ul').css('display','inline')
@@ -166,7 +167,7 @@ $(window).load(function(){
 				$(this).siblings('ul').css('display','none')
 			}
 		}
-		console.log($(this).attr("href"));
+		
 	});
 
 });
