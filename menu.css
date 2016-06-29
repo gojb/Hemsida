@@ -238,14 +238,16 @@ body {
 .smal .meny>ul {
 	height: 50px;
 	list-style: none;
+	padding-left: 0px;
 }
 
 .smal .meny>ul>li {
 	border-top: 1px solid #636366;
-	margin-left: -17%;
+	/* margin-left: -17%; */
 	padding-top: 10%;
 	padding-bottom: 10%;
-	margin-right: 5%;
+	padding-left: 5%;
+	/* margin-right: 5%; */
 }
 
 .smal .meny>ul>li:first-child {
