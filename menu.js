@@ -157,11 +157,6 @@ $(window).load(function(){
 				}, 200);
 		}
 	});
-	$(".smal.meny ul>li>a").click(function(){
-		console.log(element.attr("href"));
-		
-	});
-	$('a').click(function(){return true;}).click();
 	function expand(element) {
 		console.log(element.attr("href"));
 		if(element.attr("href")=='#'){
