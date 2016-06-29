@@ -169,5 +169,4 @@ $(window).load(function(){
 		}
 		
 	});
-
 });
