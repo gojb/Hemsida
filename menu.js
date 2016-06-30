@@ -157,7 +157,9 @@ $(window).load(function(){
 				}, 200);
 		}
 	});
-	
+	$("ul > li > a").click(function(e) {
+        console.log("a");
+    });
 });
 //function expand(element) {
 //		console.log(element.attr("href"));
