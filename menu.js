@@ -169,5 +169,5 @@ function expand(element) {
 				element.siblings('ul').css('display','none')
 			}
 		}
-		return false;
+		element.preventDefault()
 	}
