@@ -252,9 +252,6 @@ body {
 .smal .meny>ul>li>ul {
 	display: none;
 }
-.smal .meny>ul>li:traget>ul {
-	display: block;
-}
 
 .smal li>a {
 	color: rgba(58, 163, 158, 0.5);
@@ -277,7 +274,7 @@ body {
 	transition: 500ms all ease-in-out;
 }
 
-.smal li:hover a {
+.smal li a:hover {
 	color: rgb(58, 163, 158);
 }
 
