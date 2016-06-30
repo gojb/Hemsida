@@ -157,7 +157,7 @@ $(window).load(function(){
 				}, 200);
 		}
 	});
-	$("ul > li > a").click(function(e) {
+	$(".smal ul > li > a").click(function(e) {
         console.log("a");
         if($(this).siblings('ul').css('display')=='none'){
 			$(this).siblings('ul').css('display','inline')
