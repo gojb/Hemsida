@@ -159,6 +159,12 @@ $(window).load(function(){
 	});
 	$("ul > li > a").click(function(e) {
         console.log("a");
+        if($(this).siblings('ul').css('display')=='none'){
+			$(this).siblings('ul').css('display','inline')
+	}
+		else{
+			$(this).siblings('ul').css('display','none')
+		}
     });
 });
 //function expand(element) {
