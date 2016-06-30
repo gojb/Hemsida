@@ -159,15 +159,15 @@ $(window).load(function(){
 	});
 	
 });
-function expand(element) {
-		console.log(element.attr("href"));
-		if(element.attr("href")=='#'){
-			if(element.siblings('ul').css('display')=='none'){
-				element.siblings('ul').css('display','inline')
-			}
-			else{
-				element.siblings('ul').css('display','none')
-			}
-		}
-		element.preventDefault()
-	}
+//function expand(element) {
+//		console.log(element.attr("href"));
+//		if(element.attr("href")=='#'){
+//			if(element.siblings('ul').css('display')=='none'){
+//				element.siblings('ul').css('display','inline')
+//			}
+//			else{
+//				element.siblings('ul').css('display','none')
+//			}
+//		}
+//		element.preventDefault()
+//	}

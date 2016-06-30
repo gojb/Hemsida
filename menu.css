@@ -250,8 +250,10 @@ body {
 }
 
 .smal .meny>ul>li>ul {
-	list-style: none;
 	display: none;
+}
+.smal .meny>ul>li:traget>ul {
+	display: block;
 }
 
 .smal li>a {
