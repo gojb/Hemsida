@@ -235,7 +235,7 @@ body {
 	cursor: pointer;
 }
 
-.smal .meny>ul {
+.smal .meny ul {
 /*	height: 50px;*/
 	list-style: none;
 	padding-left: 0px;
@@ -249,8 +249,8 @@ body {
 	border-top: none;
 }
 
-.smal .meny>ul>li>ul {
-	
+.smal .meny>ul ul {
+	padding-left:10px;
 	display: none;
 }
 
