@@ -220,15 +220,12 @@ body {
 		repeat left top;
 	text-decoration: none;
 	color: black;
-<<<<<<< HEAD
 	height: 200%;
 	width: 0px;
-=======
 	height: 100%;
-	width: 250px;
->>>>>>> branch 'master' of https://github.com/gojb/Hemsida.git
 	position: fixed;
 	left: 0px;
+overflow:hidden;
 }
 
 .smal .stängKnapp {
