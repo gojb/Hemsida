@@ -160,7 +160,7 @@ $(window).load(function(){
 	$(".smal ul > li > a").click(function(e) {
         console.log("a");
         if($(this).siblings('ul').css('display')=='none'){
-			$(this).siblings('ul').css('display','inline')
+			$(this).siblings('ul').css('display','block')
 	}
 		else{
 			$(this).siblings('ul').css('display','none')
