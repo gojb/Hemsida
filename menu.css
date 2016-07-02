@@ -269,11 +269,11 @@ body {
 	color: rgb(58, 163, 158);
 }
 
-.smal li:hover {
+/*.smal li:hover {
 	background-color: rgba(0, 0, 0, 0.13);
 	cursor: pointer;
 	transition: 500ms all ease-in-out;
-}
+}*/
 
 .smal li a:hover {
 	color: rgb(58, 163, 158);
