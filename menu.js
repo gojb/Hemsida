@@ -129,32 +129,20 @@ $(window).load(function(){
 	}
 
 	$('.menuKnapp').click(function(){
-		if($('.meny').css("left")==="-250px"){
-			$('.meny').animate({
-				left: '0'
-			},200);
-			$('.smal').animate({
-				left: '250' 
-			}, 300);
+		if($('.meny').css("width")==="0px"){
+			$('.meny').css("width",'250px');
+			$('.smal').css("margin-left",'250px');
 		}
 
 		else{
-			$('.meny').animate({
-				left: '-250'
-			},300);
-			$('.smal').animate({
-				left: '0' 
-			}, 200);
+			$('.meny').css("width",'0px');
+			$('.smal').css("margin-left",'0px');
 		}
 	});
 	$(".middle, .stängKnapp").click(function(){
-		if($('.meny').css("left")==="0px"){
-				$('.meny').animate({
-					left: '-250'
-				},300);
-				$('.smal').animate({
-					left: '0' 
-				}, 200);
+		if($('.meny').css("width")==="0px"){
+			$('.meny').css("width",'250px');
+			$('.smal').css("margin-left",'250px');
 		}
 	});
 	$(".smal ul > li > a").click(function(e) {
