@@ -220,8 +220,13 @@ body {
 		repeat left top;
 	text-decoration: none;
 	color: black;
+<<<<<<< HEAD
 	height: 200%;
 	width: 0px;
+=======
+	height: 100%;
+	width: 250px;
+>>>>>>> branch 'master' of https://github.com/gojb/Hemsida.git
 	position: fixed;
 	left: 0px;
 }
@@ -259,17 +264,14 @@ body {
 	text-decoration: none;
 	transition: 300ms all ease-in-out;
 	display: block;
-	
-    padding-top: 10%;
-    padding-bottom: 10%;
-    padding-left: 5%;
+	padding: 10% 5%;
 }
 
 .smal a.active {
 	color: rgb(58, 163, 158);
 }
 
-.smal li:hover {
+/*.smal li:hover {
 	background-color: rgba(0, 0, 0, 0.13);
 	cursor: pointer;
 	transition: 500ms all ease-in-out;
@@ -277,7 +279,7 @@ body {
 
 .smal li a:hover {
 	color: rgb(58, 163, 158);
-}
+}*/
 
 .smal .ChangeLang {
 	display: none;
@@ -312,6 +314,7 @@ body {
 .smal {
 	left: 0;
 	margin: 0;
+	width:100%;
 	overflow-x: hidden;
 	position: relative;
 }
