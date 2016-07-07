@@ -126,7 +126,7 @@ $(window).load(function(){
 		}
 	}
 	$(".smal, .stängKnapp").click(function(){
-		if($('.meny').css("width")==="250px"){
+		if($('.meny').css("width")=="250px"){
 			$('.meny').css("width",'0px');
 			$('.smal').css("margin-left",'0px');
 		}
