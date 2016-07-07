@@ -139,8 +139,8 @@ $(window).load(function(){
 	});
 	$(".middle, .stängKnapp").click(function(){
 		if($('.meny').css("width")==="0px"){
-			$('.meny').css("width",'250px');
-			$('.smal').css("margin-left",'250px');
+			$('.meny').css("width",'0px');
+			$('.smal').css("margin-left",'0px');
 		}
 	});
 	$(".smal ul > li > a").click(function(e) {
