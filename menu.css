@@ -225,7 +225,7 @@ body {
 	height: 100%;
 	position: fixed;
 	left: 0px;
-	overflow:scroll;
+	overflow:auto;
 }
 
 .smal .stängKnapp {

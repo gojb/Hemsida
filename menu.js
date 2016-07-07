@@ -127,7 +127,7 @@ $(window).load(function(){
 	}
 
 	$('.menuKnapp').click(function(){
-		if($('.meny').css("width")<="0px"){
+		if($('.meny').css("width")=="0px"){
 			$('.meny').css("width",'250px');
 			$('.smal').css("margin-left",'250px');
 		}
