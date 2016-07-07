@@ -137,7 +137,7 @@ $(window).load(function(){
 			$('.smal').css("margin-left",'0px');
 		}
 	});
-	$(".middle, .stängKnapp").click(function(){
+	$(".smal, .stängKnapp").click(function(){
 		if($('.meny').css("width")==="250px"){
 			$('.meny').css("width",'0px');
 			$('.smal').css("margin-left",'0px');
