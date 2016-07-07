@@ -300,6 +300,7 @@ body {
 	float: left;
 	height: 100%;
 	width: 120px;
+	cursor: pointer;
 }
 
 .smal .menuKnapp>p {
