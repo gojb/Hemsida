@@ -125,7 +125,7 @@ $(window).load(function(){
 			$("#"+i).html(htmlId[i]);
 		}
 	}
-	$(".smal, .stängKnapp").click(function(){
+	$(".middle, .stängKnapp").click(function(){
 		if($('.meny').css("width")=="250px"){
 			$('.meny').css("width",'0px');
 			$('.smal').css("margin-left",'0px');
