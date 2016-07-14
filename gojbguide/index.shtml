@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<!--#include virtual="/head.html" -->
 <title>GoJbGuide - GoJb Development</title>
 </head>
 <body class="bred">

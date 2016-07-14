@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<!--#include virtual="/head.html" -->
 <title>Error 404 - Sidan hittades inte</title>
 </head>
 <body class="bred">
@@ -10,7 +10,7 @@
 	</div>
 	<div class="middle" id=10>
 		<h1>Error 404 - Sidan hittades inte</h1>
-		<p>Sidan som du fÃ¶rsÃ¶kte nÃ¥ kan tyvÃ¤rr inte hittas</p>
+		<p>Sidan som du försökte nå kan tyvärr inte hittas</p>
 	</div>
 </body>
 </html>

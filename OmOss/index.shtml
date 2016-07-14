@@ -1,7 +1,6 @@
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<!--#include virtual="/head.html" -->
 <link  href="index.css" rel=stylesheet type="text/css">
 </head>
 
@@ -11,7 +10,7 @@
 	</div>
 		<div class="middle">
 		<h1>
-			<span id="gojb">GoJb</span>, <span id="gojb">G</span>lenn <span id="gojb">o</span>lsson, <span id="gojb">J</span>akob <span id="gojb">b</span>jÃ¶rns
+			<span id="gojb">GoJb</span>, <span id="gojb">G</span>lenn <span id="gojb">o</span>lsson, <span id="gojb">J</span>akob <span id="gojb">b</span>jörns
 			
 			
 		</h1>

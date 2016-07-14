@@ -1,4 +1,8 @@
-$(document).ready(function(){
+$('html').css('opacity', 0);
+
+$(window).load(function(){
+	$('html').css('transition', 'opacity 0.1s');
+	$('html').css('opacity', 1);
 	var bredd=0;
 	var visible = false;
 	$('.header').children().each(function(){
@@ -7,8 +11,6 @@ $(document).ready(function(){
 	});
 	console.log("TOTALT" + bredd);
 	res();
-	$('.smal .meny').css("left", "-250px");
-	$('.smal').css("left", "0");
 	$(function linkActive() {
 		$(".meny a").each(function() {
 			if (window.location.href == (this.href)) {
@@ -21,18 +23,19 @@ $(document).ready(function(){
 		res();
 	});
 	function res(){
-		console.log("adftg");
+		var bre=Math.ceil(bredd*1.02*1.02)+1 ;
+		console.log("Resize");
 		console.log("bredd: "+bredd);
-		console.log("header"+$(".header").width());
-		if($(".header").width()<bredd){
+		console.log("bredd*1.02*1.02: "+ bredd*1.02*1.02+ "  " +bre);
+		console.log("window"+$(window).width());
+		if ($(window).width()<=bre){
 			$('body').addClass("smal");
-			// your element has overflow
 			$('body').removeClass("bred");
 		}
-		else{
+		else if ($(window).width()>bre){
 			$('body').addClass("bred");
-			// your element has overflow
 			$('body').removeClass("smal");
+			
 		}
 	}
 	function Cookie(CookieVar){
@@ -115,45 +118,38 @@ $(document).ready(function(){
 		              /*fortfarande 7*/" so you can chat with everyone that are online at the moment.",
 		              /*8*/"Programs",
 		              /*9*/"<input type='text' placeholder='Enter a message and press ENTER to send' id='chat' /> <button type='button' " +
-		              /*fortfarande 9*/" id='knapp'>Connect</button><button type='button' id='knapp2'> The sound is disabled</button>",
+		              /*fortfarande 9*/" id='knapp'>Connect</button><button id='från' hidden>Disconnect</button><button type='button' id='knapp2'> The sound is disabled</button>",
 		              /*10*/"<h1>Error 404 - Page not found</h1><p>The page you are trying to reach was not found</p>"
 		              ]/*I htmlId är 0-3 i menu.html, 4-6 på startsidan, 7 är chat, 8 är "program" i menyn*/
 		for(var i = 0; i < htmlId.length; i++){
 			$("#"+i).html(htmlId[i]);
 		}
 	}
-
+	$(".middle, .stängKnapp").click(function(){
+		if($('.meny').css("width")=="250px"){
+			$('.meny').css("width",'0px');
+			$('.smal').css("margin-left",'0px');
+		}
+	});
 	$('.menuKnapp').click(function(){
-		if($('.meny').css("left")==="-250px"){
-			$('.meny').animate({
-				left: '0'
-			},200);
-			$('.smal').animate({
-				left: '250' 
-			}, 300);
+		if($('.meny').css("width")=="0px"){
+			$('.meny').css("width",'250px');
+			$('.smal').css("margin-left",'250px');
 		}
 
 		else{
-			$('.meny').animate({
-				left: '-250'
-			},300);
-			$('.smal').animate({
-				left: '0' 
-			}, 200);
+			$('.meny').css("width",'0px');
+			$('.smal').css("margin-left",'0px');
 		}
-	});
-	$(".middle, .stängKnapp").click(function(){
-		if($('.meny').css("left")==="0px"){
-				$('.meny').animate({
-					left: '-250'
-				},300);
-				$('.smal').animate({
-					left: '0' 
-				}, 200);
-		}
-	});
-	$(".meny>ul>li").click(function(){
-		console.log($(this).children().attr("href"));
 	});
 
+	$(".smal ul > li > a").click(function(e) {
+        console.log("a");
+        if($(this).siblings('ul').css('display')=='none'){
+			$(this).siblings('ul').css('display','block')
+	}
+		else{
+			$(this).siblings('ul').css('display','none')
+		}
+    });
 });

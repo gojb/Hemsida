@@ -40,18 +40,17 @@ body {
 	font-weight: bold;
 	color: rgb(58, 163, 158);
 	text-decoration: none;
-	width: 565px;
+	/*width: 565px;'*/
 }
 
 .bred .ChangeLang {
 	background-color: rgba(58, 163, 158, 0.5);
 	height: 30%;
 	border-radius: 11px;
-	float: left;
+	float: right;
 	color: rgb(38, 113, 110);
-	margin-left: 8%;
 	margin-top: 0.5%;
-	padding: 0.5%;
+	padding: 5px;
 }
 
 .bred .ChangeLang:hover {
@@ -222,9 +221,11 @@ body {
 	text-decoration: none;
 	color: black;
 	height: 200%;
-	width: 250px;
+	width: 0px;
+	height: 100%;
 	position: fixed;
-	left: -250px;
+	left: 0px;
+	overflow:auto;
 }
 
 .smal .stängKnapp {
@@ -236,25 +237,22 @@ body {
 	cursor: pointer;
 }
 
-.smal .meny>ul {
-	height: 50px;
+.smal .meny ul {
+/*	height: 50px;*/
 	list-style: none;
+	padding-left: 0px;
 }
 
 .smal .meny>ul>li {
-	height: 100%;
 	border-top: 1px solid #636366;
-	margin-left: -17%;
-	padding-top: 10%;
-	margin-right: 5%;
 }
 
 .smal .meny>ul>li:first-child {
 	border-top: none;
 }
 
-.smal .meny>ul>li>ul {
-	list-style: none;
+.smal .meny>ul ul {
+	padding-left:10px;
 	display: none;
 }
 
@@ -262,21 +260,23 @@ body {
 	color: rgba(58, 163, 158, 0.5);
 	text-decoration: none;
 	transition: 300ms all ease-in-out;
+	display: block;
+	padding: 10% 5%;
 }
 
 .smal a.active {
 	color: rgb(58, 163, 158);
 }
 
-.smal li:hover {
+/*.smal li:hover {
 	background-color: rgba(0, 0, 0, 0.13);
 	cursor: pointer;
 	transition: 500ms all ease-in-out;
 }
 
-.smal li:hover a {
+.smal li a:hover {
 	color: rgb(58, 163, 158);
-}
+}*/
 
 .smal .ChangeLang {
 	display: none;
@@ -300,6 +300,7 @@ body {
 	float: left;
 	height: 100%;
 	width: 120px;
+	cursor: pointer;
 }
 
 .smal .menuKnapp>p {
@@ -311,6 +312,7 @@ body {
 .smal {
 	left: 0;
 	margin: 0;
+	width:100%;
 	overflow-x: hidden;
 	position: relative;
 }
