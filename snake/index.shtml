@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script type="text/javascript" src="snake.js"></script>
 <!--#include virtual="/head.html" -->
 <title>Snake - GoJb Goodies</title>
 </head>
 <body class="bred">
 <!--#include virtual="/menu.html" -->
-<div class="middle"></div>
+<div class="middle">
+</div>
 </body>
 </html>
