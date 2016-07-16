@@ -6,12 +6,12 @@
 <title>Snake - GoJb Goodies</title>
 </head>
 <body class="bred">
-<!--#include virtual="/menu.html" -->
-<div class="middle">
-<canvas class="snakeruta"></canvas>
-</div>
+	<!--#include virtual="/menu.html" -->
+	<div class="middle">
+		<canvas class="snakeruta" style="height: 401px; width: 401px;"></canvas>
+	</div>
 
 
-<script type="text/javascript" src="snake.js"></script>
+	<script type="text/javascript" src="snake.js"></script>
 </body>
 </html>
