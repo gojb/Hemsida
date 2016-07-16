@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript" src="snake.js"></script>
+
 <!--#include virtual="/head.html" -->
 <title>Snake - GoJb Goodies</title>
 </head>
@@ -10,5 +10,6 @@
 <div class="middle">
 <canvas class="snakeruta"></canvas>
 </div>
+<script type="text/javascript" src="snake.js"></script>
 </body>
 </html>
