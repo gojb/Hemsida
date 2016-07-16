@@ -96,10 +96,10 @@ function paint(){
 	ctx.strokeStyle = '#000000';
 	ctx.stroke();
 	
-	context.beginPath();
-    context.arc(pluppX*pixelstorlek+1, pluppY*pixelstorlek+1, pixelstorlek-2, 0, 2 * Math.PI, false);
-    context.fillStyle = '#ff0000';
-    context.fill();
+	ctx.beginPath();
+	ctx.arc(pluppX*pixelstorlek+1, pluppY*pixelstorlek+1, pixelstorlek-2, 0, 2 * Math.PI, false);
+	ctx.fillStyle = '#ff0000';
+	ctx.fill();
 	
 	var arrayList = [];
 	for (var i = 0, len = pixels.length; i < len; i++) {
