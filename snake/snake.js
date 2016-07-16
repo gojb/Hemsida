@@ -88,17 +88,19 @@ socket.onmessage = function (message) {
 };
 function paint(){
 	ctx.beginPath();
-	ctx.fillStyle("#000000");
 	ctx.moveTo(0, 0);
 	ctx.lineTo(0, $('.snakeruta')[0].height);
 	ctx.lineTo($('.snakeruta')[0].width,$('.snakeruta')[0].height);
 	ctx.lineTo($('.snakeruta')[0].width,0);
 	ctx.lineTo(0,0);
-	//Client
-	g.setColor(red);
-	g.drawOval(pluppX*pixelstorlek+1, pluppY*pixelstorlek+1, pixelstorlek-2, pixelstorlek-2);
-	g.fillOval(pluppX*pixelstorlek+1, pluppY*pixelstorlek+1, pixelstorlek-2, pixelstorlek-2);
+	ctx.strokeStyle = '#000000';
 	ctx.stroke();
+	
+	context.beginPath();
+    context.arc(pluppX*pixelstorlek+1, pluppY*pixelstorlek+1, pixelstorlek-2, 0, 2 * Math.PI, false);
+    context.fillStyle = '#ff0000';
+    context.fill();
+	
 	var arrayList = [];
 	for (var i = 0, len = pixels.length; i < len; i++) {
 		arrayList[i] = clone(pixels[i]);
