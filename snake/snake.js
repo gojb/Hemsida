@@ -87,16 +87,18 @@ socket.onmessage = function (message) {
 
 };
 function paint(){
+	ctx.beginPath();
 	ctx.fillStyle("#000000");
-	g.drawLine(0, 0, 0, getHeight());
-	g.drawLine(0, 0, getWidth(), 0);
-	g.drawLine(0,getHeight(),getWidth(), getHeight());
-	g.drawLine(getWidth(),0,getWidth(), getHeight());
+	ctx.moveTo(0, 0);
+	ctx.lineTo(0, $('.snakeruta')[0].height);
+	ctx.lineTo($('.snakeruta')[0].width,$('.snakeruta')[0].height);
+	ctx.lineTo($('.snakeruta')[0].width,0);
+	ctx.lineTo(0,0);
 	//Client
 	g.setColor(red);
 	g.drawOval(pluppX*pixelstorlek+1, pluppY*pixelstorlek+1, pixelstorlek-2, pixelstorlek-2);
 	g.fillOval(pluppX*pixelstorlek+1, pluppY*pixelstorlek+1, pixelstorlek-2, pixelstorlek-2);
-
+	ctx.stroke();
 	var arrayList = [];
 	for (var i = 0, len = pixels.length; i < len; i++) {
 		arrayList[i] = clone(pixels[i]);
@@ -110,12 +112,12 @@ function paint(){
 	}
 	if(paused){
 		ctx.fillStyle("#0000FF");
-		ctx.setFont(new Font(null, 0, 25));
+		ctx.font("20px Georgia");
 		ctx.fillText("Spelet pausat. Tryck på mellanslag för att fortsätta.", 10, $('.snakeruta')[0].height/2);
 	}
 	if (gameover) {
 		ctx.fillStyle("#FF0000");
-		ctx.setFont(new Font(null, 0, 25));
+		ctx.font("20px Georgia");
 		ctx.fillText(vem+" förlorade!",25 , $('.snakeruta')[0].height/2-25);
 	}
 }
