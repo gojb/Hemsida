@@ -120,10 +120,7 @@ function paint(){
 	ctx.fillStyle = '#ff0000';
 	ctx.fill();
 	
-	var arrayList = [];
-	for (var i = 0, len = pixels.length; i < len; i++) {
-		arrayList[i] = clone(pixels[i]);
-	}
+	var arrayList = clone(pixels);
 	for (var i = 0; i < arrayList.length; i++) {
 		var pixel = arrayList[i];
 		ctx.fillStyle=pixel.color;
