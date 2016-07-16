@@ -109,14 +109,14 @@ function paint(){
 
 	}
 	if(paused){
-		ctx.fillStyle.setColor(blue);
+		ctx.fillStyle(blue);
 		ctx.setFont(new Font(null, 0, 25));
 		ctx.drawString("Spelet pausat. Tryck på mellanslag för att fortsätta.", 10, $('.snakeruta')[0].height/2);
 	}
 	if (gameover) {
-		g.setColor(red);
-		g.setFont(new Font(null, 0, 25));
-		g.drawString(vem+" förlorade!",25 , getHeight()/2-25);
+		ctx.setColor(red);
+		ctx.setFont(new Font(null, 0, 25));
+		ctx.drawString(vem+" förlorade!",25 , $('.snakeruta')[0].height/2-25);
 	}
 }
 class Pixel{
