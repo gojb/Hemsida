@@ -87,6 +87,7 @@ socket.onmessage = function (message) {
 
 };
 function paint(){
+	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	ctx.beginPath();
 	ctx.moveTo(0, 0);
 	ctx.lineTo(0, $('.snakeruta')[0].height);
@@ -97,7 +98,7 @@ function paint(){
 	ctx.stroke();
 	
 	ctx.beginPath();
-	ctx.arc(pluppX*pixelstorlek+1, pluppY*pixelstorlek+1, pixelstorlek-2, 0, 2 * Math.PI, false);
+	ctx.arc(pluppX*pixelstorlek+1, pluppY*pixelstorlek+1, pixelstorlek/2-1, 0, 2 * Math.PI, false);
 	ctx.fillStyle = '#ff0000';
 	ctx.fill();
 	
