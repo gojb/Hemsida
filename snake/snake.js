@@ -86,10 +86,9 @@ socket.onmessage = function (message) {
 			var elements=[];
 			for(var i;i<highscores.length;i++){
 				var highscore=highscores[i];
-				elements.push('<div><p style="color:highscore.color">highscore.namn</p></div>');
-				elements.push('<div><p style="color:highscore.color">highscore.poäng</p></div>');
+				$('.highscore').append('<div><p style="color:'+highscore.color+'>'+highscore.namn+'</p></div>');
+				$('.highscore').append('<div><p style="color:'+highscore.color+'>'+highscore.poäng+'</p></div>');
 			}
-			$('.highscore').add(elements);
 		}
 
 	}
