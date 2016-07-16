@@ -1,6 +1,11 @@
 var ctx = $('.snakeruta')[0].getContext("2d");
 var pixelstorlek = 10;
 var socket;
+var vem;
+var gameover;
+var paused;
+var pluppX,pluppY;
+var pixels = []
 if ('WebSocket' in window) {
 	socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/snake");
 }  else {
@@ -27,7 +32,59 @@ socket.onclose = function () {
 };
 
 socket.onmessage = function (message) {
-	Console.log(message.data);
+	consol.log(message);
+	var scanner = message.split(/\s+/);
+	var type = scanner.shift();
+
+	if (type == "A") {
+		gameover=false;
+		paused=false;
+
+		var string = scanner.shift();
+		if (string=="PAUSE") {
+			paused=true;
+		}
+		else if (string=="GAMEOVER") {
+			consol.log(scanner);
+			vem=scanner;
+			gameover = true;
+		}
+		frame.repaint();
+	}
+	else if (type=="P") {
+		pluppX=scanner.nextInt();
+		pluppY=scanner.nextInt();
+	}
+	else if (type=="B") {
+		if (scanner.nextInt()==0) {
+			pixels.clear();
+		}
+		var color = scanner.shift();
+		while (scanner.length>1) {
+			pixels.push(new Pixel(scanner.shift(), scanner.shift(), color));
+		}
+		repaint();
+	}
+	else if (type.equals("H")) {
+		var mode = scanner.shift();
+		if (mode == "RESET") {
+//			highscores.clear();
+		}
+		else if (mode=="SET") {
+//			highscores.add(new Highscore(scanner));
+		}
+		else if (mode=="DONE") {
+			
+
+		}
+	}
+	scanner.close();
 
 };
-
+class Pixel{
+	constructor(x,y,color) {
+		this.x=x;
+		this.y=y;
+		this.color=color;
+	}
+}
