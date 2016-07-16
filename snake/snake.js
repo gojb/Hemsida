@@ -63,7 +63,7 @@ socket.onmessage = function (message) {
 		while (scanner.length>1) {
 			pixels.push(new Pixel(scanner.shift(), scanner.shift(), color));
 		}
-		repaint();
+//		repaint();
 	}
 	else if (type=="H") {
 		var mode = scanner.shift();
