@@ -124,7 +124,6 @@ function paint(){
 	for (var i = 0; i < arrayList.length; i++) {
 		var pixel = arrayList[i];
 		ctx.fillStyle=pixel.color;
-//		ctx.drawRect(pixel.x*pixelstorlek+1, pixel.y*pixelstorlek+1, pixelstorlek-2, pixelstorlek-2);
 		ctx.fillRect(pixel.x*pixelstorlek+2, pixel.y*pixelstorlek+2, pixelstorlek-2, pixelstorlek-2);
 
 	}
