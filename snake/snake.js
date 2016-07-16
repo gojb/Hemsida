@@ -84,7 +84,7 @@ socket.onmessage = function (message) {
 		}
 		else if (mode=="DONE") {
 			var elements=[];
-			for(var i;i<highscores.length;i++){
+			for(var i=0;i<highscores.length;i++){
 				console.log("rtgpösrfop");
 				var highscore=highscores[i];
 				$('.highscore').append('<div><p style="color:'+highscore.color+'>'+highscore.namn+'</p></div>');
