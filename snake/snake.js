@@ -76,6 +76,7 @@ socket.onmessage = function (message) {
 		var mode = scanner.shift();
 		if (mode == "RESET") {
 			$('.highscore').empty();
+			highscores=[];
 
 		}
 		else if (mode=="SET") {
