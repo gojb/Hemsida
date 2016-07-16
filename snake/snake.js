@@ -6,8 +6,8 @@ var gameover=false;
 var paused=false;
 var pluppX=0,pluppY=0;
 var pixels = []
-$('.snakeruta')[0].height=pixelstorlek*50+1;
-$('.snakeruta')[0].width=pixelstorlek*50+1;
+$('.snakeruta')[0].height=pixelstorlek*50+2;
+$('.snakeruta')[0].width=pixelstorlek*50+2;
 if ('WebSocket' in window) {
 	socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/snake");
 }  else {
@@ -116,7 +116,7 @@ function paint(){
 	
 	
 	ctx.beginPath();
-	ctx.arc(pluppX*pixelstorlek+pixelstorlek/2, pluppY*pixelstorlek+pixelstorlek/2, pixelstorlek/2-1, 0, 2 * Math.PI, false);
+	ctx.arc(pluppX*pixelstorlek+pixelstorlek/2+1, pluppY*pixelstorlek+pixelstorlek/2+1, pixelstorlek/2-1, 0, 2 * Math.PI, false);
 	ctx.fillStyle = '#ff0000';
 	ctx.fill();
 	
@@ -128,7 +128,7 @@ function paint(){
 		var pixel = arrayList[i];
 		ctx.fillStyle=pixel.color;
 //		ctx.drawRect(pixel.x*pixelstorlek+1, pixel.y*pixelstorlek+1, pixelstorlek-2, pixelstorlek-2);
-		ctx.fillRect(pixel.x*pixelstorlek+1, pixel.y*pixelstorlek+1, pixelstorlek-2, pixelstorlek-2);
+		ctx.fillRect(pixel.x*pixelstorlek+2, pixel.y*pixelstorlek+2, pixelstorlek-2, pixelstorlek-2);
 
 	}
 	if(paused){
