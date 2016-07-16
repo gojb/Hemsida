@@ -4,6 +4,7 @@
 
 <!--#include virtual="/head.html" -->
 <title>Snake - GoJb Goodies</title>
+<link href=chat.css rel=stylesheet type=text/css>
 </head>
 <body class="bred">
 	<!--#include virtual="/menu.html" -->
