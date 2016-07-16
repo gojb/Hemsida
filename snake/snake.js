@@ -86,21 +86,21 @@ socket.onmessage = function (message) {
 	}
 
 };
-document.addEventListener("keypress", function (e) {
+$(window).keypress(function (e) {
 	console.log("tjomb,rfdoöj")
-	if(e.keyCode == 37)
+	if(e.which == 37)
 		socket.send("R left");
-	else if(e.keyCode == 39)
+	else if(e.which == 39)
 		socket.send("R right");
-	else if(e.keyCode == 38)
+	else if(e.which == 38)
 		socket.send("R up");
-	else if(e.keyCode == 40)
+	else if(e.which == 40)
 		socket.send("R down");
-	else if (e.keyCode == 82||e.keyCode == 113){
+	else if (e.which == 82||e.keyCode == 113){
 		socket.send("RES");
 		socket.send("START");
 	}
-	else if(e.keyCode == 32)
+	else if(e.which == 32)
 		socket.send("PAUSE");
 }, false);
 function paint(){
