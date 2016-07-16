@@ -60,9 +60,12 @@ socket.onmessage = function (message) {
 			pixels=[];
 		}
 		var color = scanner.shift();
+		var i;
 		while (scanner.length>1) {
 			pixels.push(new Pixel(scanner.shift(), scanner.shift(), color));
+			i++;
 		}
+		console.log(i);
 //		repaint();
 	}
 	else if (type=="H") {
