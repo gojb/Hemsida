@@ -86,7 +86,7 @@ socket.onmessage = function (message) {
 	}
 
 };
-addEventListener("keypress", function (e) {
+document.addEventListener("keypress", function (e) {
 	if(e.keyCode == 37)
 		cc.send("R left");
 	else if(e.keyCode == 39)
