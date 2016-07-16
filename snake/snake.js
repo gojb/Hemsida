@@ -45,18 +45,18 @@ socket.onmessage = function (message) {
 			paused=true;
 		}
 		else if (string=="GAMEOVER") {
-			consol.log(scanner);
+			console.log(scanner);
 			vem=scanner;
 			gameover = true;
 		}
-		frame.repaint();
+//		frame.repaint();
 	}
 	else if (type=="P") {
-		pluppX=scanner.nextInt();
-		pluppY=scanner.nextInt();
+		pluppX=scanner.shift();
+		pluppY=scanner.shift();
 	}
 	else if (type=="B") {
-		if (scanner.nextInt()==0) {
+		if (scanner.shift()==0) {
 			pixels.clear();
 		}
 		var color = scanner.shift();
@@ -65,7 +65,7 @@ socket.onmessage = function (message) {
 		}
 		repaint();
 	}
-	else if (type.equals("H")) {
+	else if (type=="H") {
 		var mode = scanner.shift();
 		if (mode == "RESET") {
 //			highscores.clear();
