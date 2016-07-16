@@ -115,7 +115,7 @@ function paint(){
 	
 	
 	ctx.beginPath();
-	ctx.arc(pluppX*pixelstorlek+1, pluppY*pixelstorlek+1, pixelstorlek/2-1, 0, 2 * Math.PI, false);
+	ctx.arc(pluppX*pixelstorlek+pixelstorlek/2, pluppY*pixelstorlek+pixelstorlek/2, pixelstorlek/2-1, 0, 2 * Math.PI, false);
 	ctx.fillStyle = '#ff0000';
 	ctx.fill();
 	
