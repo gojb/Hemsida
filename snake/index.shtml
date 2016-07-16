@@ -10,8 +10,9 @@
 	<!--#include virtual="/menu.html" -->
 	<div class="middle">
 		<canvas class="snakeruta"></canvas>
+		<div class="highscore"><p>sdhiofnkhjrtfkrdf,</p></div>
 	</div>
-	<div class="highscore"><p>sdhiofnkhjrtfkrdf,</p></div>
+	
 
 	<script type="text/javascript" src="snake.js"></script>
 </body>
