@@ -10,6 +10,8 @@
 <div class="middle">
 <canvas class="snakeruta"></canvas>
 </div>
+
+
 <script type="text/javascript" src="snake.js"></script>
 </body>
 </html>
