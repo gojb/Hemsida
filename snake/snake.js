@@ -5,7 +5,8 @@ var vem;
 var gameover=false;
 var paused=false;
 var pluppX=0,pluppY=0;
-var pixels = []
+var pixels = [];
+var highscores = [];
 $('.snakeruta')[0].height=pixelstorlek*50+2;
 $('.snakeruta')[0].width=pixelstorlek*50+2;
 if ('WebSocket' in window) {
@@ -74,10 +75,11 @@ socket.onmessage = function (message) {
 	else if (type=="H") {
 		var mode = scanner.shift();
 		if (mode == "RESET") {
-//			highscores.clear();
+			$('.snakeruta').empty();
+			
 		}
 		else if (mode=="SET") {
-//			highscores.add(new Highscore(scanner));
+			highscores.push(new Highscore(scanner));
 		}
 		else if (mode=="DONE") {
 
@@ -143,6 +145,15 @@ class Pixel{
 		this.x=x;
 		this.y=y;
 		this.color=color;
+	}
+}
+class Highscore{
+	constructor(scanner){
+		this.p=scanner.shift();
+
+		this.color=Color.decode("#"+scanner.shift());
+		this.highscore=scanner.shift();
+		this.namn=scanner;
 	}
 }
 function clone(obj) {
