@@ -32,8 +32,8 @@ socket.onclose = function () {
 };
 
 socket.onmessage = function (message) {
-	console.log(message);
-	var scanner = message.split(/\s+/);
+	console.log(message.data);
+	var scanner = message.data.split(/\s+/);
 	var type = scanner.shift();
 
 	if (type == "A") {
