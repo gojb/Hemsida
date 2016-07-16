@@ -32,7 +32,7 @@ socket.onclose = function () {
 };
 
 socket.onmessage = function (message) {
-	consol.log(message);
+	console.log(message);
 	var scanner = message.split(/\s+/);
 	var type = scanner.shift();
 
