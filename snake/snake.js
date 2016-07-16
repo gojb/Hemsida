@@ -87,7 +87,7 @@ socket.onmessage = function (message) {
 
 };
 function paint(){
-	ctx.clearRect(0, 0, canvas.width, canvas.height);
+	ctx.clearRect(0, 0, $('.snakeruta')[0].width, $('.snakeruta')[0].height);
 	ctx.beginPath();
 	ctx.moveTo(0, 0);
 	ctx.lineTo(0, $('.snakeruta')[0].height);
