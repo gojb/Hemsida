@@ -87,7 +87,7 @@ socket.onmessage = function (message) {
 
 };
 function paint(){
-	g.setColor(Color.black);
+	ctx.fillStyle(Color.black);
 	g.drawLine(0, 0, 0, getHeight());
 	g.drawLine(0, 0, getWidth(), 0);
 	g.drawLine(0,getHeight(),getWidth(), getHeight());
@@ -109,14 +109,14 @@ function paint(){
 
 	}
 	if(paused){
-		ctx.fillStyle(blue);
+		ctx.fillStyle("#0000FF");
 		ctx.setFont(new Font(null, 0, 25));
-		ctx.drawString("Spelet pausat. Tryck på mellanslag för att fortsätta.", 10, $('.snakeruta')[0].height/2);
+		ctx.fillText("Spelet pausat. Tryck på mellanslag för att fortsätta.", 10, $('.snakeruta')[0].height/2);
 	}
 	if (gameover) {
-		ctx.setColor(red);
+		ctx.fillStyle("#FF0000");
 		ctx.setFont(new Font(null, 0, 25));
-		ctx.drawString(vem+" förlorade!",25 , $('.snakeruta')[0].height/2-25);
+		ctx.fillText(vem+" förlorade!",25 , $('.snakeruta')[0].height/2-25);
 	}
 }
 class Pixel{
