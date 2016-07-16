@@ -97,6 +97,7 @@ function paint(){
 	ctx.strokeStyle = '#000000';
 	ctx.stroke();
 	
+	
 	ctx.beginPath();
 	ctx.arc(pluppX*pixelstorlek+1, pluppY*pixelstorlek+1, pixelstorlek/2-1, 0, 2 * Math.PI, false);
 	ctx.fillStyle = '#ff0000';
