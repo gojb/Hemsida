@@ -4,11 +4,11 @@ var socket;
 if ('WebSocket' in window) {
 	socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/snake");
 }  else {
-	Console.log('Error: WebSocket stöds inte.');
+	console.log('Error: WebSocket stöds inte.');
 }
 socket.onopen = function () {
 	var namn = prompt("Vad heter du?", "");
-	Console.log("Öppnar");
+	console.log("Öppnar");
 	if (namn==null||namn.equals("")) {
 		namn="Okänd";
 	}
