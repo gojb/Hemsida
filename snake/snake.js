@@ -60,7 +60,7 @@ socket.onmessage = function (message) {
 			pixels=[];
 		}
 		var color = scanner.shift();
-		var i;
+		var i=0;
 		while (scanner.length>1) {
 			pixels.push(new Pixel(scanner.shift(), scanner.shift(), color));
 			i++;
