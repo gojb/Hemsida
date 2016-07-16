@@ -160,7 +160,7 @@ class Highscore{
 	constructor(scanner){
 		this.p=scanner.shift();
 
-		this.color=Color.decode("#"+scanner.shift());
+		this.color="#"+scanner.shift();
 		this.highscore=scanner.shift();
 		this.namn=scanner;
 	}
