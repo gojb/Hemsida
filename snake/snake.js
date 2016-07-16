@@ -107,18 +107,18 @@ function paint(){
 	}
 	for (var i = 0; i < arrayList.length; i++) {
 		var pixel = arrayList[i];
-		ctx.fillStyle(pixel.color);
+		ctx.fillStyle=pixel.color;
 //		ctx.drawRect(pixel.x*pixelstorlek+1, pixel.y*pixelstorlek+1, pixelstorlek-2, pixelstorlek-2);
 		ctx.fillRect(pixel.x*pixelstorlek+1, pixel.y*pixelstorlek+1, pixelstorlek-2, pixelstorlek-2);
 
 	}
 	if(paused){
-		ctx.fillStyle("#0000FF");
+		ctx.fillStyle="#0000FF";
 		ctx.font("20px Georgia");
 		ctx.fillText("Spelet pausat. Tryck på mellanslag för att fortsätta.", 10, $('.snakeruta')[0].height/2);
 	}
 	if (gameover) {
-		ctx.fillStyle("#FF0000");
+		ctx.fillStyle="#FF0000";
 		ctx.font("20px Georgia");
 		ctx.fillText(vem+" förlorade!",25 , $('.snakeruta')[0].height/2-25);
 	}
