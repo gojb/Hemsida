@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--#include virtual="/head.html" -->
+<title>Snake - GoJb Goodies</title>
+</head>
+<body class="bred">
+<!--#include virtual="/menu.html" -->
+<div class="middle"></div>
+</body>
+</html>
