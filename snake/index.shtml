@@ -4,7 +4,7 @@
 
 <!--#include virtual="/head.html" -->
 <title>Snake - GoJb Goodies</title>
-<link href=chat.css rel=stylesheet type=text/css>
+<link href=snake.css rel=stylesheet type=text/css>
 </head>
 <body class="bred">
 	<!--#include virtual="/menu.html" -->
@@ -14,8 +14,6 @@
 			<p>sdhiofnkhjrtfkrdf,</p>
 		</div>
 	</div>
-
-
 	<script type="text/javascript" src="snake.js"></script>
 </body>
 </html>
