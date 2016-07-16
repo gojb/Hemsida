@@ -86,7 +86,7 @@ socket.onmessage = function (message) {
 	}
 
 };
-$(window).keypress(function (e) {
+$(window).keydown(function (e) {
 	console.log("tjomb,rfdoöj")
 	if(e.which == 37)
 		socket.send("R left");
