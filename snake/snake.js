@@ -87,7 +87,7 @@ socket.onmessage = function (message) {
 
 };
 function paint(){
-	ctx.fillStyle(Color.black);
+	ctx.fillStyle("#000000");
 	g.drawLine(0, 0, 0, getHeight());
 	g.drawLine(0, 0, getWidth(), 0);
 	g.drawLine(0,getHeight(),getWidth(), getHeight());
