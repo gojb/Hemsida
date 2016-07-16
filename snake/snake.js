@@ -18,10 +18,10 @@ socket.onopen = function () {
 		namn="Okänd";
 	}
 	var letters = '0123456789ABCDEF'.split('');
-    var color = '';
-    for (var i = 0; i < 6; i++ ) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
+	var color = '';
+	for (var i = 0; i < 6; i++ ) {
+		color += letters[Math.floor(Math.random() * 16)];
+	}
 	socket.send("INIT "+color+" "+namn);
 }
 socket.onclose = function () {
@@ -57,7 +57,7 @@ socket.onmessage = function (message) {
 	}
 	else if (type=="B") {
 		if (scanner.shift()==0) {
-			pixels.clear();
+			pixels=[];
 		}
 		var color = scanner.shift();
 		while (scanner.length>1) {
@@ -74,12 +74,10 @@ socket.onmessage = function (message) {
 //			highscores.add(new Highscore(scanner));
 		}
 		else if (mode=="DONE") {
-			
+
 
 		}
 	}
-	scanner.close();
-
 };
 class Pixel{
 	constructor(x,y,color) {
