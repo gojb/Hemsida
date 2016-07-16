@@ -8,7 +8,7 @@
 <body class="bred">
 	<!--#include virtual="/menu.html" -->
 	<div class="middle">
-		<canvas class="snakeruta" style="height: 401px; width: 401px;"></canvas>
+		<canvas class="snakeruta" style="height: 501px; width: 501px;"></canvas>
 	</div>
 
 
