@@ -75,17 +75,25 @@ socket.onmessage = function (message) {
 	else if (type=="H") {
 		var mode = scanner.shift();
 		if (mode == "RESET") {
-			$('.snakeruta').empty();
-			
+			$('.highscore').empty();
+
 		}
 		else if (mode=="SET") {
 			highscores.push(new Highscore(scanner));
 		}
 		else if (mode=="DONE") {
-
-
+			var elements=[];
+			for(var i;i<highscores.length;i++){
+				var highscore=highscores[i];
+				elements.push('<div><p style="color:highscore.color">highscore.namn</p></div>');
+				elements.push('<div><p style="color:highscore.color">highscore.poäng</p></div>');
+			}
+			$('.highscore').add(elements);
 		}
+
 	}
+
+
 
 };
 $(window).keydown(function (e) {
@@ -115,13 +123,13 @@ function paint(){
 	ctx.lineTo(0,0);
 	ctx.strokeStyle = '#000000';
 	ctx.stroke();
-	
-	
+
+
 	ctx.beginPath();
 	ctx.arc(pluppX*pixelstorlek+pixelstorlek/2+1, pluppY*pixelstorlek+pixelstorlek/2+1, pixelstorlek/2-1, 0, 2 * Math.PI, false);
 	ctx.fillStyle = '#ff0000';
 	ctx.fill();
-	
+
 	var arrayList = clone(pixels);
 	for (var i = 0; i < arrayList.length; i++) {
 		var pixel = arrayList[i];
@@ -157,33 +165,33 @@ class Highscore{
 	}
 }
 function clone(obj) {
-    // Handle the 3 simple types, and null or undefined
-    if (null == obj || "object" != typeof obj) return obj;
+	// Handle the 3 simple types, and null or undefined
+	if (null == obj || "object" != typeof obj) return obj;
 
-    // Handle Date
-    if (obj instanceof Date) {
-        var copy = new Date();
-        copy.setTime(obj.getTime());
-        return copy;
-    }
+	// Handle Date
+	if (obj instanceof Date) {
+		var copy = new Date();
+		copy.setTime(obj.getTime());
+		return copy;
+	}
 
-    // Handle Array
-    if (obj instanceof Array) {
-        var copy = [];
-        for (var i = 0, len = obj.length; i < len; i++) {
-            copy[i] = clone(obj[i]);
-        }
-        return copy;
-    }
+	// Handle Array
+	if (obj instanceof Array) {
+		var copy = [];
+		for (var i = 0, len = obj.length; i < len; i++) {
+			copy[i] = clone(obj[i]);
+		}
+		return copy;
+	}
 
-    // Handle Object
-    if (obj instanceof Object) {
-        var copy = {};
-        for (var attr in obj) {
-            if (obj.hasOwnProperty(attr)) copy[attr] = clone(obj[attr]);
-        }
-        return copy;
-    }
+	// Handle Object
+	if (obj instanceof Object) {
+		var copy = {};
+		for (var attr in obj) {
+			if (obj.hasOwnProperty(attr)) copy[attr] = clone(obj[attr]);
+		}
+		return copy;
+	}
 
-    throw new Error("Unable to copy obj! Its type isn't supported.");
+	throw new Error("Unable to copy obj! Its type isn't supported.");
 }
