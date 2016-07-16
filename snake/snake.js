@@ -9,7 +9,7 @@ if ('WebSocket' in window) {
 socket.onopen = function () {
 	var namn = prompt("Vad heter du?", "");
 	console.log("Öppnar");
-	if (namn==null||namn.equals("")) {
+	if (namn==null||namn=="") {
 		namn="Okänd";
 	}
 	var letters = '0123456789ABCDEF'.split('');
