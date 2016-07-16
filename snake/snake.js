@@ -14,7 +14,7 @@ if ('WebSocket' in window) {
 	console.log('Error: WebSocket stöds inte.');
 }
 socket.onopen = function () {
-	
+
 	var namn = prompt("Vad heter du?", "");
 	console.log("Öppnar");
 	if (namn==null||namn=="") {
@@ -98,26 +98,26 @@ function paint(){
 	g.fillOval(pluppX*pixelstorlek+1, pluppY*pixelstorlek+1, pixelstorlek-2, pixelstorlek-2);
 
 	var arrayList = [];
-    for (var i = 0, len = pixels.length; i < len; i++) {
-    	arrayList[i] = clone(pixels[i]);
-    }
+	for (var i = 0, len = pixels.length; i < len; i++) {
+		arrayList[i] = clone(pixels[i]);
+	}
 	for (var i = 0; i < arrayList.length; i++) {
 		var pixel = arrayList[i];
 		ctx.fillStyle(pixel.color);
-		ctx.drawRect(pixel.x*pixelstorlek+1, pixel.y*pixelstorlek+1, pixelstorlek-2, pixelstorlek-2);
+//		ctx.drawRect(pixel.x*pixelstorlek+1, pixel.y*pixelstorlek+1, pixelstorlek-2, pixelstorlek-2);
 		ctx.fillRect(pixel.x*pixelstorlek+1, pixel.y*pixelstorlek+1, pixelstorlek-2, pixelstorlek-2);
+
 	}
-}
-if(paused){
-	g.setColor(blue);
-	g.setFont(new Font(null, 0, 25));
-	g.drawString("Spelet pausat. Tryck på mellanslag för att fortsätta.", 10, getHeight()/2);
-}
-if (gameover) {
-	g.setColor(red);
-	g.setFont(new Font(null, 0, 25));
-	g.drawString(vem+" förlorade!",25 , getHeight()/2-25);
-}
+	if(paused){
+		ctx.fillStyle.setColor(blue);
+		ctx.setFont(new Font(null, 0, 25));
+		ctx.drawString("Spelet pausat. Tryck på mellanslag för att fortsätta.", 10, $('.snakeruta')[0].height/2);
+	}
+	if (gameover) {
+		g.setColor(red);
+		g.setFont(new Font(null, 0, 25));
+		g.drawString(vem+" förlorade!",25 , getHeight()/2-25);
+	}
 }
 class Pixel{
 	constructor(x,y,color) {
