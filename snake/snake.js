@@ -1,5 +1,22 @@
 var ctx = $('.snakeruta')[0].getContext("2d");
 var pixelstorlek = 10;
-$('.snakeruta').width = pixelstorlek*50+1;
-$('.snakeruta').height =  pixelstorlek*50+1;
+var socket;
+if ('WebSocket' in window) {
+	socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/snake");
+}  else {
+	Console.log('Error: WebSocket stöds inte.');
+}
+socket.onopen = function () {
+	var namn = prompt("Vad heter du?", "");
+	Console.log("Öppnar");
+	if (namn==null||namn.equals("")) {
+		namn="Okänd";
+	}
+	var letters = '0123456789ABCDEF'.split('');
+    var color = '';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+	socket.send("INIT "+color+" "+namn);
+}
 
