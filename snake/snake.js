@@ -87,20 +87,21 @@ socket.onmessage = function (message) {
 
 };
 document.addEventListener("keypress", function (e) {
+	console.log("tjomb,rfdoöj")
 	if(e.keyCode == 37)
-		cc.send("R left");
+		socket.send("R left");
 	else if(e.keyCode == 39)
-		cc.send("R right");
+		socket.send("R right");
 	else if(e.keyCode == 38)
-		cc.send("R up");
+		socket.send("R up");
 	else if(e.keyCode == 40)
-		cc.send("R down");
+		socket.send("R down");
 	else if (e.keyCode == 82||e.keyCode == 113){
-		cc.send("RES");
-		cc.send("START");
+		socket.send("RES");
+		socket.send("START");
 	}
 	else if(e.keyCode == 32)
-		cc.send("PAUSE");
+		socket.send("PAUSE");
 }, false);
 function paint(){
 	ctx.clearRect(0, 0, $('.snakeruta')[0].width, $('.snakeruta')[0].height);
