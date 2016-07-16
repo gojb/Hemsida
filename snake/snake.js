@@ -86,6 +86,22 @@ socket.onmessage = function (message) {
 	}
 
 };
+addEventListener("keypress", function (e) {
+	if(e.keyCode == 37)
+		cc.send("R left");
+	else if(e.keyCode == 39)
+		cc.send("R right");
+	else if(e.keyCode == 38)
+		cc.send("R up");
+	else if(e.keyCode == 40)
+		cc.send("R down");
+	else if (e.keyCode == 82||e.keyCode == 113){
+		cc.send("RES");
+		cc.send("START");
+	}
+	else if(e.keyCode == 32)
+		cc.send("PAUSE");
+}, false);
 function paint(){
 	ctx.clearRect(0, 0, $('.snakeruta')[0].width, $('.snakeruta')[0].height);
 	ctx.beginPath();
