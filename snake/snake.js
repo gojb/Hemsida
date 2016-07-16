@@ -19,4 +19,15 @@ socket.onopen = function () {
     }
 	socket.send("INIT "+color+" "+namn);
 }
+socket.onclose = function () {
+	document.getElementById('chat').onkeydown = null;
+	Console.log('*Ifrånkopplad');
+	document.getElementById('från').setAttribute('hidden','');
+	document.getElementById('knapp').removeAttribute('hidden');
+};
+
+socket.onmessage = function (message) {
+	Console.log(message.data);
+
+};
 
