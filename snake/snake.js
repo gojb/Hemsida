@@ -102,7 +102,7 @@ $(window).keypress(function (e) {
 	}
 	else if(e.which == 32)
 		socket.send("PAUSE");
-}, false);
+});
 function paint(){
 	ctx.clearRect(0, 0, $('.snakeruta')[0].width, $('.snakeruta')[0].height);
 	ctx.beginPath();
