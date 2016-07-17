@@ -172,13 +172,13 @@ class Highscore{
 	}
 }
 $(window).resize(function res() {
-	if ($('.middle').offsetHeight < $('.middle').scrollHeight ||
-			$('.middle').offsetWidth < $('.middle').scrollWidth) {
+	if ($('.middle').outerHeight() < $('.middle')[0].scrollHeight ||
+			$('.middle').outerWidth() < $('.middle')[0].scrollWidth) {
 		    // your element have overflow
-		alert($('.middle').scrollHeight+"ower"+$('.middle').offsetHeight);
+		alert($('.middle')[0].scrollHeight+"ower"+$('.middle')[0].offsetHeight);
 		} else {
 		    // your element doesn't have overflow
-			alert($('.middle').scrollHeight+"not"+$('.middle').offsetHeight);
+			alert($('.middle')[0].scrollHeight+"not"+$('.middle')[0].offsetHeight);
 		}
 });
 function clone(obj) {
