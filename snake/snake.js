@@ -87,7 +87,7 @@ socket.onmessage = function (message) {
 			$('.highscore').append(
 					'<tr>'+
 					'<th>Spelare</th>'+
-					'<th>Poäng</th'>+
+					'<th>Poäng</th>'+
 					'<th>Highscore</th>'+
 			'</tr>');
 			for(var i=0;i<highscores.length;i++){
