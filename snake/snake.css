@@ -2,12 +2,23 @@
 	display: inline-block;
 	float: left;
 }
+.highscore {
+    background-color: black;
+    padding-top: 2px;
+    padding-left: 2px;
+    margin-left: 10px;
+}
 .highscore>div{
-	
+
 }
 .highscore>div>div{
 	display: inline;
+	background-color: white;
+	margin-bottom: 2px;
+	margin-right: 2px;
+	float: left;
 }
 .highscore>div>div>span{
 	
+margin: 10px;
 }
