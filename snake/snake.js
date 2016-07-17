@@ -182,7 +182,7 @@ function res() {
 	visibleBottom = bottom > scrollBot ? scrollBot : bottom;
 	pixelstorlek=Math.floor((visibleBottom - visibleTop)/50);
 
-	while (this.get(0) ? this.get(0).scrollHeight > this.innerHeight() : false) {
+	while ($(window).get(0) ? $(window).get(0).scrollHeight > $(window).innerHeight() : false) {
 		console.log("hdfc,m");
 		pixelstorlek--;
 		resa();
