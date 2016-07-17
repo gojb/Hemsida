@@ -178,7 +178,7 @@ $(window).resize(function res() {
 		alert($('.middle').scrollHeight+"ower"+$('.middle').offsetHeight);
 		} else {
 		    // your element doesn't have overflow
-			lert($('.middle').scrollHeight+"not"+$('.middle').offsetHeight);
+			alert($('.middle').scrollHeight+"not"+$('.middle').offsetHeight);
 		}
 });
 function clone(obj) {
