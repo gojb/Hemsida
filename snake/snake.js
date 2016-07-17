@@ -60,7 +60,7 @@ socket.onmessage = function (message) {
 	}
 	else if (type=="B") {
 		pixels=[];
-		var s=[];
+		var s;
 		for (var int = 0; int < scanner2.length; int++) {
 			if(int=0){
 				s=scanner;
