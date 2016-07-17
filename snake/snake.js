@@ -171,6 +171,14 @@ class Highscore{
 		this.namn=scanner;
 	}
 }
+$(window).resize(function res() {
+	if ($('.middle').offsetHeight < $('.middle').scrollHeight ||
+			$('.middle').offsetWidth < $('.middle').scrollWidth) {
+		    // your element have overflow
+		} else {
+		    // your element doesn't have overflow
+		}
+});
 function clone(obj) {
 	// Handle the 3 simple types, and null or undefined
 	if (null == obj || "object" != typeof obj) return obj;
