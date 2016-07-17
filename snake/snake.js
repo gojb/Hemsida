@@ -30,7 +30,7 @@ socket.onopen = function () {
 }
 socket.onclose = function () {
 	document.getElementById('chat').onkeydown = null;
-	Console.log('*Ifrånkopplad');
+	console.log('*Ifrånkopplad');
 	document.getElementById('från').setAttribute('hidden','');
 	document.getElementById('knapp').removeAttribute('hidden');
 };
@@ -64,12 +64,10 @@ socket.onmessage = function (message) {
 			pixels=[];
 		}
 		var color = "#"+scanner.shift();
-		var i=0;
 		while (scanner.length>1) {
 			pixels.push(new Pixel(scanner.shift(), scanner.shift(), color));
 			i++;
 		}
-		console.log(i);
 		paint();
 	}
 	else if (type=="H") {
@@ -146,7 +144,6 @@ function paint(){
 		var pixel = arrayList[i];
 		ctx.fillStyle=pixel.color;
 		ctx.fillRect(pixel.x*pixelstorlek+2, pixel.y*pixelstorlek+2, pixelstorlek-2, pixelstorlek-2);
-
 	}
 	if(paused){
 		ctx.fillStyle="#0000FF";
