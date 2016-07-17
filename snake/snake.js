@@ -66,6 +66,7 @@ var scanner2 = message.data.split(";");
 			if(int=0){
 				var color = "#"+s.shift();
 				while (scanner.length>1) {
+					console.log(22);
 					pixels.push(new Pixel(scanner.shift(), scanner.shift(), color));
 				}
 			}
