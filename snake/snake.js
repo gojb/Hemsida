@@ -63,7 +63,7 @@ var scanner2 = message.data.split(";");
 		var s;
 		console.log(scanner2.length);
 		for (var int = 0; int < scanner2.length; int++) {
-			if(int=0){
+			if(int==0){
 				var color = "#"+s.shift();
 				while (scanner.length>1) {
 					console.log(22);
