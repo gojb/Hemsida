@@ -7,8 +7,7 @@ var paused=false;
 var pluppX=0,pluppY=0;
 var pixels = [];
 var highscores = [];
-$('.snakeruta')[0].height=pixelstorlek*50+2;
-$('.snakeruta')[0].width=pixelstorlek*50+2;
+res();
 if ('WebSocket' in window) {
 	socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/snake");
 }  else {
@@ -172,14 +171,10 @@ class Highscore{
 	}
 }
 $(window).resize(function res() {
-	if ($('.middle').outerHeight() < $('.middle')[0].scrollHeight ||
-			$('.middle').outerWidth() < $('.middle')[0].scrollWidth) {
-		    // your element have overflow
-		alert($('.middle')[0].scrollHeight+"ower"+$('.middle')[0].offsetHeight);
-		} else {
-		    // your element doesn't have overflow
-			alert($('.middle')[0].scrollHeight+"not"+$('.middle')[0].offsetHeight);
-		}
+	pixelstorlek=Math.floor($('.middle').innerHeight()/50);
+	console.log(Math.floor($('.middle').innerHeight()/50))
+	$('.snakeruta')[0].height=pixelstorlek*50+2;
+	$('.snakeruta')[0].width=pixelstorlek*50+2;
 });
 function clone(obj) {
 	// Handle the 3 simple types, and null or undefined
