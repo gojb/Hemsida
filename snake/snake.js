@@ -63,15 +63,15 @@ socket.onmessage = function (message) {
 		var s;
 		for (var int = 0; int < scanner2.length; int++) {
 			if(int=0){
-				s=scanner;
+				var color = "#"+s.shift();
+				while (scanner.length>1) {
+					pixels.push(new Pixel(scanner.shift(), scanner.shift(), color));
+				}
 			}
 			else{
 				s=scanner2[int].split(/\s+/);
 			}
-			var color = "#"+s.shift();
-			while (s.length>1) {
-				pixels.push(new Pixel(s.shift(), s.shift(), color));
-			}
+
 			paint();
 		}
 
