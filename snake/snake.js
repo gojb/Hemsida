@@ -176,7 +176,7 @@ $(window).resize(function r() {
 function res() {
 	$('.snakeruta')[0].height=0;
 	$('.snakeruta')[0].width=0;
-	pixelstorlek=Math.floor($('.middle').innerHeight()-2/50);
+	pixelstorlek=Math.floor(($('.middle').innerHeight()-2)/50);
 //	resa();	
 	console.log(pixelstorlek);
 	$('.snakeruta')[0].height=pixelstorlek*50+2;
