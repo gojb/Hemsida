@@ -201,7 +201,7 @@ body {
 	background-color: white;
 	padding: 20px;
 	border-radius: 30px;
-	min-height: calc(100% - 170px);
+	min-height: calc(100% - 130px);
 	cursor: default;
 	display: table;
 }
