@@ -9,7 +9,7 @@
     margin-left: 10px;
 }
 .highscore>tr{
-
+background-color: white;
 }
 .highscore>tr>td{
 	display: inline;
