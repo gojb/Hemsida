@@ -75,15 +75,13 @@ socket.onmessage = function (message) {
 	else if (type=="H") {
 		var mode = scanner.shift();
 		if (mode == "RESET") {
-			$('.highscore').empty();
 			highscores=[];
-
 		}
 		else if (mode=="SET") {
 			highscores.push(new Highscore(scanner));
 		}
 		else if (mode=="DONE") {
-			var elements=[];
+			$('.highscore').empty();
 			$('.highscore').append(
 					'<tr>'+
 					'<th>Spelare</th>'+
