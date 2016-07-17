@@ -60,13 +60,13 @@ socket.onmessage = function (message) {
 	}
 	else if (type=="B") {
 		pixels=[];
-		var s;
+		var s=[];
 		for (var int = 0; int < scanner2.length; int++) {
 			if(int=0){
 				s=scanner;
 			}
 			else{
-				s=scanner2[int]
+				s=scanner2[int].split(/\s+/);
 			}
 			var color = "#"+s.shift();
 			while (s.length>1) {
