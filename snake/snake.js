@@ -35,9 +35,9 @@ socket.onclose = function () {
 };
 
 socket.onmessage = function (message) {
-var scanner2 = message.data.split(";");
+	var scanner2 = message.data.split(";");
 	var scanner = scanner2[0].split(/\s+/);
-	
+
 	var type = scanner.shift();
 
 	if (type == "A") {
@@ -60,22 +60,17 @@ var scanner2 = message.data.split(";");
 	}
 	else if (type=="B") {
 		pixels=[];
-		var s;
-		console.log(scanner2.length);
 		for (var int = 0; int < scanner2.length; int++) {
-			if(int==0){
-				var color = "#"+scanner.shift();
-				while (scanner.length>1) {
-					console.log(22);
-					pixels.push(new Pixel(scanner.shift(), scanner.shift(), color));
-				}
+			if(int!=0){
+				scanner=scanner2[int].split(/\s+/);
 			}
-			else{
-				s=scanner2[int].split(/\s+/);
+			var color = "#"+scanner.shift();
+			while (scanner.length>1) {
+				console.log(22);
+				pixels.push(new Pixel(scanner.shift(), scanner.shift(), color));
 			}
-
-			paint();
 		}
+		paint();
 
 	}
 	else if (type=="H") {
