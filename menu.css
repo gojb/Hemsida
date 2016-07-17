@@ -21,7 +21,6 @@ body {
 .bred .menuKnapp {
 	display: none;
 	width: 0;
-	
 }
 
 .bred .logo {
@@ -204,7 +203,7 @@ body {
 	border-radius: 30px;
 	min-height: calc(100% - 170px);
 	cursor: default;
-	    display: table;
+	display: table;
 }
 
 .smal .logo {
@@ -227,7 +226,7 @@ body {
 	height: 100%;
 	position: fixed;
 	left: 0px;
-	overflow:auto;
+	overflow: auto;
 }
 
 .smal .stängKnapp {
@@ -240,7 +239,7 @@ body {
 }
 
 .smal .meny ul {
-/*	height: 50px;*/
+	/*	height: 50px;*/
 	list-style: none;
 	padding-left: 0px;
 }
@@ -254,7 +253,7 @@ body {
 }
 
 .smal .meny>ul ul {
-	padding-left:10px;
+	padding-left: 10px;
 	display: none;
 }
 
@@ -279,7 +278,6 @@ body {
 .smal li a:hover {
 	color: rgb(58, 163, 158);
 }*/
-
 .smal .ChangeLang {
 	display: none;
 }
@@ -314,7 +312,7 @@ body {
 .smal {
 	left: 0;
 	margin: 0;
-	width:100%;
+	width: 100%;
 	overflow-x: hidden;
 	position: relative;
 }

@@ -1,5 +1,6 @@
 .snakeruta , .highscore{
 	display: inline-block;
+	float: left;
 }
 .highscore>div{
 	
