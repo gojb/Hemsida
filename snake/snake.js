@@ -35,7 +35,7 @@ socket.onclose = function () {
 };
 
 socket.onmessage = function (message) {
-	console.log(message.data);
+	
 	var scanner = message.data.split(/\s+/);
 	var type = scanner.shift();
 
@@ -48,7 +48,6 @@ socket.onmessage = function (message) {
 			paused=true;
 		}
 		else if (string=="GAMEOVER") {
-			console.log(scanner);
 			vem=scanner;
 			gameover = true;
 		}
@@ -87,7 +86,6 @@ socket.onmessage = function (message) {
 					'</tr>'
 			);
 			for(var i=0;i<highscores.length;i++){
-				console.log("rtgpösrfop");
 				var highscore=highscores[i];
 				$('.highscore').append(
 						'<tr style="color:'+highscore.color+';">'+
@@ -105,7 +103,6 @@ socket.onmessage = function (message) {
 
 };
 $(window).keydown(function (e) {
-	console.log("press"+e)
 	if(e.which == 37)
 		socket.send("R left");
 	else if(e.which == 39)
@@ -177,25 +174,10 @@ function res() {
 	$('.snakeruta')[0].height=0;
 	$('.snakeruta')[0].width=0;
 	pixelstorlek=Math.floor(($('.middle').height()-2)/50);
-//	resa();	
 	console.log("pixel"+pixelstorlek);
 	$('.snakeruta')[0].height=pixelstorlek*50+2;
 	$('.snakeruta')[0].width=pixelstorlek*50+2;
-//	while ($(window).get(0) ? $(window).get(0).scrollHeight > $(window).innerHeight() : false) {
-//	console.log("hdfc,m");
-//	pixelstorlek--;
-//	resa();
-
-//	}
 }
-function resa() {    
-
-}
-(function($) {
-	$.fn.hasScrollBar = function() {
-		return this.get(0) ? this.get(0).scrollHeight > this.innerHeight() : false;
-	}
-})(jQuery);
 function clone(obj) {
 	// Handle the 3 simple types, and null or undefined
 	if (null == obj || "object" != typeof obj) return obj;
