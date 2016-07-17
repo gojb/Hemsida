@@ -175,7 +175,7 @@ $(window).resize(function res() {
 	if ($('.middle').offsetHeight < $('.middle').scrollHeight ||
 			$('.middle').offsetWidth < $('.middle').scrollWidth) {
 		    // your element have overflow
-		alert("ower");
+		alert($('.middle').scrollHeight+"ower"+$('.middle').offsetHeight);
 		} else {
 		    // your element doesn't have overflow
 			alert("not");
