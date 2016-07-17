@@ -21,6 +21,7 @@ body {
 .bred .menuKnapp {
 	display: none;
 	width: 0;
+	
 }
 
 .bred .logo {
@@ -203,6 +204,7 @@ body {
 	border-radius: 30px;
 	min-height: calc(100% - 170px);
 	cursor: default;
+	    display: table;
 }
 
 .smal .logo {
