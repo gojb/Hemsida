@@ -170,12 +170,15 @@ class Highscore{
 		this.namn=scanner;
 	}
 }
-$(window).resize(function res() {
+$(window).resize(function r() {
+	res();
+});
+function res() {
 	pixelstorlek=Math.floor($('.middle').innerHeight()/50);
 	console.log(Math.floor($('.middle').innerHeight()/50))
 	$('.snakeruta')[0].height=pixelstorlek*50+2;
 	$('.snakeruta')[0].width=pixelstorlek*50+2;
-});
+}
 function clone(obj) {
 	// Handle the 3 simple types, and null or undefined
 	if (null == obj || "object" != typeof obj) return obj;
