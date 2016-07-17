@@ -8,17 +8,17 @@
     padding-left: 2px;
     margin-left: 10px;
 }
-.highscore>div{
+.highscore>tr{
 
 }
-.highscore>div>div{
+.highscore>tr>td{
 	display: inline;
 	background-color: white;
 	margin-bottom: 2px;
 	margin-right: 2px;
 	float: left;
 }
-.highscore>div>div>span{
+.highscore>tr>th{
 	
 margin: 10px;
 }

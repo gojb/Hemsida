@@ -84,13 +84,20 @@ socket.onmessage = function (message) {
 		}
 		else if (mode=="DONE") {
 			var elements=[];
+			$('.highscore').append(
+					'<tr>'+
+					'<th>Spelare</th>'+
+					'<th>Poäng</th'>+
+					'<th>Highscore</th>'+
+			'</tr>');
 			for(var i=0;i<highscores.length;i++){
 				console.log("rtgpösrfop");
 				var highscore=highscores[i];
 				$('.highscore').append(
-						'<div style="color:'+highscore.color+';">'+
-						'<div><span>'+highscore.namn+'</span></div>'+
-						'<div><span>'+highscore.poäng+'</span></div>'+
+						'<tr style="color:'+highscore.color+';">'+
+						'<td>'+highscore.namn+'</td>'+
+						'<td>'+highscore.poäng+'</td>'+
+						'<td>'+highscore.highscore+'</td>'+
 						'</div>'
 				);
 			}
