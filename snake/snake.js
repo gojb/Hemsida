@@ -183,6 +183,7 @@ function res() {
 	pixelstorlek=Math.floor((visibleBottom - visibleTop)/50);
 
 	while (this.get(0) ? this.get(0).scrollHeight > this.innerHeight() : false) {
+		console.log("hdfc,m");
 		pixelstorlek--;
 		resa();
 		
