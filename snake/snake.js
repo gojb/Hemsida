@@ -178,7 +178,7 @@ function res() {
 	$('.snakeruta')[0].width=0;
 	pixelstorlek=Math.floor(($('.middle').innerHeight()-2)/50);
 //	resa();	
-	console.log(pixelstorlek);
+	console.log("pixel"+pixelstorlek);
 	$('.snakeruta')[0].height=pixelstorlek*50+2;
 	$('.snakeruta')[0].width=pixelstorlek*50+2;
 //	while ($(window).get(0) ? $(window).get(0).scrollHeight > $(window).innerHeight() : false) {
