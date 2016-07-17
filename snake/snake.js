@@ -90,6 +90,9 @@ socket.onmessage = function (message) {
 				$('.highscore').append('<div> <p style="color:'+highscore.color+'>gehhuikehfcuiwekhjds</p></div>');
 				$('.highscore').append('<div> <p style="color:'+highscore.color+'>'+highscore.poäng+'</p></div>');
 				$('.highscore').append('<div> <p> Hejhejhejfiordkerojöinfmkdjoifmkd</p></div>');
+				
+				$('.highscore').append('<div> <p><span> Hejhejhejfiordkerojöinfmkdjoifmkd</span></p></div>');
+
 			}
 		}
 
