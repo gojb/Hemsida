@@ -181,14 +181,23 @@ function res() {
 	visibleTop = top < scrollTop ? scrollTop : top,
 	visibleBottom = bottom > scrollBot ? scrollBot : bottom;
 	pixelstorlek=Math.floor((visibleBottom - visibleTop)/50);
+
+	while (this.get(0) ? this.get(0).scrollHeight > this.innerHeight() : false) {
+		pixelstorlek--;
+		resa();
+		
+	}
+}
+function resa() {    
 	console.log(pixelstorlek);
 	$('.snakeruta')[0].height=pixelstorlek*50+2;
 	$('.snakeruta')[0].width=pixelstorlek*50+2;
 }
-function getVisible() {    
-
-}
-
+(function($) {
+    $.fn.hasScrollBar = function() {
+        return this.get(0) ? this.get(0).scrollHeight > this.innerHeight() : false;
+    }
+})(jQuery);
 function clone(obj) {
 	// Handle the 3 simple types, and null or undefined
 	if (null == obj || "object" != typeof obj) return obj;
