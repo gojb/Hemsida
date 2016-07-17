@@ -35,7 +35,7 @@ socket.onclose = function () {
 };
 
 socket.onmessage = function (message) {
-	
+
 	var scanner = message.data.split(/\s+/);
 	var type = scanner.shift();
 
@@ -58,15 +58,17 @@ socket.onmessage = function (message) {
 		pluppY=scanner.shift();
 	}
 	else if (type=="B") {
-		if (scanner.shift()==0) {
-			pixels=[];
+		pixels=[];
+		var string=scanner.split(";");
+		for (var int = 0; int < string.length; int++) {
+			var s=scanner.split(/\s+/);
+			var color = "#"+s.shift();
+			while (s.length>1) {
+				pixels.push(new Pixel(s.shift(), s.shift(), color));
+			}
+			paint();
 		}
-		var color = "#"+scanner.shift();
-		while (scanner.length>1) {
-			pixels.push(new Pixel(scanner.shift(), scanner.shift(), color));
-			i++;
-		}
-		paint();
+
 	}
 	else if (type=="H") {
 		var mode = scanner.shift();
