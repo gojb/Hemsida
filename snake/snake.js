@@ -177,7 +177,7 @@ function res() {
 	var scrollTop = $(window).scrollTop(),
 	scrollBot = scrollTop + $(window).height(),
 	top = $('.middle').offset().top,
-	bottom = top + $('.middle').outerHeight(),
+	bottom = top + $('.middle').innerHeight(),
 	visibleTop = top < scrollTop ? scrollTop : top,
 	visibleBottom = bottom > scrollBot ? scrollBot : bottom;
 	pixelstorlek=Math.floor((visibleBottom - visibleTop)/50);
