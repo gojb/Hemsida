@@ -89,7 +89,8 @@ socket.onmessage = function (message) {
 					'<th>Spelare</th>'+
 					'<th>Poäng</th>'+
 					'<th>Highscore</th>'+
-			'</tr>');
+					'</tr>'
+			);
 			for(var i=0;i<highscores.length;i++){
 				console.log("rtgpösrfop");
 				var highscore=highscores[i];
