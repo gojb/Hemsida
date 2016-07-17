@@ -1,17 +1,20 @@
-.snakeruta , .highscore{
+.snakeruta, .highscore {
 	display: inline-block;
 	float: left;
 }
+
 .highscore {
-    background-color: black;
-    padding-top: 2px;
-    padding-left: 2px;
-    margin-left: 10px;
+	background-color: black;
+	padding-top: 2px;
+	padding-left: 2px;
+	margin-left: 10px;
 }
-.highscore>tr{
-background-color: white;
+
+.highscore>tr {
+	background-color: white;
 }
-.highscore>tr>td{
+
+.highscore>tr>td {
 	display: inline;
 	background-color: white;
 	margin-bottom: 2px;
