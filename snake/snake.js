@@ -178,12 +178,12 @@ function res() {
 	scrollBot = scrollTop + $(window).height(),
 	top = $('.middle').offset().top,
 	bottom = top + $('.middle').outerHeight(),
-	visibleTop = top < scrollTop ? scrollTop : top,
-			visibleBottom = bottom > scrollBot ? scrollBot : bottom;
-			pixelstorlek=Math.floor((visibleBottom - visibleTop)/50);
-			console.log(pixelstorlek);
-			$('.snakeruta')[0].height=pixelstorlek*50+2;
-			$('.snakeruta')[0].width=pixelstorlek*50+2;
+	visibleTop = top < scrollTop ? scrollTop : top;
+	visibleBottom = bottom > scrollBot ? scrollBot : bottom;
+	pixelstorlek=Math.floor((visibleBottom - visibleTop)/50);
+	console.log(pixelstorlek);
+	$('.snakeruta')[0].height=pixelstorlek*50+2;
+	$('.snakeruta')[0].width=pixelstorlek*50+2;
 }
 function getVisible() {    
 
