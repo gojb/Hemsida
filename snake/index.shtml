@@ -12,11 +12,6 @@
 		<canvas class="snakeruta"></canvas>
 		<table>
 			<thead>
-				<tr>
-					<th>Spelare</th>
-					<th>Poäng</th>
-					<th>Highscore</th>
-				</tr>
 			</thead>
 			<tbody class="highscore"></tbody>
 		</table>
