@@ -170,8 +170,7 @@ class Pixel{
 }
 class Highscore{
 	constructor(scanner){
-		this.p=scanner.shift();
-
+		this.poäng=scanner.shift();
 		this.color="#"+scanner.shift();
 		this.highscore=scanner.shift();
 		this.namn=scanner;
