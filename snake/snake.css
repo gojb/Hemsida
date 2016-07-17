@@ -5,19 +5,8 @@
 
 .highscore {
 	background-color: black;
-	padding-top: 2px;
-	padding-left: 2px;
-	margin-left: 10px;
 }
 
 .highscore>tr {
 	background-color: white;
-}
-
-.highscore>tr>td {
-	display: inline;
-	background-color: white;
-	margin-bottom: 2px;
-	margin-right: 2px;
-	float: left;
 }
