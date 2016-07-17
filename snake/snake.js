@@ -174,11 +174,11 @@ $(window).resize(function r() {
 	res();
 });
 function res() {
-	scrollTop = $(window).scrollTop(),
+	var scrollTop = $(window).scrollTop(),
 	scrollBot = scrollTop + $(window).height(),
 	top = $('.middle').offset().top,
 	bottom = top + $('.middle').outerHeight(),
-	visibleTop = top < scrollTop ? scrollTop : top;
+	visibleTop = top < scrollTop ? scrollTop : top,
 	visibleBottom = bottom > scrollBot ? scrollBot : bottom;
 	pixelstorlek=Math.floor((visibleBottom - visibleTop)/50);
 	console.log(pixelstorlek);
