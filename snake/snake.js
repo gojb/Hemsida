@@ -175,10 +175,10 @@ $(window).resize(function res() {
 	if ($('.middle').offsetHeight < $('.middle').scrollHeight ||
 			$('.middle').offsetWidth < $('.middle').scrollWidth) {
 		    // your element have overflow
-		console.log("ower");
+		alert("ower");
 		} else {
 		    // your element doesn't have overflow
-			console.log("not");
+			alert("not");
 		}
 });
 function clone(obj) {
