@@ -37,6 +37,7 @@ socket.onclose = function () {
 socket.onmessage = function (message) {
 
 	var scanner = message.data.split(/\s+/);
+	var scanner2 = message.data.split(";");
 	var type = scanner.shift();
 
 	if (type == "A") {
@@ -59,9 +60,14 @@ socket.onmessage = function (message) {
 	}
 	else if (type=="B") {
 		pixels=[];
-		var string=scanner.split(";");
-		for (var int = 0; int < string.length; int++) {
-			var s=scanner.split(/\s+/);
+		var s
+		for (var int = 0; int < scanner2.length; int++) {
+			if(int=0){
+				s=scanner;
+			}
+			else{
+				s=scanner2[int]
+			}
 			var color = "#"+s.shift();
 			while (s.length>1) {
 				pixels.push(new Pixel(s.shift(), s.shift(), color));
