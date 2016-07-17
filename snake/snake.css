@@ -13,11 +13,3 @@
 .highscore>tr {
 	background-color: white;
 }
-
-.highscore>tr>td {
-	display: inline;
-	background-color: white;
-	margin-bottom: 2px;
-	margin-right: 2px;
-	float: left;
-}
