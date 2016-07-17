@@ -35,9 +35,9 @@ socket.onclose = function () {
 };
 
 socket.onmessage = function (message) {
-
-	var scanner = message.data.split(/\s+/);
-	var scanner2 = message.data.split(";");
+var scanner2 = message.data.split(";");
+	var scanner = scanner2[0].split(/\s+/);
+	
 	var type = scanner.shift();
 
 	if (type == "A") {
