@@ -177,17 +177,17 @@ function res() {
 	var scrollTop = $(window).scrollTop(),
 	scrollBot = scrollTop + $(window).height(),
 	top = $('.middle').offset().top,
-	bottom = top + $('.middle').innerHeight(),
+	bottom = top + $('.middle').innerHeight()-10,
 	visibleTop = top < scrollTop ? scrollTop : top,
 	visibleBottom = bottom > scrollBot ? scrollBot : bottom;
 	pixelstorlek=Math.floor((visibleBottom - visibleTop)/50);
 resa();
-	while ($(window).get(0) ? $(window).get(0).scrollHeight > $(window).innerHeight() : false) {
-		console.log("hdfc,m");
-		pixelstorlek--;
-		resa();
-		
-	}
+//	while ($(window).get(0) ? $(window).get(0).scrollHeight > $(window).innerHeight() : false) {
+//		console.log("hdfc,m");
+//		pixelstorlek--;
+//		resa();
+//		
+//	}
 }
 function resa() {    
 	console.log(pixelstorlek);
