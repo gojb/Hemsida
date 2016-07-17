@@ -174,19 +174,19 @@ $(window).resize(function r() {
 	res();
 });
 function res() {
-	scrollTop = $(this).scrollTop(),
-        scrollBot = scrollTop + $(this).height(),
-        top = $('.middle').offset().top,
-        bottom = top + $('.middle').outerHeight(),
-        visibleTop = top < scrollTop ? scrollTop : top,
-        visibleBottom = bottom > scrollBot ? scrollBot : bottom;
-        pixelstorlek=Math.floor((visibleBottom - visibleTop)/50);
-	console.log(pixelstorlek);
-	$('.snakeruta')[0].height=pixelstorlek*50+2;
-	$('.snakeruta')[0].width=pixelstorlek*50+2;
+	scrollTop = $(window).scrollTop(),
+	scrollBot = scrollTop + $(window).height(),
+	top = $('.middle').offset().top,
+	bottom = top + $('.middle').outerHeight(),
+	visibleTop = top < scrollTop ? scrollTop : top,
+			visibleBottom = bottom > scrollBot ? scrollBot : bottom;
+			pixelstorlek=Math.floor((visibleBottom - visibleTop)/50);
+			console.log(pixelstorlek);
+			$('.snakeruta')[0].height=pixelstorlek*50+2;
+			$('.snakeruta')[0].width=pixelstorlek*50+2;
 }
 function getVisible() {    
-        
+
 }
 
 function clone(obj) {
