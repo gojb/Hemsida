@@ -10,7 +10,15 @@
 	<!--#include virtual="/menu.html" -->
 	<div class="middle">
 		<canvas class="snakeruta"></canvas>
-		<table class="highscore">
+		<table>
+			<thead>
+				<tr>
+					<th>Spelare</th>
+					<th>Poäng</th>
+					<th>Highscore</th>
+				</tr>
+			</thead>
+			<tbody class="highscore"></tbody>
 		</table>
 	</div>
 
