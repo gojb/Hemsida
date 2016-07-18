@@ -1034,7 +1034,7 @@
 	* @param {DOM-Event} event_
 	* @return {Void}
 	*/
-//	function _onTouchstart(event_) {
+	function _onTouchstart(event_) {
 //
 //		// ignore bubbled handlers
 //		// if ( event_.currentTarget !== event_.target ) { return; }
@@ -1070,7 +1070,7 @@
 //		_oObj.oStartTouch = { screenX : _eventBase.screenX, screenY : _eventBase.screenY, timestamp:new Date().getTime()};
 //
 //		_$element.data('ojQueryGestures',$.extend(true,_oDatajQueryGestures,_oObj));
-//	}
+	}
 
 
 	/**
