@@ -1,3 +1,4 @@
+$(document).load(function(){
 var ctx = $('.snakeruta')[0].getContext("2d");
 var pixelstorlek = 9;
 var socket;
@@ -221,4 +222,5 @@ function clone(obj) {
 	}
 
 	throw new Error("Unable to copy obj! Its type isn't supported.");
+}
 }
