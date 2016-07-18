@@ -827,7 +827,7 @@
 	* @param {DOM-Event} event_
 	* @return {Void}
 	*/
-//	function _onOrientationchange(event_) {
+	function _onOrientationchange(event_) {
 //
 //		// window.orientation: -90,0,90,180
 //		var _aDict = ['landscape:clockwise:','portrait:default:','landscape:counterclockwise:','portrait:upsidedown:'];
@@ -841,7 +841,7 @@
 //					window.orientation
 //					].join('')
 //			});
-//	}
+	}
 
 
 	/**
@@ -871,7 +871,7 @@
 	* @param {DOM-Event} event_
 	* @return {Void}
 	*/
-//	function _onDevicemotion(event_) {
+	function _onDevicemotion(event_) {
 //
 //		var _sType;
 //		var _$element = jQuery(window);
@@ -1020,7 +1020,7 @@
 //			_$element.data('ojQueryGestures',$.extend(true,_oDatajQueryGestures,_oObj));
 //
 //		}
-//	}
+	}
 
 
 	/**
@@ -1034,7 +1034,7 @@
 	* @param {DOM-Event} event_
 	* @return {Void}
 	*/
-//	function _onTouchstart(event_) {
+	function _onTouchstart(event_) {
 //
 //		// ignore bubbled handlers
 //		// if ( event_.currentTarget !== event_.target ) { return; }
@@ -1070,7 +1070,7 @@
 //		_oObj.oStartTouch = { screenX : _eventBase.screenX, screenY : _eventBase.screenY, timestamp:new Date().getTime()};
 //
 //		_$element.data('ojQueryGestures',$.extend(true,_oDatajQueryGestures,_oObj));
-//	}
+	}
 
 
 	/**
@@ -1115,7 +1115,7 @@
 	* @param {DOM-Event} event_
 	* @return {Void}
 	*/
-//	function _onTouchmove(event_) {
+	function _onTouchmove(event_) {
 //
 //		var _$element = jQuery(event_.currentTarget);
 //		// var _$element = jQuery(event_.target);
@@ -1145,7 +1145,7 @@
 //		var _eventBase = (event_.touches) ? event_.touches[0] : event_;
 //		_oObj.oLastSwipemove = { screenX : _eventBase.screenX, screenY : _eventBase.screenY, timestamp:new Date().getTime()};
 //		_$element.data('ojQueryGestures',$.extend(true,_oDatajQueryGestures,_oObj));
-//	}
+	}
 
 
 	/**
@@ -1409,7 +1409,7 @@
 	* @param {DOM-Event} event_
 	* @return {Void}
 	*/
-//	function _onGesturestart(event_) {
+	function _onGesturestart(event_) {
 //
 //		// ignore bubbled handlers
 //		// if ( event_.currentTarget !== event_.target ) { return; }
@@ -1429,7 +1429,7 @@
 //		var _oObj = {};
 //		_oObj.oStartTouch = {timestamp:new Date().getTime()};
 //		_$element.data('ojQueryGestures',$.extend(true,_oDatajQueryGestures,_oObj));
-//	}
+	}
 
 	/**
 	* Handler: gesturechange
@@ -1454,7 +1454,7 @@
 	* @param {DOM-Event} event_
 	* @return {Void}
 	*/
-//	function _onGesturechange(event_) {
+	function _onGesturechange(event_) {
 //
 //		// ignore bubbled handlers
 //		// if ( event_.currentTarget !== event_.target ) { return; }
@@ -1493,7 +1493,7 @@
 //			}
 //		}
 //
-//	}
+	}
 
 
 	/**
@@ -1522,7 +1522,7 @@
 	* @param {DOM-Event} event_
 	* @return {Void}
 	*/
-//	function _onGestureend(event_) {
+	function _onGestureend(event_) {
 //		// ignore bubbled handlers
 //		// if ( event_.currentTarget !== event_.target ) { return; }
 //
@@ -1572,6 +1572,6 @@
 //				}
 //			}
 //			_$element.triggerHandler($.jGestures.events.gestureendProcessed,event_);
-//		}
+		}
 	}
 )(jQuery);
