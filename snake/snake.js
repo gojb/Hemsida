@@ -1,4 +1,4 @@
-$(document).load(function(){
+$(window).load(function(){
 var ctx = $('.snakeruta')[0].getContext("2d");
 var pixelstorlek = 9;
 var socket;
