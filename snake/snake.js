@@ -10,7 +10,19 @@ var pixels = [];
 var highscores = [];
 
 $('div').bind('swipeleft', function(){
-    console.log("test");
+	socket.send("R left");
+});
+
+$('div').bind('swiperight', function(){
+	socket.send("R right");
+});
+
+$('div').bind('swipeup', function(){
+	socket.send("R up");
+});
+
+$('div').bind('swipedown', function(){
+	socket.send("R down");
 });
 
 
