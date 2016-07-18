@@ -10,8 +10,10 @@
 .highscore>tr {
 	background-color: white;
 }
-.smal .highscore{
+
+.smal .highscore {
 	position: fixed;
-    top: 0;
-    right: 0px;
+	top: 0;
+	right: 0px;
+	font-size: 16px;
 }
