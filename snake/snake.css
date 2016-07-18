@@ -10,3 +10,6 @@
 .highscore>tr {
 	background-color: white;
 }
+html, body {
+  overflow-x: hidden;
+}
