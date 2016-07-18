@@ -35,7 +35,7 @@
 		</div>
 	</div>
 	<audio muted id="ljud">
-		<source src="http://gojb.bl.ee/bing.mp3" />
+		<source src="http://gojb.ml/images/bing.mp3" />
 	</audio>
 	<script type="text/javascript" src="chat.js"></script>
 </body>
