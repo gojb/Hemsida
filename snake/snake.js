@@ -109,9 +109,10 @@ socket.onmessage = function (message) {
 
 };
 
-$(document).on("swipe",function(){
+$("div").on("swipe",function(){
 	 console.log("SWIPE");
 	});
+console.log("WHAT?!!?!?");
 
 $(window).keydown(function (e) {
 	if(e.which == 37)
