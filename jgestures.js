@@ -1035,41 +1035,41 @@
 	* @return {Void}
 	*/
 	function _onTouchstart(event_) {
-//
-//		// ignore bubbled handlers
-//		// if ( event_.currentTarget !== event_.target ) { return; }
-//
-//		var _$element = jQuery(event_.currentTarget);
-//		// var _$element = jQuery(event_.target);
-//
-//		// trigger custom notification
-//		_$element.triggerHandler($.jGestures.events.touchstart,event_);
-//
-//
-//		// set the necessary touch events
-//		if($.hasGestures) {
-//			event_.currentTarget.addEventListener('touchmove', _onTouchmove, false);
-//			event_.currentTarget.addEventListener('touchend', _onTouchend, false);
-//		}
-//		// event substitution
-//		else {
-////			event_.currentTarget.addEventListener('mousemove', _onTouchmove, false);
-////			event_.currentTarget.addEventListener('mouseup', _onTouchend, false);
-//			_$element.bind('mousemove', _onTouchmove);
-//			_$element.bind('mouseup', _onTouchend);
-//		}
-//
-//		// get stored pseudo event
-//		var _oDatajQueryGestures = _$element.data('ojQueryGestures');
-//
-//		// var _oEventData = _oDatajQueryGestures[_sType];
-//		var _eventBase = (event_.touches) ? event_.touches[0] : event_;
-//		// store current values for calculating relative values (changes between touchmoveevents)
-//		var _oObj = {};
-//		_oObj.oLastSwipemove = { screenX : _eventBase.screenX, screenY : _eventBase.screenY, timestamp:new Date().getTime()};
-//		_oObj.oStartTouch = { screenX : _eventBase.screenX, screenY : _eventBase.screenY, timestamp:new Date().getTime()};
-//
-//		_$element.data('ojQueryGestures',$.extend(true,_oDatajQueryGestures,_oObj));
+
+		// ignore bubbled handlers
+		// if ( event_.currentTarget !== event_.target ) { return; }
+
+		var _$element = jQuery(event_.currentTarget);
+		// var _$element = jQuery(event_.target);
+
+		// trigger custom notification
+		_$element.triggerHandler($.jGestures.events.touchstart,event_);
+
+
+		// set the necessary touch events
+		if($.hasGestures) {
+			event_.currentTarget.addEventListener('touchmove', _onTouchmove, false);
+			event_.currentTarget.addEventListener('touchend', _onTouchend, false);
+		}
+		// event substitution
+		else {
+//			event_.currentTarget.addEventListener('mousemove', _onTouchmove, false);
+//			event_.currentTarget.addEventListener('mouseup', _onTouchend, false);
+			_$element.bind('mousemove', _onTouchmove);
+			_$element.bind('mouseup', _onTouchend);
+		}
+
+		// get stored pseudo event
+		var _oDatajQueryGestures = _$element.data('ojQueryGestures');
+
+		// var _oEventData = _oDatajQueryGestures[_sType];
+		var _eventBase = (event_.touches) ? event_.touches[0] : event_;
+		// store current values for calculating relative values (changes between touchmoveevents)
+		var _oObj = {};
+		_oObj.oLastSwipemove = { screenX : _eventBase.screenX, screenY : _eventBase.screenY, timestamp:new Date().getTime()};
+		_oObj.oStartTouch = { screenX : _eventBase.screenX, screenY : _eventBase.screenY, timestamp:new Date().getTime()};
+
+		_$element.data('ojQueryGestures',$.extend(true,_oDatajQueryGestures,_oObj));
 	}
 
 
