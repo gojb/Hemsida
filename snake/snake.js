@@ -170,13 +170,13 @@ function paint(){
 	}
 	if(paused){
 		ctx.fillStyle="#0000FF";
-		ctx.font=pixelstorlek*2+"px Bitter";
+		ctx.font=pixelstorlek*3+"px Bitter";
 		ctx.fillText("Spelet pausat.", 10, $('.snakeruta')[0].height/2);
-		ctx.fillText("Tryck på mellanslag för att fortsätta.", 10, $('.snakeruta')[0].height/2+pixelstorlek*2);
+		ctx.fillText("Tryck på mellanslag för att fortsätta.", 10, $('.snakeruta')[0].height/2+pixelstorlek*3);
 	}
 	if (gameover) {
 		ctx.fillStyle="#FF0000";
-		ctx.font=pixelstorlek*2+"px Bitter";
+		ctx.font=pixelstorlek*3+"px Bitter";
 		ctx.fillText(vem+" förlorade!",25 , $('.snakeruta')[0].height/2-25);
 	}
 }
