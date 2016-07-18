@@ -109,7 +109,7 @@ socket.onmessage = function (message) {
 
 };
 
-$(".snakeruta").on("swipe",function(){
+$(document).on("swipe",function(){
 	 console.log("SWIPE");
 	});
 
