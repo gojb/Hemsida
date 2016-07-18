@@ -53,7 +53,7 @@ socket.onmessage = function (message) {
 			vem=scanner;
 			gameover = true;
 		}
-//		frame.repaint();
+		paint();
 	}
 	else if (type=="P") {
 		pluppX=scanner.shift();
