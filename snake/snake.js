@@ -1,3 +1,4 @@
+$(window).load(function(){
 var ctx = $('.snakeruta')[0].getContext("2d");
 var pixelstorlek = 9;
 var socket;
@@ -7,7 +8,7 @@ var paused=false;
 var pluppX=0,pluppY=0;
 var pixels = [];
 var highscores = [];
-//document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
+document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
 res();
 if ('WebSocket' in window) {
 	socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/snake");
@@ -222,3 +223,4 @@ function clone(obj) {
 
 	throw new Error("Unable to copy obj! Its type isn't supported.");
 }
+});
