@@ -1115,37 +1115,37 @@
 	* @param {DOM-Event} event_
 	* @return {Void}
 	*/
-//	function _onTouchmove(event_) {
-//
-//		var _$element = jQuery(event_.currentTarget);
-//		// var _$element = jQuery(event_.target);
-//
-//		// get stored pseudo event
-//		var _oDatajQueryGestures = _$element.data('ojQueryGestures');
-//
-//		var _bHasTouches = !!event_.touches;
-//		var _iScreenX = (_bHasTouches) ? event_.changedTouches[0].screenX : event_.screenX;
-//		var _iScreenY = (_bHasTouches) ? event_.changedTouches[0].screenY : event_.screenY;
-//
-//		//relative to the last event
-//		var _oEventData = _oDatajQueryGestures.oLastSwipemove;
-//		var _iDeltaX = _iScreenX - _oEventData.screenX   ;
-//		var _iDeltaY = _iScreenY - _oEventData.screenY;
-//
-//		var _oDetails;
-//
-//			// there's a swipemove set (not the first occurance), trigger event
-//		if (!!_oDatajQueryGestures.oLastSwipemove) {
-//			// check
-//			_oDetails = _createOptions({type: 'swipemove', touches: (_bHasTouches) ? event_.touches.length: '1', screenY: _iScreenY,screenX:_iScreenX ,deltaY: _iDeltaY,deltaX : _iDeltaX, startMove:_oEventData, event:event_, timestamp:_oEventData.timestamp});
-//			_$element.triggerHandler(_oDetails.type,_oDetails);
-//		}
-//		// store the new values
-//		var _oObj = {};
-//		var _eventBase = (event_.touches) ? event_.touches[0] : event_;
-//		_oObj.oLastSwipemove = { screenX : _eventBase.screenX, screenY : _eventBase.screenY, timestamp:new Date().getTime()};
-//		_$element.data('ojQueryGestures',$.extend(true,_oDatajQueryGestures,_oObj));
-//	}
+	function _onTouchmove(event_) {
+
+		var _$element = jQuery(event_.currentTarget);
+		// var _$element = jQuery(event_.target);
+
+		// get stored pseudo event
+		var _oDatajQueryGestures = _$element.data('ojQueryGestures');
+
+		var _bHasTouches = !!event_.touches;
+		var _iScreenX = (_bHasTouches) ? event_.changedTouches[0].screenX : event_.screenX;
+		var _iScreenY = (_bHasTouches) ? event_.changedTouches[0].screenY : event_.screenY;
+
+		//relative to the last event
+		var _oEventData = _oDatajQueryGestures.oLastSwipemove;
+		var _iDeltaX = _iScreenX - _oEventData.screenX   ;
+		var _iDeltaY = _iScreenY - _oEventData.screenY;
+
+		var _oDetails;
+
+			// there's a swipemove set (not the first occurance), trigger event
+		if (!!_oDatajQueryGestures.oLastSwipemove) {
+			// check
+			_oDetails = _createOptions({type: 'swipemove', touches: (_bHasTouches) ? event_.touches.length: '1', screenY: _iScreenY,screenX:_iScreenX ,deltaY: _iDeltaY,deltaX : _iDeltaX, startMove:_oEventData, event:event_, timestamp:_oEventData.timestamp});
+			_$element.triggerHandler(_oDetails.type,_oDetails);
+		}
+		// store the new values
+		var _oObj = {};
+		var _eventBase = (event_.touches) ? event_.touches[0] : event_;
+		_oObj.oLastSwipemove = { screenX : _eventBase.screenX, screenY : _eventBase.screenY, timestamp:new Date().getTime()};
+		_$element.data('ojQueryGestures',$.extend(true,_oDatajQueryGestures,_oObj));
+	}
 
 
 	/**
