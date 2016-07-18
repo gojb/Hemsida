@@ -108,6 +108,11 @@ socket.onmessage = function (message) {
 
 
 };
+
+$(".snakeruta").on("swipe",function(){
+	 console.log("SWIPE");
+	});
+
 $(window).keydown(function (e) {
 	if(e.which == 37)
 		socket.send("R left");
