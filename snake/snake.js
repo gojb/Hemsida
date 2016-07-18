@@ -10,7 +10,7 @@ var pixels = [];
 var highscores = [];
 
 $('div').bind('swipeleft', function(){
-    alert("test");
+    console.log("test");
 });
 
 
