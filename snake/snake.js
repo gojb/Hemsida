@@ -189,7 +189,7 @@ $(window).resize(function r() {
 function res() {
 	$('.snakeruta')[0].height=0;
 	$('.snakeruta')[0].width=0;
-	pixelstorlek=Math.floor(($('.middle').height()-2)/50);
+	pixelstorlek=Math.min(Math.floor(($('.middle').height()-2)/50),Math.floor(($('.middle').width()-2)/50));
 	console.log("pixel"+pixelstorlek);
 	$('.snakeruta')[0].height=pixelstorlek*50+2;
 	$('.snakeruta')[0].width=pixelstorlek*50+2;
