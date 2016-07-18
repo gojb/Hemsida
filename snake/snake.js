@@ -125,7 +125,8 @@ $(window).keydown(function (e) {
 		socket.send("PAUSE");
 });
 function paint(){
-	ctx.clearRect(0, 0, $('.snakeruta')[0].width, $('.snakeruta')[0].height);
+	ctx.fillStyle="#ffffff";
+	ctx.fillRect(0, 0, $('.snakeruta')[0].width, $('.snakeruta')[0].height);
 	ctx.beginPath();
 	ctx.moveTo(0, 0);
 	ctx.lineTo(0, $('.snakeruta')[0].height);
