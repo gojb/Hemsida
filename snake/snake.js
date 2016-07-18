@@ -157,12 +157,12 @@ function paint(){
 	}
 	if(paused){
 		ctx.fillStyle="#0000FF";
-		ctx.font="20px Bitter";
+		ctx.font=pixelstorlek*2-2+"px Bitter";
 		ctx.fillText("Spelet pausat. Tryck på mellanslag för att fortsätta.", 10, $('.snakeruta')[0].height/2);
 	}
 	if (gameover) {
 		ctx.fillStyle="#FF0000";
-		ctx.font="20px Bitter";
+		ctx.font=pixelstorlek*2-2+"px Bitter";
 		ctx.fillText(vem+" förlorade!",25 , $('.snakeruta')[0].height/2-25);
 	}
 }
