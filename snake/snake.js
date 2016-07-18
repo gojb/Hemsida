@@ -8,6 +8,12 @@ var paused=false;
 var pluppX=0,pluppY=0;
 var pixels = [];
 var highscores = [];
+
+$('div').bind('swipeleft', function(){
+    alert("test");
+});
+
+
 document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
 res();
 if ('WebSocket' in window) {
@@ -109,11 +115,6 @@ socket.onmessage = function (message) {
 
 
 };
-
-$("div").on("swipe",function(){
-	 console.log("SWIPE");
-	});
-console.log("WHAT?!!?!?");
 
 $(window).keydown(function (e) {
 	if(e.which == 37)
