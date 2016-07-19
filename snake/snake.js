@@ -8,21 +8,35 @@ var paused=false;
 var pluppX=0,pluppY=0;
 var pixels = [];
 var highscores = [];
+var riktning;
 
-$('div').bind('swipeleft', function(){
-	socket.send("R left");
-});
+//$('div').bind('swipeleft', function(){
+//	socket.send("R left");
+//});
+//
+//$('div').bind('swiperight', function(){
+//	socket.send("R right");
+//});
+//
+//$('div').bind('swipeup', function(){
+//	socket.send("R up");
+//});
+//
+//$('div').bind('swipedown', function(){
+//	socket.send("R down");
+//});
 
-$('div').bind('swiperight', function(){
-	socket.send("R right");
-});
 
-$('div').bind('swipeup', function(){
-	socket.send("R up");
-});
-
-$('div').bind('swipedown', function(){
-	socket.send("R down");
+//Kolla vart klicket är. Om riktning är horizontell, kolla om klickHeight-snakeHeight>0, då åker den uppålt, annars nedåt.
+//Kolla om JS swipe är snabbare än JGesture
+$("snakeruta").click(function(){
+	if(riktning=="hori"){
+		console.log("HORI")
+	}
+	else if(riktning=="vert"){
+		console.log("VERT")
+	}
+//	
 });
 
 
@@ -129,14 +143,22 @@ socket.onmessage = function (message) {
 };
 
 $(window).keydown(function (e) {
-	if(e.which == 37)
+	if(e.which == 37){
 		socket.send("R left");
-	else if(e.which == 39)
+		rikning="hori";
+	}
+	else if(e.which == 39){
 		socket.send("R right");
-	else if(e.which == 38)
+		riktning="hori";
+	}
+	else if(e.which == 38){
 		socket.send("R up");
-	else if(e.which == 40)
+		riktning="vert";
+	}
+	else if(e.which == 40){
 		socket.send("R down");
+		riktning="vert";
+	}
 	else if (e.which == 82||e.keyCode == 113){
 		socket.send("RES");
 		socket.send("START");
