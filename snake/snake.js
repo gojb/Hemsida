@@ -34,7 +34,7 @@ $(".snakeruta").click(function(e){
 	var x = e.pageX - $('.snakeruta').offset().left;
 	var y = e.pageY - $('.snakeruta').offset().top;
 	console.log("CLICK");
-	if(riktning=="hori"){
+	if(riktning=="left"||riktning=="right"){
 		console.log(y);
 		if(y>pixelstorlek*25){
 			socket.send("R down");
@@ -46,7 +46,7 @@ $(".snakeruta").click(function(e){
 		}
 		
 	}
-	else if(riktning=="vert"){
+	else if(riktning=="up"||riktning=="down"){
 		console.log(x);
 		if(x>pixelstorlek*25){
 			socket.send("R right");
