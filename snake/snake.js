@@ -146,7 +146,7 @@ socket.onmessage = function (message) {
 $(window).keydown(function (e) {
 	if(e.which == 37){
 		socket.send("R left");
-		rikning="hori";
+		riktning="hori";
 	}
 	else if(e.which == 39){
 		socket.send("R right");
