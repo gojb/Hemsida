@@ -8,6 +8,7 @@
 </head>
 <body class="bred">
 	<!--#include virtual="/menu.html" -->
+	<meta name="viewport" content="maximum-scale=1.0">
 	<div class="middle">
 		<canvas class="snakeruta"></canvas>
 		<table>
