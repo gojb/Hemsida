@@ -59,7 +59,9 @@ $(".snakeruta").click(function(e){
 });
 
 (function($) {
+	  var IS_IOS = /iphone|ipad/i.test(navigator.userAgent);
 	  $.fn.nodoubletapzoom = function() {
+	    if (IS_IOS)
 	      $(this).bind('touchstart', function preventZoom(e) {
 	        var t2 = e.timeStamp
 	          , t1 = $(this).data('lastTouch') || t2
@@ -74,7 +76,6 @@ $(".snakeruta").click(function(e){
 	      });
 	  };
 	})(jQuery);
-
 document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
 res();
 if ('WebSocket' in window) {
