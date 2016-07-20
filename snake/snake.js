@@ -183,19 +183,15 @@ socket.onmessage = function (message) {
 $(window).keydown(function (e) {
 	if(e.which == 37){
 		socket.send("R left");
-		riktning="hori";
 	}
 	else if(e.which == 39){
 		socket.send("R right");
-		riktning="hori";
 	}
 	else if(e.which == 38){
 		socket.send("R up");
-		riktning="vert";
 	}
 	else if(e.which == 40){
 		socket.send("R down");
-		riktning="vert";
 	}
 	else if (e.which == 82||e.keyCode == 113){
 		socket.send("RES");
