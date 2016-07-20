@@ -10,32 +10,33 @@ var pixels = [];
 var highscores = [];
 var riktning;
 
-//$('div').bind('swipeleft', function(){
-//	socket.send("R left");
-//});
+// $('div').bind('swipeleft', function(){
+// socket.send("R left");
+// });
 //
-//$('div').bind('swiperight', function(){
-//	socket.send("R right");
-//});
+// $('div').bind('swiperight', function(){
+// socket.send("R right");
+// });
 //
-//$('div').bind('swipeup', function(){
-//	socket.send("R up");
-//});
+// $('div').bind('swipeup', function(){
+// socket.send("R up");
+// });
 //
-//$('div').bind('swipedown', function(){
-//	socket.send("R down");
-//});
+// $('div').bind('swipedown', function(){
+// socket.send("R down");
+// });
 
 
-//Kolla vart klicket är. Om riktning är horizontell, kolla om klickHeight-snakeHeight>0, då åker den uppålt, annars nedåt.
-//Kolla om JS swipe är snabbare än JGesture
-$(".snakeruta").click(function(){
+// Kolla vart klicket är. Om riktning är horizontell, kolla om
+// klickHeight-snakeHeight>0, då åker den uppålt, annars nedåt.
+// Kolla om JS swipe är snabbare än JGesture
+$(".snakeruta").click(function(e){
 	console.log("CLICK");
 	if(riktning=="hori"){
-		console.log("HORI")
+		console.log(e.pageY);
 	}
 	else if(riktning=="vert"){
-		console.log("VERT")
+		console.log(e.pageX);
 	}
 //	
 });
