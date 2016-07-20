@@ -30,6 +30,7 @@ var riktning;
 //Kolla vart klicket är. Om riktning är horizontell, kolla om klickHeight-snakeHeight>0, då åker den uppålt, annars nedåt.
 //Kolla om JS swipe är snabbare än JGesture
 $("snakeruta").click(function(){
+	console.log("CLICK");
 	if(riktning=="hori"){
 		console.log("HORI")
 	}
