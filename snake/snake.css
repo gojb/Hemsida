@@ -1,3 +1,10 @@
+body * {
+/**
+*Anti-blink iphone?
+*/
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 .snakeruta, .highscore {
 	float: left;
 }
