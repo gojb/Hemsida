@@ -34,9 +34,22 @@ $(".snakeruta").click(function(e){
 	console.log("CLICK");
 	if(riktning=="hori"){
 		console.log(e.pageY);
+		if(e.getY>pixelstorlek*25){
+			socket.send("R down");
+		}
+		else{
+			socket.send("R up");
+		}
+		
 	}
 	else if(riktning=="vert"){
 		console.log(e.pageX);
+		if(e.getX>pixelstorlek*25){
+			socket.send("R right");
+		}
+		else{
+			socket.send("R left");
+		}
 	}
 //	
 });
@@ -102,7 +115,6 @@ socket.onmessage = function (message) {
 			}
 			var color = "#"+scanner.shift();
 			while (scanner.length>1) {
-				console.log(22);
 				pixels.push(new Pixel(scanner.shift(), scanner.shift(), color));
 			}
 		}
