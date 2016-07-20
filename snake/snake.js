@@ -38,9 +38,11 @@ $(".snakeruta").click(function(e){
 		console.log(y);
 		if(y>pixelstorlek*25){
 			socket.send("R down");
+			riktning="vert";
 		}
 		else if(y<=pixelstorlek*25){
 			socket.send("R up");
+			riktning="hori";
 		}
 		
 	}
