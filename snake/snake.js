@@ -116,7 +116,7 @@ socket.onmessage = function (message) {
 			paused=true;
 		}
 		else if (string=="GAMEOVER") {
-			consol.log(scanner);
+			console.log(scanner);
 			scaner.shift();
 			vem=scanner;
 			gameover = true;
