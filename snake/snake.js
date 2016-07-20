@@ -31,8 +31,8 @@ var riktning;
 // klickHeight-snakeHeight>0, då åker den uppålt, annars nedåt.
 // Kolla om JS swipe är snabbare än JGesture
 $(".snakeruta").click(function(e){
-	var x = e.pageX - $('#element').offset().left;
-	var y = e.pageY - $('#element').offset().top;
+	var x = e.pageX - $('.snakeruta').offset().left;
+	var y = e.pageY - $('.snakeruta').offset().top;
 	console.log("CLICK");
 	if(riktning=="hori"){
 		console.log(y);
