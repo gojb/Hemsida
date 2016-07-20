@@ -172,6 +172,9 @@ socket.onmessage = function (message) {
 		}
 
 	}
+	else if (type=="R") {
+		riktning=scanner.shift();
+	}
 
 
 
