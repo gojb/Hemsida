@@ -216,7 +216,7 @@ function paint(){
 	ctx.lineTo(pixelstorlek*25,pixelstorlek*50);
 	ctx.moveTo(0,pixelstorlek*25);
 	ctx.lineTo(pixelstorlek*50,pixelstorlek*25);
-	ctx.strokeStyle = '#000000';
+	ctx.strokeStyle = '#EEEEEE';
 	ctx.stroke();
 
 	ctx.beginPath();
