@@ -37,7 +37,7 @@ $(".snakeruta").click(function(e){
 		if(e.getY>pixelstorlek*25){
 			socket.send("R down");
 		}
-		else{
+		else if(e.getY<=pixelstorlek*25){
 			socket.send("R up");
 		}
 		
@@ -47,7 +47,7 @@ $(".snakeruta").click(function(e){
 		if(e.getX>pixelstorlek*25){
 			socket.send("R right");
 		}
-		else{
+		else if(e.getX<=pixelstorlek*25){
 			socket.send("R left");
 		}
 	}
