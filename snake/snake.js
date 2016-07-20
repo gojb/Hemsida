@@ -211,7 +211,12 @@ function paint(){
 	ctx.lineTo(0,0);
 	ctx.strokeStyle = '#000000';
 	ctx.stroke();
-
+	ctx.moveTo(pixelstorlek*25,0);
+	ctx.lineTo(pixelstorlek*25,pixelstorlek*50);
+	ctx.moveTo(0,pixelstorlek*25);
+	ctx.lineTo(pixelstorlek*50,pixelstorlek*25);
+	ctx.strokeStyle = '#000000';
+	ctx.stroke();
 
 	ctx.beginPath();
 	ctx.arc(pluppX*pixelstorlek+pixelstorlek/2+1, pluppY*pixelstorlek+pixelstorlek/2+1, pixelstorlek/2-1, 0, 2 * Math.PI, false);
