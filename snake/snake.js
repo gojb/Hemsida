@@ -30,28 +30,25 @@ var riktning;
 // Kolla vart klicket är. Om riktning är horizontell, kolla om
 // klickHeight-snakeHeight>0, då åker den uppålt, annars nedåt.
 // Kolla om JS swipe är snabbare än JGesture
-$(".snakeruta").click(function(e){
-	var x = e.pageX - $('.snakeruta').offset().left;
-	var y = e.pageY - $('.snakeruta').offset().top;
-	console.log("CLICK");
+$(document).click(function(e){
+	var x = e.pageX;
+	var y = e.pageY;
 	if(riktning=="left"||riktning=="right"){
-		console.log(y);
-		if(y>pixelstorlek*25){
+		if(y>(pixelstorlek*25 + $('.snakeruta').offset().top)){
 			socket.send("R down");
 			riktning="vert";
 		}
-		else if(y<=pixelstorlek*25){
+		else if(y<=(pixelstorlek*25 + $('.snakeruta').offset().top)){
 			socket.send("R up");
 			riktning="hori";
 		}
 		
 	}
 	else if(riktning=="up"||riktning=="down"){
-		console.log(x);
-		if(x>pixelstorlek*25){
+		if(x>(pixelstorlek*25 + $('.snakeruta').offset().left)){
 			socket.send("R right");
 		}
-		else if(x<=pixelstorlek*25){
+		else if(x<=(pixelstorlek*25 + $('.snakeruta').offset().left)){
 			socket.send("R left");
 		}
 	}
