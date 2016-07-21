@@ -160,7 +160,7 @@ socket.onmessage = function (message) {
 				var highscore=highscores[i];
 				$('.highscore').append(
 						'<tr style="color:'+highscore.color+';">'+
-						'<td><plaintext>'+highscore.namn+'</plaintext></td>'+
+						'<td><script type="text/plain">'+highscore.namn+'</script></td>'+
 						'<td>'+highscore.poäng+'</td>'+
 						'<td>'+highscore.highscore+'</td>'+
 						'</div>'
