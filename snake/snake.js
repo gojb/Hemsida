@@ -36,17 +36,17 @@ $(document).click(function(e){
 			socket.send("R down");
 			riktning="vert";
 		}
-		else if(e.pageY<=(pixelstorlek*25 + $('.snakeruta').offset().top)){
+		else /*if(e.pageY<=(pixelstorlek*25 + $('.snakeruta').offset().top))*/{
 			socket.send("R up");
 			riktning="hori";
 		}
 		
 	}
-	else if(riktning=="up"||riktning=="down"){
+	else/* if(riktning=="up"||riktning=="down")*/{
 		if(e.pageX>(pixelstorlek*25 + $('.snakeruta').offset().left)){
 			socket.send("R right");
 		}
-		else if(e.pageX<=(pixelstorlek*25 + $('.snakeruta').offset().left)){
+		else /*if(e.pageX<=(pixelstorlek*25 + $('.snakeruta').offset().left))*/{
 			socket.send("R left");
 		}
 	}
