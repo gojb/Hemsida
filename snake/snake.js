@@ -114,7 +114,7 @@ $(window).load(function(){
 				paused=true;
 			}
 			else if (string=="GAMEOVER") {
-//				console.log(scanner);
+				console.log(scanner);
 				scanner.shift();
 				vem=scanner;
 				gameover = true;
