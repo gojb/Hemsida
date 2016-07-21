@@ -47,7 +47,7 @@ $(window).load(function(){
 				socket.send("R up left");
 			}
 		}
-	});
+	}, false);
 
 	(function($) {
 		var IS_IOS = /iphone|ipad/i.test(navigator.userAgent);
