@@ -192,7 +192,6 @@ $(window).keydown(function (e) {
 	}
 	else if (e.which == 82||e.keyCode == 113){
 		socket.send("RES");
-		socket.send("START");
 	}
 	else if(e.which == 32)
 		socket.send("PAUSE");
