@@ -1,7 +1,7 @@
 .snakeruta, .highscore {
 	float: left;
 }
-
+script[type="text/plain"] {display:block;}
 .highscore {
 	background-color: black;
 	font-size: 20px;
