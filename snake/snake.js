@@ -169,6 +169,10 @@ $(window).load(function(){
 		else if (type=="R") {
 			riktning=scanner.shift();
 		}
+		else if (type=="Tid") {
+			console.log(scanner.shift());
+			
+		}
 
 
 
