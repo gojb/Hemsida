@@ -150,7 +150,6 @@ $(window).load(function(){
 			);
 			
 			for (var int = 0; int < scanner2.length; int++) {
-				console.log("tfgvhjk,");
 				if(int!=0){
 					scanner=scanner2[int].split(/\s+/);
 				}
