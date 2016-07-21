@@ -163,16 +163,16 @@ $(window).load(function(){
 				);
 			}
 
-			for(var i=0;i<highscores.length;i++){
-				var highscore=highscores[i];
-				$('.highscore').append(
-						'<tr style="color:'+highscore.color+';">'+
-						'<td><script type="text/plain">'+highscore.namn+'</script></td>'+
-						'<td>'+highscore.poäng+'</td>'+
-						'<td>'+highscore.highscore+'</td>'+
-						'</div>'
-				);
-			}
+//			for(var i=0;i<highscores.length;i++){
+//				var highscore=highscores[i];
+//				$('.highscore').append(
+//						'<tr style="color:'+highscore.color+';">'+
+//						'<td><script type="text/plain">'+highscore.namn+'</script></td>'+
+//						'<td>'+highscore.poäng+'</td>'+
+//						'<td>'+highscore.highscore+'</td>'+
+//						'</div>'
+//				);
+//			}
 
 
 		}
