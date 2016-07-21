@@ -30,7 +30,7 @@ $(window).load(function(){
 //	Kolla vart klicket är. Om riktning är horizontell, kolla om
 //	klickHeight-snakeHeight>0, då åker den uppålt, annars nedåt.
 //	Kolla om JS swipe är snabbare än JGesture
-	$(document).click(function(e){
+	$(document).mousedown(function(e){
 		if(e.pageY>(pixelstorlek*25 + $('.snakeruta').offset().top)){
 			if(e.pageX>(pixelstorlek*25 + $('.snakeruta').offset().left)){
 				socket.send("R down right");
