@@ -90,7 +90,7 @@ socket.onopen = function () {
 	for (var i = 0; i < 6; i++ ) {
 		color += letters[Math.floor(Math.random() * 16)];
 	}
-	socket.send("INIT "+color+" <plaintext>"+namn+"</plaintext>");
+	socket.send("INIT "+color+" "+namn);
 }
 socket.onclose = function () {
 	document.getElementById('chat').onkeydown = null;
@@ -160,7 +160,7 @@ socket.onmessage = function (message) {
 				var highscore=highscores[i];
 				$('.highscore').append(
 						'<tr style="color:'+highscore.color+';">'+
-						'<td>'+highscore.namn+'</td>'+
+						'<td><plaintext>'+highscore.namn+'</plaintext></td>'+
 						'<td>'+highscore.poäng+'</td>'+
 						'<td>'+highscore.highscore+'</td>'+
 						'</div>'
