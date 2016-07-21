@@ -47,6 +47,7 @@ $(window).load(function(){
 				socket.send("R up left");
 			}
 		}
+		e.preventDefault(); 
 	}, false);
 
 	(function($) {
@@ -67,7 +68,6 @@ $(window).load(function(){
 				});
 		};
 	})(jQuery);
-	document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
 	res();
 	if ('WebSocket' in window) {
 		socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/snake");
