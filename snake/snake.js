@@ -46,7 +46,7 @@ $(document).click(function(e){
 		if(e.pageX>(pixelstorlek*25 + $('.snakeruta').offset().left)){
 			socket.send("R right");
 		}
-		else /*if(e.pageX<=(pixelstorlek*25 + $('.snakeruta').offset().left))*/{
+		else /*if(e.pageX<=(pixelstorlek*25 + $('.snakeruta').offset().left))*/{ 
 			socket.send("R left");
 		}
 	}
