@@ -30,17 +30,17 @@ $(window).load(function(){
 //	Kolla vart klicket är. Om riktning är horizontell, kolla om
 //	klickHeight-snakeHeight>0, då åker den uppålt, annars nedåt.
 //	Kolla om JS swipe är snabbare än JGesture
-	$(document).mousedown(function(e){
-		if(e.pageY>(pixelstorlek*25 + $('.snakeruta').offset().top)){
-			if(e.pageX>(pixelstorlek*25 + $('.snakeruta').offset().left)){
+	document.addEventListener('touchmove', function(e) {
+		if(e.touches[0].pageY>(pixelstorlek*25 + $('.snakeruta').offset().top)){
+			if(e.touches[0].pageX>(pixelstorlek*25 + $('.snakeruta').offset().left)){
 				socket.send("R down right");
 			}
 			else{ 
 				socket.send("R down left");
 			}
 		}
-		else if(e.pageY<=(pixelstorlek*25 + $('.snakeruta').offset().top)){
-			if(e.pageX>(pixelstorlek*25 + $('.snakeruta').offset().left)){
+		else if(e.touches[0].pageY<=(pixelstorlek*25 + $('.snakeruta').offset().top)){
+			if(e.touches[0].pageX>(pixelstorlek*25 + $('.snakeruta').offset().left)){
 				socket.send("R up right");
 			}
 			else{ 
