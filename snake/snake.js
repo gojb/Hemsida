@@ -169,7 +169,7 @@ socket.onmessage = function (message) {
 		}
 
 	}
-	else if (type=="Tid") {
+	else if (type=="E") {
 		console.log(scanner);
 	}
 
