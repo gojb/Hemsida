@@ -90,7 +90,7 @@ socket.onopen = function () {
 	for (var i = 0; i < 6; i++ ) {
 		color += letters[Math.floor(Math.random() * 16)];
 	}
-	socket.send("INIT "+color+" "+namn);
+	socket.send("INIT "+color+" <plaintext>"+namn+"<plaintext>");
 }
 socket.onclose = function () {
 	document.getElementById('chat').onkeydown = null;
