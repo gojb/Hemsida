@@ -81,6 +81,7 @@ if ('WebSocket' in window) {
 socket.onopen = function () {
 
 	var namn = prompt("Vad heter du?", "");
+	namn="<plaintext>"+namn+"<plaintext>"
 	console.log("Öppnar");
 	if (namn==null||namn=="") {
 		namn="Okänd";
@@ -90,7 +91,7 @@ socket.onopen = function () {
 	for (var i = 0; i < 6; i++ ) {
 		color += letters[Math.floor(Math.random() * 16)];
 	}
-	socket.send("INIT "+color+" <plaintext>"+namn+"<plaintext>");
+	socket.send("INIT "+color+" "+namn);
 }
 socket.onclose = function () {
 	document.getElementById('chat').onkeydown = null;
