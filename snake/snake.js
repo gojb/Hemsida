@@ -149,14 +149,15 @@ $(window).load(function(){
 					'</tr>'
 			);
 			
-			for (var int = 0; int < scanner2.length; int+2) {
+			for (var int = 0; int < scanner2.length; int++) {
+				console.log("tfgvhjk,");
 				if(int!=0){
 					scanner=scanner2[int].split(/\s+/);
 				}
 				var highscore=new Highscore(scanner);
 				$('.highscore').append(
 						'<tr style="color:'+highscore.color+';">'+
-						'<td><script type="text/plain">'+scanner2[int+1]+'</script></td>'+
+						'<td><script type="text/plain">'+scanner2[++int]+'</script></td>'+
 						'<td>'+highscore.poäng+'</td>'+
 						'<td>'+highscore.highscore+'</td>'+
 						'</div>'
