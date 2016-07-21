@@ -30,7 +30,7 @@ var riktning;
 // Kolla vart klicket är. Om riktning är horizontell, kolla om
 // klickHeight-snakeHeight>0, då åker den uppålt, annars nedåt.
 // Kolla om JS swipe är snabbare än JGesture
-$(document).click(function(e){
+$(document).mousedown(function(e){
 	var x = e.pageX;
 	var y = e.pageY;
 	if(riktning=="left"||riktning=="right"){
