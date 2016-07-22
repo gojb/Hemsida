@@ -122,12 +122,14 @@ $(window).load(function(){
 				}
 				paint();
 			}
+			
 			console.log(message.data);
 			return;
 		}
-		
+		concole.log("1");
 		var datas=obj.data;
 		for (var int = 0; int < datas.length; int++) {
+			concole.log("2");
 			var data=datas[int];
 			var type=data.type;
 			if(type=="plupp"){
@@ -138,9 +140,11 @@ $(window).load(function(){
 				pixels=[];
 				var players=data.players;
 				for (var int = 0; int < players.length; int++) {
+					concole.log("3");
 					var player=players[int];
 					var pixels=player.pixels;
 					for (var int = 0; int < pixels.length; int++) {
+						concole.log("4");
 						var pixel=pixels[i];
 						var färg = "#"+player.färg;
 						pixels.push(new Pixel(pixel.X, pixel.Y, färg));
@@ -150,6 +154,7 @@ $(window).load(function(){
 
 			}
 			else if(type=="highscore"){
+				concole.log("5");
 				$('.highscore').empty();
 				$('.highscore').append(
 						'<tr>'+
@@ -158,6 +163,7 @@ $(window).load(function(){
 						'<th>Highscore</th>'+
 						'</tr>'
 				);
+				concole.log("6");
 				var highscores=data.highscore;
 				for (var int = 0; int < highscores.length; int++) {
 					var highscore=highscores[int];
