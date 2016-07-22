@@ -129,7 +129,7 @@ $(window).load(function(){
 		console.log("1");
 		var datas=obj.data;
 		for (var int = 0; int < datas.length; int++) {
-			console.log("2");
+			console.log(datas.length);
 			var data=datas[int];
 			var type=data.type;
 			if(type=="plupp"){
@@ -139,13 +139,13 @@ $(window).load(function(){
 			else if (type=="players") {
 				pixels=[];
 				var players=data.players;
-				for (var int = 0; int < players.length; int++) {
+				for (var int2 = 0; int2 < players.length; int2++) {
 					console.log("3");
-					var player=players[int];
+					var player=players[int2];
 					var pixels=player.pixels;
-					for (var int = 0; int < pixels.length; int++) {
+					for (var int3 = 0; int3 < pixels.length; int3++) {
 						console.log("4");
-						var pixel=pixels[i];
+						var pixel=pixels[int3];
 						var färg = "#"+player.färg;
 						pixels.push(new Pixel(pixel.X, pixel.Y, färg));
 					}
