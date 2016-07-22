@@ -126,24 +126,24 @@ $(window).load(function(){
 			return;
 		}
 		
-		var datas=obj.get("data");
+		var datas=obj.data;
 		for (var int = 0; int < datas.length; int++) {
 			var data=datas[int];
-			var type=data.get("type");
+			var type=data.type;
 			if(type=="plupp"){
-				pluppX=data.get("X");
-				pluppY=data.get("X");
+				pluppX=data.X;
+				pluppY=data.Y;
 			}
 			else if (type=="players") {
 				pixels=[];
-				var players=data.get("players");
+				var players=data.players;
 				for (var int = 0; int < players.length; int++) {
 					var player=players[int];
-					var pixels=player.get("pixels");
+					var pixels=player.pixels;
 					for (var int = 0; int < pixels.length; int++) {
 						var pixel=pixels[i];
-						var färg = "#"+player.get("färg");
-						pixels.push(new Pixel(pixel.get("X"), pixel.get("X"), färg));
+						var färg = "#"+player.färg;
+						pixels.push(new Pixel(pixel.X, pixel.Y, färg));
 					}
 				}
 				paint();
@@ -158,15 +158,15 @@ $(window).load(function(){
 						'<th>Highscore</th>'+
 						'</tr>'
 				);
-				var highscores=data.get("highscore");
+				var highscores=data.highscore;
 				for (var int = 0; int < highscores.length; int++) {
 					var highscore=highscores[int];
 //					var highscore=new Highscore(scanner);
 					$('.highscore').append(
-							'<tr style="color:'+highscore.get("färg")+';">'+
-							'<td><script type="text/plain">'+highscore.get("namn")+'</script></td>'+
-							'<td>'+highscore.get("poäng")+'</td>'+
-							'<td>'+highscore.get("highscore")+'</td>'+
+							'<tr style="color:'+highscore.färg+';">'+
+							'<td><script type="text/plain">'+highscore.namn+'</script></td>'+
+							'<td>'+highscore.poäng+'</td>'+
+							'<td>'+highscore.highscore+'</td>'+
 							'</div>'
 					);
 				}
