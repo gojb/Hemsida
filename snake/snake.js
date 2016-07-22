@@ -93,95 +93,99 @@ $(window).load(function(){
 		socket.send("INIT "+color+" "+namn);
 	}
 	socket.onclose = function () {
-		document.getElementById('chat').onkeydown = null;
 		console.log('*Ifrånkopplad');
-		document.getElementById('från').setAttribute('hidden','');
-		document.getElementById('knapp').removeAttribute('hidden');
+
 	};
 
 	socket.onmessage = function (message) {
-		var scanner2 = message.data.split(";");
-		var scanner = scanner2[0].split(/\s+/);
+		var obj;
+		try {
+			obj = JSON.parse(message.data);
+		} 
+		catch (e) {
+			var scanner2 = message.data.split(";");
+			var scanner = scanner2[0].split(/\s+/);
+			var type = scanner.shift();
+			if (type == "A") {
+				gameover=false;
+				paused=false;
 
-		var type = scanner.shift();
-
-		if (type == "A") {
-			gameover=false;
-			paused=false;
-
-			var string = scanner.shift();
-			if (string=="PAUSE") {
-				paused=true;
-			}
-			else if (string=="GAMEOVER") {
-				console.log(scanner);
-				scanner.shift();
-				vem=scanner;
-				gameover = true;
-			}
-			paint();
-		}
-		else if (type=="P") {
-			pluppX=scanner.shift();
-			pluppY=scanner.shift();
-		}
-		else if (type=="B") {
-			pixels=[];
-			for (var int = 0; int < scanner2.length; int++) {
-				if(int!=0){
-					scanner=scanner2[int].split(/\s+/);
+				var string = scanner.shift();
+				if (string=="PAUSE") {
+					paused=true;
 				}
-				var color = "#"+scanner.shift();
-				while (scanner.length>1) {
-					pixels.push(new Pixel(scanner.shift(), scanner.shift(), color));
+				else if (string=="GAMEOVER") {
+					console.log(scanner);
+					scanner.shift();
+					vem=scanner;
+					gameover = true;
 				}
+				paint();
 			}
-			paint();
-
+			console.log(message.data);
+			return;
 		}
-		else if (type=="H") {
-			$('.highscore').empty();
-			$('.highscore').append(
-					'<tr>'+
-					'<th>Spelare</th>'+
-					'<th>Poäng</th>'+
-					'<th>Highscore</th>'+
-					'</tr>'
-			);
-			
-			for (var int = 0; int < scanner2.length; int++) {
-				if(int!=0){
-					scanner=scanner2[int].split(/\s+/);
+		
+		var datas=obj.get("data");
+		for (var int = 0; int < datas.length; int++) {
+			var data=datas[int];
+			var type=data.get("type");
+			if(type=="plupp"){
+				pluppX=data.get("X");
+				pluppY=data.get("X");
+			}
+			else if (type=="players") {
+				pixels=[];
+				var players=data.get("players");
+				for (var int = 0; int < players.length; int++) {
+					var player=players[int];
+					var pixels=player.get("pixels");
+					for (var int = 0; int < pixels.length; int++) {
+						var pixel=pixels[i];
+						var färg = "#"+player.get("färg");
+						pixels.push(new Pixel(pixel.get("X"), pixel.get("X"), färg));
+					}
 				}
-				var highscore=new Highscore(scanner);
+				paint();
+
+			}
+			else if(type=="highscore"){
+				$('.highscore').empty();
 				$('.highscore').append(
-						'<tr style="color:'+highscore.color+';">'+
-						'<td><script type="text/plain">'+scanner2[++int]+'</script></td>'+
-						'<td>'+highscore.poäng+'</td>'+
-						'<td>'+highscore.highscore+'</td>'+
-						'</div>'
+						'<tr>'+
+						'<th>Spelare</th>'+
+						'<th>Poäng</th>'+
+						'<th>Highscore</th>'+
+						'</tr>'
 				);
+				var highscores=data.get("highscore");
+				for (var int = 0; int < highscores.length; int++) {
+					var highscore=highscores[int];
+//					var highscore=new Highscore(scanner);
+					$('.highscore').append(
+							'<tr style="color:'+highscore.get("färg")+';">'+
+							'<td><script type="text/plain">'+highscore.get("namn")+'</script></td>'+
+							'<td>'+highscore.get("poäng")+'</td>'+
+							'<td>'+highscore.get("highscore")+'</td>'+
+							'</div>'
+					);
+				}
 			}
+
 
 //			for(var i=0;i<highscores.length;i++){
-//				var highscore=highscores[i];
-//				$('.highscore').append(
-//						'<tr style="color:'+highscore.color+';">'+
-//						'<td><script type="text/plain">'+highscore.namn+'</script></td>'+
-//						'<td>'+highscore.poäng+'</td>'+
-//						'<td>'+highscore.highscore+'</td>'+
-//						'</div>'
-//				);
+//			var highscore=highscores[i];
+//			$('.highscore').append(
+//			'<tr style="color:'+highscore.color+';">'+
+//			'<td><script type="text/plain">'+highscore.namn+'</script></td>'+
+//			'<td>'+highscore.poäng+'</td>'+
+//			'<td>'+highscore.highscore+'</td>'+
+//			'</div>'
+//			);
 //			}
 
 
 		}
-		else if (type=="E") {
-			console.log(scanner);
-		}
-
-
-
 	};
 
 	$(window).keydown(function (e) {
