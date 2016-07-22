@@ -141,7 +141,6 @@ $(window).load(function(){
 					var player=players[int2];
 					var pixlar=player.pixels;
 					var färg = "#"+player.färg;
-					console.log(pixlar.length);
 					for (var int3 = 0; int3 < pixlar.length; int3++) {
 						var pixel=pixlar[int3];
 						pixels.push(new Pixel(pixel.X, pixel.Y, färg));
