@@ -144,7 +144,6 @@ $(window).load(function(){
 					var player=players[int2];
 					var pixlar=player.pixels;
 					var färg = "#"+player.färg;
-					console.log(pixlar.length);
 					for (var int3 = 0; int3 < pixlar.length; int3++) {
 						console.log("4");
 						var pixel=pixlar[int3];
@@ -155,7 +154,7 @@ $(window).load(function(){
 
 			}
 			else if(type=="highscore"){
-				concole.log("5");
+				console.log("5");
 				$('.highscore').empty();
 				$('.highscore').append(
 						'<tr>'+
