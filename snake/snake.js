@@ -126,10 +126,8 @@ $(window).load(function(){
 			console.log(message.data);
 			return;
 		}
-		console.log("1");
 		var datas=obj.data;
 		for (var int = 0; int < datas.length; int++) {
-			console.log(datas.length);
 			var data=datas[int];
 			var type=data.type;
 			if(type=="plupp"){
@@ -140,13 +138,11 @@ $(window).load(function(){
 				pixels=[];
 				var players=data.players;
 				for (var int2 = 0; int2 < players.length; int2++) {
-					console.log("3");
 					var player=players[int2];
 					var pixlar=player.pixels;
 					var färg = "#"+player.färg;
 					console.log(pixlar.length);
 					for (var int3 = 0; int3 < pixlar.length; int3++) {
-						console.log("4");
 						var pixel=pixlar[int3];
 						pixels.push(new Pixel(pixel.X, pixel.Y, färg));
 					}
@@ -155,7 +151,6 @@ $(window).load(function(){
 
 			}
 			else if(type=="highscore"){
-				console.log("5");
 				$('.highscore').empty();
 				$('.highscore').append(
 						'<tr>'+
@@ -164,14 +159,12 @@ $(window).load(function(){
 						'<th>Highscore</th>'+
 						'</tr>'
 				);
-				console.log("6");
 				var highscores=data.highscore;
 				for (var int3 = 0; int3 < highscores.length; int3++) {
-					console.log("6");
 					var highscore=highscores[int3];
 //					var highscore=new Highscore(scanner);
 					$('.highscore').append(
-							'<tr style="color:'+highscore.färg+';">'+
+							'<tr style="color:#'+highscore.färg+';">'+
 							'<td><script type="text/plain">'+highscore.namn+'</script></td>'+
 							'<td>'+highscore.poäng+'</td>'+
 							'<td>'+highscore.highscore+'</td>'+
@@ -182,20 +175,6 @@ $(window).load(function(){
 			else if(type=="delay"){
 				console.log(data.delay)
 			}
-
-
-//			for(var i=0;i<highscores.length;i++){
-//			var highscore=highscores[i];
-//			$('.highscore').append(
-//			'<tr style="color:'+highscore.color+';">'+
-//			'<td><script type="text/plain">'+highscore.namn+'</script></td>'+
-//			'<td>'+highscore.poäng+'</td>'+
-//			'<td>'+highscore.highscore+'</td>'+
-//			'</div>'
-//			);
-//			}
-
-
 		}
 	};
 
@@ -267,13 +246,6 @@ $(window).load(function(){
 			this.x=x;
 			this.y=y;
 			this.color=color;
-		}
-	}
-	class Highscore{
-		constructor(scanner){
-			this.poäng=scanner.shift();
-			this.color="#"+scanner.shift();
-			this.highscore=scanner.shift();
 		}
 	}
 	$(window).resize(function r() {
