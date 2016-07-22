@@ -144,6 +144,7 @@ $(window).load(function(){
 					var player=players[int2];
 					var pixlar=player.pixels;
 					var färg = "#"+player.färg;
+					console.log(pixlar.length);
 					for (var int3 = 0; int3 < pixlar.length; int3++) {
 						console.log("4");
 						var pixel=pixlar[int3];
@@ -165,8 +166,9 @@ $(window).load(function(){
 				);
 				console.log("6");
 				var highscores=data.highscore;
-				for (var int = 0; int < highscores.length; int++) {
-					var highscore=highscores[int];
+				for (var int3 = 0; int3 < highscores.length; int3++) {
+					console.log("6");
+					var highscore=highscores[int3];
 //					var highscore=new Highscore(scanner);
 					$('.highscore').append(
 							'<tr style="color:'+highscore.färg+';">'+
