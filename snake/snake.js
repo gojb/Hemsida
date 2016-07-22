@@ -122,8 +122,12 @@ $(window).load(function(){
 				}
 				paint();
 			}
-			
+			else if (type==START||type==OPEN) {
+				console.log(type);
+			}
+			else{
 			console.error(message.data);
+			}
 			return;
 		}
 		var datas=obj.data;
