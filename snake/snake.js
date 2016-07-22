@@ -123,7 +123,7 @@ $(window).load(function(){
 				paint();
 			}
 			
-			console.log(message.data);
+			console.error(message.data);
 			return;
 		}
 		var datas=obj.data;
