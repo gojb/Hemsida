@@ -179,6 +179,9 @@ $(window).load(function(){
 					);
 				}
 			}
+			else if(type=="delay"){
+				console.log(data.delay)
+			}
 
 
 //			for(var i=0;i<highscores.length;i++){
