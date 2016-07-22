@@ -142,11 +142,12 @@ $(window).load(function(){
 				for (var int2 = 0; int2 < players.length; int2++) {
 					console.log("3");
 					var player=players[int2];
-					var pixels=player.pixels;
-					for (var int3 = 0; int3 < pixels.length; int3++) {
+					var pixlar=player.pixels;
+					var färg = "#"+player.färg;
+					console.log(pixlar.length);
+					for (var int3 = 0; int3 < pixlar.length; int3++) {
 						console.log("4");
-						var pixel=pixels[int3];
-						var färg = "#"+player.färg;
+						var pixel=pixlar[int3];
 						pixels.push(new Pixel(pixel.X, pixel.Y, färg));
 					}
 				}
