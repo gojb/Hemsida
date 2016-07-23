@@ -10,22 +10,6 @@ $(window).load(function(){
 	var highscores = [];
 	var riktning;
 
-//	$('div').bind('swipeleft', function(){
-//	socket.send("R left");
-//	});
-
-//	$('div').bind('swiperight', function(){
-//	socket.send("R right");
-//	});
-
-//	$('div').bind('swipeup', function(){
-//	socket.send("R up");
-//	});
-
-//	$('div').bind('swipedown', function(){
-//	socket.send("R down");
-//	});
-
 
 //	Kolla vart klicket är. Om riktning är horizontell, kolla om
 //	klickHeight-snakeHeight>0, då åker den uppålt, annars nedåt.
@@ -49,25 +33,6 @@ $(window).load(function(){
 			}
 		}
 	}, false);
-
-	(function($) {
-		var IS_IOS = /iphone|ipad/i.test(navigator.userAgent);
-		$.fn.nodoubletapzoom = function() {
-			if (IS_IOS)
-				$(this).bind('touchstart', function preventZoom(e) {
-					var t2 = e.timeStamp
-					, t1 = $(this).data('lastTouch') || t2
-					, dt = t2 - t1
-					, fingers = e.originalEvent.touches.length;
-					$(this).data('lastTouch', t2);
-					if (!dt || dt > 500 || fingers > 1) return; // not double-tap
-
-					e.preventDefault(); // double tap - prevent the zoom
-					// also synthesize click events we just swallowed up
-					$(this).trigger('click').trigger('click');
-				});
-		};
-	})(jQuery);
 	document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
 	res();
 	if ('WebSocket' in window) {
