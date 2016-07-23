@@ -30,28 +30,24 @@ $(window).load(function(){
 //	Kolla vart klicket är. Om riktning är horizontell, kolla om
 //	klickHeight-snakeHeight>0, då åker den uppålt, annars nedåt.
 //	Kolla om JS swipe är snabbare än JGesture
-	$(document).click(function(e){
-		if(riktning=="left"||riktning=="right"){
-			if(e.pageY>(pixelstorlek*25 + $('.snakeruta').offset().top)){
-				socket.send("R down");
-				riktning="vert";
+	document.addEventListener('touchmove', function(e) {
+		if(e.touches[0].pageY>(pixelstorlek*25 + $('.snakeruta').offset().top)){
+			if(e.touches[0].pageX>(pixelstorlek*25 + $('.snakeruta').offset().left)){
+				socket.send("R down right");
 			}
-			else /*if(e.pageY<=(pixelstorlek*25 + $('.snakeruta').offset().top))*/{
-				socket.send("R up");
-				riktning="hori";
-			}
-
-		}
-		else/* if(riktning=="up"||riktning=="down")*/{
-			if(e.pageX>(pixelstorlek*25 + $('.snakeruta').offset().left)){
-				socket.send("R right");
-			}
-			else /*if(e.pageX<=(pixelstorlek*25 + $('.snakeruta').offset().left))*/{ 
-				socket.send("R left");
+			else{ 
+				socket.send("R down left");
 			}
 		}
-
-	});
+		else if(e.touches[0].pageY<=(pixelstorlek*25 + $('.snakeruta').offset().top)){
+			if(e.touches[0].pageX>(pixelstorlek*25 + $('.snakeruta').offset().left)){
+				socket.send("R up right");
+			}
+			else{ 
+				socket.send("R up left");
+			}
+		}
+	}, false);
 
 	(function($) {
 		var IS_IOS = /iphone|ipad/i.test(navigator.userAgent);
