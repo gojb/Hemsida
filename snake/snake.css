@@ -35,12 +35,13 @@ script[type="text/plain"] {
 		right: auto !important;
 		left: 0px;
 		bottom: 0px;
+		top:auto !important;
 	}
 	.middle {
 		min-height: calc(100% - 40px);
 	}
 	.header {
-		height: 0px;
+		height: 0px !important;
 		overflow: hidden;
 	}
 	.logo {
