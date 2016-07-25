@@ -33,6 +33,6 @@ script[type="text/plain"] {
 	}
 	.highscore {
 		left: 0px;
-		right: inherit;
+		right: auto;
 	}
 }
