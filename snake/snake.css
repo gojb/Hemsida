@@ -31,4 +31,7 @@ script[type="text/plain"] {
 	.menuKnapp {
 		display: none;
 	}
+	.highscore {
+		left: 0px;
+	}
 }
