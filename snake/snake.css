@@ -38,7 +38,7 @@ script[type="text/plain"] {
 		top:auto !important;
 	}
 	.middle {
-		min-height: calc(100% - 40px);
+		min-height: calc(100% - 40px) !important;
 	}
 	.header {
 		height: 0px !important;
