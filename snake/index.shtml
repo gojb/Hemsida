@@ -5,6 +5,7 @@
 <!--#include virtual="/head.html" -->
 <title>Snake - GoJb Goodies</title>
 <link href=snake.css rel=stylesheet type=text/css>
+<link rel="manifest" href="manifest.json">
 </head>
 <body class="bred">
 	<!--#include virtual="/menu.html" -->

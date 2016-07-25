@@ -1,0 +1,6 @@
+{
+  "name": "GoJb Development - Snake",
+   "start_url": "index.shtml",
+  "display": "standalone",
+  "orientation": "landscape"
+}
