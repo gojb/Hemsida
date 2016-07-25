@@ -1,11 +1,7 @@
 .snakeruta, .highscore {
 	float: left;
 }
-@media all and (display-mode: standalone) {
-  * {
-    background-color: yellow; 
-  }
-}
+
 script[type="text/plain"] {
 	display: block;
 }
@@ -29,4 +25,10 @@ script[type="text/plain"] {
 .smal canvas {
 	position: fixed;
 	z-index: 50;
+}
+
+@media all and (display-mode: standalone) {
+	.menuKnapp {
+		display: none;
+	}
 }
