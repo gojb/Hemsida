@@ -32,7 +32,7 @@ script[type="text/plain"] {
 		display: none;
 	}
 	.highscore {
-		right: auto;
+		right: auto !important;
 		left: 0px;
 	}
 }
