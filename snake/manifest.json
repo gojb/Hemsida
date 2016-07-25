@@ -1,6 +1,5 @@
 {
   "name": "Snake - GoJb Development",
    "start_url": "index.shtml",
-  "display": "fullscreen",
-  "orientation": "landscape"
+  "display": "fullscreen"
 }
