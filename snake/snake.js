@@ -189,7 +189,7 @@ $(window).load(function(){
 		ctx.fillStyle = '#ff0000';
 		ctx.fill();
 
-		var arrayList = clone(pixels);
+		var arrayList = pixels;
 		for (var i = 0; i < arrayList.length; i++) {
 			var pixel = arrayList[i];
 			ctx.fillStyle=pixel.color;
