@@ -65,20 +65,8 @@ $(window).load(function(){
 			obj = JSON.parse(message.data);
 		} 
 		catch (e) {
-			var scanner2 = message.data.split(";");
-			var scanner = scanner2[0].split(/\s+/);
-			var type = scanner.shift();
-			if (type == "A") {
-				if (scanner.shift()=="PAUSE") {
-					paused=true;
-				}
-				else{
-					paused=false;
-				}
-				paint();
-			}
-			else if (type=="START"||type=="OPEN") {
-				console.log(type);
+			if (message.data=="START"||message.data=="OPEN") {
+				console.log(message.data);
 			}
 			else{
 				console.error(message.data);
@@ -139,6 +127,12 @@ $(window).load(function(){
 			}
 			else if(type=="cleangameover"){
 				gameover=false;
+			}
+			else if(type=="pause"){
+				paused=true;
+			}
+			else if(type=="unpause"){
+				paused=false;
 			}
 		}
 		paint();
