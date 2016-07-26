@@ -106,8 +106,6 @@ $(window).load(function(){
 						pixels.push(new Pixel(pixel.X, pixel.Y, färg));
 					}
 				}
-				paint();
-
 			}
 			else if(type=="highscore"){
 				$('.highscore').empty();
@@ -132,14 +130,19 @@ $(window).load(function(){
 				}
 			}
 			else if(type=="gameover"){
-					console.log(data);
-					vem=data.namn;
-					gameover = true;
+				console.log(data);
+				vem=data.namn;
+				gameover = true;
+
 			}
 			else if(type=="delay"){
 				console.log(data.delay)
 			}
+			else if(type=="cleangameover"){
+				gameover=false;
+			}
 		}
+		paint();
 	};
 
 	$(window).keydown(function (e) {
