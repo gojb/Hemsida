@@ -69,12 +69,11 @@ $(window).load(function(){
 			var scanner = scanner2[0].split(/\s+/);
 			var type = scanner.shift();
 			if (type == "A") {
-				gameover=false;
-				paused=false;
-
-				var string = scanner.shift();
-				if (string=="PAUSE") {
+				if (scanner.shift()=="PAUSE") {
 					paused=true;
+				}
+				else{
+					paused=false;
 				}
 				paint();
 			}
