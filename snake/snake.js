@@ -76,12 +76,6 @@ $(window).load(function(){
 				if (string=="PAUSE") {
 					paused=true;
 				}
-				else if (string=="GAMEOVER") {
-					console.log(scanner);
-					scanner.shift();
-					vem=scanner;
-					gameover = true;
-				}
 				paint();
 			}
 			else if (type=="START"||type=="OPEN") {
@@ -136,6 +130,11 @@ $(window).load(function(){
 							'</div>'
 					);
 				}
+			}
+			else if(type=="gameover"){
+					console.log(data);
+					vem=data.namn;
+					gameover = true;
 			}
 			else if(type=="delay"){
 				console.log(data.delay)
