@@ -65,27 +65,8 @@ $(window).load(function(){
 			obj = JSON.parse(message.data);
 		} 
 		catch (e) {
-			var scanner2 = message.data.split(";");
-			var scanner = scanner2[0].split(/\s+/);
-			var type = scanner.shift();
-			if (type == "A") {
-				gameover=false;
-				paused=false;
-
-				var string = scanner.shift();
-				if (string=="PAUSE") {
-					paused=true;
-				}
-				else if (string=="GAMEOVER") {
-					console.log(scanner);
-					scanner.shift();
-					vem=scanner;
-					gameover = true;
-				}
-				paint();
-			}
-			else if (type=="START"||type=="OPEN") {
-				console.log(type);
+			if (message.data=="START"||message.data=="OPEN") {
+				console.log(message.data);
 			}
 			else{
 				console.error(message.data);
@@ -112,8 +93,6 @@ $(window).load(function(){
 						pixels.push(new Pixel(pixel.X, pixel.Y, färg));
 					}
 				}
-				paint();
-
 			}
 			else if(type=="highscore"){
 				$('.highscore').empty();
@@ -137,10 +116,26 @@ $(window).load(function(){
 					);
 				}
 			}
+			else if(type=="gameover"){
+				console.log(data);
+				vem=data.namn;
+				gameover = true;
+
+			}
 			else if(type=="delay"){
 				console.log(data.delay)
 			}
+			else if(type=="cleangameover"){
+				gameover=false;
+			}
+			else if(type=="pause"){
+				paused=true;
+			}
+			else if(type=="unpause"){
+				paused=false;
+			}
 		}
+		paint();
 	};
 
 	$(window).keydown(function (e) {
@@ -188,7 +183,7 @@ $(window).load(function(){
 		ctx.fillStyle = '#ff0000';
 		ctx.fill();
 
-		var arrayList = clone(pixels);
+		var arrayList = pixels;
 		for (var i = 0; i < arrayList.length; i++) {
 			var pixel = arrayList[i];
 			ctx.fillStyle=pixel.color;
