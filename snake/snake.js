@@ -86,11 +86,11 @@ $(window).load(function(){
 				var players=data.players;
 				for (var int2 = 0; int2 < players.length; int2++) {
 					var player=players[int2];
-					var pixlar=player.pixels;
+					var X=player.X;
+					var Y=player.Y;
 					var färg = "#"+player.färg;
-					for (var int3 = 0; int3 < pixlar.length; int3++) {
-						var pixel=pixlar[int3];
-						pixels.push(new Pixel(pixel.X, pixel.Y, färg));
+					for (var int3 = 0; int3 < X.length; int3++) {
+						pixels.push(new Pixel(X[int3], Y[int3], färg));
 					}
 				}
 			}
