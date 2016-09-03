@@ -55,7 +55,7 @@ $(window).load(function(){
 		socket.send("INIT "+color+" "+namn);
 	}
 	socket.onclose = function () {
-		console.log('*Ifrånkopplad');
+		socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/snake");
 
 	};
 
