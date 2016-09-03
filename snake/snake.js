@@ -84,7 +84,7 @@ $(window).load(function(){
 			else if (type=="players") {
 				pixels=[];
 				var players=data.players;
-				for (var int2 = 0; int2 < players.length; int2) {
+				for (var int2 = 0; int2 < players.length; int2++) {
 					var player=players[int2];
 //					var X=player.X;
 //					var Y=player.Y;
