@@ -55,7 +55,7 @@ $(window).load(function(){
 		socket.send("INIT "+color+" "+namn);
 	}
 	socket.onclose = function () {
-		console.log('*Ifrånkopplad');
+		socket = new WebSocket("ws://wildfly-gojb.rhcloud.com:8000/snake");
 
 	};
 
@@ -86,11 +86,11 @@ $(window).load(function(){
 				var players=data.players;
 				for (var int2 = 0; int2 < players.length; int2++) {
 					var player=players[int2];
-					var pixlar=player.pixels;
-					var färg = "#"+player.färg;
-					for (var int3 = 0; int3 < pixlar.length; int3++) {
-						var pixel=pixlar[int3];
-						pixels.push(new Pixel(pixel.X, pixel.Y, färg));
+//					var X=player.X;
+//					var Y=player.Y;
+					var färg = "#"+player[0];
+					for (var int3 = 1; int3 < player.length; int3++) {
+						pixels.push(new Pixel(player[int3], player[++int3], färg));
 					}
 				}
 			}
