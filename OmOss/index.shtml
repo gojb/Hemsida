@@ -1,8 +1,9 @@
 <html>
+
+<head>
 <script type="text/javascript">
 navigator.vibrate(200);
 </script>
-<head>
 <!--#include virtual="/head.html" -->
 <link  href="index.css" rel=stylesheet type="text/css">
 </head>
