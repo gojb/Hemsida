@@ -90,7 +90,7 @@ $(window).load(function(){
 	Cookie("lang");
 	//AcceptCookies
 	function acceptCookies(){
-		var namn = "acceptCookies=";
+		var namn = "acceptCookies=yes";
 		var elseAmount = 0;
 		cookieArray = document.cookie.split(";");
 		for(var i = 0; i < cookieArray.length; i++){
@@ -112,7 +112,7 @@ $(window).load(function(){
 		var date = new Date();
 		date.setTime(date.getTime()+(365*86400000));
 		var UTC = date.toUTCString();
-		document.cookie = "acceptCookies=; expires="+UTC+";path=/";
+		document.cookie = "acceptCookies=yes; expires="+UTC+";path=/";
 
 		console.log(document.cookie);
 		$('.acceptCookies').css("display", "none");
