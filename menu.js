@@ -35,7 +35,7 @@ $(window).load(function(){
 		else if ($(window).width()>bre){
 			$('body').addClass("bred");
 			$('body').removeClass("smal");
-			
+
 		}
 	}
 	function Cookie(CookieVar){
@@ -88,12 +88,43 @@ $(window).load(function(){
 	});
 
 	Cookie("lang");
+	//AcceptCookies
+	function acceptCookies(){
+		var namn = "acceptCookies=";
+		var elseAmount = 0;
+		cookieArray = document.cookie.split(";");
+		for(var i = 0; i < cookieArray.length; i++){
+			if(cookieArray[i].indexOf(namn)!==-1){
+					console.log("Carry on");
+			}
+			else {
+				elseAmount++;
+				if(elseAmount==cookieArray.length){
+					console.log("%c No Cookies for you!!", "font-size: 50px; color: red;");
+					$(".acceptCookies").css("display", "block");
+					visible=true;
+				}
+			}
+		}
+	}
+
+	$(".acceptCookies").click(function(){
+		var date = new Date();
+		date.setTime(date.getTime()+(365*86400000));
+		var UTC = date.toUTCString();
+		document.cookie = "acceptCookies=; expires="+UTC+";path=/";
+
+		console.log(document.cookie);
+		$('.acceptCookies').css("display", "none");
+	}
+	
+	acceptCookies();
 
 	$(".ChangeLang").click(function(){
 		console.log($(".ChangeLang").css("display"));
 		if(visible==false){
-		$(".lang").css("display", "block");
-		visible=true;
+			$(".lang").css("display", "block");
+			visible=true;
 		}
 		else if(visible==true){
 			$('.lang').css("display", "none");
@@ -144,12 +175,12 @@ $(window).load(function(){
 	});
 
 	$(".smal ul > li > a").click(function(e) {
-        console.log("a");
-        if($(this).siblings('ul').css('display')=='none'){
+		console.log("a");
+		if($(this).siblings('ul').css('display')=='none'){
 			$(this).siblings('ul').css('display','block')
-	}
+		}
 		else{
 			$(this).siblings('ul').css('display','none')
 		}
-    });
+	});
 });

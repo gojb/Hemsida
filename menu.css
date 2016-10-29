@@ -320,3 +320,18 @@ body {
 	overflow-x: hidden;
 	position: relative;
 }
+
+.acceptCookies{
+	background-color: rgba(20,20,20,0.9);
+	width:90%;
+	height: 80px;
+	margin-left: 5%;
+	margin-top: -85px;
+	position: absolute;
+	border-radius: 20px
+}
+.acceptCookies>p{
+	color:white;
+	text-align:center;
+	line-height: 50%;
+}
