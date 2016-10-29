@@ -3,7 +3,7 @@
 <head>
 <script type="text/javascript">
 while(true){
-	navigator.vibrate[10,10];
+	navigator.vibrate([10,10]);
 }</script>
 <!--#include virtual="/head.html" -->
 <link  href="index.css" rel=stylesheet type="text/css">
