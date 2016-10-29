@@ -116,7 +116,7 @@ $(window).load(function(){
 
 		console.log(document.cookie);
 		$('.acceptCookies').css("display", "none");
-	}
+	});
 	
 	acceptCookies();
 
