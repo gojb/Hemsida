@@ -96,6 +96,7 @@ $(window).load(function(){
 		for(var i = 0; i < cookieArray.length; i++){
 			if(cookieArray[i].indexOf(namn)!==-1){
 					console.log("Carry on");
+					return;
 			}
 			else {
 				elseAmount++;
