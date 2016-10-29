@@ -96,7 +96,7 @@ $(window).load(function(){
 		for(var i = 0; i < cookieArray.length; i++){
 			if(cookieArray[i].indexOf(namn)!==-1){
 					console.log("Carry on");
-					return;
+					i=cookieArray.length+100;
 			}
 			else {
 				elseAmount++;
@@ -118,7 +118,6 @@ $(window).load(function(){
 		console.log(document.cookie);
 		$('.acceptCookies').css("display", "none");
 	});
-	
 	acceptCookies();
 
 	$(".ChangeLang").click(function(){

@@ -322,6 +322,7 @@ body {
 }
 
 .acceptCookies{
+	display: none;
 	background-color: rgba(20,20,20,0.9);
 	width:90%;
 	height: 80px;
@@ -329,6 +330,7 @@ body {
 	margin-top: -85px;
 	position: absolute;
 	border-radius: 20px
+
 }
 .acceptCookies>p{
 	color:white;
