@@ -1,6 +1,6 @@
 <html>
 <script type="text/javascript">
-window.navigator.vibrate(200);
+navigator.vibrate(200);
 </script>
 <head>
 <!--#include virtual="/head.html" -->
