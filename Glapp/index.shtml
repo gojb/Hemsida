@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <!--#include virtual="/head.html" -->
+    <link  href="index.css" rel=stylesheet type="text/css">
+</head>
+
+<body class="bred">
+<div class="menu" id="menu">
+    <!--#include virtual="/menu.html" -->
+</div>
+<div class="middle">
+    <h1>
+        Glapp
+    </h1>
+
+    <p>
+        How long can you bare to stay on the app?
+
+        This app is very simple but entertaining. Every click earns one point. Every time you exit the app,
+        bring up the control center or pull down the notification center, your points reset. The only reference
+        you have is your top score. How far can you come?
+
+        If you need to get in contact with the developer, send an email to gojbmail@gmail.com and I will help you
+        from there
+
+    </p>
+</div>
+</body>
+</html>
