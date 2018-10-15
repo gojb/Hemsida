@@ -31,7 +31,7 @@ $(document).ready(function(){
 	function connect(lang) {
 		if(lang=='swe'){
 			if ('WebSocket' in window) {
-				socket = new WebSocket("wss://wildfly-gojb.rhcloud.com:8443/chat");
+				socket = new WebSocket("wss://bjorns.tk/ws/chat");
 			}  else {
 				Console.log('Error: WebSocket stöds inte.');
 			}
